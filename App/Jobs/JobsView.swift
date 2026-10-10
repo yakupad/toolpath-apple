@@ -91,10 +91,11 @@ struct JobsView: View {
 
 struct JobRow: View {
     let job: JobFile
+    @Environment(Router.self) private var router
 
     var body: some View {
         HStack(spacing: 12) {
-            ScoreBadge(score: job.safetyScore, hasDanger: job.dangerCount > 0)
+            JobScoreBadge(job: job)
             VStack(alignment: .leading, spacing: 3) {
                 Text(job.name).font(.headline).lineLimit(1)
                 Text(summary).font(.subheadline).foregroundStyle(TP.Palette.textSecondary)
@@ -104,6 +105,7 @@ struct JobRow: View {
     }
 
     private var summary: String {
+        guard job.isAnalyzed else { return String(localized: "Analyzing…") }
         let minutes = Duration.seconds(job.estimatedMinutes * 60).shortEstimate
         let size = "\(Int(job.widthMm.rounded()))×\(Int(job.heightMm.rounded())) mm"
         return job.dangerCount > 0
@@ -133,5 +135,23 @@ struct ScoreBadge: View {
         .frame(width: size, height: size)
         .accessibilityElement()
         .accessibilityLabel(Text("Safety score \(score)"))
+    }
+}
+
+/// Score badge for a saved job; analyzes it on first display if needed.
+struct JobScoreBadge: View {
+    let job: JobFile
+    var size: CGFloat = 44
+    @Environment(Router.self) private var router
+
+    var body: some View {
+        Group {
+            if job.isAnalyzed {
+                ScoreBadge(score: job.safetyScore, hasDanger: job.dangerCount > 0, size: size)
+            } else {
+                ProgressView().frame(width: size, height: size)
+                    .onAppear { router.analyses.load(job, machine: nil) }
+            }
+        }
     }
 }

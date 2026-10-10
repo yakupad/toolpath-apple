@@ -23,6 +23,8 @@ final class JobFile {
     var widthMm: Double = 0
     var heightMm: Double = 0
     var tagsRaw: String = ""
+    /// False until the cached summary above has been computed at least once.
+    var isAnalyzed: Bool = false
 
     init(name: String, content: String) {
         self.name = name

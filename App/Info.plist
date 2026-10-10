@@ -27,6 +27,13 @@
 	<array>
 		<string>en</string>
 		<string>tr</string>
+		<string>de</string>
+		<string>es</string>
+		<string>it</string>
+		<string>ru</string>
+		<string>ja</string>
+		<string>zh-Hans</string>
+		<string>ar</string>
 	</array>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>

@@ -39,6 +39,7 @@ final class Router {
             do {
                 let job = try JobImporter.makeJob(from: url)
                 context.insert(job)
+                analyses.load(job, machine: nil)
                 lastID = job.id
             } catch {
                 importError = error.localizedDescription
@@ -146,6 +147,7 @@ final class AnalysisStore {
             let bounds = result.document.cuttingBounds ?? result.document.bounds
             job.widthMm = bounds.width
             job.heightMm = bounds.height
+            job.isAnalyzed = true
         }
     }
 

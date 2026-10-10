@@ -82,9 +82,9 @@ struct WorkshopView: View {
                     ForEach(jobs.prefix(8)) { job in
                         Button { router.open(job: job.id) } label: {
                             VStack(alignment: .leading, spacing: 8) {
-                                ScoreBadge(score: job.safetyScore, hasDanger: job.dangerCount > 0, size: 40)
+                                JobScoreBadge(job: job, size: 40)
                                 Text(job.name).font(.subheadline.weight(.semibold)).lineLimit(1)
-                                Text(Duration.seconds(job.estimatedMinutes * 60).shortEstimate)
+                                Text(job.isAnalyzed ? Duration.seconds(job.estimatedMinutes * 60).shortEstimate : String(localized: "Analyzing…"))
                                     .font(.caption)
                                     .foregroundStyle(TP.Palette.textSecondary)
                             }
