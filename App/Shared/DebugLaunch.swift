@@ -1,3 +1,16 @@
+import Foundation
+
+enum DebugFlags {
+    /// Screenshot runs skip onboarding with `-skipOnboarding`.
+    static var skipOnboarding: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-skipOnboarding")
+        #else
+        false
+        #endif
+    }
+}
+
 #if DEBUG
 import SwiftData
 import SwiftUI

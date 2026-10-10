@@ -5,6 +5,7 @@ import SwiftUI
 struct RootView: View {
     @Environment(Router.self) private var router
     @Environment(\.modelContext) private var context
+    @AppStorage("onboarded") private var onboarded = false
 
     var body: some View {
         @Bindable var router = router
@@ -46,6 +47,9 @@ struct RootView: View {
         }
         .sheet(isPresented: $router.showSettings) {
             SettingsView()
+        }
+        .fullScreenCoverCompat(isPresented: Binding(get: { !onboarded && !DebugFlags.skipOnboarding }, set: { _ in })) {
+            OnboardingView()
         }
         .dropDestination(for: URL.self) { urls, _ in
             router.pendingURLs.append(contentsOf: urls)
