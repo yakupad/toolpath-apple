@@ -12,6 +12,26 @@
         }
       }
     },
+    "%@ mm · %lld×%lld · %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ mm · %2$lld×%3$lld · %4$@"
+          }
+        }
+      }
+    },
+    "%@ rpm · %@ mm/min · %@ mm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ rpm · %2$@ mm/min · %3$@ mm"
+          }
+        }
+      }
+    },
     "%@ · %lld danger": {
       "localizations": {
         "en": {
@@ -38,6 +58,16 @@
         }
       }
     },
+    "%@ · spindle hours": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · iş mili saati"
+          }
+        }
+      }
+    },
     "%@:%lld": {
       "localizations": {
         "en": {
@@ -55,6 +85,54 @@
           "stringUnit": {
             "state": "new",
             "value": "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld of your last 3 runs burned. Lower spindle speed %lld%% so each tooth takes a bigger chip.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld of your last 3 runs burned. Lower spindle speed %2$lld%% so each tooth takes a bigger chip."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son 3 çalışmanın %1$lld tanesinde yanık oldu. Her diş daha büyük talaş alsın diye iş mili devrini %%%2$lld düşür."
+          }
+        }
+      }
+    },
+    "%lld of your last 3 runs chattered. Lower feed %lld%% and depth %lld%%. Also check stickout and workholding.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld of your last 3 runs chattered. Lower feed %2$lld%% and depth %3$lld%%. Also check stickout and workholding."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son 3 çalışmanın %1$lld tanesinde titreşim oldu. İlerlemeyi %%%2$lld, derinliği %%%3$lld düşür. Takım çıkıntısını ve bağlamayı da kontrol et."
+          }
+        }
+      }
+    },
+    "%lld of your last 3 runs were rough. Lower stepover %lld%% and feed %lld%%.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld of your last 3 runs were rough. Lower stepover %2$lld%% and feed %3$lld%%."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son 3 çalışmanın %1$lld tanesinde yüzey kaba çıktı. Yan kaymayı %%%2$lld, ilerlemeyi %%%3$lld düşür."
           }
         }
       }
@@ -163,6 +241,26 @@
         }
       }
     },
+    "7 days free, then billed yearly": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "7 gün ücretsiz, sonra yıllık"
+          }
+        }
+      }
+    },
+    "A tool broke with these settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu ayarlarla bir takım kırıldı"
+          }
+        }
+      }
+    },
     "About %@ in. Re-zero Z after the change.": {
       "localizations": {
         "tr": {
@@ -213,12 +311,32 @@
         }
       }
     },
+    "Add stock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzeme ekle"
+          }
+        }
+      }
+    },
     "Add tool": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Takım ekle"
+          }
+        }
+      }
+    },
+    "Add your machine in Library › Machines.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makineni Kütüphane › Makineler'den ekle."
           }
         }
       }
@@ -299,6 +417,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Analiz ediliyor…"
+          }
+        }
+      }
+    },
+    "Apply to recipe": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarife uygula"
           }
         }
       }
@@ -423,6 +551,16 @@
         }
       }
     },
+    "Billed yearly": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yıllık faturalandırılır"
+          }
+        }
+      }
+    },
     "Bit angle": {
       "localizations": {
         "tr": {
@@ -479,6 +617,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Yanık izi"
+          }
+        }
+      }
+    },
+    "Burn marks — the bit is rubbing": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yanık izi — uç sürtünüyor"
           }
         }
       }
@@ -559,12 +707,32 @@
         }
       }
     },
+    "Chatter keeps showing up": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titreşim tekrar ediyor"
+          }
+        }
+      }
+    },
     "Check against the outline in the viewer.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Görüntüleyicideki çerçeveyle karşılaştır."
+          }
+        }
+      }
+    },
+    "Check belt tension and V-wheels": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kayış gerginliğini ve V tekerleri kontrol et"
           }
         }
       }
@@ -645,6 +813,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Temiz"
+          }
+        }
+      }
+    },
+    "Clean and inspect the collet": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penseti temizle ve kontrol et"
+          }
+        }
+      }
+    },
+    "Clean and lube linear rails": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lineer rayları temizle ve yağla"
           }
         }
       }
@@ -739,6 +927,16 @@
         }
       }
     },
+    "Cost per piece": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parça başı maliyet"
+          }
+        }
+      }
+    },
     "Costs": {
       "localizations": {
         "tr": {
@@ -759,12 +957,32 @@
         }
       }
     },
+    "Counted from logged jobs.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydedilen işlerden hesaplanır."
+          }
+        }
+      }
+    },
     "Custom": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Özel"
+          }
+        }
+      }
+    },
+    "Cut recipes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesim tarifleri"
           }
         }
       }
@@ -880,6 +1098,16 @@
         }
       }
     },
+    "Due now": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi zamanı"
+          }
+        }
+      }
+    },
     "Dust collection ready": {
       "localizations": {
         "tr": {
@@ -912,6 +1140,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tahmini süre"
+          }
+        }
+      }
+    },
+    "Every %lld h": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her %lld saatte"
           }
         }
       }
@@ -1012,6 +1250,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Nasıl geçtiğini kaydetmek için bir işi bitir."
+          }
+        }
+      }
+    },
+    "Finish is rough": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yüzey kaba"
           }
         }
       }
@@ -1123,6 +1371,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ön"
+          }
+        }
+      }
+    },
+    "G-code checks, pre-flight, feeds and speeds, alarms and iCloud sync stay free — forever.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-code kontrolü, ön kontrol, ilerleme ve devir, alarmlar ve iCloud eşitleme sonsuza dek ücretsiz."
           }
         }
       }
@@ -1288,6 +1546,16 @@
         }
       }
     },
+    "Job history": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş geçmişi"
+          }
+        }
+      }
+    },
     "Job not found": {
       "localizations": {
         "tr": {
@@ -1405,6 +1673,16 @@
         }
       }
     },
+    "Lifetime": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ömür boyu"
+          }
+        }
+      }
+    },
     "Light": {
       "localizations": {
         "tr": {
@@ -1425,6 +1703,16 @@
         }
       }
     },
+    "Log a few jobs with this recipe and Toolpath will suggest adjustments.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu tarifle birkaç iş kaydet, Toolpath ayar önerileri sunsun."
+          }
+        }
+      }
+    },
     "Log job": {
       "localizations": {
         "tr": {
@@ -1441,6 +1729,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Çalıştırmaya hazır görünüyor"
+          }
+        }
+      }
+    },
+    "Lower feed %lld%% and depth %lld%%, and check the zero and clamps before the next run.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Lower feed %1$lld%% and depth %2$lld%%, and check the zero and clamps before the next run."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerlemeyi %%%1$lld, derinliği %%%2$lld düşür; bir sonraki çalışmadan önce sıfırı ve kelepçeleri kontrol et."
           }
         }
       }
@@ -1482,6 +1786,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Makineler"
+          }
+        }
+      }
+    },
+    "Maintenance": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakım"
+          }
+        }
+      }
+    },
+    "Maintenance schedule from spindle hours": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş mili saatine göre bakım takvimi"
           }
         }
       }
@@ -1556,6 +1880,16 @@
         }
       }
     },
+    "Monthly": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aylık"
+          }
+        }
+      }
+    },
     "More": {
       "localizations": {
         "tr": {
@@ -1626,6 +1960,16 @@
         }
       }
     },
+    "New stock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni malzeme"
+          }
+        }
+      }
+    },
     "New tool": {
       "localizations": {
         "tr": {
@@ -1646,6 +1990,16 @@
         }
       }
     },
+    "No active machine": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktif makine yok"
+          }
+        }
+      }
+    },
     "No issues found": {
       "localizations": {
         "tr": {
@@ -1656,12 +2010,52 @@
         }
       }
     },
+    "No jobs logged with this recipe yet. Pick it when you log a job.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu tarifle henüz iş kaydedilmedi. İş kaydederken bu tarifi seç."
+          }
+        }
+      }
+    },
     "No jobs logged yet": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Henüz kayıtlı iş yok"
+          }
+        }
+      }
+    },
+    "No recipes yet": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz tarif yok"
+          }
+        }
+      }
+    },
+    "None": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yok"
+          }
+        }
+      }
+    },
+    "Not enough runs yet": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz yeterli çalışma yok"
           }
         }
       }
@@ -1692,6 +2086,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tamam"
+          }
+        }
+      }
+    },
+    "One payment · no subscription": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tek ödeme · abonelik yok"
           }
         }
       }
@@ -1886,6 +2290,16 @@
         }
       }
     },
+    "Privacy": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizlilik"
+          }
+        }
+      }
+    },
     "Profile": {
       "localizations": {
         "tr": {
@@ -1906,6 +2320,16 @@
         }
       }
     },
+    "Quantity: %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adet: %lld"
+          }
+        }
+      }
+    },
     "Quote": {
       "localizations": {
         "tr": {
@@ -1922,6 +2346,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "İş için teklif"
+          }
+        }
+      }
+    },
+    "Quotes and cost breakdowns for every job": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her iş için teklif ve maliyet dökümü"
+          }
+        }
+      }
+    },
+    "Quotes, recipes, maintenance": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teklif, tarif, bakım"
           }
         }
       }
@@ -1996,12 +2440,52 @@
         }
       }
     },
+    "Recipe": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarif"
+          }
+        }
+      }
+    },
+    "Replace the collet": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penseti değiştir"
+          }
+        }
+      }
+    },
     "Required": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Zorunlu"
+          }
+        }
+      }
+    },
+    "Restore": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geri yükle"
+          }
+        }
+      }
+    },
+    "Restore purchases": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın alımları geri yükle"
           }
         }
       }
@@ -2056,6 +2540,26 @@
         }
       }
     },
+    "Run your shop like a pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölyeni profesyonel gibi yönet"
+          }
+        }
+      }
+    },
+    "Running low": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Azalıyor"
+          }
+        }
+      }
+    },
     "Runs on your device with Apple Intelligence. Cutting numbers always come from the calculator.": {
       "localizations": {
         "tr": {
@@ -2106,6 +2610,16 @@
         }
       }
     },
+    "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme & Devir'den bir tarif kaydet. Onunla iş kaydettikçe Toolpath gerçekte olanlara göre ayar önerir."
+          }
+        }
+      }
+    },
     "Saved to recipes": {
       "localizations": {
         "tr": {
@@ -2122,6 +2636,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tarak yüksekliği"
+          }
+        }
+      }
+    },
+    "Schedule": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takvim"
           }
         }
       }
@@ -2356,6 +2880,16 @@
         }
       }
     },
+    "Stable — keep these settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kararlı — bu ayarlarla devam"
+          }
+        }
+      }
+    },
     "Stainless steel (303/304)": {
       "localizations": {
         "tr": {
@@ -2372,6 +2906,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Başlangıç açısı"
+          }
+        }
+      }
+    },
+    "Start free trial": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ücretsiz denemeyi başlat"
           }
         }
       }
@@ -2446,6 +2990,16 @@
         }
       }
     },
+    "Stock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzeme stoku"
+          }
+        }
+      }
+    },
     "Stock at least %@ mm thick": {
       "localizations": {
         "tr": {
@@ -2456,12 +3010,42 @@
         }
       }
     },
+    "Stock value": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stok değeri"
+          }
+        }
+      }
+    },
     "Suggested price": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Önerilen fiyat"
+          }
+        }
+      }
+    },
+    "Suggestion": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öneri"
+          }
+        }
+      }
+    },
+    "Support an independent workshop app": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bağımsız bir atölye uygulamasını destekle"
           }
         }
       }
@@ -2506,6 +3090,26 @@
         }
       }
     },
+    "Terms": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koşullar"
+          }
+        }
+      }
+    },
+    "Thank you for your support": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desteğin için teşekkürler"
+          }
+        }
+      }
+    },
     "The deepest cut reaches this depth.": {
       "localizations": {
         "tr": {
@@ -2546,6 +3150,16 @@
         }
       }
     },
+    "The purchase couldn't be verified.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın alma doğrulanamadı."
+          }
+        }
+      }
+    },
     "The toolpath covers %@ × %@ mm from that point.": {
       "localizations": {
         "en": {
@@ -2568,6 +3182,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tema"
+          }
+        }
+      }
+    },
+    "Thickness": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kalınlık"
           }
         }
       }
@@ -2702,6 +3326,16 @@
         }
       }
     },
+    "Toolpath Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath Pro"
+          }
+        }
+      }
+    },
     "Toolpath checks your files and calculates conservative values, but your machine, stock and setup are unique. Always make a test cut, keep your hands clear, and wear eye and ear protection.": {
       "localizations": {
         "tr": {
@@ -2742,6 +3376,26 @@
         }
       }
     },
+    "Track record": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçmiş performans"
+          }
+        }
+      }
+    },
+    "Tram the spindle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş milini dikliğe ayarla"
+          }
+        }
+      }
+    },
     "Travel": {
       "localizations": {
         "tr": {
@@ -2758,6 +3412,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Dene"
+          }
+        }
+      }
+    },
+    "Try Toolpath Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath Pro'yu dene"
           }
         }
       }
@@ -2788,6 +3452,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Birimler"
+          }
+        }
+      }
+    },
+    "Unlimited machines and cut recipes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sınırsız makine ve kesim tarifi"
+          }
+        }
+      }
+    },
+    "Unlock maintenance reminders with Pro": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakım hatırlatıcılarını Pro ile aç"
           }
         }
       }
@@ -2852,6 +3536,16 @@
         }
       }
     },
+    "Warn at: %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarı eşiği: %lld"
+          }
+        }
+      }
+    },
     "Warnings": {
       "localizations": {
         "tr": {
@@ -2912,6 +3606,16 @@
         }
       }
     },
+    "Width": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genişlik"
+          }
+        }
+      }
+    },
     "Workshop": {
       "localizations": {
         "tr": {
@@ -2964,6 +3668,36 @@
       }
     },
     "Y": {},
+    "Yearly": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yıllık"
+          }
+        }
+      }
+    },
+    "You're Pro — thank you!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artık Pro'sun — teşekkürler!"
+          }
+        }
+      }
+    },
+    "Your last %lld runs were clean.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son %lld çalışman temizdi."
+          }
+        }
+      }
+    },
     "Your rate": {
       "localizations": {
         "tr": {
@@ -3042,6 +3776,16 @@
         }
       }
     },
+    "in %@ h": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ saat sonra"
+          }
+        }
+      }
+    },
     "in/min": {},
     "mm": {},
     "mm/min": {},
@@ -3101,6 +3845,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "sağ üst köşe"
+          }
+        }
+      }
+    },
+    "× %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "× %lld"
           }
         }
       }

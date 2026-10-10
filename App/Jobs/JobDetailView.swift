@@ -36,7 +36,7 @@ struct JobDetailView: View {
 
     private var machine: Machine? { activeMachines.first }
     private var analysis: JobAnalysis? {
-        router.analyses.analysis(for: job, rapidRate: machine?.rapidRate ?? GCodeStatistics.defaultRapidRateMmPerMin)
+        router.analyses.analysis(for: job, machine: machine)
     }
 
     var body: some View {

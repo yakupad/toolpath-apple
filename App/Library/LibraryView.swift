@@ -4,37 +4,55 @@ import SwiftData
 import SwiftUI
 
 struct LibraryView: View {
-    @State private var segment: Segment = .machines
-
-    enum Segment: String, CaseIterable, Identifiable {
-        case machines, tools, history
-        var id: String { rawValue }
-        var title: LocalizedStringKey {
-            switch self {
-            case .machines: "Machines"
-            case .tools: "Tools"
-            case .history: "History"
-            }
-        }
-    }
+    @Query private var machines: [Machine]
+    @Query private var tools: [Tool]
+    @Query private var recipes: [Recipe]
+    @Query private var stock: [StockItem]
+    @Query private var logs: [JobLog]
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                Picker("Section", selection: $segment) {
-                    ForEach(Segment.allCases) { Text($0.title).tag($0) }
+            List {
+                Section {
+                    NavigationLink { MachinesList().navigationTitle("Machines") } label: {
+                        LibraryRow(title: "Machines", systemImage: "cube.transparent", count: machines.count)
+                    }
+                    NavigationLink { ToolsList().navigationTitle("Tools") } label: {
+                        LibraryRow(title: "Tools", systemImage: "wrench.adjustable", count: tools.count)
+                    }
+                    NavigationLink { RecipesList() } label: {
+                        LibraryRow(title: "Cut recipes", systemImage: "list.bullet.rectangle", count: recipes.count)
+                    }
+                    NavigationLink { StockList() } label: {
+                        LibraryRow(title: "Stock", systemImage: "shippingbox", count: stock.count)
+                    }
                 }
-                .pickerStyle(.segmented)
-                .padding(.horizontal, TP.Metric.gutter)
-                .padding(.bottom, 8)
-                switch segment {
-                case .machines: MachinesList()
-                case .tools: ToolsList()
-                case .history: HistoryList()
+                Section {
+                    NavigationLink { MaintenanceView() } label: {
+                        LibraryRow(title: "Maintenance", systemImage: "drop", count: nil)
+                    }
+                    NavigationLink { HistoryList().navigationTitle("History") } label: {
+                        LibraryRow(title: "Job history", systemImage: "clock.arrow.circlepath", count: logs.count)
+                    }
                 }
             }
             .navigationTitle("Library")
         }
+    }
+}
+
+struct LibraryRow: View {
+    let title: LocalizedStringKey
+    let systemImage: String
+    let count: Int?
+
+    var body: some View {
+        HStack {
+            Label(title, systemImage: systemImage)
+            Spacer()
+            if let count { Text("\(count)").font(.tpValue(15, weight: .regular)).foregroundStyle(TP.Palette.textSecondary) }
+        }
+        .frame(minHeight: 36)
     }
 }
 
@@ -119,6 +137,7 @@ struct MachinesList: View {
 
 struct MachineEditView: View {
     @Bindable var machine: Machine
+    @Environment(Router.self) private var router
 
     var body: some View {
         Form {
@@ -149,6 +168,7 @@ struct MachineEditView: View {
             }
         }
         .navigationTitle(machine.name)
+        .onDisappear { router.analyses.invalidateAll() }
     }
 }
 

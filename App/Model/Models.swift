@@ -154,6 +154,38 @@ final class StockItem {
     init(name: String) { self.name = name }
 }
 
+@Model
+final class MaintenanceTask {
+    var id: UUID = UUID()
+    var machineID: UUID?
+    var name: String = ""
+    var intervalHours: Double = 25
+    /// Machine spindle hours when this was last done.
+    var lastDoneAtHours: Double = 0
+    var lastDoneDate: Date = Date.now
+
+    init(name: String, intervalHours: Double, machineID: UUID?, currentHours: Double) {
+        self.name = name
+        self.intervalHours = intervalHours
+        self.machineID = machineID
+        self.lastDoneAtHours = currentHours
+    }
+
+    func hoursUntilDue(machineHours: Double) -> Double {
+        intervalHours - (machineHours - lastDoneAtHours)
+    }
+
+    static func defaults(for machine: Machine) -> [MaintenanceTask] {
+        [
+            (String(localized: "Clean and lube linear rails"), 25.0),
+            (String(localized: "Clean and inspect the collet"), 40.0),
+            (String(localized: "Check belt tension and V-wheels"), 50.0),
+            (String(localized: "Replace the collet"), 300.0),
+            (String(localized: "Tram the spindle"), 150.0),
+        ].map { MaintenanceTask(name: $0.0, intervalHours: $0.1, machineID: machine.id, currentHours: machine.spindleHours) }
+    }
+}
+
 enum AppSchema {
-    static let models: [any PersistentModel.Type] = [JobFile.self, Machine.self, Tool.self, JobLog.self, Recipe.self, StockItem.self]
+    static let models: [any PersistentModel.Type] = [JobFile.self, Machine.self, Tool.self, JobLog.self, Recipe.self, StockItem.self, MaintenanceTask.self]
 }

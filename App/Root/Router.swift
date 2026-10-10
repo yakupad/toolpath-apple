@@ -94,9 +94,9 @@ struct JobAnalysis: Sendable {
     let timeline: GCodeTimeline
     let score: Int
 
-    static func make(content: String, name: String, rapidRate: Double) -> JobAnalysis {
+    static func make(content: String, name: String, rapidRate: Double, envelope: MachineEnvelope?) -> JobAnalysis {
         let document = GCodeParser().parse(content, fileName: name)
-        let findings = GCodeAnalyzer().analyze(document)
+        let findings = GCodeAnalyzer().analyze(document, machineEnvelope: envelope)
         return JobAnalysis(
             document: document,
             findings: findings,
@@ -118,20 +118,22 @@ final class AnalysisStore {
     private(set) var results: [UUID: JobAnalysis] = [:]
     private var inFlight: Set<UUID> = []
 
-    func analysis(for job: JobFile, rapidRate: Double) -> JobAnalysis? {
+    func analysis(for job: JobFile, machine: Machine?) -> JobAnalysis? {
         if let cached = results[job.id] { return cached }
-        load(job, rapidRate: rapidRate)
+        load(job, machine: machine)
         return nil
     }
 
-    func load(_ job: JobFile, rapidRate: Double) {
+    func load(_ job: JobFile, machine: Machine?) {
+        let rapidRate = machine?.rapidRate ?? GCodeStatistics.defaultRapidRateMmPerMin
+        let envelope = machine?.checkTravelFromOrigin == true ? machine?.envelope : nil
         let id = job.id
         guard !inFlight.contains(id) else { return }
         inFlight.insert(id)
         let content = job.content, name = job.name
         Task {
             let result = await Task.detached(priority: .userInitiated) {
-                JobAnalysis.make(content: content, name: name, rapidRate: rapidRate)
+                JobAnalysis.make(content: content, name: name, rapidRate: rapidRate, envelope: envelope)
             }.value
             results[id] = result
             inFlight.remove(id)
@@ -148,4 +150,7 @@ final class AnalysisStore {
     }
 
     func invalidate(_ id: UUID) { results[id] = nil }
+
+    /// Machine settings changed: re-analyze on next open.
+    func invalidateAll() { results.removeAll() }
 }

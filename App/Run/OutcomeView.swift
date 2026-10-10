@@ -14,6 +14,8 @@ struct OutcomeView: View {
     @State private var outcome: JobOutcome = .clean
     @State private var materialID = CuttingMaterial.catalog[0].id
     @State private var notes = ""
+    @State private var recipeID: UUID?
+    @Query(sort: \Recipe.createdAt, order: .reverse) private var recipes: [Recipe]
 
     var body: some View {
         NavigationStack {
@@ -56,6 +58,14 @@ struct OutcomeView: View {
                         ForEach(CuttingMaterial.catalog) { Text($0.title).tag($0.id) }
                     }
                 }
+                if !recipes.isEmpty {
+                    Section("Recipe") {
+                        Picker("Recipe", selection: $recipeID) {
+                            Text("None").tag(UUID?.none)
+                            ForEach(recipes) { Text($0.name).tag(Optional($0.id)) }
+                        }
+                    }
+                }
                 Section("Note") {
                     TextField("Optional", text: $notes, axis: .vertical)
                 }
@@ -79,6 +89,7 @@ struct OutcomeView: View {
         log.machineID = machine?.id
         log.durationMinutes = minutes
         log.notes = notes
+        log.recipeID = recipeID
         context.insert(log)
         machine?.spindleHours += minutes / 60
         try? context.save()
