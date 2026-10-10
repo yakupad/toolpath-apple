@@ -1,0 +1,37 @@
+Toolpath — Source-Available License
+Copyright (c) 2026 Yakup Ad. All rights reserved.
+
+This repository is published so that its source code can be read, studied and
+discussed. It is NOT open source.
+
+You MAY:
+  - View and read the source code on GitHub or in a local clone.
+  - Reference small excerpts in discussions, issues, reviews or articles,
+    with attribution.
+  - Submit issues and pull requests to this repository. By submitting a
+    contribution you grant the copyright holder a perpetual, worldwide,
+    royalty-free, irrevocable license to use, modify and relicense it.
+
+You MAY NOT, without prior written permission from the copyright holder:
+  - Copy, reproduce, or redistribute the source code or any substantial
+    portion of it.
+  - Modify the code to create derivative works, other than transient local
+    changes made solely to read, build or evaluate it for yourself.
+  - Use the code, in whole or in part, in any other product, application or
+    service, whether commercial or non-commercial.
+  - Publish, distribute or sell any application built from this code,
+    including on the App Store or any other marketplace.
+  - Use the names "Toolpath" or "CNC Maker Assistant", the app icon, or other
+    brand assets.
+
+No license is granted under any patent or trademark.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE
+USE OF THE SOFTWARE. CUTTING PARAMETERS AND SAFETY CHECKS ARE STARTING POINTS
+ONLY; MACHINE OPERATION IS AT YOUR OWN RISK.
+
+For licensing inquiries: open an issue at
+https://github.com/yakupad/toolpath-apple

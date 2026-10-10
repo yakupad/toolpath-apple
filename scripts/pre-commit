@@ -1,0 +1,15 @@
+#!/bin/sh
+# Blocks commits that stage likely secrets. Install with:
+#   ln -sf ../../scripts/pre-commit .git/hooks/pre-commit
+staged=$(git diff --cached --name-only --diff-filter=ACM)
+fail=0
+for f in $staged; do
+  case "$f" in
+    *.p8|*.p12|*.mobileprovision|*AuthKey_*|Config/Secrets.xcconfig|.env*)
+      echo "Refusing to commit secret-like file: $f"; fail=1 ;;
+  esac
+done
+if git diff --cached -U0 -- . ':(exclude)scripts/pre-commit' | grep -E -q 'BEGIN (EC |RSA )?PRIVATE KEY|sk-ant-|github_pat_|AKIA[0-9A-Z]{16}'; then
+  echo "Refusing to commit: staged changes contain what looks like a key or token."; fail=1
+fi
+exit $fail
