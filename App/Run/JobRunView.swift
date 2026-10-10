@@ -52,7 +52,12 @@ struct JobRunView: View {
                             }
                             Spacer()
                             if inSeconds <= 0 {
-                                Button("Done") { acknowledgedChanges.insert(next.line) }
+                                Button("Done") {
+                                    acknowledgedChanges.insert(next.line)
+                                    let elapsed = clock.time(at: .now)
+                                    RunActivity.update(elapsed: elapsed, duration: duration, paused: !clock.isPlaying,
+                                                       toolChange: nextChange(after: elapsed).map { ($0.tool, $0.atSeconds) })
+                                }
                                     .buttonStyle(.borderedProminent)
                             }
                         }
@@ -65,6 +70,9 @@ struct JobRunView: View {
                     HStack(spacing: 12) {
                         Button {
                             if clock.isPlaying { clock.pause(at: .now) } else { clock.play(at: .now) }
+                            let elapsed = clock.time(at: .now)
+                            RunActivity.update(elapsed: elapsed, duration: duration, paused: !clock.isPlaying,
+                                               toolChange: nextChange(after: elapsed).map { ($0.tool, $0.atSeconds) })
                         } label: {
                             Text(clock.isPlaying ? "Pause timer" : "Resume")
                                 .frame(maxWidth: .infinity, minHeight: TP.Metric.targetWorkshop)
@@ -99,7 +107,8 @@ struct JobRunView: View {
         }
         .onAppear {
             clock.play(at: .now)
-            RunActivity.start(job: job.name, duration: duration)
+            RunActivity.start(job: job.name, machine: machine?.name ?? "", duration: duration,
+                              toolChange: nextChange(after: 0).map { ($0.tool, $0.atSeconds) })
         }
         .onDisappear { RunActivity.end() }
         .sheet(isPresented: $showOutcome) {
@@ -120,10 +129,4 @@ struct JobRunView: View {
             return (change.toolNumber, change.sourceLine, at)
         }.first
     }
-}
-
-/// Live Activity hooks. Implemented in the widget extension step; no-op now.
-enum RunActivity {
-    static func start(job: String, duration: Double) {}
-    static func end() {}
 }

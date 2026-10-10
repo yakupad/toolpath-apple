@@ -34,6 +34,10 @@ targets:
         product: CNCDesign
       - package: ToolpathKit
         product: CNCRender
+      - package: ToolpathKit
+        product: ToolpathActivity
+      - target: ToolpathWidgets
+        destinationFilters: [iOS]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yakupad.toolpath
@@ -66,6 +70,31 @@ targets:
             UTTypeConformsTo: [public.plain-text, public.data]
             UTTypeTagSpecification:
               public.filename-extension: [nc, gcode, ngc, tap, cnc, gc, nc1]
+  ToolpathWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widgets
+    dependencies:
+      - package: ToolpathKit
+        product: CNCDesign
+      - package: ToolpathKit
+        product: ToolpathActivity
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yakupad.toolpath.widgets
+        PRODUCT_NAME: ToolpathWidgets
+        INFOPLIST_KEY_CFBundleDisplayName: Toolpath
+        GENERATE_INFOPLIST_FILE: YES
+        SKIP_INSTALL: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+    info:
+      path: Widgets/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
 schemes:
   Toolpath:
     build:

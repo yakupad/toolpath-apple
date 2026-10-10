@@ -9,6 +9,7 @@ let package = Package(
         .library(name: "CNCKit", targets: ["CNCKit"]),
         .library(name: "CNCDesign", targets: ["CNCDesign"]),
         .library(name: "CNCRender", targets: ["CNCRender"]),
+        .library(name: "ToolpathActivity", targets: ["ToolpathActivity"]),
     ],
     targets: [
         // Pure, deterministic CNC logic. No UI, no networking, no persistence.
@@ -20,6 +21,8 @@ let package = Package(
         .target(name: "CNCDesign"),
         // Toolpath drawing (2D Canvas, 3D Metal) and orbit camera.
         .target(name: "CNCRender", dependencies: ["CNCKit", "CNCDesign"], resources: [.process("Resources")]),
+        // Live Activity attributes shared by the app and the widget extension.
+        .target(name: "ToolpathActivity"),
         .testTarget(
             name: "CNCKitTests",
             dependencies: ["CNCKit"],
