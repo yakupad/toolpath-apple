@@ -20,6 +20,7 @@ struct JobDetailView: View {
     @State private var isSimulating = false
     @State private var showRun = false
     @State private var panelExpanded = false
+    @State private var showQuote = false
     @Environment(\.horizontalSizeClass) private var sizeClass
 
     enum InspectorTab: String, CaseIterable, Identifiable {
@@ -67,6 +68,9 @@ struct JobDetailView: View {
             }
         }
         .onAppear { job.lastOpenedAt = .now }
+        .navigationDestination(isPresented: $showQuote) {
+            QuoteView(machineMinutes: analysis?.statistics.estimatedMachiningTimeMinutes ?? 30, title: job.name)
+        }
         .fullScreenCoverCompat(isPresented: $showRun) {
             if let analysis {
                 JobRunView(job: job, analysis: analysis, machine: machine)
@@ -152,6 +156,11 @@ struct JobDetailView: View {
                 }
                 if let analysis {
                     Section {
+                        Button {
+                            showQuote = true
+                        } label: {
+                            Label("Make a quote", systemImage: "doc.text")
+                        }
                         ShareLink(item: SafetyReport.text(job: job, analysis: analysis), subject: Text(job.name)) {
                             Label("Share report", systemImage: "square.and.arrow.up")
                         }

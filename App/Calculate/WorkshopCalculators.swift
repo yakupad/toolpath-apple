@@ -178,9 +178,23 @@ struct UnitsView: View {
 }
 
 struct QuoteView: View {
-    @State private var input = QuoteInput(materialCost: 8.9, machineMinutes: 43, machineHourlyRate: 12,
-                                          laborMinutes: 40, laborHourlyRate: 20, feePercent: 0.065,
-                                          feeFixed: 0.2, targetMargin: 0.6)
+    @AppStorage("quote.machineRate") private var machineRate = 12.0
+    @AppStorage("quote.laborRate") private var laborRate = 20.0
+    @AppStorage("quote.feePercent") private var feePercent = 0.065
+    @AppStorage("quote.feeFixed") private var feeFixed = 0.2
+    @AppStorage("quote.margin") private var margin = 0.6
+    @State private var input: QuoteInput
+
+    /// `machineMinutes` pre-fills from a job's estimated time.
+    init(machineMinutes: Double = 30, title: String? = nil) {
+        _input = State(initialValue: QuoteInput(materialCost: 0, machineMinutes: machineMinutes.rounded(.up),
+                                                machineHourlyRate: 12, laborMinutes: 20, laborHourlyRate: 20,
+                                                feePercent: 0.065, feeFixed: 0.2, targetMargin: 0.6))
+        self.title = title
+    }
+
+    private let title: String?
+
     var body: some View {
         let q = QuoteCalculator.quote(input)
         let currency = Locale.current.currency?.identifier ?? "USD"
@@ -206,6 +220,21 @@ struct QuoteView: View {
                 LabeledContent("Profit", value: q.profitPerUnit.formatted(.currency(code: currency)))
             }
         }
-        .navigationTitle("Quote")
+        .navigationTitle(title ?? String(localized: "Quote"))
+        .onAppear {
+            input.machineHourlyRate = machineRate
+            input.laborHourlyRate = laborRate
+            input.feePercent = feePercent
+            input.feeFixed = feeFixed
+            input.targetMargin = margin
+        }
+        .onChange(of: input) {
+            // Remember the shop's rates; the job-specific values stay per quote.
+            machineRate = input.machineHourlyRate
+            laborRate = input.laborHourlyRate
+            feePercent = input.feePercent
+            feeFixed = input.feeFixed
+            margin = input.targetMargin
+        }
     }
 }
