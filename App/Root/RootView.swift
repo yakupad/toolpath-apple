@@ -36,6 +36,10 @@ struct RootView: View {
         .onChange(of: router.pendingURLs) { router.consumePending(into: context) }
         .onAppear {
             router.consumePending(into: context)
+            if IntentFlags.importRequested {
+                IntentFlags.importRequested = false
+                router.isImporting = true
+            }
             #if DEBUG
             DebugLaunch.apply(router: router, context: context)
             #endif
@@ -53,6 +57,10 @@ struct RootView: View {
         }
         .fullScreenCoverCompat(isPresented: Binding(get: { !onboarded && !DebugFlags.skipOnboarding }, set: { _ in })) {
             OnboardingView()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .toolpathImportRequested)) { _ in
+            IntentFlags.importRequested = false
+            router.isImporting = true
         }
         .dropDestination(for: URL.self) { urls, _ in
             router.pendingURLs.append(contentsOf: urls)
