@@ -20,8 +20,14 @@ public enum Tessellator {
         let startAngle = atan2(move.start.y - center.y, move.start.x - center.x)
         var endAngle = atan2(move.end.y - center.y, move.end.x - center.x)
         let clockwise = move.type == .arcClockwise
-        if clockwise, endAngle > startAngle { endAngle -= 2 * .pi }
-        if !clockwise, endAngle < startAngle { endAngle += 2 * .pi }
+        let fullCircle = abs(move.start.x - move.end.x) < 1e-9 && abs(move.start.y - move.end.y) < 1e-9
+        if fullCircle {
+            // Same start and end point in the plane: a complete circle.
+            endAngle = startAngle + (clockwise ? -2 * .pi : 2 * .pi)
+        } else {
+            if clockwise, endAngle > startAngle { endAngle -= 2 * .pi }
+            if !clockwise, endAngle < startAngle { endAngle += 2 * .pi }
+        }
         let radius = hypot(move.start.x - center.x, move.start.y - center.y)
         return ArcGeometry(center: center, radius: radius, startAngle: startAngle, endAngle: endAngle)
     }

@@ -30,6 +30,14 @@ LongMill, X-Carve and desktop mills. Native SwiftUI for iPhone, iPad
 - Xcode 27, Swift 6
 - iOS / iPadOS / macOS 26 or later
 
+## Building
+```
+brew install xcodegen
+xcodegen generate
+open Toolpath.xcodeproj
+```
+Core logic tests: `cd Packages/ToolpathKit && swift test`.
+
 ## Configuration
 No secrets live in this repository. Local values go in
 `Config/Secrets.xcconfig` (git-ignored); copy

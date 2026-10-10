@@ -16,6 +16,7 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
     /// A flagged move to emphasize (others are dimmed).
     let focusedMove: Int?
     let showGrid: Bool
+    let insets: EdgeInsetsValue
 
     public var animatableData: Double {
         get { drawProgress }
@@ -29,8 +30,10 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
         drawProgress: Double = 1,
         cursor: SimulationPoint? = nil,
         focusedMove: Int? = nil,
-        showGrid: Bool = true
+        showGrid: Bool = true,
+        insets: EdgeInsetsValue = .zero
     ) {
+        self.insets = insets
         self.geometry = geometry
         self.camera = camera
         self.filter = filter
@@ -43,7 +46,7 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
     public var body: some View {
         Canvas(rendersAsynchronously: false) { context, size in
             guard !geometry.isEmpty, size.width > 1, size.height > 1 else { return }
-            let projection = Projection(camera: camera, size: size, bounds: geometry.bounds)
+            let projection = Projection(camera: camera, size: size, bounds: geometry.bounds, insets: insets)
             if showGrid { drawGrid(in: &context, projection) }
             drawMoves(in: &context, projection)
         }

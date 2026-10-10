@@ -161,6 +161,15 @@ struct ParserEdgeCaseTests {
         #expect(doc.toolChanges[1].firstMoveIndex == 1)
     }
 
+    @Test func fullCircleArcHasFullLength() throws {
+        let doc = GCodeParser().parse("G0 X0 Y0\nG2 X0 Y0 I10 J0 F500", fileName: "t")
+        let arc = doc.moves[1]
+        #expect(abs(Tessellator.length(of: arc) - 2 * .pi * 10) < 1e-9)
+        let mid = Tessellator.point(along: arc, at: 0.5)
+        #expect(abs(mid.x - 20) < 1e-9 && abs(mid.y) < 1e-9)
+        #expect(doc.bounds.maxX >= 19.9 && doc.bounds.minY <= -9.9)
+    }
+
     @Test func timelineAgreesWithStatistics() throws {
         let (document, _) = try load("rectangular_pocket_centered.nc")
         let stats = GCodeStatistics(document: document)

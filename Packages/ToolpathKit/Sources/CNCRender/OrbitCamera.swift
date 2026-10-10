@@ -80,12 +80,18 @@ public struct Projection: Sendable {
     public let size: CGSize
     let center: GPoint
     let scale: Double
+    /// Screen point the job's center maps to (center of the unobscured area).
+    let origin: CGPoint
 
-    /// Fits the job's footprint (not the machine bed) into the viewport.
-    public init(camera: OrbitCamera, size: CGSize, bounds: GBounds, padding: Double = 32) {
+    /// Fits the job's footprint (not the machine bed) into the part of the
+    /// viewport not covered by `insets` (toolbars, bottom panel).
+    public init(camera: OrbitCamera, size: CGSize, bounds: GBounds, padding: Double = 32, insets: EdgeInsetsValue = .zero) {
         self.camera = camera
         self.size = size
         self.center = bounds.center
+        let visible = CGSize(width: max(size.width - insets.leading - insets.trailing, 1),
+                             height: max(size.height - insets.top - insets.bottom, 1))
+        self.origin = CGPoint(x: insets.leading + visible.width / 2, y: insets.top + visible.height / 2)
         let corners: [GPoint] = [
             GPoint(x: bounds.minX, y: bounds.minY, z: bounds.minZ), GPoint(x: bounds.maxX, y: bounds.minY, z: bounds.minZ),
             GPoint(x: bounds.minX, y: bounds.maxY, z: bounds.minZ), GPoint(x: bounds.maxX, y: bounds.maxY, z: bounds.minZ),
@@ -99,7 +105,7 @@ public struct Projection: Sendable {
             minY = min(minY, r.y); maxY = max(maxY, r.y)
         }
         let w = max(maxX - minX, 1e-6), h = max(maxY - minY, 1e-6)
-        let fit = min((size.width - padding * 2) / w, (size.height - padding * 2) / h)
+        let fit = min((visible.width - padding * 2) / w, (visible.height - padding * 2) / h)
         self.scale = max(fit, 1e-6) * camera.zoom
     }
 
@@ -107,8 +113,8 @@ public struct Projection: Sendable {
     public func point(_ x: Double, _ y: Double, _ z: Double) -> CGPoint {
         let r = camera.rotate(x: x - center.x, y: y - center.y, z: z - center.z)
         return CGPoint(
-            x: size.width / 2 + r.x * scale + camera.pan.width,
-            y: size.height / 2 - r.y * scale + camera.pan.height
+            x: origin.x + r.x * scale + camera.pan.width,
+            y: origin.y - r.y * scale + camera.pan.height
         )
     }
 
@@ -116,4 +122,13 @@ public struct Projection: Sendable {
 
     /// Millimeters per screen point at the current zoom.
     public var pointsPerMillimeter: Double { scale }
+}
+
+/// Platform-neutral edge insets (CoreGraphics only).
+public struct EdgeInsetsValue: Sendable, Hashable {
+    public var top: CGFloat, leading: CGFloat, bottom: CGFloat, trailing: CGFloat
+    public init(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0) {
+        self.top = top; self.leading = leading; self.bottom = bottom; self.trailing = trailing
+    }
+    public static let zero = EdgeInsetsValue()
 }

@@ -13,6 +13,7 @@ public struct ToolpathViewer: View {
     let cursor: SimulationPoint?
     let focusedMove: Int?
     let drawProgress: Double
+    let insets: EdgeInsetsValue
 
     @State private var dragBase: OrbitCamera?
     @State private var zoomBase: Double?
@@ -24,8 +25,10 @@ public struct ToolpathViewer: View {
         filter: MoveFilter = MoveFilter(),
         cursor: SimulationPoint? = nil,
         focusedMove: Int? = nil,
-        drawProgress: Double = 1
+        drawProgress: Double = 1,
+        insets: EdgeInsetsValue = .zero
     ) {
+        self.insets = insets
         self.geometry = geometry
         self._camera = camera
         self.is3D = is3D
@@ -42,7 +45,8 @@ public struct ToolpathViewer: View {
             filter: filter,
             drawProgress: drawProgress,
             cursor: cursor,
-            focusedMove: focusedMove
+            focusedMove: focusedMove,
+            insets: insets
         )
         .contentShape(.rect)
         .gesture(dragGesture.simultaneously(with: magnifyGesture))

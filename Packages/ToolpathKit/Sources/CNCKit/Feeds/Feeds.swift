@@ -35,7 +35,7 @@ public struct CuttingMaterial: Sendable, Hashable, Identifiable, Codable {
     public static func byID(_ id: String) -> CuttingMaterial? { catalog.first { $0.id == id } }
 }
 
-public enum Operation: String, Sendable, Codable, CaseIterable {
+public enum CutOperation: String, Sendable, Codable, CaseIterable {
     case slotting, profiling, pocketing, drilling
 
     /// Radial engagement: full-width slotting runs hotter per tooth, a light
@@ -55,11 +55,11 @@ public struct FeedsInput: Sendable, Hashable, Codable {
     public var toolDiameterMm: Double
     public var flutes: Int
     public var toolMaterial: ToolMaterial
-    public var operation: Operation
+    public var operation: CutOperation
     /// RPM is capped here and the feed recomputed from the capped value.
     public var maxSpindleRpm: Double
 
-    public init(material: CuttingMaterial, toolDiameterMm: Double, flutes: Int, toolMaterial: ToolMaterial, operation: Operation, maxSpindleRpm: Double) {
+    public init(material: CuttingMaterial, toolDiameterMm: Double, flutes: Int, toolMaterial: ToolMaterial, operation: CutOperation, maxSpindleRpm: Double) {
         self.material = material
         self.toolDiameterMm = toolDiameterMm
         self.flutes = flutes

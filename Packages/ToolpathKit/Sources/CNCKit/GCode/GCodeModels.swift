@@ -143,6 +143,11 @@ public struct GCodeDocument: Sendable {
         for move in moves {
             consider(move.start)
             consider(move.end)
+            // Arcs can bulge past their endpoints (a full circle starts and
+            // ends at the same point).
+            if move.isArc {
+                for p in Tessellator.polyline(for: move, arcSegments: 16) { consider(p) }
+            }
         }
         return b
     }

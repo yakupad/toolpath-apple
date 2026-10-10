@@ -68,7 +68,7 @@ public enum FeedsReason: Sendable, Hashable {
     case cappedByMaxRpm(ideal: Double, machineMax: Double)
     case chipLoadClamped
     case hssSlower
-    case engagement(Operation)
+    case engagement(CutOperation)
     case drillingFormula
     case conservativeStart
 }
