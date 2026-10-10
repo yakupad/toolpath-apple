@@ -1,0 +1,17 @@
+(Circular pocket, arc-heavy roughing pass, work offset G54)
+G90 G21 G17
+G54
+T2 M6
+S15000 M3
+G0 X0 Y0 Z10
+G0 Z2
+G1 Z-1 F250
+G1 X8 Y0 F500
+G3 X-8 Y0 I-8 J0
+G3 X8 Y0 I8 J0
+G1 X10 Y0
+G2 X-10 Y0 I-10 J0
+G2 X10 Y0 I10 J0
+G0 Z10
+M5
+M30

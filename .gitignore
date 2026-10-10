@@ -36,3 +36,7 @@ fastlane/test_output
 
 # --- macOS ---
 .DS_Store
+
+# SwiftPM
+Packages/*/.build/
+Packages/*/Package.resolved
