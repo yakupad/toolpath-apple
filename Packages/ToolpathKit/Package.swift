@@ -10,7 +10,10 @@ let package = Package(
     ],
     targets: [
         // Pure, deterministic CNC logic. No UI, no networking, no persistence.
-        .target(name: "CNCKit"),
+        .target(
+            name: "CNCKit",
+            resources: [.process("Resources")]
+        ),
         .testTarget(
             name: "CNCKitTests",
             dependencies: ["CNCKit"],
