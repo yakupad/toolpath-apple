@@ -3,6 +3,8 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(Store.self) private var store
+    @State private var showPaywall = false
     @AppStorage("appearance") private var appearance: Appearance = .system
     @AppStorage("workshopMode") private var workshopMode = false
     @AppStorage("toolChangeAlerts") private var toolChangeAlerts = true
@@ -11,6 +13,20 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
+                Section {
+                    Button { showPaywall = true } label: {
+                        Label {
+                            VStack(alignment: .leading) {
+                                Text(store.isPro ? "Toolpath Pro" : "Try Toolpath Pro").font(.headline)
+                                Text(store.isPro ? "Thank you for your support" : "Quotes, recipes, maintenance")
+                                    .font(.caption).foregroundStyle(TP.Palette.textSecondary)
+                            }
+                        } icon: {
+                            Image(systemName: "seal.fill").foregroundStyle(TP.Palette.accent)
+                        }
+                    }
+                    Button("Restore purchases") { Task { await store.restore() } }
+                }
                 Section("Workshop") {
                     Toggle(isOn: $workshopMode) {
                         VStack(alignment: .leading) {
@@ -54,6 +70,7 @@ struct SettingsView: View {
                 }
             }
             .navigationTitle("Settings")
+            .sheet(isPresented: $showPaywall) { PaywallView() }
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { dismiss() }

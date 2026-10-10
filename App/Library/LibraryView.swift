@@ -57,6 +57,8 @@ struct MachinePreset: Identifiable, Hashable {
 
 struct MachinesList: View {
     @Environment(\.modelContext) private var context
+    @Environment(Store.self) private var store
+    @Environment(Router.self) private var router
     @Query(sort: \Machine.createdAt) private var machines: [Machine]
 
     var body: some View {
@@ -93,6 +95,10 @@ struct MachinesList: View {
     }
 
     private func add(_ preset: MachinePreset?) {
+        guard store.isPro || machines.count < Store.Limit.machines else {
+            router.showPaywall = true
+            return
+        }
         let machine = Machine(name: preset?.name ?? String(localized: "My machine"))
         if let preset {
             machine.presetID = preset.id

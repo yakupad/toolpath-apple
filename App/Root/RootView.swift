@@ -48,6 +48,9 @@ struct RootView: View {
         .sheet(isPresented: $router.showSettings) {
             SettingsView()
         }
+        .sheet(isPresented: $router.showPaywall) {
+            PaywallView()
+        }
         .fullScreenCoverCompat(isPresented: Binding(get: { !onboarded && !DebugFlags.skipOnboarding }, set: { _ in })) {
             OnboardingView()
         }

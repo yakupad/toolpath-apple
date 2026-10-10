@@ -17,6 +17,7 @@ final class Router {
     var jobsPath: [UUID] = []
     var isImporting = false
     var showSettings = false
+    var showPaywall = false
     var importError: String?
     /// Files opened from outside (Files, AirDrop, Finder) before a model
     /// context was available.

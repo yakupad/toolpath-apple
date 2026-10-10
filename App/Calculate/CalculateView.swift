@@ -33,6 +33,9 @@ struct FeedsView: View {
     @Query(filter: #Predicate<Machine> { $0.isActive }) private var activeMachines: [Machine]
     @Query(sort: \Tool.createdAt) private var tools: [Tool]
     @Environment(\.modelContext) private var context
+    @Environment(Store.self) private var store
+    @Environment(Router.self) private var router
+    @Query private var recipes: [Recipe]
 
     @State private var materialID = "hardwood"
     @State private var diameter = 6.35
@@ -124,6 +127,10 @@ struct FeedsView: View {
     }
 
     private func saveRecipe(_ result: FeedsResult) {
+        guard store.isPro || recipes.count < Store.Limit.recipes else {
+            router.showPaywall = true
+            return
+        }
         let recipe = Recipe(name: "\(CuttingMaterial.byID(materialID).map { String(localized: $0.titleResource) } ?? materialID) · \(diameter.formatted()) mm")
         recipe.materialID = materialID
         recipe.operationRaw = operation.rawValue

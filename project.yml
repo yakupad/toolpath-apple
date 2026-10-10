@@ -101,5 +101,7 @@ schemes:
     build:
       targets:
         Toolpath: all
+    run:
+      storeKitConfiguration: Config/Toolpath.storekit
     test:
       gatherCoverageData: false

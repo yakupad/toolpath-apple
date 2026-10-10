@@ -5,6 +5,7 @@ import SwiftUI
 struct ToolpathApp: App {
     let container: ModelContainer
     @State private var router = Router()
+    @State private var store = Store()
     @AppStorage("appearance") private var appearance: Appearance = .system
 
     init() {
@@ -23,6 +24,7 @@ struct ToolpathApp: App {
         WindowGroup {
             RootView()
                 .environment(router)
+                .environment(store)
                 .preferredColorScheme(appearance.colorScheme)
                 .tint(Color.accentColor)
                 .onOpenURL { url in router.importFile(at: url) }
