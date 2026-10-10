@@ -1,0 +1,3110 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ mm": {},
+    "%@ mm · %lld flute · %@ · %lld h": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ mm · %2$lld flute · %3$@ · %4$lld h"
+          }
+        }
+      }
+    },
+    "%@ · %lld danger": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$lld danger"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ · %lld tehlike"
+          }
+        }
+      }
+    },
+    "%@ · %lld min": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@ · %2$lld min"
+          }
+        }
+      }
+    },
+    "%@:%lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@:%2$lld"
+          }
+        }
+      }
+    },
+    "%lld": {},
+    "%lld / %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld / %2$lld"
+          }
+        }
+      }
+    },
+    "%lld required checks left": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld zorunlu kontrol kaldı"
+          }
+        }
+      }
+    },
+    "%lld × %lld mm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld × %2$lld mm"
+          }
+        }
+      }
+    },
+    "%lld × %lld × %lld mm · %lld h": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld × %2$lld × %3$lld mm · %4$lld h"
+          }
+        }
+      }
+    },
+    "%lld°": {},
+    "%lld×": {},
+    "1/4\" compression bit": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/4\" kompresyon freze"
+          }
+        }
+      }
+    },
+    "1/4\" flat end mill, 2 flute": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/4\" düz freze, 2 ağız"
+          }
+        }
+      }
+    },
+    "1/4\" flat, 2 flute": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/4\" düz, 2 ağız"
+          }
+        }
+      }
+    },
+    "1/8\" ball nose": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8\" küresel uç"
+          }
+        }
+      }
+    },
+    "1/8\" flat end mill, 2 flute": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8\" düz freze, 2 ağız"
+          }
+        }
+      }
+    },
+    "1/8\" flat, 2 flute": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1/8\" düz, 2 ağız"
+          }
+        }
+      }
+    },
+    "2D": {},
+    "3D": {},
+    "60° V-bit": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "60° V uç"
+          }
+        }
+      }
+    },
+    "About %@ in. Re-zero Z after the change.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaklaşık %@ sonra. Değişimden sonra Z'yi yeniden sıfırla."
+          }
+        }
+      }
+    },
+    "About 75% thread engagement (major diameter − pitch). Round to the nearest drill you own and check a full chart for critical parts.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaklaşık %75 diş kavrama (dış çap − adım). Elindeki en yakın matkaba yuvarla; kritik parçalar için tam tabloya bak."
+          }
+        }
+      }
+    },
+    "Acrylic (cast)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akrilik (döküm)"
+          }
+        }
+      }
+    },
+    "Active": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktif"
+          }
+        }
+      }
+    },
+    "Add machine": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine ekle"
+          }
+        }
+      }
+    },
+    "Add tool": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım ekle"
+          }
+        }
+      }
+    },
+    "Air-cut first (optional)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce havada kes (isteğe bağlı)"
+          }
+        }
+      }
+    },
+    "Alarm code or question": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm kodu veya soru"
+          }
+        }
+      }
+    },
+    "Alarm codes and workshop notes in Ask still work offline.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sor sekmesindeki alarm kodları ve atölye notları çevrimdışı da çalışır."
+          }
+        }
+      }
+    },
+    "Alarm table": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm tablosu"
+          }
+        }
+      }
+    },
+    "All": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümü"
+          }
+        }
+      }
+    },
+    "All cuts stay above Z0, so Z0 must be the bed under the stock.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm kesimler Z0'ın üstünde, yani Z0 malzemenin altındaki tabla olmalı."
+          }
+        }
+      }
+    },
+    "Aluminum (6061)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alüminyum (6061)"
+          }
+        }
+      }
+    },
+    "Analyzing…": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Analiz ediliyor…"
+          }
+        }
+      }
+    },
+    "Arcs (G2)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaylar (G2)"
+          }
+        }
+      }
+    },
+    "Arcs (G3)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaylar (G3)"
+          }
+        }
+      }
+    },
+    "Ask": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sor"
+          }
+        }
+      }
+    },
+    "Ask about your machine…": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinen hakkında sor…"
+          }
+        }
+      }
+    },
+    "Ask the assistant: “%@”": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistana sor: “%@”"
+          }
+        }
+      }
+    },
+    "Assistant": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistan"
+          }
+        }
+      }
+    },
+    "Assistant unavailable": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistan kullanılamıyor"
+          }
+        }
+      }
+    },
+    "Back": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arka"
+          }
+        }
+      }
+    },
+    "Ball": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Küresel"
+          }
+        }
+      }
+    },
+    "Ball-nose diameter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Küresel uç çapı"
+          }
+        }
+      }
+    },
+    "Below half the diameter, the real chip is thinner than programmed. Raise the feed by this factor to keep the intended chip load — then test.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çapın yarısından az kavramada gerçek talaş programlanandan incedir. Hedef talaş yükünü korumak için ilerlemeyi bu katsayıyla artır — sonra test et."
+          }
+        }
+      }
+    },
+    "Bigger buttons for gloves": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eldivenle kullanım için büyük düğmeler"
+          }
+        }
+      }
+    },
+    "Bit angle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uç açısı"
+          }
+        }
+      }
+    },
+    "Bolt circle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delik dairesi"
+          }
+        }
+      }
+    },
+    "Bottom": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alt"
+          }
+        }
+      }
+    },
+    "Brass": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pirinç"
+          }
+        }
+      }
+    },
+    "Broke a tool": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım kırıldı"
+          }
+        }
+      }
+    },
+    "Burn marks": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yanık izi"
+          }
+        }
+      }
+    },
+    "Calculate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesapla"
+          }
+        }
+      }
+    },
+    "Calculator": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesaplayıcı"
+          }
+        }
+      }
+    },
+    "Camera": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamera"
+          }
+        }
+      }
+    },
+    "Carbide": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karbür"
+          }
+        }
+      }
+    },
+    "Change to T%lld at line %lld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Change to T%1$lld at line %2$lld"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld. satırda T%1$lld'e geç"
+          }
+        }
+      }
+    },
+    "Change tool now": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takımı şimdi değiştir"
+          }
+        }
+      }
+    },
+    "Chatter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titreşim"
+          }
+        }
+      }
+    },
+    "Check against the outline in the viewer.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görüntüleyicideki çerçeveyle karşılaştır."
+          }
+        }
+      }
+    },
+    "Check every G-code file, get feeds you can trust, and follow the job from your lock screen.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her G-code dosyasını kontrol et, güvenebileceğin ilerleme değerleri al, işi kilit ekranından takip et."
+          }
+        }
+      }
+    },
+    "Check files against travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosyaları hareket alanına göre kontrol et"
+          }
+        }
+      }
+    },
+    "Check your first file": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk dosyanı kontrol et"
+          }
+        }
+      }
+    },
+    "Chip load": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talaş yükü"
+          }
+        }
+      }
+    },
+    "Chip thinning": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talaş incelmesi"
+          }
+        }
+      }
+    },
+    "Circle diameter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daire çapı"
+          }
+        }
+      }
+    },
+    "Clamps must be lower than this.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kelepçeler bundan alçak olmalı."
+          }
+        }
+      }
+    },
+    "Clean": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temiz"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapat"
+          }
+        }
+      }
+    },
+    "Close simulation": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simülasyonu kapat"
+          }
+        }
+      }
+    },
+    "Collapse panel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paneli daralt"
+          }
+        }
+      }
+    },
+    "Coming soon": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yakında"
+          }
+        }
+      }
+    },
+    "Compression": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kompresyon"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devam"
+          }
+        }
+      }
+    },
+    "Continue conversation": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sohbete devam et"
+          }
+        }
+      }
+    },
+    "Controller": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrolcü"
+          }
+        }
+      }
+    },
+    "Correct bit loaded": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doğru uç takılı"
+          }
+        }
+      }
+    },
+    "Costs": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maliyetler"
+          }
+        }
+      }
+    },
+    "Couldn't import": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe aktarılamadı"
+          }
+        }
+      }
+    },
+    "Custom": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özel"
+          }
+        }
+      }
+    },
+    "CutOperation": {},
+    "Cuts go below Z0, so Z0 must be the stock surface.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesimler Z0'ın altına iniyor, yani Z0 malzemenin üst yüzeyi olmalı."
+          }
+        }
+      }
+    },
+    "Cutting": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesim"
+          }
+        }
+      }
+    },
+    "Cutting moves (G1)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesim hareketleri (G1)"
+          }
+        }
+      }
+    },
+    "Cutting values and safety checks are starting points to test, not guarantees. Wear eye and ear protection, secure your work, and never leave a running machine unattended.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesme değerleri ve güvenlik kontrolleri test edilecek başlangıç noktalarıdır, garanti değildir. Göz ve kulak koruması kullan, parçanı sabitle, çalışan makineyi asla başıboş bırakma."
+          }
+        }
+      }
+    },
+    "Dark": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koyu"
+          }
+        }
+      }
+    },
+    "Data": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veri"
+          }
+        }
+      }
+    },
+    "Depth": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derinlik"
+          }
+        }
+      }
+    },
+    "Depth / pass": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Derinlik / paso"
+          }
+        }
+      }
+    },
+    "Diameter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çap"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitti"
+          }
+        }
+      }
+    },
+    "Drill": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matkap"
+          }
+        }
+      }
+    },
+    "Dust collection ready": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toz emme hazır"
+          }
+        }
+      }
+    },
+    "Est. %@ · ^[%lld tool](inflect: true)": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Est. %1$@ · ^[%2$lld tool](inflect: true)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahmini %@ · %lld takım"
+          }
+        }
+      }
+    },
+    "Est. time": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tahmini süre"
+          }
+        }
+      }
+    },
+    "Every move passed the safety checks. Still run the pre-flight before you cut.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm hareketler güvenlik kontrollerinden geçti. Yine de kesmeden önce ön kontrolü yap."
+          }
+        }
+      }
+    },
+    "Expand panel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paneli genişlet"
+          }
+        }
+      }
+    },
+    "Eye and hearing protection on": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Göz ve kulak koruması takılı"
+          }
+        }
+      }
+    },
+    "Feed": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme"
+          }
+        }
+      }
+    },
+    "Feed range": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme aralığı"
+          }
+        }
+      }
+    },
+    "Feed rate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme hızı"
+          }
+        }
+      }
+    },
+    "Feeds & Speeds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme & Devir"
+          }
+        }
+      }
+    },
+    "Filter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtre"
+          }
+        }
+      }
+    },
+    "Finish & log": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitir ve kaydet"
+          }
+        }
+      }
+    },
+    "Finish a job run to log how it went.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nasıl geçtiğini kaydetmek için bir işi bitir."
+          }
+        }
+      }
+    },
+    "Finishing time": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son işlem süresi"
+          }
+        }
+      }
+    },
+    "Fits your machine's travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinenin hareket alanına sığıyor"
+          }
+        }
+      }
+    },
+    "Fix %lld danger before running": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çalıştırmadan önce %lld tehlikeyi gider"
+          }
+        }
+      }
+    },
+    "Fix an alarm": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm çöz"
+          }
+        }
+      }
+    },
+    "Fix or accept %lld danger findings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld tehlike bulgusunu düzelt veya kabul et"
+          }
+        }
+      }
+    },
+    "Fixed fee": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sabit ücret"
+          }
+        }
+      }
+    },
+    "Flat": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Düz"
+          }
+        }
+      }
+    },
+    "FluidNC": {},
+    "Flutes: %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ağız: %lld"
+          }
+        }
+      }
+    },
+    "From the workshop notes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölye notlarından"
+          }
+        }
+      }
+    },
+    "From your library": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kütüphanenden"
+          }
+        }
+      }
+    },
+    "Front": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ön"
+          }
+        }
+      }
+    },
+    "GRBL": {},
+    "HDPE / Delrin": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HDPE / Delrin"
+          }
+        }
+      }
+    },
+    "HSS": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HSS"
+          }
+        }
+      }
+    },
+    "Hardwood (oak, maple)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sert ağaç (meşe, akçaağaç)"
+          }
+        }
+      }
+    },
+    "Hide": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizle"
+          }
+        }
+      }
+    },
+    "History": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçmiş"
+          }
+        }
+      }
+    },
+    "Hold to start": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlatmak için basılı tut"
+          }
+        }
+      }
+    },
+    "Hole positions from center": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merkezden delik konumları"
+          }
+        }
+      }
+    },
+    "Holes: %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delik: %lld"
+          }
+        }
+      }
+    },
+    "Homing switches": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referans (homing) switchleri"
+          }
+        }
+      }
+    },
+    "How did it cut?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesim nasıl geçti?"
+          }
+        }
+      }
+    },
+    "I understand and will verify settings before cutting": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anladım, kesmeden önce ayarları doğrulayacağım"
+          }
+        }
+      }
+    },
+    "Import G-code": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-code içe aktar"
+          }
+        }
+      }
+    },
+    "Inches": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İnç"
+          }
+        }
+      }
+    },
+    "Inspector": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denetçi"
+          }
+        }
+      }
+    },
+    "Isometric": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İzometrik"
+          }
+        }
+      }
+    },
+    "Job finished": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş bitti"
+          }
+        }
+      }
+    },
+    "Job not found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş bulunamadı"
+          }
+        }
+      }
+    },
+    "Job: %@ × %@ × %@ mm": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Job: %1$@ × %2$@ × %3$@ mm"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş: %1$@ × %2$@ × %3$@ mm"
+          }
+        }
+      }
+    },
+    "Jobs": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşler"
+          }
+        }
+      }
+    },
+    "Keep clamps %@ mm outside the path": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kelepçeleri yolun %@ mm dışında tut"
+          }
+        }
+      }
+    },
+    "L%lld": {},
+    "Language": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dil"
+          }
+        }
+      }
+    },
+    "Language & appearance": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dil ve görünüm"
+          }
+        }
+      }
+    },
+    "Larger than your machine's travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinenin hareket alanından büyük"
+          }
+        }
+      }
+    },
+    "Left": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sol"
+          }
+        }
+      }
+    },
+    "Length": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uzunluk"
+          }
+        }
+      }
+    },
+    "Less": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha az"
+          }
+        }
+      }
+    },
+    "Library": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kütüphane"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açık"
+          }
+        }
+      }
+    },
+    "Line width": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çizgi genişliği"
+          }
+        }
+      }
+    },
+    "Log job": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşi kaydet"
+          }
+        }
+      }
+    },
+    "Looks good to run": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çalıştırmaya hazır görünüyor"
+          }
+        }
+      }
+    },
+    "MDF": {},
+    "Machine": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine"
+          }
+        }
+      }
+    },
+    "Machine rate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine ücreti"
+          }
+        }
+      }
+    },
+    "Machine time": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine süresi"
+          }
+        }
+      }
+    },
+    "Machines": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makineler"
+          }
+        }
+      }
+    },
+    "Marketplace fee": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pazar yeri komisyonu"
+          }
+        }
+      }
+    },
+    "Material": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzeme"
+          }
+        }
+      }
+    },
+    "Max RPM": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maks. devir"
+          }
+        }
+      }
+    },
+    "Metric": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Metrik"
+          }
+        }
+      }
+    },
+    "Mild steel (1018)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yumuşak çelik (1018)"
+          }
+        }
+      }
+    },
+    "Millimeters": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Milimetre"
+          }
+        }
+      }
+    },
+    "Min RPM": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Min. devir"
+          }
+        }
+      }
+    },
+    "More": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha fazla"
+          }
+        }
+      }
+    },
+    "Moves": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket"
+          }
+        }
+      }
+    },
+    "Multiply feed by": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerlemeyi şununla çarp"
+          }
+        }
+      }
+    },
+    "My machine": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinem"
+          }
+        }
+      }
+    },
+    "Name": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad"
+          }
+        }
+      }
+    },
+    "Needs fixes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Düzeltilmeli"
+          }
+        }
+      }
+    },
+    "New chat": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni sohbet"
+          }
+        }
+      }
+    },
+    "New tool": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni takım"
+          }
+        }
+      }
+    },
+    "No account needed — your data stays on your devices and in your iCloud.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hesap gerekmez — verilerin cihazlarında ve iCloud'unda kalır."
+          }
+        }
+      }
+    },
+    "No issues found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sorun bulunamadı"
+          }
+        }
+      }
+    },
+    "No jobs logged yet": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz kayıtlı iş yok"
+          }
+        }
+      }
+    },
+    "Note": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not"
+          }
+        }
+      }
+    },
+    "Notifications": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirimler"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamam"
+          }
+        }
+      }
+    },
+    "Only turn this on if your work zero usually sits near machine home. Most CAM files are relative to the part, which this check can't see.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bunu yalnızca iş sıfırın genelde makine referansına yakınsa aç. Çoğu CAM dosyası parçaya göredir ve bu kontrol bunu göremez."
+          }
+        }
+      }
+    },
+    "Open a .nc or .gcode file from Files, AirDrop it from your CAM computer, or try the sample sign.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosyalar'dan bir .nc veya .gcode aç, CAM bilgisayarından AirDrop ile gönder ya da örnek tabelayı dene."
+          }
+        }
+      }
+    },
+    "Open sample file": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Örnek dosyayı aç"
+          }
+        }
+      }
+    },
+    "Optional": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İsteğe bağlı"
+          }
+        }
+      }
+    },
+    "Other": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diğer"
+          }
+        }
+      }
+    },
+    "Other / DIY": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diğer / Kendin yap"
+          }
+        }
+      }
+    },
+    "Outside your machine's spindle range — set it by hand or check the file.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinenin iş mili aralığının dışında — elle ayarla veya dosyayı kontrol et."
+          }
+        }
+      }
+    },
+    "Pause": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duraklat"
+          }
+        }
+      }
+    },
+    "Pause timer": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamanlayıcıyı duraklat"
+          }
+        }
+      }
+    },
+    "Play": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oynat"
+          }
+        }
+      }
+    },
+    "Playback position": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oynatma konumu"
+          }
+        }
+      }
+    },
+    "Plunge": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalma"
+          }
+        }
+      }
+    },
+    "Plunge & retract": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalma ve geri çekme"
+          }
+        }
+      }
+    },
+    "Plywood": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrplak"
+          }
+        }
+      }
+    },
+    "Pocket": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cep"
+          }
+        }
+      }
+    },
+    "Position may be lost — re-home or re-zero before cutting.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konum kaybolmuş olabilir — kesmeden önce referansa al veya yeniden sıfırla."
+          }
+        }
+      }
+    },
+    "Pre-flight": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ön kontrol"
+          }
+        }
+      }
+    },
+    "Pre-flight and feeds use your own tools. Add more anytime in Library.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ön kontrol ve ilerleme hesapları kendi takımlarını kullanır. Kütüphane'den istediğin zaman ekle."
+          }
+        }
+      }
+    },
+    "Price a job": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş fiyatla"
+          }
+        }
+      }
+    },
+    "Profile": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profil"
+          }
+        }
+      }
+    },
+    "Profit": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kâr"
+          }
+        }
+      }
+    },
+    "Quote": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teklif"
+          }
+        }
+      }
+    },
+    "Quote a job": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş için teklif"
+          }
+        }
+      }
+    },
+    "Rapid moves (G0)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareketler (G0)"
+          }
+        }
+      }
+    },
+    "Rapid rate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareket hızı"
+          }
+        }
+      }
+    },
+    "Rapid · Cut · Arc": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı · Kesim · Yay"
+          }
+        }
+      }
+    },
+    "Rapids travel at Z%@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareketler Z%@ yüksekliğinde"
+          }
+        }
+      }
+    },
+    "Re-zero Z after the change.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Değişimden sonra Z'yi yeniden sıfırla."
+          }
+        }
+      }
+    },
+    "Ready, with %lld things to check": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hazır, %lld şeyi kontrol et"
+          }
+        }
+      }
+    },
+    "Recent files": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son dosyalar"
+          }
+        }
+      }
+    },
+    "Required": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zorunlu"
+          }
+        }
+      }
+    },
+    "Result": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonuç"
+          }
+        }
+      }
+    },
+    "Resume": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devam et"
+          }
+        }
+      }
+    },
+    "Right": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağ"
+          }
+        }
+      }
+    },
+    "Rough finish": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaba yüzey"
+          }
+        }
+      }
+    },
+    "Run 5–10 mm above the stock with the spindle off and watch the moves.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş mili kapalıyken malzemenin 5–10 mm üstünde çalıştır ve hareketleri izle."
+          }
+        }
+      }
+    },
+    "Runs on your device with Apple Intelligence. Cutting numbers always come from the calculator.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ile cihazında çalışır. Kesme değerleri her zaman hesaplayıcıdan gelir."
+          }
+        }
+      }
+    },
+    "Safety": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik"
+          }
+        }
+      }
+    },
+    "Safety score %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik puanı %lld"
+          }
+        }
+      }
+    },
+    "Save": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaydet"
+          }
+        }
+      }
+    },
+    "Save as recipe": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarif olarak kaydet"
+          }
+        }
+      }
+    },
+    "Saved to recipes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tariflere kaydedildi"
+          }
+        }
+      }
+    },
+    "Scallop height": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tarak yüksekliği"
+          }
+        }
+      }
+    },
+    "Seat it fully in the collet and tighten.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pensete tam oturt ve sık."
+          }
+        }
+      }
+    },
+    "Section": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bölüm"
+          }
+        }
+      }
+    },
+    "See Warnings. Only continue if you know the file is right for your setup.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarılara bak. Dosyanın kurulumun için doğru olduğundan eminsen devam et."
+          }
+        }
+      }
+    },
+    "See all": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümünü gör"
+          }
+        }
+      }
+    },
+    "See it before\nyou cut it.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesmeden önce\ngör."
+          }
+        }
+      }
+    },
+    "Selling": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satış"
+          }
+        }
+      }
+    },
+    "Send": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gönder"
+          }
+        }
+      }
+    },
+    "Set the dial if your router is manual.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freze motorun manuelse kadranı ayarla."
+          }
+        }
+      }
+    },
+    "Set up my workshop": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölyemi kur"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar"
+          }
+        }
+      }
+    },
+    "Setup · from your file": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kurulum · dosyandan"
+          }
+        }
+      }
+    },
+    "Shape": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şekil"
+          }
+        }
+      }
+    },
+    "Share report": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raporu paylaş"
+          }
+        }
+      }
+    },
+    "Show": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Göster"
+          }
+        }
+      }
+    },
+    "Simulate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simüle et"
+          }
+        }
+      }
+    },
+    "Size X × Y": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boyut X × Y"
+          }
+        }
+      }
+    },
+    "Skip": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atla"
+          }
+        }
+      }
+    },
+    "Skip for now": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdilik atla"
+          }
+        }
+      }
+    },
+    "Slot": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kanal"
+          }
+        }
+      }
+    },
+    "Softwood (pine)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yumuşak ağaç (çam)"
+          }
+        }
+      }
+    },
+    "Spindle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş mili"
+          }
+        }
+      }
+    },
+    "Spindle & motion": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş mili ve hareket"
+          }
+        }
+      }
+    },
+    "Spindle at %@ RPM": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş mili %@ devirde"
+          }
+        }
+      }
+    },
+    "Stainless steel (303/304)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paslanmaz çelik (303/304)"
+          }
+        }
+      }
+    },
+    "Start angle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlangıç açısı"
+          }
+        }
+      }
+    },
+    "Start job": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşi başlat"
+          }
+        }
+      }
+    },
+    "Start using Toolpath": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath'i kullanmaya başla"
+          }
+        }
+      }
+    },
+    "Starting point · calculated": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlangıç noktası · hesaplandı"
+          }
+        }
+      }
+    },
+    "Starting points, not guarantees": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Başlangıç noktaları, garanti değil"
+          }
+        }
+      }
+    },
+    "Stats": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İstatistik"
+          }
+        }
+      }
+    },
+    "Stepover": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yan kayma"
+          }
+        }
+      }
+    },
+    "Stepover (radial)": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yan kayma (radyal)"
+          }
+        }
+      }
+    },
+    "Stock at least %@ mm thick": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzeme en az %@ mm kalınlıkta"
+          }
+        }
+      }
+    },
+    "Suggested price": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önerilen fiyat"
+          }
+        }
+      }
+    },
+    "Swap to T%lld, then re-zero Z": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "T%lld'e geç, sonra Z'yi yeniden sıfırla"
+          }
+        }
+      }
+    },
+    "System": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistem"
+          }
+        }
+      }
+    },
+    "Tap drill": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kılavuz matkabı"
+          }
+        }
+      }
+    },
+    "Target margin: %lld%%": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hedef kâr: %%%lld"
+          }
+        }
+      }
+    },
+    "The deepest cut reaches this depth.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En derin kesim bu derinliğe iner."
+          }
+        }
+      }
+    },
+    "The on-device assistant couldn't answer: %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cihaz içi asistan yanıt veremedi: %@"
+          }
+        }
+      }
+    },
+    "The on-device assistant isn't available right now.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cihaz içi asistan şu an kullanılamıyor."
+          }
+        }
+      }
+    },
+    "The on-device model is still downloading. Try again in a little while.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cihaz içi model hâlâ indiriliyor. Biraz sonra tekrar dene."
+          }
+        }
+      }
+    },
+    "The toolpath covers %@ × %@ mm from that point.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "The toolpath covers %1$@ × %2$@ mm from that point."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım yolu o noktadan itibaren %1$@ × %2$@ mm alanı kaplıyor."
+          }
+        }
+      }
+    },
+    "Theme": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tema"
+          }
+        }
+      }
+    },
+    "This device doesn't support Apple Intelligence.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu cihaz Apple Intelligence'ı desteklemiyor."
+          }
+        }
+      }
+    },
+    "This file couldn't be read as G-code text.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu dosya G-code metni olarak okunamadı."
+          }
+        }
+      }
+    },
+    "This file is larger than 50 MB.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu dosya 50 MB'tan büyük."
+          }
+        }
+      }
+    },
+    "This week": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu hafta"
+          }
+        }
+      }
+    },
+    "Thou": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Binde inç"
+          }
+        }
+      }
+    },
+    "Time is an estimate: rapids are assumed at your machine's rapid rate, and acceleration isn't modelled.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süre tahminidir: hızlı hareketler makinenin hızlı hareket hızında varsayılır, ivmelenme hesaba katılmaz."
+          }
+        }
+      }
+    },
+    "Tool": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım"
+          }
+        }
+      }
+    },
+    "Tool T%lld loaded": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "T%lld takımı takılı"
+          }
+        }
+      }
+    },
+    "Tool change alerts": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım değişimi uyarıları"
+          }
+        }
+      }
+    },
+    "Tool change in %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sonra takım değişimi"
+          }
+        }
+      }
+    },
+    "Tool diameter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım çapı"
+          }
+        }
+      }
+    },
+    "Tool material": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım malzemesi"
+          }
+        }
+      }
+    },
+    "Tooling": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takımlar"
+          }
+        }
+      }
+    },
+    "Toolpath checks your files and calculates conservative values, but your machine, stock and setup are unique. Always make a test cut, keep your hands clear, and wear eye and ear protection.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath dosyalarını kontrol eder ve temkinli değerler hesaplar, ama makinen, malzemen ve kurulumun sana özgüdür. Her zaman deneme kesimi yap, ellerini uzak tut, göz ve kulak koruması kullan."
+          }
+        }
+      }
+    },
+    "Tools": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takımlar"
+          }
+        }
+      }
+    },
+    "Top": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üst"
+          }
+        }
+      }
+    },
+    "Total cost": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplam maliyet"
+          }
+        }
+      }
+    },
+    "Travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket"
+          }
+        }
+      }
+    },
+    "Try": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dene"
+          }
+        }
+      }
+    },
+    "Turn on Apple Intelligence in Settings to use the on-device assistant.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cihaz içi asistanı kullanmak için Ayarlar'dan Apple Intelligence'ı aç."
+          }
+        }
+      }
+    },
+    "UNC / UNF": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UNC / UNF"
+          }
+        }
+      }
+    },
+    "Units": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birimler"
+          }
+        }
+      }
+    },
+    "Use": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullan"
+          }
+        }
+      }
+    },
+    "V-bit": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V uç"
+          }
+        }
+      }
+    },
+    "V-bit depth": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V uç derinliği"
+          }
+        }
+      }
+    },
+    "Version": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürüm"
+          }
+        }
+      }
+    },
+    "Very low — clamps or screws can be hit.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çok alçak — kelepçe veya vidalara çarpabilir."
+          }
+        }
+      }
+    },
+    "View": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görünüm"
+          }
+        }
+      }
+    },
+    "Warnings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uyarılar"
+          }
+        }
+      }
+    },
+    "We'll load its travel and spindle limits so every check fits your machine.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket alanı ve iş mili sınırlarını yükleyelim, her kontrol makinene uysun."
+          }
+        }
+      }
+    },
+    "Which bits do you own?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangi uçlar sende var?"
+          }
+        }
+      }
+    },
+    "Which machine do you run?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangi makineyi kullanıyorsun?"
+          }
+        }
+      }
+    },
+    "Why & how to fix": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neden ve nasıl düzeltilir"
+          }
+        }
+      }
+    },
+    "Why these numbers": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neden bu değerler"
+          }
+        }
+      }
+    },
+    "Workshop": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölye"
+          }
+        }
+      }
+    },
+    "Workshop calculators": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölye hesaplayıcıları"
+          }
+        }
+      }
+    },
+    "Workshop mode": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölye modu"
+          }
+        }
+      }
+    },
+    "Workshop notes": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atölye notları"
+          }
+        }
+      }
+    },
+    "X": {},
+    "X %@   Y %@": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "X %1$@   Y %2$@"
+          }
+        }
+      }
+    },
+    "Y": {},
+    "Your rate": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senin ücretin"
+          }
+        }
+      }
+    },
+    "Z": {},
+    "Z range": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z aralığı"
+          }
+        }
+      }
+    },
+    "Zero X/Y at %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X/Y sıfırı: %@"
+          }
+        }
+      }
+    },
+    "Zero Z on the spoilboard": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z sıfırını tablaya al"
+          }
+        }
+      }
+    },
+    "Zero Z on top of the stock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z sıfırını malzemenin üstüne al"
+          }
+        }
+      }
+    },
+    "a point %@ mm left and %@ mm below the job": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "a point %1$@ mm left and %2$@ mm below the job"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "işin %1$@ mm solunda ve %2$@ mm altında bir nokta"
+          }
+        }
+      }
+    },
+    "grblHAL": {},
+    "iCloud sync": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iCloud eşitleme"
+          }
+        }
+      }
+    },
+    "in/min": {},
+    "mm": {},
+    "mm/min": {},
+    "remaining · %lld%%": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "kaldı · %%%lld"
+          }
+        }
+      }
+    },
+    "the center of the part": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "parçanın merkezi"
+          }
+        }
+      }
+    },
+    "the lower-left corner": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sol alt köşe"
+          }
+        }
+      }
+    },
+    "the lower-right corner": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sağ alt köşe"
+          }
+        }
+      }
+    },
+    "the upper-left corner": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sol üst köşe"
+          }
+        }
+      }
+    },
+    "the upper-right corner": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "sağ üst köşe"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

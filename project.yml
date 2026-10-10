@@ -60,6 +60,7 @@ targets:
     info:
       path: App/Info.plist
       properties:
+        CFBundleLocalizations: [en, tr]
         CFBundleDocumentTypes:
           - CFBundleTypeName: G-code
             LSHandlerRank: Alternate

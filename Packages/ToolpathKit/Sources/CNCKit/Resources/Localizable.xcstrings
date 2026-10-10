@@ -1,1 +1,328 @@
-{"sourceLanguage":"en","strings":{},"version":"1.0"}
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%lld cutting moves run before any M3/M4 spindle start. The first is on line %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld cutting moves run before any M3/M4 spindle start. The first is on line %2$lld."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld kesim hareketi M3/M4 iş mili başlatmasından önce çalışıyor. İlki %2$lld. satırda."
+          }
+        }
+      }
+    },
+    "%lld cutting moves run without a feed rate (F). The first is on line %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld cutting moves run without a feed rate (F). The first is on line %2$lld."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld kesim hareketi ilerleme hızı (F) olmadan çalışıyor. İlki %2$lld. satırda."
+          }
+        }
+      }
+    },
+    "%lld moves end outside your machine's travel, measured from machine zero. The first is on line %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld moves end outside your machine's travel, measured from machine zero. The first is on line %2$lld."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hareket, makine sıfırından ölçüldüğünde hareket alanının dışında bitiyor. İlki %2$lld. satırda."
+          }
+        }
+      }
+    },
+    "%lld rapid moves go below the stock top. The first is on line %lld, dropping from Z%@ to Z%@.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld rapid moves go below the stock top. The first is on line %2$lld, dropping from Z%3$@ to Z%4$@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hızlı hareket malzeme yüzeyinin altına iniyor. İlki %2$lld. satırda, Z%3$@ değerinden Z%4$@ değerine düşüyor."
+          }
+        }
+      }
+    },
+    "%lld rapid moves travel sideways at only Z%@, below %@ mm. The first is on line %lld.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld rapid moves travel sideways at only Z%2$@, below %3$@ mm. The first is on line %4$lld."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hızlı hareket yalnızca Z%2$@ yüksekliğinde, %3$@ mm altında yanlamasına gidiyor. İlki %4$lld. satırda."
+          }
+        }
+      }
+    },
+    "A light profiling pass engages less of the bit, so it can take a 30% heavier chip.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hafif bir profil pasosu ucun daha azını kavrar, bu yüzden %30 daha kalın talaş alabilir."
+          }
+        }
+      }
+    },
+    "A stationary bit pushed into material breaks almost instantly. Machines with a manual router need it switched on by hand before Start.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dönmeyen bir uç malzemeye bastırılınca neredeyse anında kırılır. Manuel freze motorlu makinelerde motor Başlat'tan önce elle açılmalıdır."
+          }
+        }
+      }
+    },
+    "Add an F value before the first cutting move, or re-export from CAM with feed rates enabled.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk kesim hareketinden önce bir F değeri ekle ya da CAM'den ilerleme hızları açık olarak yeniden dışa aktar."
+          }
+        }
+      }
+    },
+    "At that height the bit can catch clamps, screws, tabs or an uneven stock surface while moving at full speed.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu yükseklikte uç tam hızda giderken kelepçelere, vidalara, köprülere veya düzgün olmayan yüzeye takılabilir."
+          }
+        }
+      }
+    },
+    "Check your Z zero first. If it is right, set a safe retract height in your CAM and re-export so plunges use a G1 feed.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce Z sıfırını kontrol et. Doğruysa CAM'de güvenli geri çekme yüksekliği ayarla ve yeniden dışa aktar; dalmalar G1 ilerlemesiyle yapılsın."
+          }
+        }
+      }
+    },
+    "Drilling uses feed per revolution instead of chip load per tooth.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delmede diş başına talaş yükü yerine devir başına ilerleme kullanılır."
+          }
+        }
+      }
+    },
+    "GRBL refuses these moves with error 22; other controllers may use an unexpected default speed.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GRBL bu hareketleri error 22 ile reddeder; diğer kontrolcüler beklenmedik bir varsayılan hız kullanabilir."
+          }
+        }
+      }
+    },
+    "High-speed steel bits run at about half the surface speed of carbide, so the RPM is lower.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HSS uçlar karbürün yaklaşık yarısı yüzey hızında çalışır, bu yüzden devir daha düşüktür."
+          }
+        }
+      }
+    },
+    "If your router is switched by hand, turn it on before starting and confirm it here. Otherwise add M3 with a speed (e.g. M3 S18000) before the first cut, or enable spindle output in your post processor.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Freze motorun elle açılıyorsa başlatmadan önce aç ve burada onayla. Aksi halde ilk kesimden önce hızla birlikte M3 ekle (ör. M3 S18000) ya da post işlemcide iş mili çıkışını etkinleştir."
+          }
+        }
+      }
+    },
+    "Line %lld is a rapid (G0) that drops from Z%@ to Z%@, below the stock top.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Line %1$lld is a rapid (G0) that drops from Z%2$@ to Z%3$@, below the stock top."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld. satır, Z%2$@ değerinden Z%3$@ değerine, malzeme yüzeyinin altına inen hızlı (G0) bir hareket."
+          }
+        }
+      }
+    },
+    "Low clearance on rapid moves": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareketlerde düşük açıklık"
+          }
+        }
+      }
+    },
+    "Move your work zero so the whole job fits, or scale the design down. This check assumes your zero is near machine home.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm iş sığacak şekilde iş sıfırını kaydır ya da tasarımı küçült. Bu kontrol sıfırının makine referansına yakın olduğunu varsayar."
+          }
+        }
+      }
+    },
+    "Moves outside machine travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine hareket alanı dışında hareketler"
+          }
+        }
+      }
+    },
+    "No feed rate set": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme hızı ayarlanmamış"
+          }
+        }
+      }
+    },
+    "Raise the clearance or retract height in your CAM (5 mm is a common start), or keep clamps well outside the toolpath.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CAM'de açıklık veya geri çekme yüksekliğini artır (5 mm iyi bir başlangıç) ya da kelepçeleri takım yolunun epey dışında tut."
+          }
+        }
+      }
+    },
+    "Rapid move plunges into stock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareket malzemeye dalıyor"
+          }
+        }
+      }
+    },
+    "Rapids run at full machine speed and ignore the feed rate. Driving the bit into material this way usually snaps it and can throw the workpiece.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı hareketler makinenin tam hızında çalışır ve ilerleme hızını yok sayar. Ucu malzemeye böyle sokmak genelde onu kırar ve parçayı fırlatabilir."
+          }
+        }
+      }
+    },
+    "Slotting engages the full bit width, so the chip load is reduced by 20% to control heat and deflection.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kanal açmada ucun tüm genişliği kavrar, bu yüzden ısı ve esnemeyi kontrol için talaş yükü %20 azaltılır."
+          }
+        }
+      }
+    },
+    "Spindle is off while cutting": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keserken iş mili kapalı"
+          }
+        }
+      }
+    },
+    "The chip load was held inside the safe range for this material, so very small or very large bits don't get an unrealistic bite.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talaş yükü bu malzeme için güvenli aralıkta tutuldu; çok küçük veya çok büyük uçlar gerçek dışı bir yük almaz."
+          }
+        }
+      }
+    },
+    "The ideal speed for this bit is %@ RPM, above your machine's %@. The feed was recalculated from %@ RPM so each tooth still takes the intended chip.": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "The ideal speed for this bit is %1$@ RPM, above your machine's %2$@. The feed was recalculated from %3$@ RPM so each tooth still takes the intended chip."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu uç için ideal hız %1$@ devir; makinenin %2$@ değerinin üstünde. İlerleme %3$@ devirden yeniden hesaplandı, böylece her diş hedeflenen talaşı alır."
+          }
+        }
+      }
+    },
+    "The machine will hit a hard limit or stall partway through the job.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine işin ortasında sert limite çarpar veya takılır."
+          }
+        }
+      }
+    },
+    "These are starting points for a typical hobby machine. Make a test cut, listen, and log how it went — your recipe learns from it.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bunlar tipik bir hobi makinesi için başlangıç noktalarıdır. Deneme kesimi yap, dinle ve nasıl geçtiğini kaydet — tarifin bundan öğrenir."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
