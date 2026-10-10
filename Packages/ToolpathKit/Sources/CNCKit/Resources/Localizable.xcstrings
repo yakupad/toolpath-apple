@@ -81,12 +81,132 @@
         }
       }
     },
+    "A G-code word is missing its letter.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir G-code kelimesinin harfi eksik."
+          }
+        }
+      }
+    },
+    "A G-code word is repeated on one line.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir G-code kelimesi aynı satırda tekrar ediyor."
+          }
+        }
+      }
+    },
+    "A G2/G3 arc has no axis words in the selected plane.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir G2/G3 yayının seçili düzlemde eksen kelimesi yok."
+          }
+        }
+      }
+    },
+    "A command requires an integer value.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir komut tam sayı değer gerektiriyor."
+          }
+        }
+      }
+    },
+    "A cutting move was sent before any feed rate (F).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herhangi bir ilerleme hızından (F) önce kesim hareketi gönderildi."
+          }
+        }
+      }
+    },
+    "A jog target exceeds machine travel and was ignored.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir jog hedefi makine hareket alanını aşıyor ve yok sayıldı."
+          }
+        }
+      }
+    },
     "A light profiling pass engages less of the bit, so it can take a 30% heavier chip.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Hafif bir profil pasosu ucun daha azını kavrar, bu yüzden %30 daha kalın talaş alabilir."
+          }
+        }
+      }
+    },
+    "A limit switch was hit during motion. Machine position is likely lost.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket sırasında bir limit switch tetiklendi. Makine konumu büyük olasılıkla kayboldu."
+          }
+        }
+      }
+    },
+    "A line exceeds the maximum length and was not executed.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir satır azami uzunluğu aşıyor ve çalıştırılmadı."
+          }
+        }
+      }
+    },
+    "A move in the program targets a position outside the machine's configured travel. Position is kept; it is safe to unlock.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programdaki bir hareket makinenin ayarlı hareket alanının dışını hedefliyor. Konum korunur; kilidi açmak güvenlidir."
+          }
+        }
+      }
+    },
+    "A negative value was given where a positive one is required.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pozitif değer gereken yerde negatif değer verildi."
+          }
+        }
+      }
+    },
+    "A number is missing or badly formatted.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir sayı eksik veya hatalı biçimde."
+          }
+        }
+      }
+    },
+    "A setting exceeds the maximum supported step rate.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir ayar desteklenen azami adım hızını aşıyor."
           }
         }
       }
@@ -101,12 +221,102 @@
         }
       }
     },
+    "Add an F value before the first G1/G2/G3, or re-export from CAM.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk G1/G2/G3'ten önce bir F değeri ekle ya da CAM'den yeniden dışa aktar."
+          }
+        }
+      }
+    },
     "Add an F value before the first cutting move, or re-export from CAM with feed rates enabled.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "İlk kesim hareketinden önce bir F değeri ekle ya da CAM'den ilerleme hızları açık olarak yeniden dışa aktar."
+          }
+        }
+      }
+    },
+    "After touching a limit switch the axis could not pull off far enough to release it.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksen limit switch'e dokunduktan sonra onu bırakacak kadar geri çekilemedi."
+          }
+        }
+      }
+    },
+    "An I/J arc is missing its offset word in the selected plane.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir I/J yayının seçili düzlemde ofset kelimesi eksik."
+          }
+        }
+      }
+    },
+    "An R-format arc had a geometry error.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "R biçimli bir yayda geometri hatası oluştu."
+          }
+        }
+      }
+    },
+    "An arc or probe target is impossible (e.g. the arc cannot be generated).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir yay veya prob hedefi imkânsız (ör. yay oluşturulamıyor)."
+          }
+        }
+      }
+    },
+    "An axis could not find its limit switch within the search distance.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir eksen arama mesafesi içinde limit switch'ini bulamadı."
+          }
+        }
+      }
+    },
+    "Arc missing offset": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yayda ofset eksik"
+          }
+        }
+      }
+    },
+    "Arc radius error": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yay yarıçap hatası"
+          }
+        }
+      }
+    },
+    "Arc without axis words": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksen kelimesiz yay"
           }
         }
       }
@@ -121,12 +331,152 @@
         }
       }
     },
+    "Axis words were given while motion is cancelled (G80).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket iptal edilmişken (G80) eksen kelimeleri verildi."
+          }
+        }
+      }
+    },
+    "Bad number": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatalı sayı"
+          }
+        }
+      }
+    },
+    "Build info or startup line exceeds the storage limit.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yapı bilgisi veya başlangıç satırı depolama sınırını aşıyor."
+          }
+        }
+      }
+    },
+    "Check the probe wiring for a short.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prob kablolamasında kısa devre olup olmadığını kontrol et."
+          }
+        }
+      }
+    },
+    "Check the reported line in Job › G-code text.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirilen satırı İş › G-code metni'nde kontrol et."
+          }
+        }
+      }
+    },
+    "Check the switch connectors on the controller — an unplugged switch is the most common cause.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrolcüdeki switch konnektörlerini kontrol et — en yaygın neden takılı olmayan bir switch'tir."
+          }
+        }
+      }
+    },
+    "Check the switch for a stuck lever or wiring that holds it closed.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Switch'te sıkışmış bir kol veya onu kapalı tutan bir kablo olup olmadığını kontrol et."
+          }
+        }
+      }
+    },
+    "Check where you set work zero: the job may extend past the end of travel from that point.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş sıfırını nereye koyduğunu kontrol et: iş o noktadan hareket alanının sonunu aşıyor olabilir."
+          }
+        }
+      }
+    },
+    "Check whether the gantry really reached the end of travel, or a switch triggered from noise or a loose wire.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Köprünün gerçekten hareket sonuna gelip gelmediğini ya da switch'in parazit veya gevşek kablo yüzünden tetiklenip tetiklenmediğini kontrol et."
+          }
+        }
+      }
+    },
     "Check your Z zero first. If it is right, set a safe retract height in your CAM and re-export so plunges use a G1 feed.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Önce Z sıfırını kontrol et. Doğruysa CAM'de güvenli geri çekme yüksekliği ayarla ve yeniden dışa aktar; dalmalar G1 ilerlemesiyle yapılsın."
+          }
+        }
+      }
+    },
+    "Clear the alarm first ($X to unlock, or home), then send again.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce alarmı temizle ($X ile kilidi aç veya referansa al), sonra tekrar gönder."
+          }
+        }
+      }
+    },
+    "Close the enclosure door (or check the door switch wiring) and home again.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kabin kapağını kapat (veya kapak switch kablolamasını kontrol et) ve tekrar referansa al."
+          }
+        }
+      }
+    },
+    "Compare the file's size (Job › Stats) with your machine's travel.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dosyanın boyutunu (İş › İstatistik) makinenin hareket alanıyla karşılaştır."
+          }
+        }
+      }
+    },
+    "Confirm the clip is attached and the plate is on the work surface under the bit.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klipsin takılı olduğunu ve plakanın ucun altında iş yüzeyinde olduğunu doğrula."
+          }
+        }
+      }
+    },
+    "Conflicting commands": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çakışan komutlar"
           }
         }
       }
@@ -141,12 +491,92 @@
         }
       }
     },
+    "E-stop or second switch not found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil stop veya ikinci switch bulunamadı"
+          }
+        }
+      }
+    },
+    "Enable homing with $22=1 if your machine has homing switches.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinende referans switch'leri varsa $22=1 ile referanslamayı aç."
+          }
+        }
+      }
+    },
+    "Feed rate not set": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme hızı ayarlanmamış"
+          }
+        }
+      }
+    },
+    "G-code is locked out during an alarm or jog.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm veya jog sırasında G-code kilitlidir."
+          }
+        }
+      }
+    },
+    "G43.1 cannot apply an offset to this axis.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G43.1 bu eksene ofset uygulayamaz."
+          }
+        }
+      }
+    },
+    "G53 needs G0 or G1": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G53 için G0 veya G1 gerekli"
+          }
+        }
+      }
+    },
+    "G53 requires G0 or G1 motion mode.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G53, G0 veya G1 hareket modu gerektirir."
+          }
+        }
+      }
+    },
     "GRBL refuses these moves with error 22; other controllers may use an unexpected default speed.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "GRBL bu hareketleri error 22 ile reddeder; diğer kontrolcüler beklenmedik bir varsayılan hız kullanabilir."
+          }
+        }
+      }
+    },
+    "Hard limit triggered": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sert limit tetiklendi"
           }
         }
       }
@@ -161,12 +591,202 @@
         }
       }
     },
+    "Home the machine first — soft limits only work after homing.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önce makineyi referansa al — yazılım limitleri yalnızca referanslamadan sonra çalışır."
+          }
+        }
+      }
+    },
+    "Homing disabled": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama kapalı"
+          }
+        }
+      }
+    },
+    "Homing fail: could not clear switch": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama hatası: switch bırakılamadı"
+          }
+        }
+      }
+    },
+    "Homing fail: door opened": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama hatası: kapak açıldı"
+          }
+        }
+      }
+    },
+    "Homing fail: reset during homing": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama hatası: referanslama sırasında sıfırlandı"
+          }
+        }
+      }
+    },
+    "Homing fail: switch not found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama hatası: switch bulunamadı"
+          }
+        }
+      }
+    },
+    "Homing is not enabled in settings ($22).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlarda referanslama etkin değil ($22)."
+          }
+        }
+      }
+    },
+    "If it happened mid-job, check the file's bounds against your work zero — the job may be larger than the space you left.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşin ortasında olduysa dosyanın sınırlarını iş sıfırına göre kontrol et — iş bıraktığın alandan büyük olabilir."
+          }
+        }
+      }
+    },
+    "If your machine has no homing switches, disable homing ($22=0).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makinende referans switch'i yoksa referanslamayı kapat ($22=0)."
+          }
+        }
+      }
+    },
     "If your router is switched by hand, turn it on before starting and confirm it here. Otherwise add M3 with a speed (e.g. M3 S18000) before the first cut, or enable spindle output in your post processor.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Freze motorun elle açılıyorsa başlatmadan önce aç ve burada onayla. Aksi halde ilk kesimden önce hızla birlikte M3 ekle (ör. M3 S18000) ya da post işlemcide iş mili çıkışını etkinleştir."
+          }
+        }
+      }
+    },
+    "Increase the homing pull-off ($27), e.g. to 2–3 mm.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referans geri çekilme mesafesini ($27) artır, ör. 2–3 mm."
+          }
+        }
+      }
+    },
+    "Integer required": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tam sayı gerekli"
+          }
+        }
+      }
+    },
+    "Invalid jog command": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçersiz jog komutu"
+          }
+        }
+      }
+    },
+    "Invalid motion target": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçersiz hareket hedefi"
+          }
+        }
+      }
+    },
+    "Jog beyond travel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket alanı dışına jog"
+          }
+        }
+      }
+    },
+    "Jog command has no '=' or contains prohibited G-code.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jog komutunda '=' yok veya yasak G-code içeriyor."
+          }
+        }
+      }
+    },
+    "Jog in the other direction or re-home so the controller knows where it is.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ters yöne jog yap ya da kontrolcü nerede olduğunu bilsin diye yeniden referansa al."
+          }
+        }
+      }
+    },
+    "Laser mode needs PWM": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lazer modu PWM gerektirir"
+          }
+        }
+      }
+    },
+    "Laser mode requires a PWM spindle output.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lazer modu PWM iş mili çıkışı gerektirir."
+          }
+        }
+      }
+    },
+    "Leftover words": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Artık kelimeler"
           }
         }
       }
@@ -187,12 +807,112 @@
         }
       }
     },
+    "Line number out of range": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satır numarası aralık dışında"
+          }
+        }
+      }
+    },
+    "Line too long": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satır çok uzun"
+          }
+        }
+      }
+    },
+    "Line too long for storage": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satır depolama için çok uzun"
+          }
+        }
+      }
+    },
+    "Locked": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kilitli"
+          }
+        }
+      }
+    },
+    "Look for a stray character or a missing value on the reported line.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirilen satırda fazladan bir karakter veya eksik bir değer ara."
+          }
+        }
+      }
+    },
     "Low clearance on rapid moves": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Hızlı hareketlerde düşük açıklık"
+          }
+        }
+      }
+    },
+    "Make sure max travel ($130–$132) is at least your machine's real travel.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Azami hareketin ($130–$132) en az makinenin gerçek hareket alanı kadar olduğundan emin ol."
+          }
+        }
+      }
+    },
+    "Make sure the touch plate is not already touching the bit, and the magnet clip is on the bit, not the plate.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dokunma plakasının uca zaten değmediğinden ve mıknatıslı klipsin plakada değil uçta olduğundan emin ol."
+          }
+        }
+      }
+    },
+    "Missing P or L": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "P veya L eksik"
+          }
+        }
+      }
+    },
+    "Missing axis words": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eksen kelimeleri eksik"
+          }
+        }
+      }
+    },
+    "Missing letter": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Harf eksik"
           }
         }
       }
@@ -217,12 +937,102 @@
         }
       }
     },
+    "N line number is outside 1–9,999,999.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "N satır numarası 1–9.999.999 dışında."
+          }
+        }
+      }
+    },
+    "Negative value": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negatif değer"
+          }
+        }
+      }
+    },
     "No feed rate set": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "İlerleme hızı ayarlanmamış"
+          }
+        }
+      }
+    },
+    "Not idle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boşta değil"
+          }
+        }
+      }
+    },
+    "On dual-motor gantries, check the second Y (or X) switch and its wiring.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çift motorlu köprülerde ikinci Y (veya X) switch'ini ve kablolamasını kontrol et."
+          }
+        }
+      }
+    },
+    "On grblHAL/FluidNC this is the emergency stop. On GRBL 1.1h dual-axis machines, the second limit switch for squaring was not found.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "grblHAL/FluidNC'de bu acil stoptur. GRBL 1.1h çift eksenli makinelerde gönye ayarı için ikinci limit switch bulunamadı."
+          }
+        }
+      }
+    },
+    "Only G54–G59 are supported.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca G54–G59 desteklenir."
+          }
+        }
+      }
+    },
+    "Prefer I/J arc output in your CAM post instead of R.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CAM post işlemcinde R yerine I/J yay çıktısını tercih et."
+          }
+        }
+      }
+    },
+    "Probe fail: no contact": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prob hatası: temas yok"
+          }
+        }
+      }
+    },
+    "Probe fail: probe already triggered": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prob hatası: prob zaten tetiklenmiş"
           }
         }
       }
@@ -257,12 +1067,162 @@
         }
       }
     },
+    "Re-enter your machine's settings ($100+ steps/mm, $110+ max rates, $130+ travel).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Makine ayarlarını yeniden gir ($100+ adım/mm, $110+ azami hızlar, $130+ hareket)."
+          }
+        }
+      }
+    },
+    "Re-export from CAM with the GRBL post processor.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CAM'den GRBL post işlemcisiyle yeniden dışa aktar."
+          }
+        }
+      }
+    },
+    "Re-export with a GRBL post processor — commands like G41/G42 cutter compensation or canned cycles are not supported.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GRBL post işlemcisiyle yeniden dışa aktar — G41/G42 takım telafisi veya hazır çevrimler gibi komutlar desteklenmez."
+          }
+        }
+      }
+    },
+    "Re-export with arc output limited to the XY plane, or disable arcs in the post (output lines instead).": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yay çıktısını XY düzlemiyle sınırlayarak yeniden dışa aktar ya da post işlemcide yayları kapat (yerine çizgi üret)."
+          }
+        }
+      }
+    },
+    "Re-home (or re-zero X, Y and Z) before continuing.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devam etmeden önce yeniden referansa al (veya X, Y ve Z'yi yeniden sıfırla)."
+          }
+        }
+      }
+    },
+    "Release the E-stop, then reset and re-home.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil stopu bırak, sonra sıfırla ve yeniden referansa al."
+          }
+        }
+      }
+    },
+    "Repeated word": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrarlanan kelime"
+          }
+        }
+      }
+    },
+    "Reset while in motion": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket halindeyken sıfırlandı"
+          }
+        }
+      }
+    },
+    "Run homing again and let it finish.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslamayı tekrar çalıştır ve bitmesine izin ver."
+          }
+        }
+      }
+    },
+    "Safety door open": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik kapağı açık"
+          }
+        }
+      }
+    },
+    "Settings memory could not be read; defaults were restored.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayar belleği okunamadı; varsayılanlar geri yüklendi."
+          }
+        }
+      }
+    },
+    "Settings read failed": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar okunamadı"
+          }
+        }
+      }
+    },
     "Slotting engages the full bit width, so the chip load is reduced by 20% to control heat and deflection.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Kanal açmada ucun tüm genişliği kavrar, bu yüzden ısı ve esnemeyi kontrol için talaş yükü %20 azaltılır."
+          }
+        }
+      }
+    },
+    "Soft limit": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yazılım limiti"
+          }
+        }
+      }
+    },
+    "Soft limits cannot be enabled without homing.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama olmadan yazılım limitleri etkinleştirilemez."
+          }
+        }
+      }
+    },
+    "Soft limits need homing": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yazılım limitleri referanslama gerektirir"
           }
         }
       }
@@ -277,12 +1237,122 @@
         }
       }
     },
+    "Start the probe closer to the plate.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probu plakaya daha yakından başlat."
+          }
+        }
+      }
+    },
+    "Step pulse time must be greater than 3 µs.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adım darbe süresi 3 µs'den büyük olmalı."
+          }
+        }
+      }
+    },
+    "Step pulse too short": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adım darbesi çok kısa"
+          }
+        }
+      }
+    },
+    "Step rate too high": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adım hızı çok yüksek"
+          }
+        }
+      }
+    },
+    "Test the circuit: touch the plate to the bit — the controller should report a probe trigger.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devreyi test et: plakayı uca değdir — kontrolcü prob tetiklemesi bildirmeli."
+          }
+        }
+      }
+    },
+    "The '$' system command is not recognized.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'$' sistem komutu tanınmadı."
+          }
+        }
+      }
+    },
+    "The block contains a G-code command the controller does not support.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blok, kontrolcünün desteklemediği bir G-code komutu içeriyor."
+          }
+        }
+      }
+    },
     "The chip load was held inside the safe range for this material, so very small or very large bits don't get an unrealistic bite.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Talaş yükü bu malzeme için güvenli aralıkta tutuldu; çok küçük veya çok büyük uçlar gerçek dışı bir yük almaz."
+          }
+        }
+      }
+    },
+    "The command is missing a required P or L value.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komutta gerekli bir P veya L değeri eksik."
+          }
+        }
+      }
+    },
+    "The command needs X, Y or Z words but none were found.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Komut X, Y veya Z kelimeleri gerektiriyor ama hiçbiri bulunamadı."
+          }
+        }
+      }
+    },
+    "The controller was reset during a move, so steps may have been lost.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrolcü bir hareket sırasında sıfırlandı, adımlar kaybolmuş olabilir."
+          }
+        }
+      }
+    },
+    "The homing cycle was interrupted by a reset.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama çevrimi bir sıfırlamayla kesildi."
           }
         }
       }
@@ -313,12 +1383,222 @@
         }
       }
     },
+    "The probe did not touch the plate within the programmed travel.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prob programlanan mesafe içinde plakaya değmedi."
+          }
+        }
+      }
+    },
+    "The probe was not in the expected state before the probing cycle started.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prob, prob çevrimi başlamadan önce beklenen durumda değildi."
+          }
+        }
+      }
+    },
+    "The safety door input was triggered during homing.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama sırasında güvenlik kapağı girişi tetiklendi."
+          }
+        }
+      }
+    },
+    "The safety door was detected open.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik kapağı açık algılandı."
+          }
+        }
+      }
+    },
     "These are starting points for a typical hobby machine. Make a test cut, listen, and log how it went — your recipe learns from it.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Bunlar tipik bir hobi makinesi için başlangıç noktalarıdır. Deneme kesimi yap, dinle ve nasıl geçtiğini kaydet — tarifin bundan öğrenir."
+          }
+        }
+      }
+    },
+    "This '$' command can only run while the controller is idle.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu '$' komutu yalnızca kontrolcü boştayken çalışır."
+          }
+        }
+      }
+    },
+    "To resume a job, restart from a safe line above the stock — never mid-cut.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir işe devam etmek için malzemenin üstünde güvenli bir satırdan yeniden başla — asla kesimin ortasından değil."
+          }
+        }
+      }
+    },
+    "Tool length offset axis": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım boyu ofset ekseni"
+          }
+        }
+      }
+    },
+    "Tool number exceeds the supported maximum.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım numarası desteklenen azamiyi aşıyor."
+          }
+        }
+      }
+    },
+    "Tool number too high": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım numarası çok yüksek"
+          }
+        }
+      }
+    },
+    "Toolpath flags this before you run: look for a 'No feed rate' warning.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath bunu çalıştırmadan önce işaretler: 'İlerleme hızı ayarlanmamış' uyarısına bak."
+          }
+        }
+      }
+    },
+    "Two axis commands": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İki eksen komutu"
+          }
+        }
+      }
+    },
+    "Two commands from the same modal group are on one line.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aynı modal gruptan iki komut tek satırda."
+          }
+        }
+      }
+    },
+    "Two commands on one line both need XYZ words.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tek satırdaki iki komutun ikisi de XYZ kelimeleri gerektiriyor."
+          }
+        }
+      }
+    },
+    "Unknown $ command": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilinmeyen $ komutu"
+          }
+        }
+      }
+    },
+    "Unlock ($X), jog away from the switch, then re-home before cutting.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kilidi aç ($X), switch'ten uzaklaşacak şekilde jog yap, sonra kesmeden önce yeniden referansa al."
+          }
+        }
+      }
+    },
+    "Unsupported G-code": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desteklenmeyen G-code"
+          }
+        }
+      }
+    },
+    "Unsupported work offset": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desteklenmeyen iş ofseti"
+          }
+        }
+      }
+    },
+    "Unused G-code words remain on the line.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satırda kullanılmayan G-code kelimeleri kaldı."
+          }
+        }
+      }
+    },
+    "Unused axis words": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanılmayan eksen kelimeleri"
+          }
+        }
+      }
+    },
+    "Verify $130–$132 (max travel) match your machine.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "$130–$132 (azami hareket) değerlerinin makinene uyduğunu doğrula."
+          }
+        }
+      }
+    },
+    "Watch which axis moves during homing; that is the one with the problem.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referanslama sırasında hangi eksenin hareket ettiğini izle; sorun o eksendedir."
           }
         }
       }
