@@ -93,9 +93,11 @@ struct JobDetailView: View {
                     cursor: cursor,
                     focusedMove: focusedMove,
                     drawProgress: drawProgress,
-                    insets: EdgeInsetsValue(top: 110, bottom: sizeClass == .compact ? BottomPanelMetrics.collapsedHeight : 24)
+                    insets: EdgeInsetsValue(top: sizeClass == .compact ? 110 : 150,
+                                            bottom: sizeClass == .compact ? BottomPanelMetrics.collapsedHeight : 24)
                 )
-                .ignoresSafeArea()
+                // On regular widths the inspector shares the screen: only bleed vertically.
+                .ignoresSafeArea(edges: sizeClass == .compact ? .all : .vertical)
                 .onChange(of: context.date) {
                     if simulation.time(at: context.date) >= analysis.timeline.totalDurationSeconds { simulation.pause(at: context.date) }
                 }
