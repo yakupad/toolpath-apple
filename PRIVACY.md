@@ -1,6 +1,6 @@
 # Toolpath Privacy Policy
 
-_Last updated: October 2026_
+_Last updated: 11 October 2026 · Web version: https://yakupad.github.io/toolpath-apple/privacy/_
 
 Toolpath is built so that your data stays yours.
 
@@ -16,6 +16,10 @@ feeds and speeds and all calculators run locally, with no network access.
 
 **On-device assistant.** The assistant uses Apple Intelligence on your
 device. Your questions are not sent to the developer.
+
+**Live machine monitor.** If you use the optional live monitor, Toolpath
+connects to the controller address you enter on your local network and only
+reads its status. Nothing from that connection is sent anywhere else.
 
 **Purchases** are handled by Apple. The developer receives no payment
 details.
