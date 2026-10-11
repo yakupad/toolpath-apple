@@ -152,6 +152,64 @@
         }
       }
     },
+    "%@. %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$@. %2$@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@。%@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@. %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@。%@"
+          }
+        }
+      }
+    },
     "%@:%lld": {
       "localizations": {
         "en": {
@@ -995,6 +1053,58 @@
         }
       }
     },
+    "Acrylic": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكريليك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acryl"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acrílico"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acrilico"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アクリル"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Акрил"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akrilik"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "亚克力"
+          }
+        }
+      }
+    },
     "Acrylic (cast)": {
       "localizations": {
         "ar": {
@@ -1615,6 +1725,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "所有切削都在 Z0 之上，所以 Z0 应是材料下方的台面。"
+          }
+        }
+      }
+    },
+    "Aluminum": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ألومنيوم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aluminium"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aluminio"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alluminio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アルミニウム"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Алюминий"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alüminyum"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "铝"
           }
         }
       }
@@ -2867,6 +3029,58 @@
         }
       }
     },
+    "Calculate Feeds and Speeds": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "احسب التغذية والسرعات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorschub und Drehzahl berechnen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcular avances y velocidades"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calcola avanzamenti e velocità"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送りと回転数を計算"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рассчитать подачи и обороты"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme ve Devir Hesapla"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "计算进给与转速"
+          }
+        }
+      }
+    },
     "Calculator": {
       "localizations": {
         "ar": {
@@ -3233,6 +3447,110 @@
           "stringUnit": {
             "state": "translated",
             "value": "振刀反复出现"
+          }
+        }
+      }
+    },
+    "Check G-code": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افحص G-code"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-Code prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisar G-code"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla G-code"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-codeをチェック"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить G-code"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-code Kontrol Et"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查 G 代码"
+          }
+        }
+      }
+    },
+    "Check a G-code File": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افحص ملف G-code"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-Code-Datei prüfen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisar un archivo G-code"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla un file G-code"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-codeファイルをチェック"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверить файл G-code"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G-code Dosyası Kontrol Et"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查 G 代码文件"
           }
         }
       }
@@ -3965,6 +4283,58 @@
         }
       }
     },
+    "Code": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الرمز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Código"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Codice"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コード"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Код"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kod"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "代码"
+          }
+        }
+      }
+    },
     "Collapse panel": {
       "localizations": {
         "ar": {
@@ -4117,6 +4487,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "压缩刀"
+          }
+        }
+      }
+    },
+    "Conservative starting RPM and feed rate for a cut, from Toolpath's calculator.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سرعة دورانية وتغذية بداية متحفظة لقطع، من حاسبة Toolpath."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorsichtige Start-Drehzahl und Vorschub für einen Schnitt, aus dem Toolpath-Rechner."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RPM y avance iniciales prudentes para un corte, de la calculadora de Toolpath."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giri e avanzamento iniziali prudenti per un taglio, dal calcolatore di Toolpath."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpathの計算機による、切削の控えめな開始回転数と送り。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Осторожные стартовые обороты и подача для прохода из калькулятора Toolpath."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath hesaplayıcısından bir kesim için temkinli başlangıç devri ve ilerleme hızı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自 Toolpath 计算器的保守起始转速和进给。"
           }
         }
       }
@@ -4954,6 +5376,162 @@
         }
       }
     },
+    "Decode ${code}": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فك ${code}"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${code} entschlüsseln"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descifrar ${code}"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decodifica ${code}"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${code}を解読"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расшифровать ${code}"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${code} kodunu çöz"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解读 ${code}"
+          }
+        }
+      }
+    },
+    "Decode Alarm": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فك إنذار"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm entschlüsseln"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descifrar alarma"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decodifica allarme"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アラームを解読"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расшифровать аварию"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarm Çöz"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解读报警"
+          }
+        }
+      }
+    },
+    "Decode a CNC Alarm": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فك إنذار CNC"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CNC-Alarm entschlüsseln"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Descifrar una alarma CNC"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Decodifica un allarme CNC"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CNCアラームを解読"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расшифровать аварию ЧПУ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CNC Alarmı Çöz"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解读 CNC 报警"
+          }
+        }
+      }
+    },
     "Depth": {
       "localizations": {
         "ar": {
@@ -5584,6 +6162,58 @@
         }
       }
     },
+    "Explains a GRBL, grblHAL or FluidNC alarm or error code and what to check. Works offline.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يشرح رمز إنذار أو خطأ GRBL أو grblHAL أو FluidNC وما يجب فحصه. يعمل دون اتصال."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erklärt einen GRBL-, grblHAL- oder FluidNC-Alarm- oder Fehlercode und was zu prüfen ist. Funktioniert offline."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explica un código de alarma o error de GRBL, grblHAL o FluidNC y qué revisar. Funciona sin conexión."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spiega un codice di allarme o errore GRBL, grblHAL o FluidNC e cosa controllare. Funziona offline."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GRBL、grblHAL、FluidNCのアラーム・エラーコードと確認事項を説明します。オフラインで動作します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объясняет код аварии или ошибки GRBL, grblHAL или FluidNC и что проверить. Работает без интернета."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GRBL, grblHAL veya FluidNC alarm ya da hata kodunu ve neyin kontrol edileceğini açıklar. Çevrimdışı çalışır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "解释 GRBL、grblHAL 或 FluidNC 的报警或错误代码以及需要检查的内容。可离线使用。"
+          }
+        }
+      }
+    },
     "Eye and hearing protection on": {
       "localizations": {
         "ar": {
@@ -5840,6 +6470,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "进给与转速"
+          }
+        }
+      }
+    },
+    "Feeds for ${material} with a ${diameter} mm, ${flutes} flute bit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التغذية لـ ${material} بلقمة ${diameter} مم ذات ${flutes} حد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorschub für ${material} mit einem ${diameter}-mm-Fräser mit ${flutes} Schneiden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avances para ${material} con una fresa de ${diameter} mm y ${flutes} filos"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanzamenti per ${material} con una fresa da ${diameter} mm a ${flutes} taglienti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${diameter} mm・${flutes}枚刃のビットで${material}の送り"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подачи для ${material} фрезой ${diameter} мм с ${flutes} зубьями"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "${diameter} mm, ${flutes} ağızlı uçla ${material} için ilerleme"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用 ${diameter} mm、${flutes} 刃刀具加工 ${material} 的进给"
           }
         }
       }
@@ -6417,6 +7099,58 @@
       }
     },
     "FluidNC": {},
+    "Flutes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الحدود"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schneiden"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filos"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taglienti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刃数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зубья"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ağız sayısı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刃数"
+          }
+        }
+      }
+    },
     "Flutes: %lld": {
       "localizations": {
         "ar": {
@@ -6465,6 +7199,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "刃数：%lld"
+          }
+        }
+      }
+    },
+    "For example ALARM:9 or error:22": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مثلًا ALARM:9 أو error:22"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Beispiel ALARM:9 oder error:22"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por ejemplo ALARM:9 o error:22"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per esempio ALARM:9 o error:22"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例: ALARM:9 または error:22"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Например, ALARM:9 или error:22"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Örneğin ALARM:9 veya error:22"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "例如 ALARM:9 或 error:22"
           }
         }
       }
@@ -6778,6 +7564,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "高速钢"
+          }
+        }
+      }
+    },
+    "Hardwood": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خشب صلب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hartholz"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Madera dura"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legno duro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "硬木"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Твёрдая древесина"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sert ağaç"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "硬木"
           }
         }
       }
@@ -7194,6 +8032,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "切得怎么样？"
+          }
+        }
+      }
+    },
+    "I couldn't find that code. Try something like ALARM:9 or error:22.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم أجد هذا الرمز. جرّب شيئًا مثل ALARM:9 أو error:22."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diesen Code habe ich nicht gefunden. Probier etwas wie ALARM:9 oder error:22."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No encontré ese código. Prueba algo como ALARM:9 o error:22."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non ho trovato quel codice. Prova qualcosa come ALARM:9 o error:22."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "そのコードは見つかりませんでした。ALARM:9 や error:22 のように試してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не нашёл такой код. Попробуйте, например, ALARM:9 или error:22."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O kodu bulamadım. ALARM:9 veya error:22 gibi bir şey dene."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "找不到该代码。试试 ALARM:9 或 error:22 这样的代码。"
           }
         }
       }
@@ -8824,6 +9714,58 @@
         }
       }
     },
+    "Make a quote": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعداد عرض سعر"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Angebot erstellen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hacer presupuesto"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Crea preventivo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "見積もりを作成"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Составить смету"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teklif hazırla"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成报价"
+          }
+        }
+      }
+    },
     "Marketplace fee": {
       "localizations": {
         "ar": {
@@ -8980,6 +9922,58 @@
         }
       }
     },
+    "Max spindle RPM": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أقصى سرعة لعمود الدوران"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max. Spindeldrehzahl"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RPM máx. del husillo"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giri max mandrino"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大スピンドル回転数"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Макс. обороты шпинделя"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maks. iş mili devri"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主轴最高转速"
+          }
+        }
+      }
+    },
     "Metric": {
       "localizations": {
         "ar": {
@@ -9028,6 +10022,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "公制"
+          }
+        }
+      }
+    },
+    "Mild steel": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فولاذ طري"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baustahl"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acero dulce"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acciaio dolce"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "軟鋼"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мягкая сталь"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yumuşak çelik"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "低碳钢"
           }
         }
       }
@@ -10484,6 +11530,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "打开示例文件"
+          }
+        }
+      }
+    },
+    "Opens Toolpath to import and check a G-code file.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يفتح Toolpath لاستيراد ملف G-code وفحصه."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffnet Toolpath, um eine G-Code-Datei zu importieren und zu prüfen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abre Toolpath para importar y revisar un archivo G-code."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apre Toolpath per importare e controllare un file G-code."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpathを開いてG-codeファイルを読み込み、チェックします。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открывает Toolpath, чтобы импортировать и проверить файл G-code."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir G-code dosyasını içe aktarıp kontrol etmek için Toolpath'i açar."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开 Toolpath 导入并检查 G 代码文件。"
           }
         }
       }
@@ -14180,6 +15278,58 @@
         }
       }
     },
+    "Softwood": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خشب لين"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weichholz"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Madera blanda"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legno tenero"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "軟木"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мягкая древесина"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yumuşak ağaç"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "软木"
+          }
+        }
+      }
+    },
     "Softwood (pine)": {
       "localizations": {
         "ar": {
@@ -14440,6 +15590,58 @@
         }
       }
     },
+    "Stainless steel": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فولاذ مقاوم للصدأ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Edelstahl"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acero inoxidable"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acciaio inox"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ステンレス"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нержавеющая сталь"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paslanmaz çelik"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不锈钢"
+          }
+        }
+      }
+    },
     "Stainless steel (303/304)": {
       "localizations": {
         "ar": {
@@ -14540,6 +15742,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "起始角度"
+          }
+        }
+      }
+    },
+    "Start at %lld RPM and %lld millimeters per minute, up to %@ millimeters deep per pass. Make a test cut first.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ابدأ بسرعة %1$lld د/د و%2$lld مم في الدقيقة، وبعمق أقصاه %3$@ مم في كل مرور. اقطع تجربة أولًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starte mit %1$lld U/min und %2$lld Millimetern pro Minute, höchstens %3$@ Millimeter tief pro Durchgang. Fräse zuerst einen Test."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Start at %1$lld RPM and %2$lld millimeters per minute, up to %3$@ millimeters deep per pass. Make a test cut first."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza con %1$lld RPM y %2$lld milímetros por minuto, hasta %3$@ milímetros de profundidad por pasada. Haz antes un corte de prueba."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inizia con %1$lld giri e %2$lld millimetri al minuto, fino a %3$@ millimetri di profondità per passata. Fai prima un taglio di prova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld rpm、毎分%2$lld ミリで開始し、1パスあたり最大%3$@ ミリの深さにしてください。まず試し削りを。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Начните с %1$lld об/мин и %2$lld миллиметров в минуту, не глубже %3$@ миллиметра за проход. Сначала сделайте пробный проход."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld devir ve dakikada %2$lld milimetre ile başla, paso başına en fazla %3$@ milimetre derinlik. Önce deneme kesimi yap."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从 %1$lld 转/分、每分钟 %2$lld 毫米开始，每层最深 %3$@ 毫米。请先试切。"
           }
         }
       }
@@ -16578,6 +17838,58 @@
         }
       }
     },
+    "Tool diameter (mm)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قطر الأداة (مم)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkzeugdurchmesser (mm)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diámetro de la herramienta (mm)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diametro utensile (mm)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工具径(mm)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Диаметр инструмента (мм)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım çapı (mm)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刀具直径（mm）"
+          }
+        }
+      }
+    },
     "Tool material": {
       "localizations": {
         "ar": {
@@ -17358,6 +18670,58 @@
         }
       }
     },
+    "Unknown material.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خامة غير معروفة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unbekanntes Material."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Material desconocido."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Materiale sconosciuto."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不明な材料です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Неизвестный материал."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilinmeyen malzeme."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未知材料。"
+          }
+        }
+      }
+    },
     "Unlimited machines and cut recipes": {
       "localizations": {
         "ar": {
@@ -17926,6 +19290,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "我们会载入它的行程和主轴限制，让每项检查都匹配你的机器。"
+          }
+        }
+      }
+    },
+    "Which alarm or error code?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أي رمز إنذار أو خطأ؟"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Welcher Alarm- oder Fehlercode?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Qué código de alarma o error?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quale codice di allarme o errore?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "どのアラームまたはエラーコードですか?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Какой код аварии или ошибки?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hangi alarm veya hata kodu?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "哪个报警或错误代码？"
           }
         }
       }
