@@ -10,6 +10,7 @@ struct ToolpathApp: App {
     @AppStorage("workshopMode") private var workshopMode = false
 
     init() {
+        Telemetry.start()
         let schema = Schema(AppSchema.models)
         // Free iCloud sync through the user's private CloudKit database — no
         // account or login of our own. Without an iCloud account the store

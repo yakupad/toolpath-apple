@@ -39,6 +39,7 @@ final class Router {
             do {
                 let job = try JobImporter.makeJob(from: url)
                 context.insert(job)
+                Telemetry.log(.jobImported)
                 analyses.load(job, machine: nil)
                 lastID = job.id
             } catch {

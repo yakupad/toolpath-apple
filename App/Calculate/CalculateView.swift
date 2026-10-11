@@ -127,6 +127,7 @@ struct FeedsView: View {
             }
         }
         .navigationTitle("Feeds & Speeds")
+        .onAppear { Telemetry.log(.feedsCalculated) }
         .onChange(of: input) { savedRecipe = false }
     }
 

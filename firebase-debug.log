@@ -1,0 +1,36 @@
+[debug] [2026-10-11T21:10:41.400Z] ----------------------------------------------------------------------
+[debug] [2026-10-11T21:10:41.402Z] Command:       /usr/local/bin/node /private/tmp/claude-501/-Users-yakupad-Projects-cnc-maker-assistant/102c4dbc-ce0d-4256-8594-4309022f1c9f/scratchpad/npmcache/_npx/ba4f1959e38407b5/node_modules/.bin/firebase projects:list --json
+[debug] [2026-10-11T21:10:41.402Z] CLI Version:   15.33.0
+[debug] [2026-10-11T21:10:41.402Z] Platform:      darwin
+[debug] [2026-10-11T21:10:41.402Z] Node Version:  v22.16.0
+[debug] [2026-10-11T21:10:41.402Z] Detected Agent: claude-code_2-1-295_agent
+[debug] [2026-10-11T21:10:41.402Z] Time:          Mon Oct 12 2026 00:10:41 GMT+0300 (GMT+03:00)
+[debug] [2026-10-11T21:10:41.402Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-10-11T21:10:41.406Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-10-11T21:10:41.406Z] > authorizing via signed-in user (yakup.ad@gmail.com)
+[debug] [2026-10-11T21:10:41.411Z] Checked if tokens are valid: false, expires at: 1741269334754
+[debug] [2026-10-11T21:10:41.411Z] Checked if tokens are valid: false, expires at: 1741269334754
+[debug] [2026-10-11T21:10:41.411Z] > refreshing access token with scopes: []
+[debug] [2026-10-11T21:10:41.412Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-10-11T21:10:41.412Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-11T21:10:41.593Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2026-10-11T21:10:41.593Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-11T21:10:41.593Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-10-11T21:10:41.742Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2026-10-11T21:10:41.742Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2026-10-11T21:10:41.742Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2026-10-11T21:10:41.742Z] Checked if tokens are valid: false, expires at: 1741269334754
+[debug] [2026-10-11T21:10:41.742Z] Checked if tokens are valid: false, expires at: 1741269334754
+[debug] [2026-10-11T21:10:41.742Z] > refreshing access token with scopes: []
+[debug] [2026-10-11T21:10:41.743Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-10-11T21:10:41.743Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-11T21:10:41.809Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2026-10-11T21:10:41.809Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-10-11T21:10:41.810Z] Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2026-10-11T21:10:42.067Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects?pageSize=1000 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/private/tmp/claude-501/-Users-yakupad-Projects-cnc-maker-assistant/102c4dbc-ce0d-4256-8594-4309022f1c9f/scratchpad/npmcache/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/responseToError.js:53:12)
+    at RetryOperation._fn (/private/tmp/claude-501/-Users-yakupad-Projects-cnc-maker-assistant/102c4dbc-ce0d-4256-8594-4309022f1c9f/scratchpad/npmcache/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/apiv2.js:415:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

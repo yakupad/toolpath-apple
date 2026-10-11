@@ -124,6 +124,7 @@ final class AssistantModel {
     func send(_ text: String, maxSpindleRpm: Double, hasHomingSwitches: Bool = true) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty, !isResponding else { return }
+        Telemetry.log(.assistantQuestion, ["source": Self.isOnDeviceModelAvailable ? "on_device" : "cloud"])
         guard Self.isOnDeviceModelAvailable else {
             askCloud(trimmed, hasHomingSwitches: hasHomingSwitches)
             return

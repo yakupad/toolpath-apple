@@ -18365,6 +18365,58 @@
         }
       }
     },
+    "Share anonymous usage and crash data": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة بيانات الاستخدام والأعطال المجهولة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anonyme Nutzungs- und Absturzdaten teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartir datos anónimos de uso y fallos"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi dati anonimi di utilizzo e arresti anomali"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "匿名の使用状況とクラッシュデータを共有"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отправлять анонимные данные об использовании и сбоях"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anonim kullanım ve çökme verilerini paylaş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共享匿名使用和崩溃数据"
+          }
+        }
+      }
+    },
     "Share report": {
       "localizations": {
         "ar": {

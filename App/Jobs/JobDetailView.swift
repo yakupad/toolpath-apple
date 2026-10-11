@@ -154,7 +154,7 @@ struct JobDetailView: View {
         ToolbarItemGroup(placement: .primaryAction) {
             Button {
                 withAnimation { isSimulating.toggle() }
-                if isSimulating { simulation.play(at: .now) } else { simulation.reset() }
+                if isSimulating { simulation.play(at: .now); Telemetry.log(.simulationStarted) } else { simulation.reset() }
             } label: {
                 Label("Simulate", systemImage: isSimulating ? "play.circle.fill" : "play.circle")
             }
@@ -235,7 +235,10 @@ struct JobDetailView: View {
             case .warnings:
                 WarningsList(groups: analysis.groups, focusedMove: $focusedMove)
             case .preflight:
-                PreflightView(job: job, analysis: analysis, machine: machine) { showRun = true }
+                PreflightView(job: job, analysis: analysis, machine: machine) {
+                    Telemetry.log(.preflightCompleted)
+                    showRun = true
+                }
             case .stats:
                 StatsView(analysis: analysis)
             }

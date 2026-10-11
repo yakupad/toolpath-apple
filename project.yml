@@ -20,6 +20,9 @@ settings:
 packages:
   ToolpathKit:
     path: Packages/ToolpathKit
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk
+    from: "12.0.0"
 targets:
   Toolpath:
     type: application
@@ -36,6 +39,10 @@ targets:
         product: CNCRender
       - package: ToolpathKit
         product: ToolpathActivity
+      - package: Firebase
+        product: FirebaseAnalytics
+      - package: Firebase
+        product: FirebaseCrashlytics
       - target: ToolpathWidgets
         destinationFilters: [iOS]
     settings:
@@ -59,13 +66,39 @@ targets:
         ENABLE_APP_SANDBOX: YES
         ENABLE_USER_SELECTED_FILES: readonly
         ENABLE_HARDENED_RUNTIME: YES
+        # The Firebase config copy and Crashlytics upload scripts read files
+        # outside the declared inputs.
+        ENABLE_USER_SCRIPT_SANDBOXING: NO
         CODE_SIGN_ENTITLEMENTS: Config/Entitlements/Toolpath-iOS.entitlements
         "CODE_SIGN_ENTITLEMENTS[sdk=macosx*]": Config/Entitlements/Toolpath-macOS.entitlements
+    postBuildScripts:
+      - name: Copy Firebase config if present
+        basedOnDependencyAnalysis: false
+        script: |
+          # The config is not in the public repo; CI writes it from a secret.
+          if [ -f "${SRCROOT}/Config/GoogleService-Info.plist" ]; then
+            cp "${SRCROOT}/Config/GoogleService-Info.plist" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/"
+          fi
+      - name: Upload dSYMs to Crashlytics
+        basedOnDependencyAnalysis: false
+        script: |
+          if [ "${CONFIGURATION}" = "Release" ] && [ -f "${SRCROOT}/Config/GoogleService-Info.plist" ]; then
+            "${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run"
+          fi
+        inputFiles:
+          - ${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}
+          - ${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}
+          - ${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist
+          - $(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)
     info:
       path: App/Info.plist
       properties:
         CFBundleLocalizations: [en, tr, de, es, it, ru, ja, zh-Hans, ar]
         UIBackgroundModes: [remote-notification]
+        # Analytics without advertising: no IDFA, no ad personalization.
+        GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS: false
+        GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED: false
+        FirebaseAutomaticScreenReportingEnabled: false
         CFBundleDocumentTypes:
           - CFBundleTypeName: G-code
             LSHandlerRank: Alternate

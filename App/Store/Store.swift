@@ -85,6 +85,9 @@ final class Store {
         }
         do {
             cloudQuota = try await ToolpathAPI.verify(signedTransaction: result.jwsRepresentation)
+            if transaction.purchaseDate > .now.addingTimeInterval(-300) {
+                Telemetry.log(.purchaseCompleted, ["product": transaction.productID])
+            }
             await transaction.finish()
         } catch {
             if transaction.productType != .consumable { await transaction.finish() }

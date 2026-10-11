@@ -38,10 +38,15 @@ jobs:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           MATCH_REPO_TOKEN: ${{ secrets.MATCH_REPO_TOKEN }}
           MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
+          FIREBASE_PLIST_BASE64: ${{ secrets.FIREBASE_PLIST_BASE64 }}
           BUILD_NUMBER: ${{ github.run_number }}
           LANE: ${{ matrix.lane }}
         run: |
           brew install xcodegen
+          # Firebase config is not in the public repo.
+          if [ -n "$FIREBASE_PLIST_BASE64" ]; then
+            printf '%s' "$FIREBASE_PLIST_BASE64" | base64 --decode > Config/GoogleService-Info.plist
+          fi
           xcodegen generate
           export ASC_KEY_PATH="$RUNNER_TEMP/asc_key.p8"
           printf '%s' "$ASC_KEY_CONTENT_BASE64" | base64 --decode > "$ASC_KEY_PATH"

@@ -34,9 +34,13 @@ reads its status. Nothing from that connection is sent anywhere else.
 details; Apple's signed transaction record is checked by the Toolpath server
 to unlock Pro and question packs.
 
-**Analytics and tracking.** Toolpath does not track you and does not
-share data with advertisers or data brokers. Apple may provide the
-developer with aggregated, anonymous crash and usage statistics if you
-opted in to sharing them with app developers in iOS settings.
+**Usage and crash data.** Firebase Analytics and Crashlytics receive
+anonymous events (e.g. "job imported"), crash reports, app version, device
+model, OS version and a random installation id — never G-code, questions or
+library data. No advertising identifier, no ad personalization, no data
+brokers. Turn it off in Settings → Share anonymous usage and crash data.
+
+**Tracking.** Toolpath does not track you across other companies' apps or
+websites.
 
 **Questions:** open an issue at https://github.com/yakupad/toolpath-apple/issues

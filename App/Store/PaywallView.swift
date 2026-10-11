@@ -82,6 +82,7 @@ struct PaywallView: View {
                 .padding(TP.Metric.gutter)
                 .background(.bar)
             }
+            .onAppear { Telemetry.log(.paywallShown) }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close", systemImage: "xmark") { dismiss() }

@@ -105,6 +105,7 @@ struct OutcomeView: View {
             tool.cuttingMinutes += minutes
         }
         context.insert(log)
+        Telemetry.log(.jobLogged, ["outcome": log.outcomeRaw])
         machine?.spindleHours += minutes / 60
         try? context.save()
         dismiss()
