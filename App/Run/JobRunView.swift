@@ -57,6 +57,7 @@ struct JobRunView: View {
                                     let elapsed = clock.time(at: .now)
                                     RunActivity.update(elapsed: elapsed, duration: duration, paused: !clock.isPlaying,
                                                        toolChange: nextChange(after: elapsed).map { ($0.tool, $0.atSeconds) })
+                                    rescheduleAlerts()
                                 }
                                     .buttonStyle(.borderedProminent)
                             }
@@ -73,6 +74,7 @@ struct JobRunView: View {
                             let elapsed = clock.time(at: .now)
                             RunActivity.update(elapsed: elapsed, duration: duration, paused: !clock.isPlaying,
                                                toolChange: nextChange(after: elapsed).map { ($0.tool, $0.atSeconds) })
+                            rescheduleAlerts()
                         } label: {
                             Text(clock.isPlaying ? "Pause timer" : "Resume")
                                 .frame(maxWidth: .infinity, minHeight: TP.Metric.targetWorkshop)
@@ -82,6 +84,7 @@ struct JobRunView: View {
 
                         Button {
                             clock.pause(at: .now)
+                            RunNotifications.cancelAll()
                             showOutcome = true
                         } label: {
                             Text("Finish & log").frame(maxWidth: .infinity, minHeight: TP.Metric.targetWorkshop)
@@ -109,8 +112,15 @@ struct JobRunView: View {
             clock.play(at: .now)
             RunActivity.start(job: job.name, machine: machine?.name ?? "", duration: duration,
                               toolChange: nextChange(after: 0).map { ($0.tool, $0.atSeconds) })
+            Task {
+                await RunNotifications.requestAuthorizationIfNeeded()
+                rescheduleAlerts()
+            }
         }
-        .onDisappear { RunActivity.end() }
+        .onDisappear {
+            RunActivity.end()
+            RunNotifications.cancelAll()
+        }
         .sheet(isPresented: $showOutcome) {
             OutcomeView(job: job, minutes: clock.time(at: .now) / 60, machine: machine) { dismiss() }
         }
@@ -119,6 +129,19 @@ struct JobRunView: View {
         .onAppear { UIApplication.shared.isIdleTimerDisabled = true }
         .onDisappear { UIApplication.shared.isIdleTimerDisabled = false }
         #endif
+    }
+
+    /// Re-arms tool-change and finish alerts from the current clock position.
+    private func rescheduleAlerts() {
+        let elapsed = clock.time(at: .now)
+        guard clock.isPlaying else { RunNotifications.cancelAll(); return }
+        let upcoming = analysis.document.toolChanges.dropFirst().compactMap { change -> (tool: Int, inSeconds: Double)? in
+            guard !acknowledgedChanges.contains(change.sourceLine),
+                  let index = change.firstMoveIndex,
+                  let at = analysis.timeline.startTime(ofMove: index), at > elapsed else { return nil }
+            return (change.toolNumber, at - elapsed)
+        }
+        RunNotifications.schedule(job: job.name, remaining: duration - elapsed, toolChanges: upcoming)
     }
 
     private func nextChange(after elapsed: Double) -> (tool: Int, line: Int, atSeconds: Double)? {
