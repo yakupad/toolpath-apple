@@ -190,6 +190,30 @@ final class MaintenanceTask {
     }
 }
 
+/// A material the user added, computed from a curated base material.
+@Model
+final class CustomMaterial {
+    var id: UUID = UUID()
+    var name: String = ""
+    var baseMaterialID: String = "hardwood"
+    /// Advanced: 0.5…1.5 × the base material's cutting speed and chip load.
+    var speedFactor: Double = 1
+    var chipLoadFactor: Double = 1
+    var createdAt: Date = Date.now
+
+    init(name: String, baseMaterialID: String) {
+        self.name = name
+        self.baseMaterialID = baseMaterialID
+    }
+
+    static let idPrefix = "custom:"
+    var materialID: String { Self.idPrefix + id.uuidString }
+
+    var cuttingMaterial: CuttingMaterial? {
+        CuttingMaterial.byID(baseMaterialID)?.customized(id: materialID, speedFactor: speedFactor, chipLoadFactor: chipLoadFactor)
+    }
+}
+
 enum AppSchema {
-    static let models: [any PersistentModel.Type] = [JobFile.self, Machine.self, Tool.self, JobLog.self, Recipe.self, StockItem.self, MaintenanceTask.self]
+    static let models: [any PersistentModel.Type] = [JobFile.self, Machine.self, Tool.self, JobLog.self, Recipe.self, StockItem.self, MaintenanceTask.self, CustomMaterial.self]
 }

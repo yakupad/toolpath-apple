@@ -227,4 +227,15 @@ struct ExplanationTests {
         let (_, risky) = try load("rapid_into_stock_danger.nc")
         #expect(SafetyScore.compute(clean) > SafetyScore.compute(risky))
     }
+
+    @Test func customMaterialStaysInSafeBand() {
+        let base = CuttingMaterial.byID("hardwood")!
+        let same = base.customized(id: "custom:a", speedFactor: 1, chipLoadFactor: 1)
+        #expect(same.cuttingSpeedMPerMin == base.cuttingSpeedMPerMin)
+        let wild = base.customized(id: "custom:b", speedFactor: 10, chipLoadFactor: 0)
+        #expect(wild.cuttingSpeedMPerMin == base.cuttingSpeedMPerMin * 1.5)
+        #expect(wild.chipLoadCoefficient == base.chipLoadCoefficient * 0.5)
+        #expect(wild.maxDocMultiplier == base.maxDocMultiplier)
+        #expect(wild.id == "custom:b")
+    }
 }

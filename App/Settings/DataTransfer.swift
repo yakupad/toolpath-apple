@@ -19,6 +19,12 @@ enum DataTransfer {
         var logs: [LogDTO] = []
         var recipes: [RecipeDTO] = []
         var stock: [StockDTO] = []
+        /// Optional so backups made before custom materials still import.
+        var materials: [MaterialDTO]? = []
+    }
+
+    struct MaterialDTO: Codable {
+        var id: UUID, name: String, baseMaterialID: String, speedFactor: Double, chipLoadFactor: Double
     }
 
     struct MachineDTO: Codable {
@@ -85,6 +91,10 @@ enum DataTransfer {
             StockDTO(id: $0.id, name: $0.name, materialID: $0.materialID, thicknessMm: $0.thicknessMm,
                      widthMm: $0.widthMm, lengthMm: $0.lengthMm, unitCost: $0.unitCost, quantity: $0.quantity)
         }
+        backup.materials = try context.fetch(FetchDescriptor<CustomMaterial>()).map {
+            MaterialDTO(id: $0.id, name: $0.name, baseMaterialID: $0.baseMaterialID,
+                        speedFactor: $0.speedFactor, chipLoadFactor: $0.chipLoadFactor)
+        }
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
         encoder.dateEncodingStrategy = .iso8601
@@ -110,8 +120,8 @@ enum DataTransfer {
     // MARK: Import
 
     struct ImportSummary {
-        var machines = 0, tools = 0, jobs = 0, logs = 0, recipes = 0, stock = 0
-        var total: Int { machines + tools + jobs + logs + recipes + stock }
+        var machines = 0, tools = 0, jobs = 0, logs = 0, recipes = 0, stock = 0, materials = 0
+        var total: Int { machines + tools + jobs + logs + recipes + stock + materials }
     }
 
     enum ImportError: LocalizedError {
@@ -162,6 +172,12 @@ enum DataTransfer {
 
     private static func importBackup(_ b: Backup, into context: ModelContext) throws -> ImportSummary {
         var s = ImportSummary()
+        let materials = existingIDs(CustomMaterial.self, \.id, in: context)
+        for m in b.materials ?? [] where !materials.contains(m.id) {
+            let x = CustomMaterial(name: m.name, baseMaterialID: m.baseMaterialID)
+            x.id = m.id; x.speedFactor = m.speedFactor; x.chipLoadFactor = m.chipLoadFactor
+            context.insert(x); s.materials += 1
+        }
         let machines = existingIDs(Machine.self, \.id, in: context)
         for m in b.machines where !machines.contains(m.id) {
             let x = Machine(name: m.name)
@@ -274,6 +290,7 @@ enum DataTransfer {
         try context.delete(model: Recipe.self)
         try context.delete(model: StockItem.self)
         try context.delete(model: MaintenanceTask.self)
+        try context.delete(model: CustomMaterial.self)
         try context.save()
     }
 }

@@ -5,13 +5,14 @@ import SwiftUI
 struct PaywallView: View {
     @Environment(Store.self) private var store
     @Environment(\.dismiss) private var dismiss
-    @State private var selectedID = "pro_yearly"
+    @State private var selectedID = "toolpath_pro_yearly"
     @State private var purchasing = false
 
     private let benefits: [(String, LocalizedStringKey)] = [
-        ("doc.text", "Quotes and cost breakdowns for every job"),
+        ("sparkles", "150 cloud assistant questions a month — even without Apple Intelligence"),
         ("square.stack.3d.up", "Unlimited machines and cut recipes"),
-        ("wrench.and.screwdriver", "Maintenance schedule from spindle hours"),
+        ("doc.richtext", "PDF safety reports to print or share"),
+        ("wrench.and.screwdriver", "Maintenance reminders from spindle hours"),
         ("heart", "Support an independent workshop app"),
     ]
 
@@ -41,7 +42,7 @@ struct PaywallView: View {
                         }
                     }
 
-                    Text("G-code checks, pre-flight, feeds and speeds, alarms and iCloud sync stay free — forever.")
+                    Text("G-code checks, pre-flight, feeds and speeds, calculators, alarms, iCloud sync and 5 cloud questions a month stay free.")
                         .font(.footnote)
                         .foregroundStyle(TP.Palette.textSecondary)
 
@@ -74,7 +75,7 @@ struct PaywallView: View {
                     HStack(spacing: 20) {
                         Button("Restore") { Task { await store.restore() } }
                         Link("Terms", destination: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!)
-                        Link("Privacy", destination: URL(string: "https://github.com/yakupad/toolpath-apple/blob/main/PRIVACY.md")!)
+                        Link("Privacy", destination: URL(string: "https://yakupad.github.io/toolpath-apple/privacy/")!)
                     }
                     .font(.footnote)
                 }
@@ -121,20 +122,12 @@ struct PlanRow: View {
     }
 
     private var title: LocalizedStringKey {
-        switch product.id {
-        case "pro_yearly": "Yearly"
-        case "pro_monthly": "Monthly"
-        default: "Lifetime"
-        }
+        product.id == "toolpath_pro_yearly" ? "Yearly" : "Monthly"
     }
 
     private var detail: LocalizedStringKey? {
-        switch product.id {
-        case "pro_yearly":
-            if product.subscription?.introductoryOffer?.paymentMode == .freeTrial { return "7 days free, then billed yearly" }
-            return "Billed yearly"
-        case "pro_lifetime": return "One payment · no subscription"
-        default: return nil
-        }
+        guard product.id == "toolpath_pro_yearly" else { return "Billed monthly" }
+        if product.subscription?.introductoryOffer?.paymentMode == .freeTrial { return "7 days free, then billed yearly" }
+        return "Billed yearly"
     }
 }

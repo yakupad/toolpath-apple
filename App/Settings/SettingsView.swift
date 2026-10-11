@@ -24,7 +24,7 @@ struct SettingsView: View {
                         Label {
                             VStack(alignment: .leading) {
                                 Text(store.isPro ? "Toolpath Pro" : "Try Toolpath Pro").font(.headline)
-                                Text(store.isPro ? "Thank you for your support" : "Quotes, recipes, maintenance")
+                                Text(store.isPro ? "Thank you for your support" : "Cloud assistant, unlimited machines, PDF reports")
                                     .font(.caption).foregroundStyle(TP.Palette.textSecondary)
                             }
                         } icon: {

@@ -110,6 +110,10 @@ final class AssistantModel {
     private(set) var messages: [ChatMessage] = []
     private(set) var isResponding = false
     private(set) var errorText: String?
+    /// Latest cloud allowance reported by the API.
+    private(set) var cloudQuota: ToolpathAPI.Quota?
+    /// Set when the cloud allowance ran out: the view offers Pro or a pack.
+    private(set) var needsUpgrade = false
     private var session: LanguageModelSession?
 
     static var availability: SystemLanguageModel.Availability { SystemLanguageModel.default.availability }
@@ -121,9 +125,7 @@ final class AssistantModel {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty, !isResponding else { return }
         guard Self.isOnDeviceModelAvailable else {
-            // No Apple Intelligence here: answer from the built-in library.
-            messages.append(ChatMessage(role: .user, text: trimmed))
-            messages.append(OfflineAnswer.compose(for: trimmed, hasHomingSwitches: hasHomingSwitches))
+            askCloud(trimmed, hasHomingSwitches: hasHomingSwitches)
             return
         }
         messages.append(ChatMessage(role: .user, text: trimmed))
@@ -152,6 +154,38 @@ final class AssistantModel {
     func reset() {
         messages = []
         session = nil
+        needsUpgrade = false
+    }
+
+    /// Without Apple Intelligence (unsupported device or region): the cloud
+    /// assistant while the user has questions left, grounded in the same
+    /// workshop notes; otherwise the built-in library answers.
+    private func askCloud(_ question: String, hasHomingSwitches: Bool) {
+        let history = messages.suffix(6).map { ToolpathAPI.Turn(role: $0.role == .user ? "user" : "assistant", text: $0.text) }
+        messages.append(ChatMessage(role: .user, text: question))
+        messages.append(ChatMessage(role: .assistant, text: ""))
+        let index = messages.count - 1
+        isResponding = true
+        errorText = nil
+        let notes = Knowledge.base.search(OfflineAnswer.expand(question), limit: 3).map { "## \($0.title)\n\($0.body)" }
+
+        Task {
+            do {
+                let reply = try await ToolpathAPI.ask(question: question, history: history, context: notes,
+                                                      locale: Locale.current.identifier)
+                messages[index] = ChatMessage(role: .assistant, text: reply.answer, toolsUsed: ["cloud_assistant"])
+                cloudQuota = reply.quota
+                needsUpgrade = false
+            } catch let ToolpathAPI.APIError.quotaExhausted(quota) {
+                cloudQuota = quota ?? cloudQuota
+                needsUpgrade = true
+                messages[index] = OfflineAnswer.compose(for: question, hasHomingSwitches: hasHomingSwitches)
+            } catch {
+                // Offline or the service is busy: the library still answers.
+                messages[index] = OfflineAnswer.compose(for: question, hasHomingSwitches: hasHomingSwitches)
+            }
+            isResponding = false
+        }
     }
 
     private func makeSession(maxSpindleRpm: Double) -> LanguageModelSession {

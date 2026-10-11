@@ -184,7 +184,7 @@ struct StockEditView: View {
         Form {
             TextField("Name", text: $item.name)
             Picker("Material", selection: $item.materialID) {
-                ForEach(CuttingMaterial.catalog) { Text($0.title).tag($0.id) }
+                MaterialOptions()
             }
             NumberField(title: "Thickness", value: $item.thicknessMm)
             NumberField(title: "Width", value: $item.widthMm)

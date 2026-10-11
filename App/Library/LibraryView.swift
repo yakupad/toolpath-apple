@@ -9,6 +9,7 @@ struct LibraryView: View {
     @Query private var recipes: [Recipe]
     @Query private var stock: [StockItem]
     @Query private var logs: [JobLog]
+    @Query private var customMaterials: [CustomMaterial]
 
     var body: some View {
         NavigationStack {
@@ -22,6 +23,9 @@ struct LibraryView: View {
                     }
                     NavigationLink { RecipesList() } label: {
                         LibraryRow(title: "Cut recipes", systemImage: "list.bullet.rectangle", count: recipes.count)
+                    }
+                    NavigationLink { CustomMaterialsList() } label: {
+                        LibraryRow(title: "Materials", systemImage: "square.stack.3d.down.right", count: customMaterials.count)
                     }
                     NavigationLink { StockList() } label: {
                         LibraryRow(title: "Stock", systemImage: "shippingbox", count: stock.count)

@@ -44,6 +44,25 @@ public struct CuttingMaterial: Sendable, Hashable, Identifiable, Codable {
     ]
 
     public static func byID(_ id: String) -> CuttingMaterial? { catalog.first { $0.id == id } }
+
+    /// How far a user-defined material may move from the material it's based
+    /// on. Keeps "advanced" tweaks inside a conservative band.
+    public static let customFactorRange: ClosedRange<Double> = 0.5...1.5
+
+    /// A user-defined material: this material's values with cutting speed and
+    /// chip load scaled, clamped to `customFactorRange`. Depth of cut stays
+    /// the base material's.
+    public func customized(id: String, speedFactor: Double, chipLoadFactor: Double) -> CuttingMaterial {
+        let range = Self.customFactorRange
+        let speed = min(max(speedFactor, range.lowerBound), range.upperBound)
+        let chip = min(max(chipLoadFactor, range.lowerBound), range.upperBound)
+        return CuttingMaterial(id: id, category: category,
+                               cuttingSpeedMPerMin: cuttingSpeedMPerMin * speed,
+                               chipLoadCoefficient: chipLoadCoefficient * chip,
+                               chipLoadClampMinMm: chipLoadClampMinMm * chip,
+                               chipLoadClampMaxMm: chipLoadClampMaxMm * chip,
+                               maxDocMultiplier: maxDocMultiplier)
+    }
 }
 
 public enum CutOperation: String, Sendable, Codable, CaseIterable {

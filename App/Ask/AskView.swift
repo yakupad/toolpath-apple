@@ -76,26 +76,18 @@ struct AskView: View {
 struct AssistantView: View {
     let model: AssistantModel
     let maxSpindleRpm: Double
+    @Environment(Store.self) private var store
     @State private var draft = ""
 
     var body: some View {
         VStack(spacing: 0) {
             if case let .unavailable(reason) = AssistantModel.availability {
-                // Still useful without Apple Intelligence: answers come from
-                // the built-in alarm table and workshop notes.
-                Label {
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Answers from the built-in workshop library").font(.subheadline.weight(.semibold))
-                        Text(Self.text(for: reason)).font(.footnote).foregroundStyle(TP.Palette.textSecondary)
-                    }
-                } icon: {
-                    Image(systemName: "book.closed").foregroundStyle(TP.Palette.accent)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(TP.Metric.gutter)
-                .background(TP.Palette.card)
+                CloudAssistantBanner(quota: model.cloudQuota ?? store.cloudQuota, reason: Self.text(for: reason))
             }
             conversation
+        }
+        .onChange(of: model.cloudQuota) { _, quota in
+            if let quota { store.updateCloudQuota(quota) }
         }
         .navigationTitle("Assistant")
         #if os(iOS)
@@ -119,6 +111,9 @@ struct AssistantView: View {
                         }
                         if let error = model.errorText {
                             Text(error).font(.footnote).foregroundStyle(TP.Palette.danger)
+                        }
+                        if model.needsUpgrade {
+                            UpgradeCard().id("upgrade")
                         }
                     }
                     .padding(TP.Metric.gutter)
@@ -201,6 +196,7 @@ struct MessageBubble: View {
         switch tool {
         case "calculate_feeds_and_speeds": "Calculator"
         case "decode_controller_alarm": "Alarm table"
+        case "cloud_assistant": "Cloud assistant"
         default: "Workshop notes"
         }
     }
@@ -209,6 +205,7 @@ struct MessageBubble: View {
         switch tool {
         case "calculate_feeds_and_speeds": "gauge.with.dots.needle.67percent"
         case "decode_controller_alarm": "exclamationmark.triangle"
+        case "cloud_assistant": "cloud"
         default: "book.closed"
         }
     }

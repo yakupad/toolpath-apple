@@ -1,0 +1,17 @@
+name = "toolpath-api"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+
+# Secret (never committed — `wrangler secret put ANTHROPIC_API_KEY`).
+# Plans, quotas, credits and the daily budget counter live in KV.
+# The id is filled in by `wrangler kv namespace create TOOLPATH_KV`.
+[[kv_namespaces]]
+binding = "TOOLPATH_KV"
+id = "REPLACE_WITH_KV_ID"
+
+[vars]
+BUNDLE_ID = "com.yakupad.toolpath"
+# Hard stop for cloud AI spend per UTC day, in US dollars.
+DAILY_BUDGET_USD = "5"

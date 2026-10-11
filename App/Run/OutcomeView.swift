@@ -57,7 +57,7 @@ struct OutcomeView: View {
                 }
                 Section("Material") {
                     Picker("Material", selection: $materialID) {
-                        ForEach(CuttingMaterial.catalog) { Text($0.title).tag($0.id) }
+                        MaterialOptions()
                     }
                 }
                 if !tools.isEmpty {

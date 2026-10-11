@@ -850,6 +850,58 @@
         }
       }
     },
+    "150 cloud assistant questions a month — even without Apple Intelligence": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "150 سؤالًا شهريًا للمساعد السحابي — حتى دون Apple Intelligence"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "150 Fragen an den Cloud-Assistenten pro Monat – auch ohne Apple Intelligence"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "150 preguntas al asistente en la nube al mes, incluso sin Apple Intelligence"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "150 domande al mese all'assistente cloud, anche senza Apple Intelligence"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタントに毎月150回質問（Apple Intelligenceがなくても使えます）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "150 вопросов облачному ассистенту в месяц — даже без Apple Intelligence"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayda 150 bulut asistan sorusu — Apple Intelligence olmasa bile"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每月 150 次云端助手提问，即使没有 Apple 智能也能用"
+          }
+        }
+      }
+    },
     "2D": {},
     "3D": {},
     "60° V-bit": {
@@ -1320,6 +1372,58 @@
         }
       }
     },
+    "Add 100 questions · %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف 100 سؤال · %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 Fragen hinzufügen · %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir 100 preguntas · %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi 100 domande · %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100問を追加 · %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить 100 вопросов · %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "100 soru ekle · %@"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "增加 100 次提问 · %@"
+          }
+        }
+      }
+    },
     "Add machine": {
       "localizations": {
         "ar": {
@@ -1368,6 +1472,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "添加机器"
+          }
+        }
+      }
+    },
+    "Add material": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة خامة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Material hinzufügen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir material"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi materiale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料を追加"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавить материал"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzeme ekle"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加材料"
           }
         }
       }
@@ -1476,6 +1632,58 @@
         }
       }
     },
+    "Add walnut, a plastic you use often, or anything not in the list.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف خشب الجوز أو بلاستيكًا تستخدمه كثيرًا أو أي خامة غير موجودة في القائمة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge Nussbaum, einen oft genutzten Kunststoff oder etwas anderes hinzu, das nicht in der Liste steht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade nogal, un plástico que uses a menudo o cualquier cosa que no esté en la lista."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi noce, una plastica che usi spesso o qualsiasi cosa non presente nell'elenco."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ウォルナット、よく使う樹脂など、一覧にない材料を追加できます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте орех, часто используемый пластик или что-то, чего нет в списке."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceviz, sık kullandığınız bir plastik ya da listede olmayan herhangi bir malzeme ekleyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加胡桃木、常用的塑料或列表中没有的任何材料。"
+          }
+        }
+      }
+    },
     "Add your machine in Library › Machines.": {
       "localizations": {
         "ar": {
@@ -1524,6 +1732,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "请在 资料库 › 机器 中添加你的机器。"
+          }
+        }
+      }
+    },
+    "Advanced": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متقدم"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erweitert"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanzado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanzate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "詳細設定"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дополнительно"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gelişmiş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高级"
           }
         }
       }
@@ -2724,6 +2984,110 @@
         }
       }
     },
+    "Based on %@": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مبني على %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basiert auf %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basado en %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basato su %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ベース: %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На основе: %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tabanlı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "基于 %@"
+          }
+        }
+      }
+    },
+    "Behaves like": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتصرف مثل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verhält sich wie"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se comporta como"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si comporta come"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "近い材料"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ведёт себя как"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şuna benzer"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "类似于"
+          }
+        }
+      }
+    },
     "Below half the diameter, the real chip is thinner than programmed. Raise the feed by this factor to keep the intended chip load — then test.": {
       "localizations": {
         "ar": {
@@ -2824,6 +3188,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "适合戴手套的大按钮"
+          }
+        }
+      }
+    },
+    "Billed monthly": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فوترة شهرية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Monatliche Abrechnung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Facturación mensual"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fatturazione mensile"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "月額で請求"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ежемесячная оплата"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aylık faturalandırılır"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "按月计费"
           }
         }
       }
@@ -4186,6 +4602,58 @@
         }
       }
     },
+    "Chip load: %lld%%": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حمل الرايش: %lld%%"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spanlast: %lld %%"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carga de viruta: %lld %%"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carico truciolo: %lld%%"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チップロード: %lld%%"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нагрузка на зуб: %lld %%"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Talaş yükü: %%%lld"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切屑负荷：%lld%%"
+          }
+        }
+      }
+    },
     "Chip thinning": {
       "localizations": {
         "ar": {
@@ -4598,6 +5066,162 @@
           "stringUnit": {
             "state": "translated",
             "value": "关闭模拟"
+          }
+        }
+      }
+    },
+    "Cloud assistant": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المساعد السحابي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Assistent"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistente en la nube"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente cloud"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタント"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облачный ассистент"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut asistan"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端助手"
+          }
+        }
+      }
+    },
+    "Cloud assistant · %lld questions left": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المساعد السحابي · تبقى %lld أسئلة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Assistent · noch %lld Fragen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistente en la nube · quedan %lld preguntas"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente cloud · %lld domande rimaste"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタント · 残り%lld問"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облачный ассистент · осталось вопросов: %lld"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut asistan · %lld soru kaldı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端助手 · 剩余 %lld 次提问"
+          }
+        }
+      }
+    },
+    "Cloud assistant, unlimited machines, PDF reports": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مساعد سحابي، ماكينات بلا حدود، تقارير PDF"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Assistent, unbegrenzt Maschinen, PDF-Berichte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistente en la nube, máquinas ilimitadas, informes PDF"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente cloud, macchine illimitate, report PDF"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタント、機械無制限、PDFレポート"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облачный ассистент, без лимита станков, PDF-отчёты"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut asistan, sınırsız makine, PDF raporlar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端助手、无限机床、PDF 报告"
           }
         }
       }
@@ -5746,7 +6370,6 @@
         }
       }
     },
-    "CutOperation": {},
     "Cuts go below Z0, so Z0 must be the stock surface.": {
       "localizations": {
         "ar": {
@@ -5899,6 +6522,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "切削移动（G1）"
+          }
+        }
+      }
+    },
+    "Cutting speed: %lld%% · %lld m/min": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سرعة القطع: %lld%% · %lld م/دقيقة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnittgeschwindigkeit: %lld %% · %lld m/min"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Cutting speed: %1$lld%% · %2$lld m/min"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocidad de corte: %lld %% · %lld m/min"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocità di taglio: %lld%% · %lld m/min"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切削速度: %lld%% · %lld m/分"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скорость резания: %lld %% · %lld м/мин"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesme hızı: %%%lld · %lld m/dk"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切削速度：%lld%% · %lld 米/分"
           }
         }
       }
@@ -8458,6 +9139,58 @@
         }
       }
     },
+    "Free questions renew every month.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتجدد الأسئلة المجانية كل شهر."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kostenlose Fragen werden jeden Monat erneuert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las preguntas gratis se renuevan cada mes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le domande gratuite si rinnovano ogni mese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無料の質問は毎月リセットされます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бесплатные вопросы обновляются каждый месяц."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ücretsiz sorular her ay yenilenir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "免费提问每月重置。"
+          }
+        }
+      }
+    },
     "From the workshop notes": {
       "localizations": {
         "ar": {
@@ -8614,54 +9347,54 @@
         }
       }
     },
-    "G-code checks, pre-flight, feeds and speeds, alarms and iCloud sync stay free — forever.": {
+    "G-code checks, pre-flight, feeds and speeds, calculators, alarms, iCloud sync and 5 cloud questions a month stay free.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "فحص G-code والفحص المسبق والتغذية والسرعات والإنذارات ومزامنة iCloud مجانية دائمًا."
+            "value": "يبقى فحص G-code وقائمة الفحص والتغذية والسرعة والحاسبات والإنذارات ومزامنة iCloud و5 أسئلة سحابية شهريًا مجانًا."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "G-Code-Prüfung, Vorab-Check, Schnittwerte, Alarme und iCloud-Sync bleiben kostenlos – für immer."
+            "value": "G-Code-Prüfung, Checkliste, Vorschub und Drehzahl, Rechner, Alarme, iCloud-Sync und 5 Cloud-Fragen pro Monat bleiben kostenlos."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "La revisión de G-code, la comprobación previa, avances y velocidades, las alarmas y la sincronización con iCloud son gratis para siempre."
+            "value": "La revisión de G-code, la lista previa, avances y velocidades, calculadoras, alarmas, sincronización con iCloud y 5 preguntas en la nube al mes siguen siendo gratis."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Controllo G-code, controllo preliminare, avanzamenti e velocità, allarmi e sincronizzazione iCloud restano gratuiti, per sempre."
+            "value": "Controllo G-code, checklist, avanzamenti e velocità, calcolatori, allarmi, sincronizzazione iCloud e 5 domande cloud al mese restano gratis."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "G-codeチェック、事前チェック、送り&回転数、アラーム、iCloud同期はずっと無料です。"
+            "value": "Gコードチェック、事前チェックリスト、送り・回転数、計算ツール、アラーム、iCloud同期、月5回のクラウド質問は無料のままです。"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Проверка G-code, предстартовая проверка, подачи и обороты, аварии и синхронизация с iCloud остаются бесплатными — навсегда."
+            "value": "Проверка G-кода, чек-лист, подачи и обороты, калькуляторы, аварии, синхронизация iCloud и 5 облачных вопросов в месяц остаются бесплатными."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "G-code kontrolü, ön kontrol, ilerleme ve devir, alarmlar ve iCloud eşitleme sonsuza dek ücretsiz."
+            "value": "G-code kontrolleri, kesim öncesi liste, ilerleme ve devir, hesaplayıcılar, alarmlar, iCloud senkronizasyonu ve ayda 5 bulut sorusu ücretsiz kalır."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "G 代码检查、开机前检查、进给与转速、报警和 iCloud 同步永久免费。"
+            "value": "G 代码检查、加工前清单、进给与转速、计算器、报警、iCloud 同步以及每月 5 次云端提问始终免费。"
           }
         }
       }
@@ -9811,6 +10544,58 @@
         }
       }
     },
+    "Included with Pro, renews monthly.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ضمن Pro، يتجدد كل شهر."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Pro enthalten, monatlich erneuert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluido con Pro, se renueva cada mes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluso in Pro, si rinnova ogni mese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proに含まれ、毎月更新されます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Входит в Pro, обновляется каждый месяц."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro'ya dahil, her ay yenilenir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "包含在 Pro 中，每月重置。"
+          }
+        }
+      }
+    },
     "Inspector": {
       "localizations": {
         "ar": {
@@ -10702,58 +11487,6 @@
         }
       }
     },
-    "Lifetime": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مدى الحياة"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lebenslang"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "De por vida"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A vita"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "買い切り"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Навсегда"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ömür boyu"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "永久"
-          }
-        }
-      }
-    },
     "Light": {
       "localizations": {
         "ar": {
@@ -10802,6 +11535,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "浅色"
+          }
+        }
+      }
+    },
+    "Limited to 50–150% of the base material. Raise values only after a successful test cut.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محدود بنسبة 50–150٪ من الخامة الأساسية. لا ترفع القيم إلا بعد قطع تجريبي ناجح."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begrenzt auf 50–150 % des Basismaterials. Erhöhe Werte erst nach einem erfolgreichen Probeschnitt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitado al 50–150 % del material base. Sube los valores solo después de un corte de prueba correcto."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitato al 50–150% del materiale di base. Aumenta i valori solo dopo un taglio di prova riuscito."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ベース材料の50〜150%に制限されます。試し削りがうまくいってから値を上げてください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ограничено 50–150 % от базового материала. Повышайте значения только после удачного пробного реза."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temel malzemenin %50–150'si ile sınırlıdır. Değerleri yalnızca başarılı bir deneme kesiminden sonra artırın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "限制在基础材料的 50–150%。请在试切成功后再提高数值。"
           }
         }
       }
@@ -11489,54 +12274,54 @@
         }
       }
     },
-    "Maintenance schedule from spindle hours": {
+    "Maintenance reminders from spindle hours": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "جدول صيانة حسب ساعات عمود الدوران"
+            "value": "تذكيرات الصيانة حسب ساعات عمود الدوران"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wartungsplan nach Spindelstunden"
+            "value": "Wartungserinnerungen nach Spindelstunden"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Plan de mantenimiento por horas de husillo"
+            "value": "Recordatorios de mantenimiento por horas de husillo"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Piano di manutenzione in base alle ore mandrino"
+            "value": "Promemoria di manutenzione in base alle ore mandrino"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "スピンドル稼働時間によるメンテナンス予定"
+            "value": "スピンドル稼働時間に基づくメンテナンス通知"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "График обслуживания по моточасам шпинделя"
+            "value": "Напоминания об обслуживании по моточасам шпинделя"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İş mili saatine göre bakım takvimi"
+            "value": "İş mili saatlerine göre bakım hatırlatmaları"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "按主轴工时的保养计划"
+            "value": "按主轴运行时间提醒保养"
           }
         }
       }
@@ -11687,6 +12472,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "Malzeme"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料"
+          }
+        }
+      }
+    },
+    "Materials": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخامات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Materialien"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Materiales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Materiali"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Материалы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzemeler"
           }
         },
         "zh-Hans": {
@@ -12373,6 +13210,58 @@
         }
       }
     },
+    "Name, e.g. Walnut": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاسم، مثل: جوز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Name, z. B. Nussbaum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre, p. ej. Nogal"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nome, ad es. Noce"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名前（例: ウォルナット）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Название, например Орех"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad, ör. Ceviz"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "名称，例如：胡桃木"
+          }
+        }
+      }
+    },
     "Needs fixes": {
       "localizations": {
         "ar": {
@@ -12473,6 +13362,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "新对话"
+          }
+        }
+      }
+    },
+    "New material": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خامة جديدة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neues Material"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo material"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuovo materiale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい材料"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новый материал"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni malzeme"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新材料"
           }
         }
       }
@@ -12837,6 +13778,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "还没有记录加工"
+          }
+        }
+      }
+    },
+    "No materials yet": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد خامات بعد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noch keine Materialien"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aún no hay materiales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ancora nessun materiale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "まだ材料がありません"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Материалов пока нет"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Henüz malzeme yok"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还没有材料"
           }
         }
       }
@@ -13206,58 +14199,6 @@
       }
     },
     "On": {},
-    "One payment · no subscription": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "دفعة واحدة · بلا اشتراك"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Einmalzahlung · kein Abo"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un solo pago · sin suscripción"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pagamento unico · nessun abbonamento"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "1回払い · サブスクなし"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Разовый платёж · без подписки"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tek ödeme · abonelik yok"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "一次付费 · 无订阅"
-          }
-        }
-      }
-    },
     "Only turn this on if your work zero usually sits near machine home. Most CAM files are relative to the part, which this check can't see.": {
       "localizations": {
         "ar": {
@@ -13462,6 +14403,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "打开 Toolpath 导入并检查 G 代码文件。"
+          }
+        }
+      }
+    },
+    "Operation": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bearbeitung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operación"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lavorazione"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加工"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Операция"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşlem"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工序"
           }
         }
       }
@@ -13674,6 +14667,58 @@
         }
       }
     },
+    "PDF safety reports to print or share": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقارير أمان PDF للطباعة أو المشاركة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF-Sicherheitsberichte zum Drucken oder Teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informes de seguridad en PDF para imprimir o compartir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Report di sicurezza PDF da stampare o condividere"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "印刷・共有できるPDF安全レポート"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDF-отчёты о безопасности для печати и отправки"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yazdırılabilir ve paylaşılabilir PDF güvenlik raporları"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可打印或分享的 PDF 安全报告"
+          }
+        }
+      }
+    },
     "PVC foam board": {
       "localizations": {
         "ar": {
@@ -13826,6 +14871,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "暂停计时"
+          }
+        }
+      }
+    },
+    "Pick the closest material you know. Toolpath uses its conservative starting values.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر أقرب خامة تعرفها. يستخدم Toolpath قيم البداية المتحفظة الخاصة بها."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle das ähnlichste Material, das du kennst. Toolpath nutzt dessen vorsichtige Startwerte."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige el material más parecido que conozcas. Toolpath usa sus valores iniciales conservadores."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli il materiale più simile che conosci. Toolpath usa i suoi valori di partenza prudenti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "知っている中で最も近い材料を選んでください。Toolpathはその控えめな初期値を使います。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите самый похожий известный вам материал. Toolpath возьмёт его осторожные стартовые значения."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildiğiniz en yakın malzemeyi seçin. Toolpath onun temkinli başlangıç değerlerini kullanır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择你所知道的最接近的材料，Toolpath 会使用它的保守起始值。"
           }
         }
       }
@@ -14454,6 +15551,58 @@
         }
       }
     },
+    "Pro includes 150 cloud assistant questions a month, plus unlimited machines and recipes, PDF reports and maintenance reminders.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتضمن Pro ‏150 سؤالًا شهريًا للمساعد السحابي، بالإضافة إلى ماكينات ووصفات بلا حدود وتقارير PDF وتذكيرات الصيانة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro enthält 150 Fragen an den Cloud-Assistenten pro Monat sowie unbegrenzt Maschinen und Rezepte, PDF-Berichte und Wartungserinnerungen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro incluye 150 preguntas al asistente en la nube al mes, además de máquinas y recetas ilimitadas, informes PDF y recordatorios de mantenimiento."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro include 150 domande al mese all'assistente cloud, più macchine e ricette illimitate, report PDF e promemoria di manutenzione."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proには毎月150回のクラウドアシスタント質問、機械・レシピ無制限、PDFレポート、メンテナンス通知が含まれます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro включает 150 вопросов облачному ассистенту в месяц, а также станки и рецепты без лимита, PDF-отчёты и напоминания об обслуживании."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro; ayda 150 bulut asistan sorusu, sınırsız makine ve tarif, PDF raporlar ve bakım hatırlatmaları içerir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro 包含每月 150 次云端助手提问，以及无限机床和配方、PDF 报告和保养提醒。"
+          }
+        }
+      }
+    },
     "Profile": {
       "localizations": {
         "ar": {
@@ -14710,110 +15859,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "为加工报价"
-          }
-        }
-      }
-    },
-    "Quotes and cost breakdowns for every job": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "عروض أسعار وتفصيل التكاليف لكل عمل"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Angebote und Kostenaufstellungen für jeden Job"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Presupuestos y desglose de costes de cada trabajo"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Preventivi e costi dettagliati per ogni lavoro"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "作業ごとの見積もりとコスト内訳"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сметы и разбивка затрат по каждой работе"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Her iş için teklif ve maliyet dökümü"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每次加工的报价和成本明细"
-          }
-        }
-      }
-    },
-    "Quotes, recipes, maintenance": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "عروض أسعار، وصفات، صيانة"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Angebote, Rezepte, Wartung"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Presupuestos, recetas, mantenimiento"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Preventivi, ricette, manutenzione"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "見積もり、レシピ、メンテナンス"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сметы, рецепты, обслуживание"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Teklif, tarif, bakım"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "报价、配方、保养"
           }
         }
       }
@@ -15386,6 +16431,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "必需"
+          }
+        }
+      }
+    },
+    "Reset to base values": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة إلى القيم الأساسية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf Basiswerte zurücksetzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer valores base"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina valori di base"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ベース値に戻す"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбросить к базовым значениям"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temel değerlere sıfırla"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恢复为基础值"
           }
         }
       }
@@ -16640,6 +17737,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "分区"
+          }
+        }
+      }
+    },
+    "See Pro": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اطّلع على Pro"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro ansehen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver Pro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scopri Pro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proを見る"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подробнее о Pro"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro'yu gör"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "了解 Pro"
           }
         }
       }
@@ -21753,6 +22902,58 @@
         }
       }
     },
+    "Want fuller answers?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هل تريد إجابات أوفى؟"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ausführlichere Antworten?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Quieres respuestas más completas?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vuoi risposte più complete?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "もっと詳しい回答が必要ですか？"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужны более полные ответы?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha kapsamlı yanıtlar mı istiyorsunuz?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "想要更完整的回答？"
+          }
+        }
+      }
+    },
     "Warn at: %lld": {
       "localizations": {
         "ar": {
@@ -22650,6 +23851,58 @@
         }
       }
     },
+    "You've used this month's cloud questions.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لقد استخدمت أسئلة هذا الشهر السحابية."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast die Cloud-Fragen dieses Monats aufgebraucht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Has usado las preguntas en la nube de este mes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hai usato le domande cloud di questo mese."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "今月のクラウド質問を使い切りました。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы использовали облачные вопросы этого месяца."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu ayın bulut sorularını kullandınız."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你已用完本月的云端提问。"
+          }
+        }
+      }
+    },
     "Your data syncs through your own private iCloud — no account needed. It's yours: export it any time as JSON or CSV.": {
       "localizations": {
         "ar": {
@@ -22750,6 +24003,214 @@
           "stringUnit": {
             "state": "translated",
             "value": "最近 %lld 次运行都很顺利。"
+          }
+        }
+      }
+    },
+    "Your materials": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خاماتك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Materialien"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus materiales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi materiali"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイ材料"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши материалы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Malzemelerim"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的材料"
+          }
+        }
+      }
+    },
+    "Your own materials": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خاماتك الخاصة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eigene Materialien"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus propios materiales"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi materiali"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分の材料"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Свои материалы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kendi malzemeleriniz"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义材料"
+          }
+        }
+      }
+    },
+    "Your own materials use the starting values of the material they're based on, so feeds and speeds stay conservative.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تستخدم خاماتك قيم البداية للخامة التي بُنيت عليها، لذا تبقى التغذية والسرعة متحفظة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eigene Materialien nutzen die Startwerte des Materials, auf dem sie basieren – so bleiben Vorschub und Drehzahl vorsichtig."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus materiales usan los valores iniciales del material en el que se basan, así los avances y velocidades siguen siendo conservadores."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi materiali usano i valori di partenza del materiale su cui si basano, così avanzamenti e velocità restano prudenti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自分の材料はベースにした材料の初期値を使うため、送り・回転数は控えめなままです。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши материалы используют стартовые значения базового материала, поэтому подачи и обороты остаются осторожными."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kendi malzemeleriniz, temel aldıkları malzemenin başlangıç değerlerini kullanır; böylece ilerleme ve devir temkinli kalır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义材料使用其基础材料的起始值，因此进给与转速保持保守。"
+          }
+        }
+      }
+    },
+    "Your purchase is saved. Toolpath will finish setting it up when it's back online.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم حفظ عملية الشراء. سيكمل Toolpath الإعداد عند عودتك إلى الاتصال."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Kauf ist gespeichert. Toolpath schließt die Einrichtung ab, sobald du wieder online bist."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu compra está guardada. Toolpath terminará de configurarla cuando vuelvas a tener conexión."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo acquisto è salvato. Toolpath completerà la configurazione quando sarai di nuovo online."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "購入は保存されました。オンラインに戻るとToolpathが設定を完了します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покупка сохранена. Toolpath завершит настройку, когда снова появится подключение."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın alımınız kaydedildi. Toolpath tekrar çevrimiçi olduğunda kurulumu tamamlayacak."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的购买已保存。恢复联网后，Toolpath 会完成设置。"
           }
         }
       }

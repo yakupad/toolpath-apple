@@ -36,6 +36,7 @@ struct FeedsView: View {
     @Environment(Store.self) private var store
     @Environment(Router.self) private var router
     @Query private var recipes: [Recipe]
+    @Query(sort: \CustomMaterial.createdAt) private var customMaterials: [CustomMaterial]
 
     @State private var materialID = "hardwood"
     @State private var diameter = 6.35
@@ -45,7 +46,7 @@ struct FeedsView: View {
     @State private var savedRecipe = false
 
     private var input: FeedsInput {
-        FeedsInput(material: CuttingMaterial.byID(materialID) ?? CuttingMaterial.catalog[0],
+        FeedsInput(material: CuttingMaterial.resolve(materialID, custom: customMaterials) ?? CuttingMaterial.catalog[0],
                    toolDiameterMm: diameter, flutes: flutes, toolMaterial: toolMaterial,
                    operation: operation, maxSpindleRpm: activeMachines.first?.maxSpindleRpm ?? 24_000)
     }
@@ -55,7 +56,10 @@ struct FeedsView: View {
         Form {
             Section("Material") {
                 Picker("Material", selection: $materialID) {
-                    ForEach(CuttingMaterial.catalog) { Text($0.title).tag($0.id) }
+                    MaterialOptions()
+                }
+                NavigationLink { CustomMaterialsList() } label: {
+                    Label("Your own materials", systemImage: "plus.circle")
                 }
             }
             Section("Tool") {
@@ -84,8 +88,8 @@ struct FeedsView: View {
                 }
                 .pickerStyle(.segmented)
             }
-            Section("CutOperation") {
-                Picker("CutOperation", selection: $operation) {
+            Section("Operation") {
+                Picker("Operation", selection: $operation) {
                     Text("Pocket").tag(CutOperation.pocketing)
                     Text("Slot").tag(CutOperation.slotting)
                     Text("Profile").tag(CutOperation.profiling)
@@ -131,7 +135,7 @@ struct FeedsView: View {
             router.showPaywall = true
             return
         }
-        let recipe = Recipe(name: "\(CuttingMaterial.byID(materialID).map { String(localized: $0.titleResource) } ?? materialID) · \(diameter.formatted()) mm")
+        let recipe = Recipe(name: "\(CuttingMaterial.name(for: materialID, custom: customMaterials)) · \(diameter.formatted()) mm")
         recipe.materialID = materialID
         recipe.operationRaw = operation.rawValue
         recipe.spindleRpm = result.spindleRpm

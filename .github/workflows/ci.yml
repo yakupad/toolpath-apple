@@ -27,3 +27,17 @@ jobs:
         run: xcodebuild -project Toolpath.xcodeproj -scheme Toolpath -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build | tail -20
       - name: Build macOS
         run: xcodebuild -project Toolpath.xcodeproj -scheme Toolpath -destination 'generic/platform=macOS' CODE_SIGNING_ALLOWED=NO build | tail -20
+
+  worker:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: worker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npx vitest run
