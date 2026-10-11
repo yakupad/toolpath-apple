@@ -71,7 +71,7 @@ platform :mac do
     match(type: "appstore", readonly: true, platform: "macos", app_identifier: ["com.yakupad.toolpath"],
           additional_cert_types: ["mac_installer_distribution"], git_basic_authorization: match_auth)
     manual_signing("macos", { "Toolpath" => "match AppStore com.yakupad.toolpath macos" })
-    build_app(
+    pkg = build_mac_app(
       project: "Toolpath.xcodeproj",
       scheme: "Toolpath",
       destination: "generic/platform=macOS",
@@ -79,6 +79,6 @@ platform :mac do
       xcodebuild_formatter: "",
       xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true) unless ENV["SKIP_UPLOAD"] == "1"
+    upload_to_testflight(pkg: pkg, app_platform: "osx", skip_waiting_for_build_processing: true) unless ENV["SKIP_UPLOAD"] == "1"
   end
 end
