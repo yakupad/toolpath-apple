@@ -15546,6 +15546,64 @@
         }
       }
     },
+    "Safety score %lld · about %lld min": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "درجة الأمان %lld · حوالي %lld د"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sicherheitswert %lld · etwa %lld Min."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Safety score %1$lld · about %2$lld min"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puntuación de seguridad %lld · unos %lld min"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punteggio di sicurezza %lld · circa %lld min"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全スコア %lld · 約%lld分"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оценка безопасности %lld · около %lld мин"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik puanı %lld · yaklaşık %lld dk"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全评分 %lld · 约 %lld 分钟"
+          }
+        }
+      }
+    },
     "Save": {
       "localizations": {
         "ar": {

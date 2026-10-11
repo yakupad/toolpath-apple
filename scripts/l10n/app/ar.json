@@ -295,6 +295,7 @@
   "Safety report (PDF)": "تقرير السلامة (PDF)",
   "Safety score": "درجة السلامة",
   "Safety score %lld": "درجة السلامة %lld",
+  "Safety score %lld · about %lld min": "درجة الأمان %lld · حوالي %lld د",
   "Save": "حفظ",
   "Save as recipe": "حفظ كوصفة",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "احفظ واحدة من «التغذية والسرعات». سجّل الأعمال بها وسيقترح Toolpath تعديلات بناءً على ما حدث فعلًا.",

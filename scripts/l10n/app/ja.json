@@ -295,6 +295,7 @@
   "Safety report (PDF)": "安全レポート(PDF)",
   "Safety score": "安全スコア",
   "Safety score %lld": "安全スコア %lld",
+  "Safety score %lld · about %lld min": "安全スコア %lld · 約%lld分",
   "Save": "保存",
   "Save as recipe": "レシピとして保存",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "「送り&回転数」から保存しましょう。それで作業を記録すると、実際の結果からToolpathが調整を提案します。",

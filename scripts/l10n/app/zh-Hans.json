@@ -295,6 +295,7 @@
   "Safety report (PDF)": "安全报告（PDF）",
   "Safety score": "安全评分",
   "Safety score %lld": "安全评分 %lld",
+  "Safety score %lld · about %lld min": "安全评分 %lld · 约 %lld 分钟",
   "Save": "存储",
   "Save as recipe": "存为配方",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "在“进给与转速”中保存一个配方。用它记录加工后，Toolpath 会根据实际结果给出调整建议。",

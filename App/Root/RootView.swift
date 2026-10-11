@@ -1,4 +1,5 @@
 import CNCDesign
+import CoreSpotlight
 import SwiftData
 import SwiftUI
 
@@ -6,6 +7,11 @@ struct RootView: View {
     @Environment(Router.self) private var router
     @Environment(\.modelContext) private var context
     @AppStorage("onboarded") private var onboarded = false
+    @Query private var jobs: [JobFile]
+
+    private var spotlightEntries: [SpotlightIndexer.Entry] {
+        jobs.map { .init(id: $0.id, name: $0.name, score: $0.safetyScore, minutes: $0.estimatedMinutes, isAnalyzed: $0.isAnalyzed) }
+    }
 
     var body: some View {
         @Bindable var router = router
@@ -34,6 +40,10 @@ struct RootView: View {
             }
         }
         .onChange(of: router.pendingURLs) { router.consumePending(into: context) }
+        .task(id: spotlightEntries) { await SpotlightIndexer.sync(spotlightEntries) }
+        .onContinueUserActivity(CSSearchableItemActionType) { activity in
+            if let id = SpotlightIndexer.jobID(from: activity) { router.open(job: id) }
+        }
         .onAppear {
             router.consumePending(into: context)
             if IntentFlags.importRequested {

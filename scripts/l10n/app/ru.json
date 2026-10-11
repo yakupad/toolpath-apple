@@ -295,6 +295,7 @@
   "Safety report (PDF)": "Отчёт о безопасности (PDF)",
   "Safety score": "Оценка безопасности",
   "Safety score %lld": "Оценка безопасности %lld",
+  "Safety score %lld · about %lld min": "Оценка безопасности %lld · около %lld мин",
   "Save": "Сохранить",
   "Save as recipe": "Сохранить как рецепт",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "Сохраните рецепт в «Подачах и оборотах». Записывайте с ним работы, и Toolpath предложит поправки по реальным результатам.",

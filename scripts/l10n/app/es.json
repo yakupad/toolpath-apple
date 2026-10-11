@@ -295,6 +295,7 @@
   "Safety report (PDF)": "Informe de seguridad (PDF)",
   "Safety score": "Puntuación de seguridad",
   "Safety score %lld": "Puntuación de seguridad %lld",
+  "Safety score %lld · about %lld min": "Puntuación de seguridad %lld · unos %lld min",
   "Save": "Guardar",
   "Save as recipe": "Guardar como receta",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "Guarda una desde Avances y velocidades. Registra trabajos con ella y Toolpath sugerirá ajustes según lo que pasó de verdad.",

@@ -295,6 +295,7 @@
   "Safety report (PDF)": "Güvenlik raporu (PDF)",
   "Safety score": "Güvenlik puanı",
   "Safety score %lld": "Güvenlik puanı %lld",
+  "Safety score %lld · about %lld min": "Güvenlik puanı %lld · yaklaşık %lld dk",
   "Save": "Kaydet",
   "Save as recipe": "Tarif olarak kaydet",
   "Save one from Feeds & Speeds. Log jobs with it and Toolpath suggests adjustments from what actually happened.": "İlerleme & Devir'den bir tarif kaydet. Onunla iş kaydettikçe Toolpath gerçekte olanlara göre ayar önerir.",
