@@ -1,13 +1,72 @@
 {
   "sourceLanguage": "en",
   "strings": {
-    "%@ mm": {},
-    "%@ mm · %lld flute · %@ · %lld h": {
+    "": {},
+    "%@ %@": {
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "new",
+            "value": "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "%@ mm": {},
+    "%@ mm · %lld flute · %@ · %lld h": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ مم · %2$lld حد · %3$@ · %4$lld س"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld Schneiden · %3$@ · %4$lld h"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
             "value": "%1$@ mm · %2$lld flute · %3$@ · %4$lld h"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld filos · %3$@ · %4$lld h"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld taglienti · %3$@ · %4$lld h"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld枚刃 · %3$@ · %4$lld時間"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ мм · зубьев: %2$lld · %3$@ · %4$lld ч"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld ağız · %3$@ · %4$lld sa"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ mm · %2$lld 刃 · %3$@ · %4$lld 小时"
           }
         }
       }
@@ -1725,6 +1784,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "所有切削都在 Z0 之上，所以 Z0 应是材料下方的台面。"
+          }
+        }
+      }
+    },
+    "All data deleted.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حُذفت كل البيانات."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten gelöscht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se borraron todos los datos."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti i dati eliminati."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータを削除しました。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Все данные удалены."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm veriler silindi."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已删除所有数据。"
           }
         }
       }
@@ -4439,6 +4550,110 @@
         }
       }
     },
+    "Compare": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مقارنة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleichen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronta"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "比較"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сравнить"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karşılaştır"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "比较"
+          }
+        }
+      }
+    },
+    "Compare with…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مقارنة مع…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vergleichen mit …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comparar con…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Confronta con…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "比較する相手…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сравнить с…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şununla karşılaştır…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "与…比较"
+          }
+        }
+      }
+    },
     "Compression": {
       "localizations": {
         "ar": {
@@ -5532,6 +5747,162 @@
         }
       }
     },
+    "Delete all data?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف كل البيانات؟"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Borrar todos los datos?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eliminare tutti i dati?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータを削除しますか?"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить все данные?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm veriler silinsin mi?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除所有数据？"
+          }
+        }
+      }
+    },
+    "Delete all data…": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف كل البيانات…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Daten löschen …"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar todos los datos…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina tutti i dati…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべてのデータを削除…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить все данные…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm verileri sil…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "删除所有数据…"
+          }
+        }
+      }
+    },
+    "Delete everything": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حذف كل شيء"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alles löschen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Borrar todo"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elimina tutto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべて削除"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удалить всё"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her şeyi sil"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部删除"
+          }
+        }
+      }
+    },
     "Depth": {
       "localizations": {
         "ar": {
@@ -6210,6 +6581,110 @@
           "stringUnit": {
             "state": "translated",
             "value": "解释 GRBL、grblHAL 或 FluidNC 的报警或错误代码以及需要检查的内容。可离线使用。"
+          }
+        }
+      }
+    },
+    "Export backup (JSON)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصدير نسخة احتياطية (JSON)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup exportieren (JSON)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportar copia (JSON)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esporta backup (JSON)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックアップを書き出す(JSON)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспорт резервной копии (JSON)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yedeği dışa aktar (JSON)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出备份（JSON）"
+          }
+        }
+      }
+    },
+    "Export job history (CSV)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصدير سجل الأعمال (CSV)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Job-Verlauf exportieren (CSV)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exportar historial (CSV)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esporta cronologia lavori (CSV)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作業履歴を書き出す(CSV)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экспорт истории работ (CSV)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İş geçmişini dışa aktar (CSV)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出加工历史（CSV）"
           }
         }
       }
@@ -7464,6 +7939,58 @@
       }
     },
     "GRBL": {},
+    "Generated by Toolpath. Checks and values are starting points to test, not guarantees. Always air-cut new files and wear eye and ear protection.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أُنشئ بواسطة Toolpath. الفحوص والقيم نقاط بداية للاختبار وليست ضمانات. شغّل الملفات الجديدة في الهواء أولًا دائمًا وارتدِ واقي العينين والأذنين."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erstellt mit Toolpath. Prüfungen und Werte sind Startwerte zum Testen, keine Garantie. Neue Dateien immer zuerst in der Luft fahren und Augen- und Gehörschutz tragen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generado por Toolpath. Las comprobaciones y los valores son puntos de partida para probar, no garantías. Haz siempre un corte en vacío con archivos nuevos y usa protección ocular y auditiva."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generato da Toolpath. Controlli e valori sono punti di partenza da testare, non garanzie. Fai sempre un taglio a vuoto con i file nuovi e usa protezioni per occhi e udito."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpathで作成。チェックと数値は試すための出発点であり、保証ではありません。新しいファイルは必ずエアカットし、保護メガネと耳栓を着用してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Создано в Toolpath. Проверки и значения — стартовые точки для проверки, а не гарантия. Новые файлы всегда сначала прогоняйте по воздуху и носите защиту глаз и слуха."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath ile oluşturuldu. Kontroller ve değerler test edilecek başlangıç noktalarıdır, garanti değildir. Yeni dosyaları her zaman önce havada çalıştır, göz ve kulak koruması kullan."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 Toolpath 生成。检查结果和数值是用于测试的起点，而非保证。新文件务必先空跑，并佩戴护目镜和耳罩。"
+          }
+        }
+      }
+    },
     "HDPE / Delrin": {
       "localizations": {
         "ar": {
@@ -8192,6 +8719,214 @@
         }
       }
     },
+    "Import another file to compare": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استورد ملفًا آخر للمقارنة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importiere eine weitere Datei zum Vergleichen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importa otro archivo para comparar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importa un altro file da confrontare"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "比較するには別のファイルを読み込んでください"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импортируйте ещё один файл для сравнения"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karşılaştırmak için başka bir dosya içe aktar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "再导入一个文件来比较"
+          }
+        }
+      }
+    },
+    "Import backup or CNC Maker Assistant data": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استيراد نسخة احتياطية أو بيانات CNC Maker Assistant"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Backup oder CNC-Maker-Assistant-Daten importieren"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importar copia o datos de CNC Maker Assistant"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importa backup o dati di CNC Maker Assistant"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バックアップまたはCNC Maker Assistantのデータを読み込む"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импорт резервной копии или данных CNC Maker Assistant"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yedek veya CNC Maker Assistant verisi içe aktar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入备份或 CNC Maker Assistant 数据"
+          }
+        }
+      }
+    },
+    "Imported %lld items.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تم استيراد %lld عنصر."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Einträge importiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se importaron %lld elementos."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importati %lld elementi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld件を読み込みました。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импортировано элементов: %lld."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld öğe içe aktarıldı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已导入 %lld 项。"
+          }
+        }
+      }
+    },
+    "Imported job": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عمل مستورد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Importierter Job"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trabajo importado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lavoro importato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "読み込んだ作業"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Импортированная работа"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçe aktarılan iş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导入的加工"
+          }
+        }
+      }
+    },
     "Inches": {
       "localizations": {
         "ar": {
@@ -8610,6 +9345,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "加工"
+          }
+        }
+      }
+    },
+    "Jobs, machines, tools, recipes, stock and history are removed from this device and your iCloud. This can't be undone.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُحذف الأعمال والآلات والأدوات والوصفات والخامات والسجل من هذا الجهاز ومن iCloud الخاص بك. لا يمكن التراجع عن ذلك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jobs, Maschinen, Werkzeuge, Rezepte, Material und Verlauf werden von diesem Gerät und aus deiner iCloud gelöscht. Das lässt sich nicht rückgängig machen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se borran trabajos, máquinas, herramientas, recetas, material e historial de este dispositivo y de tu iCloud. No se puede deshacer."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lavori, macchine, utensili, ricette, materiale e cronologia vengono rimossi da questo dispositivo e dal tuo iCloud. Non si può annullare."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作業、マシン、工具、レシピ、材料、履歴がこのデバイスとiCloudから削除されます。元に戻せません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Работы, станки, инструменты, рецепты, материалы и история удаляются с этого устройства и из вашего iCloud. Это нельзя отменить."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşler, makineler, takımlar, tarifler, stok ve geçmiş bu cihazdan ve iCloud'undan silinir. Bu işlem geri alınamaz."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加工、机器、刀具、配方、库存和历史将从此设备和你的 iCloud 中删除。此操作无法撤销。"
           }
         }
       }
@@ -13926,6 +14713,162 @@
         }
       }
     },
+    "Safety report": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقرير السلامة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sicherheitsbericht"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informe de seguridad"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapporto di sicurezza"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全レポート"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчёт о безопасности"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik raporu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全报告"
+          }
+        }
+      }
+    },
+    "Safety report (PDF)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقرير السلامة (PDF)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sicherheitsbericht (PDF)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informe de seguridad (PDF)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapporto di sicurezza (PDF)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全レポート(PDF)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отчёт о безопасности (PDF)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik raporu (PDF)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全报告（PDF）"
+          }
+        }
+      }
+    },
+    "Safety score": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "درجة السلامة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sicherheitswert"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puntuación de seguridad"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Punteggio di sicurezza"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全スコア"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оценка безопасности"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Güvenlik puanı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "安全评分"
+          }
+        }
+      }
+    },
     "Safety score %lld": {
       "localizations": {
         "ar": {
@@ -14910,6 +15853,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "形状"
+          }
+        }
+      }
+    },
+    "Share": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشاركة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Compartir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Condividi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поделиться"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "分享"
           }
         }
       }
@@ -17422,6 +18417,58 @@
         }
       }
     },
+    "This file isn't a Toolpath backup or a CNC Maker Assistant export.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هذا الملف ليس نسخة احتياطية من Toolpath ولا تصديرًا من CNC Maker Assistant."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diese Datei ist kein Toolpath-Backup und kein CNC-Maker-Assistant-Export."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este archivo no es una copia de Toolpath ni una exportación de CNC Maker Assistant."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Questo file non è un backup di Toolpath né un'esportazione di CNC Maker Assistant."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このファイルはToolpathのバックアップでもCNC Maker Assistantの書き出しでもありません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Это не резервная копия Toolpath и не экспорт CNC Maker Assistant."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu dosya bir Toolpath yedeği veya CNC Maker Assistant dışa aktarımı değil."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此文件不是 Toolpath 备份，也不是 CNC Maker Assistant 导出文件。"
+          }
+        }
+      }
+    },
     "This week": {
       "localizations": {
         "ar": {
@@ -19930,6 +20977,58 @@
         }
       }
     },
+    "Your data is yours: export it any time as JSON or CSV.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بياناتك ملكك: صدّرها في أي وقت بصيغة JSON أو CSV."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Daten gehören dir: Exportiere sie jederzeit als JSON oder CSV."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus datos son tuyos: expórtalos cuando quieras en JSON o CSV."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I tuoi dati sono tuoi: esportali quando vuoi in JSON o CSV."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "データはあなたのものです。いつでもJSONやCSVで書き出せます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные принадлежат вам: экспортируйте их в JSON или CSV в любое время."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verilerin senin: istediğin zaman JSON veya CSV olarak dışa aktar."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的数据属于你：随时以 JSON 或 CSV 导出。"
+          }
+        }
+      }
+    },
     "Your last %lld runs were clean.": {
       "localizations": {
         "ar": {
@@ -20772,7 +21871,8 @@
           }
         }
       }
-    }
+    },
+    "☐  %@": {}
   },
   "version": "1.0"
 }
