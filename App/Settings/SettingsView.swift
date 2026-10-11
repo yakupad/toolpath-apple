@@ -5,6 +5,12 @@ struct SettingsView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(Store.self) private var store
     @State private var showPaywall = false
+    @Environment(\.modelContext) private var context
+    @State private var backupURL: URL?
+    @State private var csvURL: URL?
+    @State private var showImporter = false
+    @State private var confirmDelete = false
+    @State private var message: String?
     @AppStorage("appearance") private var appearance: Appearance = .system
     @AppStorage("workshopMode") private var workshopMode = false
     @AppStorage("toolChangeAlerts") private var toolChangeAlerts = true
@@ -54,8 +60,24 @@ struct SettingsView: View {
                     }
                     .pickerStyle(.segmented)
                 }
-                Section("Data") {
+                Section {
                     LabeledContent("iCloud sync", value: String(localized: "Coming soon"))
+                    if let backupURL {
+                        ShareLink(item: backupURL) { Label("Export backup (JSON)", systemImage: "square.and.arrow.up") }
+                    }
+                    if let csvURL {
+                        ShareLink(item: csvURL) { Label("Export job history (CSV)", systemImage: "tablecells") }
+                    }
+                    Button { showImporter = true } label: {
+                        Label("Import backup or CNC Maker Assistant data", systemImage: "square.and.arrow.down")
+                    }
+                    Button(role: .destructive) { confirmDelete = true } label: {
+                        Label("Delete all data…", systemImage: "trash")
+                    }
+                } header: {
+                    Text("Data")
+                } footer: {
+                    Text("Your data is yours: export it any time as JSON or CSV.")
                 }
                 Section {
                     Text("Cutting values and safety checks are starting points to test, not guarantees. Wear eye and ear protection, secure your work, and never leave a running machine unattended.")
@@ -71,6 +93,30 @@ struct SettingsView: View {
             }
             .navigationTitle("Settings")
             .sheet(isPresented: $showPaywall) { PaywallView() }
+            .task {
+                backupURL = try? DataTransfer.backupFile(context: context)
+                csvURL = try? DataTransfer.jobLogCSV(context: context)
+            }
+            .fileImporter(isPresented: $showImporter, allowedContentTypes: [.json], allowsMultipleSelection: true) { result in
+                guard case let .success(urls) = result else { return }
+                var total = 0
+                for url in urls {
+                    do { total += try DataTransfer.importFile(at: url, into: context).total }
+                    catch { message = error.localizedDescription; return }
+                }
+                message = String(localized: "Imported \(total) items.")
+            }
+            .confirmationDialog("Delete all data?", isPresented: $confirmDelete, titleVisibility: .visible) {
+                Button("Delete everything", role: .destructive) {
+                    try? DataTransfer.deleteAll(context: context)
+                    message = String(localized: "All data deleted.")
+                }
+            } message: {
+                Text("Jobs, machines, tools, recipes, stock and history are removed from this device and your iCloud. This can't be undone.")
+            }
+            .alert(message ?? "", isPresented: Binding(get: { message != nil }, set: { if !$0 { message = nil } })) {
+                Button("OK", role: .cancel) {}
+            }
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Done") { dismiss() }

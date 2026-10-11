@@ -21,6 +21,8 @@ struct JobDetailView: View {
     @State private var showRun = false
     @State private var panelExpanded = false
     @State private var showQuote = false
+    @State private var pdfURL: URL?
+    @Environment(Store.self) private var store
     @Environment(\.horizontalSizeClass) private var sizeClass
 
     enum InspectorTab: String, CaseIterable, Identifiable {
@@ -68,6 +70,19 @@ struct JobDetailView: View {
             }
         }
         .onAppear { job.lastOpenedAt = .now }
+        .sheet(item: Binding(get: { pdfURL.map(IdentifiedURL.init) }, set: { pdfURL = $0?.url })) { item in
+            NavigationStack {
+                ReportPreview(url: item.url)
+                    .toolbar {
+                        ToolbarItem(placement: .primaryAction) {
+                            ShareLink(item: item.url) { Label("Share", systemImage: "square.and.arrow.up") }
+                        }
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Done") { pdfURL = nil }
+                        }
+                    }
+            }
+        }
         .navigationDestination(isPresented: $showQuote) {
             QuoteView(machineMinutes: analysis?.statistics.estimatedMachiningTimeMinutes ?? 30, title: job.name)
         }
@@ -165,6 +180,15 @@ struct JobDetailView: View {
                         }
                         ShareLink(item: SafetyReport.text(job: job, analysis: analysis), subject: Text(job.name)) {
                             Label("Share report", systemImage: "square.and.arrow.up")
+                        }
+                        Button {
+                            if store.isPro {
+                                pdfURL = SafetyReportPDF.make(job: job, analysis: analysis, machine: machine)
+                            } else {
+                                router.showPaywall = true
+                            }
+                        } label: {
+                            Label("Safety report (PDF)", systemImage: "doc.richtext")
                         }
                     }
                 }
@@ -303,4 +327,9 @@ struct BottomPanel<Content: View>: View {
 
 enum BottomPanelMetrics {
     static let collapsedHeight: CGFloat = 340
+}
+
+struct IdentifiedURL: Identifiable {
+    let url: URL
+    var id: String { url.absoluteString }
 }

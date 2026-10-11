@@ -30,6 +30,16 @@ enum DebugLaunch {
             default: .workshop
             }
         }
+        if args.contains("-renderReport") {
+            let job = JobImporter.sampleJob()
+            let analysis = JobAnalysis.make(content: job.content, name: job.name, rapidRate: 3000, envelope: nil)
+            if let url = SafetyReportPDF.make(job: job, analysis: analysis, machine: nil),
+               let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+                let target = docs.appending(path: "report.pdf")
+                try? FileManager.default.removeItem(at: target)
+                try? FileManager.default.copyItem(at: url, to: target)
+            }
+        }
         if args.contains("-openSample") {
             let job = JobImporter.sampleJob()
             context.insert(job)
