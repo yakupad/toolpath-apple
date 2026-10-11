@@ -1,0 +1,346 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Decode a CNC alarm in ${applicationName}": {
+      "localizations": {
+        "tr": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ile CNC alarmı çöz"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "CNC-Alarm in ${applicationName} entschlüsseln"
+            ]
+          }
+        },
+        "es": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Descifrar una alarma CNC en ${applicationName}"
+            ]
+          }
+        },
+        "it": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Decodifica un allarme CNC in ${applicationName}"
+            ]
+          }
+        },
+        "ru": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Расшифровать аварию ЧПУ в ${applicationName}"
+            ]
+          }
+        },
+        "ja": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName}でCNCアラームを解読"
+            ]
+          }
+        },
+        "zh-Hans": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "在${applicationName}中解读 CNC 报警"
+            ]
+          }
+        },
+        "ar": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "فك إنذار CNC في ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "What does my CNC alarm mean in ${applicationName}": {
+      "localizations": {
+        "tr": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} CNC alarmım ne anlama geliyor"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Was bedeutet mein CNC-Alarm in ${applicationName}"
+            ]
+          }
+        },
+        "es": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Qué significa mi alarma CNC en ${applicationName}"
+            ]
+          }
+        },
+        "it": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Cosa significa il mio allarme CNC in ${applicationName}"
+            ]
+          }
+        },
+        "ru": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Что значит авария ЧПУ в ${applicationName}"
+            ]
+          }
+        },
+        "ja": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName}でCNCアラームの意味は"
+            ]
+          }
+        },
+        "zh-Hans": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "在${applicationName}中我的 CNC 报警是什么意思"
+            ]
+          }
+        },
+        "ar": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "ماذا يعني إنذار CNC في ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "Calculate feeds and speeds in ${applicationName}": {
+      "localizations": {
+        "tr": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ile ilerleme ve devir hesapla"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Vorschub und Drehzahl in ${applicationName} berechnen"
+            ]
+          }
+        },
+        "es": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Calcular avances y velocidades en ${applicationName}"
+            ]
+          }
+        },
+        "it": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Calcola avanzamenti e velocità in ${applicationName}"
+            ]
+          }
+        },
+        "ru": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Рассчитать подачи и обороты в ${applicationName}"
+            ]
+          }
+        },
+        "ja": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName}で送りと回転数を計算"
+            ]
+          }
+        },
+        "zh-Hans": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "在${applicationName}中计算进给与转速"
+            ]
+          }
+        },
+        "ar": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "احسب التغذية والسرعات في ${applicationName}"
+            ]
+          }
+        }
+      }
+    },
+    "${applicationName} feeds for ${material}": {
+      "localizations": {
+        "tr": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ${material} için ilerleme"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} Vorschub für ${material}"
+            ]
+          }
+        },
+        "es": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} avances para ${material}"
+            ]
+          }
+        },
+        "it": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} avanzamenti per ${material}"
+            ]
+          }
+        },
+        "ru": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} подачи для ${material}"
+            ]
+          }
+        },
+        "ja": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ${material}の送り"
+            ]
+          }
+        },
+        "zh-Hans": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ${material} 的进给"
+            ]
+          }
+        },
+        "ar": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} التغذية لـ ${material}"
+            ]
+          }
+        }
+      }
+    },
+    "Check a G-code file in ${applicationName}": {
+      "localizations": {
+        "tr": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName} ile G-code dosyası kontrol et"
+            ]
+          }
+        },
+        "de": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "G-Code-Datei in ${applicationName} prüfen"
+            ]
+          }
+        },
+        "es": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Revisar un archivo G-code en ${applicationName}"
+            ]
+          }
+        },
+        "it": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Controlla un file G-code in ${applicationName}"
+            ]
+          }
+        },
+        "ru": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "Проверить файл G-code в ${applicationName}"
+            ]
+          }
+        },
+        "ja": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "${applicationName}でG-codeファイルをチェック"
+            ]
+          }
+        },
+        "zh-Hans": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "在${applicationName}中检查 G 代码文件"
+            ]
+          }
+        },
+        "ar": {
+          "stringSet": {
+            "state": "translated",
+            "values": [
+              "افحص ملف G-code في ${applicationName}"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
