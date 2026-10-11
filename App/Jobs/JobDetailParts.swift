@@ -10,6 +10,8 @@ struct SimulationClock: Equatable {
     private var baseTime: Double = 0
     private var startedAt: Date?
 
+    init(speed: Double = 5) { self.speed = speed }
+
     func time(at date: Date) -> Double {
         guard isPlaying, let startedAt else { return baseTime }
         return baseTime + date.timeIntervalSince(startedAt) * speed
