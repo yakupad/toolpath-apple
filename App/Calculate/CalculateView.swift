@@ -143,21 +143,3 @@ struct FeedsView: View {
         savedRecipe = true
     }
 }
-
-extension CuttingMaterial {
-    var titleResource: LocalizedStringResource {
-        switch id {
-        case "aluminum_6061": "Aluminum (6061)"
-        case "brass": "Brass"
-        case "mild_steel_1018": "Mild steel (1018)"
-        case "stainless_303_304": "Stainless steel (303/304)"
-        case "acrylic_cast": "Acrylic (cast)"
-        case "hdpe_delrin": "HDPE / Delrin"
-        case "mdf": "MDF"
-        case "plywood": "Plywood"
-        case "hardwood": "Hardwood (oak, maple)"
-        case "softwood": "Softwood (pine)"
-        default: LocalizedStringResource(stringLiteral: id)
-        }
-    }
-}

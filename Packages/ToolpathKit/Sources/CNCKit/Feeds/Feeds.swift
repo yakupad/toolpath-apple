@@ -1,7 +1,7 @@
 import Foundation
 
 public enum MaterialCategory: String, Sendable, Codable, CaseIterable {
-    case metalNonFerrous, metalFerrous, plastic, wood
+    case metalNonFerrous, metalFerrous, plastic, wood, composite, foam
 }
 
 /// A curated, conservative starting point per workpiece material. All values
@@ -21,15 +21,26 @@ public struct CuttingMaterial: Sendable, Hashable, Identifiable, Codable {
 
     public static let catalog: [CuttingMaterial] = [
         .init(id: "aluminum_6061", category: .metalNonFerrous, cuttingSpeedMPerMin: 300, chipLoadCoefficient: 0.020, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.15, maxDocMultiplier: 0.25),
+        .init(id: "copper", category: .metalNonFerrous, cuttingSpeedMPerMin: 150, chipLoadCoefficient: 0.015, chipLoadClampMinMm: 0.015, chipLoadClampMaxMm: 0.10, maxDocMultiplier: 0.20),
         .init(id: "brass", category: .metalNonFerrous, cuttingSpeedMPerMin: 250, chipLoadCoefficient: 0.018, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.12, maxDocMultiplier: 0.25),
         .init(id: "mild_steel_1018", category: .metalFerrous, cuttingSpeedMPerMin: 80, chipLoadCoefficient: 0.012, chipLoadClampMinMm: 0.015, chipLoadClampMaxMm: 0.08, maxDocMultiplier: 0.15),
         .init(id: "stainless_303_304", category: .metalFerrous, cuttingSpeedMPerMin: 50, chipLoadCoefficient: 0.010, chipLoadClampMinMm: 0.01, chipLoadClampMaxMm: 0.06, maxDocMultiplier: 0.10),
         .init(id: "acrylic_cast", category: .plastic, cuttingSpeedMPerMin: 200, chipLoadCoefficient: 0.020, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.15, maxDocMultiplier: 0.30),
         .init(id: "hdpe_delrin", category: .plastic, cuttingSpeedMPerMin: 250, chipLoadCoefficient: 0.025, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.18, maxDocMultiplier: 0.35),
+        .init(id: "polycarbonate", category: .plastic, cuttingSpeedMPerMin: 150, chipLoadCoefficient: 0.020, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.15, maxDocMultiplier: 0.30),
+        .init(id: "abs", category: .plastic, cuttingSpeedMPerMin: 200, chipLoadCoefficient: 0.020, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.15, maxDocMultiplier: 0.30),
+        .init(id: "nylon", category: .plastic, cuttingSpeedMPerMin: 200, chipLoadCoefficient: 0.022, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.16, maxDocMultiplier: 0.30),
+        .init(id: "pvc_foam", category: .plastic, cuttingSpeedMPerMin: 300, chipLoadCoefficient: 0.030, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.20, maxDocMultiplier: 0.50),
+        .init(id: "solid_surface", category: .plastic, cuttingSpeedMPerMin: 250, chipLoadCoefficient: 0.022, chipLoadClampMinMm: 0.02, chipLoadClampMaxMm: 0.16, maxDocMultiplier: 0.30),
+        .init(id: "machinable_wax", category: .plastic, cuttingSpeedMPerMin: 300, chipLoadCoefficient: 0.040, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.30, maxDocMultiplier: 0.60),
+        .init(id: "fr4_pcb", category: .composite, cuttingSpeedMPerMin: 150, chipLoadCoefficient: 0.010, chipLoadClampMinMm: 0.005, chipLoadClampMaxMm: 0.05, maxDocMultiplier: 0.10),
+        .init(id: "carbon_fiber", category: .composite, cuttingSpeedMPerMin: 150, chipLoadCoefficient: 0.012, chipLoadClampMinMm: 0.01, chipLoadClampMaxMm: 0.06, maxDocMultiplier: 0.15),
+        .init(id: "foam_xps", category: .foam, cuttingSpeedMPerMin: 600, chipLoadCoefficient: 0.050, chipLoadClampMinMm: 0.05, chipLoadClampMaxMm: 0.40, maxDocMultiplier: 1.00),
         .init(id: "mdf", category: .wood, cuttingSpeedMPerMin: 400, chipLoadCoefficient: 0.030, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.20, maxDocMultiplier: 0.40),
         .init(id: "plywood", category: .wood, cuttingSpeedMPerMin: 400, chipLoadCoefficient: 0.030, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.20, maxDocMultiplier: 0.40),
         .init(id: "hardwood", category: .wood, cuttingSpeedMPerMin: 350, chipLoadCoefficient: 0.025, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.18, maxDocMultiplier: 0.35),
         .init(id: "softwood", category: .wood, cuttingSpeedMPerMin: 450, chipLoadCoefficient: 0.035, chipLoadClampMinMm: 0.04, chipLoadClampMaxMm: 0.25, maxDocMultiplier: 0.45),
+        .init(id: "bamboo", category: .wood, cuttingSpeedMPerMin: 350, chipLoadCoefficient: 0.025, chipLoadClampMinMm: 0.03, chipLoadClampMaxMm: 0.18, maxDocMultiplier: 0.35),
     ]
 
     public static func byID(_ id: String) -> CuttingMaterial? { catalog.first { $0.id == id } }

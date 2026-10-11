@@ -101,3 +101,36 @@ feeds/speeds settings on before moving to a more expensive or less
 forgiving material. Soft resinous woods like pine can gum up flutes with
 sap/resin on longer jobs — an occasional pause to clean the bit with a
 brush or bit cleaner keeps cut quality consistent through a long program.
+
+## Copper
+Gummy and prone to built-up edge. Use sharp, uncoated or polished carbide with 2 flutes, a light depth of cut and plenty of chip clearing (air blast or a mist of lubricant). Avoid rubbing: if chips come out as dust, feed is too low. Burrs are common — plan a light finishing pass.
+
+## Polycarbonate (Lexan)
+Tough and forgiving, but melts if the chips stay in the cut. Single- or 2-flute O-flute bits work best; keep the feed up so it cuts rather than rubs. Leave the protective film on, and expect a fuzzy edge that needs a light finishing pass. Do not use solvents to clean it.
+
+## ABS
+Cuts easily but softens quickly with heat. Use a single-flute or O-flute bit, a high feed and air blast to clear chips. Melted, re-welded chips in the slot mean the feed is too low or the spindle too fast.
+
+## Nylon
+Tough and stringy; chips tend to wrap around the tool. Use sharp single- or 2-flute bits, high feed, and clear chips often. It is hard to get a crisp edge — plan a deburring step.
+
+## PVC foam board (Forex, Sintra)
+Very easy to cut; the closed-cell foam machines cleanly with a single-flute bit at a high feed. Heat makes the edges melt and string, so keep the feed high. PVC dust and smoke are harmful — use dust collection and never let it burn.
+
+## Solid surface (Corian)
+Machines like a dense, slightly gummy plastic. Carbide 2-flute bits, moderate feed and good dust collection give a clean edge that sands to a polish. The dust is fine — wear a respirator.
+
+## Machinable wax
+Ideal for testing new toolpaths and mold making: it cuts like butter and is reusable. Feeds can be very high and depth of cut generous. Chips can stick in deep pockets — clear them with air.
+
+## FR4 / PCB
+Glass-fibre epoxy board used for printed circuits. Very abrasive: use carbide engraving V-bits or small end mills and expect them to wear. Keep depths shallow (a few hundredths of a millimetre for isolation routing), level the board with a probe or height map, and never breathe the dust — it is glass fibre. Use a vacuum and a respirator.
+
+## Carbon fiber / G10
+Abrasive composite sheets. Use carbide (ideally diamond-coated or compression) bits, shallow passes and good dust extraction. The dust is conductive and harmful — vacuum at the cutter, wear a respirator, and keep it away from electronics.
+
+## XPS foam
+Extruded polystyrene (insulation board) used for prototypes and molds. Cuts with almost no force at very high feed and deep passes; long single-flute or ball-nose bits work well. Heat and slow feeds melt it — keep the feed high.
+
+## Bamboo
+Behaves like a dense hardwood with long fibres that splinter at edges. Use a sharp compression or down-cut bit for clean top edges, moderate depth per pass, and support thin parts with tabs.

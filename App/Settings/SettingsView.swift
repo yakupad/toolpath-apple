@@ -61,7 +61,7 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                 }
                 Section {
-                    LabeledContent("iCloud sync", value: String(localized: "Coming soon"))
+                    ICloudStatusRow()
                     if let backupURL {
                         ShareLink(item: backupURL) { Label("Export backup (JSON)", systemImage: "square.and.arrow.up") }
                     }
@@ -77,7 +77,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Data")
                 } footer: {
-                    Text("Your data is yours: export it any time as JSON or CSV.")
+                    Text("Your data syncs through your own private iCloud — no account needed. It's yours: export it any time as JSON or CSV.")
                 }
                 Section {
                     Text("Cutting values and safety checks are starting points to test, not guarantees. Wear eye and ear protection, secure your work, and never leave a running machine unattended.")

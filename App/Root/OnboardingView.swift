@@ -107,7 +107,7 @@ struct OnboardingView: View {
                     .foregroundStyle(TP.Palette.textSecondary)
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
                     ForEach(MachinePreset.all) { option in
-                        Button { preset = option } label: {
+                        Button { preset = preset == option ? nil : option } label: {
                             VStack(alignment: .leading, spacing: 6) {
                                 Image(systemName: "cube.transparent").font(.title2).foregroundStyle(TP.Palette.accentText)
                                 Spacer(minLength: 8)
@@ -123,6 +123,9 @@ struct OnboardingView: View {
                     }
                 }
                 .sensoryFeedback(.selection, trigger: preset)
+                Text("Values are approximate — check them against your machine. Not listed? Continue without choosing and add your own machine later in Library.")
+                    .font(.footnote)
+                    .foregroundStyle(TP.Palette.textSecondary)
             }
             .padding(TP.Metric.gutter)
         }

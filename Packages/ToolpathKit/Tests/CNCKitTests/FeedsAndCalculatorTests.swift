@@ -44,9 +44,13 @@ struct FeedsTests {
         #expect(reasons.contains(.drillingFormula))
     }
 
-    @Test func catalogMatchesOriginal() {
-        #expect(CuttingMaterial.catalog.count == 10)
-        #expect(Set(CuttingMaterial.catalog.map(\.id)).count == 10)
+    @Test func catalogKeepsPersistedIDs() {
+        // Ids are stored in recipes, logs and stock: originals must never disappear.
+        let original = ["aluminum_6061", "brass", "mild_steel_1018", "stainless_303_304", "acrylic_cast",
+                        "hdpe_delrin", "mdf", "plywood", "hardwood", "softwood"]
+        for id in original { #expect(CuttingMaterial.byID(id) != nil) }
+        #expect(CuttingMaterial.catalog.count == 21)
+        #expect(Set(CuttingMaterial.catalog.map(\.id)).count == 21)
     }
 }
 

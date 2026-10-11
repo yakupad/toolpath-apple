@@ -111,7 +111,8 @@ struct JobDetailView: View {
                     focusedMove: focusedMove,
                     drawProgress: drawProgress,
                     insets: EdgeInsetsValue(top: sizeClass == .compact ? 110 : 150,
-                                            bottom: sizeClass == .compact ? BottomPanelMetrics.collapsedHeight : 24)
+                                            bottom: (sizeClass == .compact ? BottomPanelMetrics.collapsedHeight : 24)
+                                                + (isSimulating ? SimulationBarMetrics.reservedHeight : 0))
                 )
                 // On regular widths the inspector shares the screen: only bleed vertically.
                 .ignoresSafeArea(edges: sizeClass == .compact ? .all : .vertical)
@@ -298,42 +299,67 @@ extension Duration {
 struct BottomPanel<Content: View>: View {
     @Binding var expanded: Bool
     @ViewBuilder let content: Content
-    @GestureState private var drag: CGFloat = 0
+    /// Live drag distance. Plain state (not @GestureState) so it can animate
+    /// back to zero together with the snap instead of jumping on release.
+    @State private var drag: CGFloat = 0
 
     var body: some View {
         GeometryReader { proxy in
             let full = proxy.size.height * 0.86
-            let height = max(BottomPanelMetrics.collapsedHeight, min(full, (expanded ? full : BottomPanelMetrics.collapsedHeight) - drag))
+            let collapsed = BottomPanelMetrics.collapsedHeight
+            let base = expanded ? full : collapsed
+            let height = rubberBand(base - drag, lower: collapsed, upper: full)
             VStack(spacing: 0) {
+                // A generous, full-width grab area: easy to hit with a thumb
+                // or a gloved finger, not just the small capsule.
                 Capsule()
                     .fill(TP.Palette.textTertiary.opacity(0.5))
                     .frame(width: 40, height: 5)
-                    .padding(.vertical, 8)
                     .frame(maxWidth: .infinity)
+                    .frame(height: BottomPanelMetrics.handleHeight)
                     .contentShape(.rect)
                     .onTapGesture { withAnimation(.snappy) { expanded.toggle() } }
                     .gesture(
-                        DragGesture()
-                            .updating($drag) { value, state, _ in state = value.translation.height }
+                        // Global coordinates: the handle moves while the panel
+                        // resizes, so local translations would feed back and jitter.
+                        DragGesture(minimumDistance: 2, coordinateSpace: .global)
+                            .onChanged { drag = $0.translation.height }
                             .onEnded { value in
-                                withAnimation(.snappy) { expanded = value.translation.height < 0 ? true : value.translation.height > 60 ? false : expanded }
+                                let projected = base - value.predictedEndTranslation.height
+                                withAnimation(.spring(response: 0.35, dampingFraction: 0.86)) {
+                                    expanded = projected > (collapsed + full) / 2
+                                    drag = 0
+                                }
                             }
                     )
                     .accessibilityLabel(expanded ? Text("Collapse panel") : Text("Expand panel"))
                     .accessibilityAddTraits(.isButton)
                 content
             }
-            .frame(height: height)
+            .frame(height: height, alignment: .top)
             .background(TP.Palette.canvas, in: UnevenRoundedRectangle(topLeadingRadius: 28, topTrailingRadius: 28))
             .shadow(color: .black.opacity(0.15), radius: 12, y: -2)
             .frame(maxHeight: .infinity, alignment: .bottom)
         }
         .ignoresSafeArea(edges: .bottom)
     }
+
+    /// Follows the finger inside the range and resists gently beyond it.
+    private func rubberBand(_ value: CGFloat, lower: CGFloat, upper: CGFloat) -> CGFloat {
+        if value < lower { return lower - (lower - value) * 0.25 }
+        if value > upper { return upper + (value - upper) * 0.25 }
+        return value
+    }
+}
+
+enum SimulationBarMetrics {
+    /// Bar height plus its spacing, kept clear so the toolpath never sits under it.
+    static let reservedHeight: CGFloat = 92
 }
 
 enum BottomPanelMetrics {
     static let collapsedHeight: CGFloat = 340
+    static let handleHeight: CGFloat = 28
 }
 
 struct IdentifiedURL: Identifiable {

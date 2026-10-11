@@ -113,10 +113,19 @@ final class AssistantModel {
     private var session: LanguageModelSession?
 
     static var availability: SystemLanguageModel.Availability { SystemLanguageModel.default.availability }
+    static var isOnDeviceModelAvailable: Bool {
+        if case .available = availability { true } else { false }
+    }
 
-    func send(_ text: String, maxSpindleRpm: Double) {
+    func send(_ text: String, maxSpindleRpm: Double, hasHomingSwitches: Bool = true) {
         let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty, !isResponding else { return }
+        guard Self.isOnDeviceModelAvailable else {
+            // No Apple Intelligence here: answer from the built-in library.
+            messages.append(ChatMessage(role: .user, text: trimmed))
+            messages.append(OfflineAnswer.compose(for: trimmed, hasHomingSwitches: hasHomingSwitches))
+            return
+        }
         messages.append(ChatMessage(role: .user, text: trimmed))
         messages.append(ChatMessage(role: .assistant, text: ""))
         let index = messages.count - 1

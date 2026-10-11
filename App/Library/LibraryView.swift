@@ -63,13 +63,26 @@ struct MachinePreset: Identifiable, Hashable {
     let maxRpm: Double
     let minRpm: Double
 
+    /// Popular hobby machines, smallest first. Approximate travel and spindle
+    /// ranges, used only to prefill a profile the user can edit.
     static let all: [MachinePreset] = [
         .init(id: "3018", name: "Genmitsu 3018", x: 300, y: 180, z: 45, maxRpm: 10_000, minRpm: 0),
-        .init(id: "shapeoko4xl", name: "Shapeoko 4 XL", x: 838, y: 432, z: 100, maxRpm: 30_000, minRpm: 10_000),
-        .init(id: "shapeoko5pro4x4", name: "Shapeoko 5 Pro 4×4", x: 1229, y: 1229, z: 120, maxRpm: 24_000, minRpm: 10_000),
-        .init(id: "onefinitywoodworker", name: "Onefinity Woodworker", x: 816, y: 816, z: 133, maxRpm: 30_000, minRpm: 10_000),
-        .init(id: "longmillmk2_30x30", name: "LongMill MK2 30×30", x: 792, y: 845, z: 120, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "carveraair", name: "Makera Carvera Air", x: 300, y: 200, z: 120, maxRpm: 15_000, minRpm: 3_000),
+        .init(id: "carvera", name: "Makera Carvera", x: 360, y: 240, z: 140, maxRpm: 15_000, minRpm: 3_000),
+        .init(id: "4040", name: "Genmitsu 4040", x: 400, y: 400, z: 78, maxRpm: 10_000, minRpm: 0),
+        .init(id: "foxalienmasuter", name: "FoxAlien Masuter Pro", x: 400, y: 400, z: 55, maxRpm: 10_000, minRpm: 0),
+        .init(id: "twotreesttc450", name: "Two Trees TTC450", x: 460, y: 460, z: 80, maxRpm: 10_000, minRpm: 0),
+        .init(id: "bobscnce4", name: "BobsCNC E4", x: 610, y: 610, z: 85, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "lead1010", name: "OpenBuilds LEAD 1010", x: 730, y: 810, z: 90, maxRpm: 30_000, minRpm: 10_000),
         .init(id: "xcarve1000", name: "X-Carve 1000", x: 750, y: 750, z: 65, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "longmillmk2_30x30", name: "LongMill MK2 30×30", x: 792, y: 845, z: 120, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "onefinitywoodworker", name: "Onefinity Woodworker", x: 816, y: 816, z: 133, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "shapeoko4xl", name: "Shapeoko 4 XL", x: 838, y: 432, z: 100, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "shapeoko4xxl", name: "Shapeoko 4 XXL", x: 838, y: 838, z: 100, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "onefinityjourneyman", name: "Onefinity Journeyman", x: 1220, y: 816, z: 133, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "shapeoko5pro4x2", name: "Shapeoko 5 Pro 4×2", x: 1229, y: 610, z: 120, maxRpm: 24_000, minRpm: 10_000),
+        .init(id: "longmillmk2_48x30", name: "LongMill MK2 48×30", x: 1270, y: 845, z: 120, maxRpm: 30_000, minRpm: 10_000),
+        .init(id: "shapeoko5pro4x4", name: "Shapeoko 5 Pro 4×4", x: 1229, y: 1229, z: 120, maxRpm: 24_000, minRpm: 10_000),
     ]
 }
 

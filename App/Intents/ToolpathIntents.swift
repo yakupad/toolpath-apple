@@ -15,6 +15,17 @@ enum MaterialOption: String, AppEnum {
     case plywood
     case hardwood
     case softwood
+    case copper
+    case polycarbonate
+    case abs
+    case nylon
+    case pvcFoam = "pvc_foam"
+    case solidSurface = "solid_surface"
+    case machinableWax = "machinable_wax"
+    case fr4 = "fr4_pcb"
+    case carbonFiber = "carbon_fiber"
+    case xpsFoam = "foam_xps"
+    case bamboo
 
     static let typeDisplayRepresentation: TypeDisplayRepresentation = "Material"
     static let caseDisplayRepresentations: [MaterialOption: DisplayRepresentation] = [
@@ -28,6 +39,17 @@ enum MaterialOption: String, AppEnum {
         .plywood: "Plywood",
         .hardwood: "Hardwood",
         .softwood: "Softwood",
+        .copper: "Copper",
+        .polycarbonate: "Polycarbonate",
+        .abs: "ABS",
+        .nylon: "Nylon",
+        .pvcFoam: "PVC foam board",
+        .solidSurface: "Solid surface",
+        .machinableWax: "Machinable wax",
+        .fr4: "FR4 / PCB",
+        .carbonFiber: "Carbon fiber / G10",
+        .xpsFoam: "XPS foam",
+        .bamboo: "Bamboo",
     ]
 }
 

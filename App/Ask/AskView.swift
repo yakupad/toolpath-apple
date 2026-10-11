@@ -51,7 +51,11 @@ struct AskView: View {
                             Label("Ask the assistant: “\(query)”", systemImage: "sparkles")
                         }
                     } footer: {
-                        Text("Runs on your device with Apple Intelligence. Cutting numbers always come from the calculator.")
+                        if AssistantModel.isOnDeviceModelAvailable {
+                            Text("Runs on your device with Apple Intelligence. Cutting numbers always come from the calculator.")
+                        } else {
+                            Text("Answers come from the built-in workshop library. Cutting numbers always come from the calculator.")
+                        }
                     }
                 }
                 if !assistant.messages.isEmpty {
@@ -76,18 +80,22 @@ struct AssistantView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            switch AssistantModel.availability {
-            case .available:
-                conversation
-            case .unavailable(let reason):
-                ContentUnavailableView {
-                    Label("Assistant unavailable", systemImage: "sparkles")
-                } description: {
-                    Text(Self.text(for: reason))
-                } actions: {
-                    Text("Alarm codes and workshop notes in Ask still work offline.").font(.footnote)
+            if case let .unavailable(reason) = AssistantModel.availability {
+                // Still useful without Apple Intelligence: answers come from
+                // the built-in alarm table and workshop notes.
+                Label {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Answers from the built-in workshop library").font(.subheadline.weight(.semibold))
+                        Text(Self.text(for: reason)).font(.footnote).foregroundStyle(TP.Palette.textSecondary)
+                    }
+                } icon: {
+                    Image(systemName: "book.closed").foregroundStyle(TP.Palette.accent)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(TP.Metric.gutter)
+                .background(TP.Palette.card)
             }
+            conversation
         }
         .navigationTitle("Assistant")
         #if os(iOS)
@@ -148,7 +156,7 @@ struct AssistantView: View {
 
     static func text(for reason: SystemLanguageModel.Availability.UnavailableReason) -> LocalizedStringKey {
         switch reason {
-        case .deviceNotEligible: "This device doesn't support Apple Intelligence."
+        case .deviceNotEligible: "Apple Intelligence isn't available on this device or in your region."
         case .appleIntelligenceNotEnabled: "Turn on Apple Intelligence in Settings to use the on-device assistant."
         case .modelNotReady: "The on-device model is still downloading. Try again in a little while."
         @unknown default: "The on-device assistant isn't available right now."

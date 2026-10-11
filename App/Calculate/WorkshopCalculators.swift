@@ -177,12 +177,33 @@ struct UnitsView: View {
     }
 }
 
+/// Currencies offered in the quote calculator: the common ones for makers
+/// selling online, plus the device's own and whatever was picked before.
+enum QuoteCurrency {
+    static let common = ["USD", "EUR", "GBP", "TRY", "CAD", "AUD", "CHF", "JPY", "CNY",
+                         "RUB", "SAR", "AED", "SEK", "NOK", "DKK", "PLN", "INR", "BRL", "MXN"]
+
+    static func options(including selected: String) -> [String] {
+        var codes = common
+        for extra in [selected, Locale.current.currency?.identifier].compactMap({ $0 }) where !codes.contains(extra) {
+            codes.insert(extra, at: 0)
+        }
+        return codes
+    }
+
+    static func label(for code: String) -> String {
+        let name = Locale.current.localizedString(forCurrencyCode: code) ?? code
+        return "\(code) · \(name)"
+    }
+}
+
 struct QuoteView: View {
     @AppStorage("quote.machineRate") private var machineRate = 12.0
     @AppStorage("quote.laborRate") private var laborRate = 20.0
     @AppStorage("quote.feePercent") private var feePercent = 0.065
     @AppStorage("quote.feeFixed") private var feeFixed = 0.2
     @AppStorage("quote.margin") private var margin = 0.6
+    @AppStorage("quote.currency") private var currency = Locale.current.currency?.identifier ?? "USD"
     @State private var input: QuoteInput
 
     /// `machineMinutes` pre-fills from a job's estimated time.
@@ -197,8 +218,14 @@ struct QuoteView: View {
 
     var body: some View {
         let q = QuoteCalculator.quote(input)
-        let currency = Locale.current.currency?.identifier ?? "USD"
         Form {
+            Section {
+                Picker("Currency", selection: $currency) {
+                    ForEach(QuoteCurrency.options(including: currency), id: \.self) { code in
+                        Text(QuoteCurrency.label(for: code)).tag(code)
+                    }
+                }
+            }
             Section("Costs") {
                 NumberField(title: "Material", value: $input.materialCost, unit: currency)
                 NumberField(title: "Machine time", value: $input.machineMinutes, unit: "min")

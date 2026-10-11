@@ -1008,6 +1008,58 @@
         }
       }
     },
+    "ABS": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ABS"
+          }
+        }
+      }
+    },
     "About %@ in. Re-zero Z after the change.": {
       "localizations": {
         "ar": {
@@ -1580,58 +1632,6 @@
         }
       }
     },
-    "Alarm codes and workshop notes in Ask still work offline.": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "رموز الإنذار وملاحظات الورشة في «اسأل» تعمل دون اتصال."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alarmcodes und Werkstattnotizen unter „Fragen“ funktionieren auch offline."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Los códigos de alarma y las notas de taller en Preguntar funcionan sin conexión."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Codici di allarme e note di officina in Chiedi funzionano anche offline."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "「質問」のアラームコードと工房メモはオフラインでも使えます。"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Коды аварий и заметки мастерской во вкладке «Спросить» работают без интернета."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sor sekmesindeki alarm kodları ve atölye notları çevrimdışı da çalışır."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "“提问”中的报警代码和车间笔记可离线使用。"
-          }
-        }
-      }
-    },
     "Alarm table": {
       "localizations": {
         "ar": {
@@ -1992,6 +1992,162 @@
           "stringUnit": {
             "state": "translated",
             "value": "正在分析…"
+          }
+        }
+      }
+    },
+    "Answers come from the built-in workshop library. Cutting numbers always come from the calculator.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تأتي الإجابات من مكتبة الورشة المدمجة. قيم القطع تأتي دائمًا من الحاسبة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antworten stammen aus der eingebauten Werkstatt-Bibliothek. Schnittwerte kommen immer aus dem Rechner."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las respuestas vienen de la biblioteca de taller integrada. Los valores de corte siempre vienen de la calculadora."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le risposte provengono dalla libreria d'officina integrata. I valori di taglio arrivano sempre dal calcolatore."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回答は内蔵の作業場ライブラリから表示されます。切削条件は常に計算ツールから出します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответы берутся из встроенной библиотеки мастерской. Режимы резания всегда даёт калькулятор."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yanıtlar yerleşik atölye kütüphanesinden gelir. Kesim değerleri her zaman hesaplayıcıdan gelir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回答来自内置的车间资料库。切削参数始终来自计算器。"
+          }
+        }
+      }
+    },
+    "Answers from the built-in workshop library": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إجابات من مكتبة الورشة المدمجة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antworten aus der eingebauten Werkstatt-Bibliothek"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Respuestas de la biblioteca de taller integrada"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Risposte dalla libreria d'officina integrata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内蔵の作業場ライブラリからの回答"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ответы из встроенной библиотеки мастерской"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yanıtlar yerleşik atölye kütüphanesinden"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自内置车间资料库的回答"
+          }
+        }
+      }
+    },
+    "Apple Intelligence isn't available on this device or in your region.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence غير متاح على هذا الجهاز أو في منطقتك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ist auf diesem Gerät oder in deiner Region nicht verfügbar."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence no está disponible en este dispositivo o en tu región."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence non è disponibile su questo dispositivo o nella tua regione."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このデバイスまたはお住まいの地域では Apple Intelligence を利用できません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence недоступен на этом устройстве или в вашем регионе."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence bu cihazda veya bölgenizde kullanılamıyor."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设备或你所在的地区不支持 Apple 智能。"
           }
         }
       }
@@ -2360,58 +2516,6 @@
         }
       }
     },
-    "Assistant unavailable": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "المساعد غير متاح"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Assistent nicht verfügbar"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Asistente no disponible"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Assistente non disponibile"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アシスタントは利用できません"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ассистент недоступен"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Asistan kullanılamıyor"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "助手不可用"
-          }
-        }
-      }
-    },
     "Back": {
       "localizations": {
         "ar": {
@@ -2564,6 +2668,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "球头刀直径"
+          }
+        }
+      }
+    },
+    "Bamboo": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خيزران"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bambus"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bambú"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bambù"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "竹"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бамбук"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bambu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "竹材"
           }
         }
       }
@@ -3344,6 +3500,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "硬质合金"
+          }
+        }
+      }
+    },
+    "Carbon fiber / G10": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ألياف الكربون / G10"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kohlefaser / G10"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fibra de carbono / G10"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fibra di carbonio / G10"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カーボンファイバー / G10"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Углепластик / G10"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karbon fiber / G10"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "碳纤维 / G10"
           }
         }
       }
@@ -4498,58 +4706,6 @@
         }
       }
     },
-    "Coming soon": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "قريبًا"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Demnächst"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Próximamente"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prossimamente"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "近日公開"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Скоро"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yakında"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "即将推出"
-          }
-        }
-      }
-    },
     "Compare": {
       "localizations": {
         "ar": {
@@ -5122,6 +5278,58 @@
         }
       }
     },
+    "Copper": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نحاس"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kupfer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cobre"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rame"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "銅"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Медь"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakır"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "铜"
+          }
+        }
+      }
+    },
     "Correct bit loaded": {
       "localizations": {
         "ar": {
@@ -5378,6 +5586,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "根据已记录的加工统计。"
+          }
+        }
+      }
+    },
+    "Currency": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العملة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Währung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Moneda"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valuta"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通貨"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Валюта"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para birimi"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "货币"
           }
         }
       }
@@ -7053,6 +7313,58 @@
         }
       }
     },
+    "FR4 / PCB": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / لوحة دوائر"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / Leiterplatte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / PCB"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / PCB"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / 基板"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / печатная плата"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / PCB"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FR4 / 电路板"
+          }
+        }
+      }
+    },
     "Feed": {
       "localizations": {
         "ar": {
@@ -7986,6 +8298,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "刃数：%lld"
+          }
+        }
+      }
+    },
+    "For RPM, feed and depth of cut, use the Feeds & Speeds calculator in the Calculate tab — it works from your machine's limits.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "للسرعة والتغذية وعمق القطع استخدم حاسبة التغذية والسرعة في علامة تبويب الحساب — فهي تعمل وفق حدود ماكينتك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für Drehzahl, Vorschub und Zustelltiefe nutze den Vorschub-Rechner im Tab „Berechnen“ – er arbeitet mit den Grenzen deiner Maschine."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para RPM, avance y profundidad de corte, usa la calculadora de avances en la pestaña Calcular: trabaja con los límites de tu máquina."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per giri, avanzamento e profondità di passata usa il calcolatore nella scheda Calcola: lavora con i limiti della tua macchina."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回転数、送り速度、切込み深さは「計算」タブの送り・回転数計算ツールを使ってください。機械の上限に合わせて計算します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для оборотов, подачи и глубины резания используйте калькулятор во вкладке «Расчёт» — он учитывает ограничения вашего станка."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devir, ilerleme ve kesme derinliği için Hesapla sekmesindeki İlerleme ve Devir hesaplayıcısını kullanın — makinenizin sınırlarına göre çalışır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "转速、进给和切深请使用“计算”标签中的进给与转速计算器，它会按你机床的限制来计算。"
           }
         }
       }
@@ -8979,6 +9343,58 @@
         }
       }
     },
+    "I couldn't find this in the workshop notes. Try different words — for example the material, the symptom or the alarm code.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لم أجد ذلك في ملاحظات الورشة. جرّب كلمات أخرى — مثل الخامة أو العرَض أو رمز الإنذار."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das habe ich in den Werkstattnotizen nicht gefunden. Versuche andere Wörter – etwa das Material, das Symptom oder den Alarmcode."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No encontré esto en las notas del taller. Prueba con otras palabras, por ejemplo el material, el síntoma o el código de alarma."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non l'ho trovato nelle note d'officina. Prova altre parole, ad esempio il materiale, il sintomo o il codice di allarme."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作業メモに該当する内容が見つかりませんでした。材料、症状、アラームコードなど別の言葉で試してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не нашёл этого в заметках мастерской. Попробуйте другие слова — например, материал, симптом или код аварии."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bunu atölye notlarında bulamadım. Farklı kelimeler deneyin — örneğin malzeme, belirti ya da alarm kodu."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在车间笔记中没有找到相关内容。请换个说法，例如材料、现象或报警代码。"
+          }
+        }
+      }
+    },
     "I understand and will verify settings before cutting": {
       "localizations": {
         "ar": {
@@ -9871,7 +10287,6 @@
     },
     "L%lld": {},
     "Language": {
-      "extractionState": "stale",
       "localizations": {
         "ar": {
           "stringUnit": {
@@ -10762,6 +11177,58 @@
       }
     },
     "MDF": {},
+    "Machinable wax": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شمع قابل للتشغيل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modellierwachs"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cera mecanizable"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cera lavorabile"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切削用ワックス"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Модельный воск"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşlenebilir mum"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可加工蜡"
+          }
+        }
+      }
+    },
     "Machine": {
       "localizations": {
         "ar": {
@@ -12634,6 +13101,58 @@
         }
       }
     },
+    "Nylon": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نايلون"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nylon"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nailon"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nylon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ナイロン"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нейлон"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naylon"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尼龙"
+          }
+        }
+      }
+    },
     "OK": {
       "localizations": {
         "ar": {
@@ -12686,6 +13205,7 @@
         }
       }
     },
+    "On": {},
     "One payment · no subscription": {
       "localizations": {
         "ar": {
@@ -13154,6 +13674,58 @@
         }
       }
     },
+    "PVC foam board": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لوح PVC رغوي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PVC-Hartschaumplatte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plancha de PVC espumado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pannello in PVC espanso"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "発泡塩ビ板"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вспененный ПВХ"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PVC köpük levha"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PVC 发泡板"
+          }
+        }
+      }
+    },
     "Pause": {
       "localizations": {
         "ar": {
@@ -13566,6 +14138,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "挖槽"
+          }
+        }
+      }
+    },
+    "Polycarbonate": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بولي كربونات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polycarbonat"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Policarbonato"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Policarbonato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ポリカーボネート"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поликарбонат"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Polikarbonat"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "聚碳酸酯"
           }
         }
       }
@@ -16696,6 +17320,58 @@
         }
       }
     },
+    "Sign in to iCloud in Settings": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سجّل الدخول إلى iCloud من الإعدادات"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melde dich in den Einstellungen bei iCloud an"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inicia sesión en iCloud en Ajustes"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi a iCloud in Impostazioni"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定でiCloudにサインインしてください"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Войдите в iCloud в Настройках"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar'dan iCloud'a giriş yapın"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请在“设置”中登录 iCloud"
+          }
+        }
+      }
+    },
     "Simulate": {
       "localizations": {
         "ar": {
@@ -17056,6 +17732,110 @@
           "stringUnit": {
             "state": "translated",
             "value": "软木（松木）"
+          }
+        }
+      }
+    },
+    "Solid surface": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سطح صلب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mineralwerkstoff"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Superficie sólida"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid surface"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人工大理石"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Искусственный камень"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid surface"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人造石"
+          }
+        }
+      }
+    },
+    "Solid surface (Corian)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سطح صلب (Corian)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mineralwerkstoff (Corian)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Superficie sólida (Corian)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid surface (Corian)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人工大理石（Corian）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Искусственный камень (Corian)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solid surface (Corian)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "人造石（Corian）"
           }
         }
       }
@@ -18945,58 +19725,6 @@
         }
       }
     },
-    "This device doesn't support Apple Intelligence.": {
-      "localizations": {
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "هذا الجهاز لا يدعم Apple Intelligence."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dieses Gerät unterstützt Apple Intelligence nicht."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Este dispositivo no es compatible con Apple Intelligence."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Questo dispositivo non supporta Apple Intelligence."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "このデバイスはApple Intelligenceに対応していません。"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Это устройство не поддерживает Apple Intelligence."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bu cihaz Apple Intelligence'ı desteklemiyor."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "此设备不支持 Apple 智能。"
-          }
-        }
-      }
-    },
     "This file couldn't be read as G-code text.": {
       "localizations": {
         "ar": {
@@ -20401,6 +21129,58 @@
         }
       }
     },
+    "Unavailable": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متاح"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht verfügbar"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non disponibile"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "利用不可"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недоступно"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanılamıyor"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不可用"
+          }
+        }
+      }
+    },
     "Units": {
       "localizations": {
         "ar": {
@@ -20761,6 +21541,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "V 刀深度"
+          }
+        }
+      }
+    },
+    "Values are approximate — check them against your machine. Not listed? Continue without choosing and add your own machine later in Library.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "القيم تقريبية — قارنها بماكينتك. ليست في القائمة؟ تابع دون اختيار وأضف ماكينتك لاحقًا من المكتبة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Werte sind ungefähr – prüfe sie an deiner Maschine. Nicht dabei? Fahre ohne Auswahl fort und lege deine Maschine später in der Bibliothek an."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los valores son aproximados: compáralos con tu máquina. ¿No aparece? Continúa sin elegir y añade tu máquina más tarde en Biblioteca."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I valori sono indicativi: confrontali con la tua macchina. Non c'è? Continua senza scegliere e aggiungi la tua macchina più tardi in Libreria."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "値はおおよそです。お使いの機械と照らし合わせてください。一覧にない場合は、選ばずに進み、あとでライブラリから機械を追加できます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Значения приблизительные — сверьте их со своим станком. Нет в списке? Продолжите без выбора и добавьте станок позже в Библиотеке."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Değerler yaklaşıktır — kendi makinenizle karşılaştırın. Listede yok mu? Seçmeden devam edin, makinenizi daha sonra Kütüphane'den ekleyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数值为近似值，请与你的机床核对。没有你的机型？可以不选择直接继续，之后在资料库中添加你的机床。"
           }
         }
       }
@@ -21661,6 +22493,58 @@
         }
       }
     },
+    "XPS foam": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "رغوة XPS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XPS-Schaum"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Espuma XPS"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schiuma XPS"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XPSフォーム"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пенополистирол XPS"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XPS köpük"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XPS 泡沫"
+          }
+        }
+      }
+    },
     "Y": {},
     "Yearly": {
       "localizations": {
@@ -21766,54 +22650,54 @@
         }
       }
     },
-    "Your data is yours: export it any time as JSON or CSV.": {
+    "Your data syncs through your own private iCloud — no account needed. It's yours: export it any time as JSON or CSV.": {
       "localizations": {
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "بياناتك ملكك: صدّرها في أي وقت بصيغة JSON أو CSV."
+            "value": "تتم مزامنة بياناتك عبر iCloud الخاص بك — دون حساب. بياناتك ملكك: صدّرها في أي وقت بصيغة JSON أو CSV."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deine Daten gehören dir: Exportiere sie jederzeit als JSON oder CSV."
+            "value": "Deine Daten werden über dein privates iCloud synchronisiert – ohne Konto. Sie gehören dir: exportiere sie jederzeit als JSON oder CSV."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tus datos son tuyos: expórtalos cuando quieras en JSON o CSV."
+            "value": "Tus datos se sincronizan con tu iCloud privado, sin cuenta. Son tuyos: expórtalos cuando quieras en JSON o CSV."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "I tuoi dati sono tuoi: esportali quando vuoi in JSON o CSV."
+            "value": "I tuoi dati si sincronizzano con il tuo iCloud privato, senza account. Sono tuoi: esportali quando vuoi in JSON o CSV."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "データはあなたのものです。いつでもJSONやCSVで書き出せます。"
+            "value": "データはあなた専用のiCloudで同期されます。アカウントは不要です。データはあなたのもの。いつでもJSONやCSVで書き出せます。"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ваши данные принадлежат вам: экспортируйте их в JSON или CSV в любое время."
+            "value": "Данные синхронизируются через ваш личный iCloud — без аккаунта. Они ваши: экспортируйте их в JSON или CSV в любой момент."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verilerin senin: istediğin zaman JSON veya CSV olarak dışa aktar."
+            "value": "Verileriniz kendi özel iCloud'unuzla senkronize olur — hesap gerekmez. Verileriniz sizindir: istediğiniz zaman JSON veya CSV olarak dışa aktarın."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "你的数据属于你：随时以 JSON 或 CSV 导出。"
+            "value": "你的数据通过你自己的私有 iCloud 同步，无需账户。数据归你所有：随时可导出为 JSON 或 CSV。"
           }
         }
       }
