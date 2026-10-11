@@ -30,4 +30,4 @@ notes live in a private planning vault, not in this repo.
   `MATCH_PASSWORD` Actions secret — never in the repo.
 - TestFlight: `.github/workflows/testflight.yml` (manual). Secrets:
   `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_KEY_CONTENT_BASE64`, `MATCH_PASSWORD`,
-  `MATCH_REPO_TOKEN` (fine-grained PAT, Contents: read on apple-signing).
+  `MATCH_DEPLOY_KEY` (read-only deploy key on apple-signing) or `MATCH_REPO_TOKEN`.

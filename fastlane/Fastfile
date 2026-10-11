@@ -57,9 +57,10 @@ platform :ios do
       scheme: "Toolpath",
       destination: "generic/platform=iOS",
       export_method: "app-store",
+      xcodebuild_formatter: "",
       xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true)
+    upload_to_testflight(skip_waiting_for_build_processing: true) unless ENV["SKIP_UPLOAD"] == "1"
   end
 end
 
@@ -75,8 +76,9 @@ platform :mac do
       scheme: "Toolpath",
       destination: "generic/platform=macOS",
       export_method: "app-store",
+      xcodebuild_formatter: "",
       xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true)
+    upload_to_testflight(skip_waiting_for_build_processing: true) unless ENV["SKIP_UPLOAD"] == "1"
   end
 end

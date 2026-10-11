@@ -33,6 +33,7 @@ jobs:
           ASC_KEY_CONTENT_BASE64: ${{ secrets.ASC_KEY_CONTENT_BASE64 }}
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           MATCH_REPO_TOKEN: ${{ secrets.MATCH_REPO_TOKEN }}
+          MATCH_DEPLOY_KEY: ${{ secrets.MATCH_DEPLOY_KEY }}
           BUILD_NUMBER: ${{ github.run_number }}
           LANE: ${{ matrix.lane }}
         run: |
@@ -40,7 +41,16 @@ jobs:
           xcodegen generate
           export ASC_KEY_PATH="$RUNNER_TEMP/asc_key.p8"
           printf '%s' "$ASC_KEY_CONTENT_BASE64" | base64 --decode > "$ASC_KEY_PATH"
-          export MATCH_GIT_BASIC_AUTHORIZATION=$(printf 'x-access-token:%s' "$MATCH_REPO_TOKEN" | base64)
+          # Access to the private signing repo: a read-only deploy key
+          # (preferred) or a fine-grained token with Contents: read.
+          if [ -n "$MATCH_DEPLOY_KEY" ]; then
+            eval "$(ssh-agent -s)"
+            printf '%s\n' "$MATCH_DEPLOY_KEY" | ssh-add -
+            mkdir -p ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts 2>/dev/null
+            export MATCH_GIT_URL="git@github.com:yakupad/apple-signing.git"
+          else
+            export MATCH_GIT_BASIC_AUTHORIZATION=$(printf 'x-access-token:%s' "$MATCH_REPO_TOKEN" | base64)
+          fi
           export MATCH_KEYCHAIN_NAME=ci.keychain MATCH_KEYCHAIN_PASSWORD=$(uuidgen)
           security create-keychain -p "$MATCH_KEYCHAIN_PASSWORD" "$MATCH_KEYCHAIN_NAME"
           security set-keychain-settings -lut 3600 "$MATCH_KEYCHAIN_NAME"
