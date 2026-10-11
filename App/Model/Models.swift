@@ -25,6 +25,10 @@ final class JobFile {
     var tagsRaw: String = ""
     /// False until the cached summary above has been computed at least once.
     var isAnalyzed: Bool = false
+    /// Lathe jobs: axial position of the chuck jaws (negative), if set.
+    var chuckZ: Double?
+    /// "lathe" when the file was read as a lathe program.
+    var kindRaw: String = MachineKind.mill.rawValue
 
     init(name: String, content: String) {
         self.name = name
@@ -51,8 +55,19 @@ final class Machine {
     var createdAt: Date = Date.now
     /// Address of a Wi-Fi controller for the read-only live monitor.
     var monitorHost: String = ""
+    // Lathe profile (used when kind == .lathe).
+    var kindRaw: String = MachineKind.mill.rawValue
+    var maxTurningDiameter: Double = 135
+    var maxTurningLength: Double = 275
+    /// X words are diameters (Fanuc default). Off = radius programming (G8).
+    var latheDiameterMode: Bool = true
 
     init(name: String) { self.name = name }
+
+    var kind: MachineKind {
+        get { MachineKind(rawValue: kindRaw) ?? .mill }
+        set { kindRaw = newValue.rawValue }
+    }
 
     var envelope: MachineEnvelope {
         MachineEnvelope(maxX: travelX, maxY: travelY, minZ: -travelZ, maxZ: travelZ)

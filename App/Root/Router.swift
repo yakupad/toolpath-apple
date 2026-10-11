@@ -84,6 +84,10 @@ enum JobImporter {
     static func sampleJob() -> JobFile {
         JobFile(name: "sample_sign.nc", content: SampleProgram.sign)
     }
+
+    static func latheSampleJob() -> JobFile {
+        JobFile(name: "sample_lathe.nc", content: SampleProgram.lathe)
+    }
 }
 
 /// Result of analyzing one job — computed off the main actor, cached by id.
@@ -95,10 +99,33 @@ struct JobAnalysis: Sendable {
     let geometry: ToolpathGeometry
     let timeline: GCodeTimeline
     let score: Int
+    var kind: MachineKind { document.kind }
 
-    static func make(content: String, name: String, rapidRate: Double, envelope: MachineEnvelope?) -> JobAnalysis {
-        let document = GCodeParser().parse(content, fileName: name)
-        let findings = GCodeAnalyzer().analyze(document, machineEnvelope: envelope)
+    /// How to read a lathe program, when the job is one.
+    struct LatheOptions: Sendable {
+        var diameterMode = true
+        var maxRpm: Double?
+        var setup = LatheSetup()
+    }
+
+    /// A file is a lathe program when it clearly looks like one, or when the
+    /// active machine is a lathe and the file has no Y axis at all.
+    static func isLathe(content: String, machineKind: MachineKind?) -> Bool {
+        if LatheDetector.isLikelyLathe(content) { return true }
+        guard machineKind == .lathe else { return false }
+        return !LatheDetector.hasYAxis(content)
+    }
+
+    static func make(content: String, name: String, rapidRate: Double, envelope: MachineEnvelope?, lathe: LatheOptions? = nil) -> JobAnalysis {
+        let document: GCodeDocument
+        let findings: [Finding]
+        if let lathe {
+            document = LatheParser(diameterMode: lathe.diameterMode, machineMaxRpm: lathe.maxRpm).parse(content, fileName: name)
+            findings = LatheAnalyzer().analyze(document, setup: lathe.setup)
+        } else {
+            document = GCodeParser().parse(content, fileName: name)
+            findings = GCodeAnalyzer().analyze(document, machineEnvelope: envelope)
+        }
         return JobAnalysis(
             document: document,
             findings: findings,
@@ -133,9 +160,16 @@ final class AnalysisStore {
         guard !inFlight.contains(id) else { return }
         inFlight.insert(id)
         let content = job.content, name = job.name
+        let machineKind = machine?.kind
+        let latheOptions = JobAnalysis.LatheOptions(
+            diameterMode: machine?.kind == .lathe ? machine?.latheDiameterMode ?? true : true,
+            maxRpm: machine?.kind == .lathe ? machine?.maxSpindleRpm : nil,
+            setup: LatheSetup(maxDiameter: machine?.kind == .lathe ? machine?.maxTurningDiameter : nil, chuckZ: job.chuckZ)
+        )
         Task {
             let result = await Task.detached(priority: .userInitiated) {
-                JobAnalysis.make(content: content, name: name, rapidRate: rapidRate, envelope: envelope)
+                let lathe = JobAnalysis.isLathe(content: content, machineKind: machineKind) ? latheOptions : nil
+                return JobAnalysis.make(content: content, name: name, rapidRate: rapidRate, envelope: envelope, lathe: lathe)
             }.value
             results[id] = result
             inFlight.remove(id)
@@ -145,6 +179,7 @@ final class AnalysisStore {
             job.cautionCount = result.cautionCount
             job.estimatedMinutes = result.statistics.estimatedMachiningTimeMinutes
             job.toolCount = max(result.document.toolChanges.count, 1)
+            job.kindRaw = result.kind.rawValue
             let bounds = result.document.cuttingBounds ?? result.document.bounds
             job.widthMm = bounds.width
             job.heightMm = bounds.height

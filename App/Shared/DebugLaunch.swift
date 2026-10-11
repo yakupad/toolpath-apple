@@ -1,6 +1,15 @@
 import Foundation
 
 enum DebugFlags {
+    /// Screenshot runs open job previews in 2D with `-view2D`.
+    static var start2D: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-view2D")
+        #else
+        false
+        #endif
+    }
+
     /// Screenshot runs skip onboarding with `-skipOnboarding`.
     static var skipOnboarding: Bool {
         #if DEBUG
@@ -39,6 +48,19 @@ enum DebugLaunch {
                 try? FileManager.default.removeItem(at: target)
                 try? FileManager.default.copyItem(at: url, to: target)
             }
+        }
+        if args.contains("-openLatheDanger") {
+            // G96 without a G50 limit facing to the centre, and a rapid into uncut stock.
+            let job = JobFile(name: "lathe_mistakes.nc", content: "G21 G96 S150 M3\nG95\nT0101\nG0 X32 Z2\nG1 X30 F0.2\nG1 Z-20\nG0 X20 Z-10\nG0 X32 Z0\nG1 X0 F0.1\nG0 Z5\nM5")
+            context.insert(job)
+            router.analyses.load(job, machine: nil)
+            router.open(job: job.id)
+        }
+        if args.contains("-openLatheSample") {
+            let job = JobImporter.latheSampleJob()
+            context.insert(job)
+            router.analyses.load(job, machine: nil)
+            router.open(job: job.id)
         }
         if args.contains("-openSample") {
             let job = JobImporter.sampleJob()

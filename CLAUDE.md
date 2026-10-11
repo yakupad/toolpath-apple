@@ -31,3 +31,16 @@ notes live in a private planning vault, not in this repo.
 - TestFlight: `.github/workflows/testflight.yml` (manual). Secrets:
   `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_KEY_CONTENT_BASE64`, `MATCH_PASSWORD`,
   `MATCH_DEPLOY_KEY` (read-only deploy key on apple-signing) or `MATCH_REPO_TOKEN`.
+
+## Lathe support
+- `CNCKit/GCode/LatheParser.swift`: 2-axis lathe programs (Fanuc ISO, LinuxCNC,
+  grblHAL). Moves map to the shared model as x = axial Z, y = radius, z = 0, so
+  preview/timeline/statistics are shared. G95/G99 and G96 are converted to
+  mm/min and RPM per move. G70/G71/G72/G76/G74/G75 are expanded into passes.
+  G90/G91 are absolute/incremental (not Fanuc group-A turning cycles).
+- `LatheAnalyzer` keeps a per-0.1 mm stock surface so rapids between roughing
+  passes are not flagged. Lathe findings have their own categories and
+  explanations (`Explainer.explain(_:kind:)`).
+- A job is read as a lathe program when `LatheDetector` says so, or when the
+  active machine is a lathe and the file has no Y words.
+- Debug launch flags: `-openLatheSample`, `-openLatheDanger`, `-view2D`.

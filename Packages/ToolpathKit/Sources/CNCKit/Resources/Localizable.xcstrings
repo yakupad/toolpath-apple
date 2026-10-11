@@ -1,6 +1,64 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%lld cutting moves go past X0 to the other side of the spindle axis. The first is on line %lld, at X%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld حركة قطع تتجاوز X0 إلى الجهة الأخرى من محور عمود الدوران. الأولى في السطر %2$lld عند X%3$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Schnittbewegungen gehen über X0 hinaus auf die andere Seite der Spindelachse. Die erste ist in Zeile %lld, bei X%@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld cutting moves go past X0 to the other side of the spindle axis. The first is on line %2$lld, at X%3$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimientos de corte pasan de X0 al otro lado del eje del husillo. El primero está en la línea %lld, en X%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimenti di taglio superano X0 passando dall'altra parte dell'asse mandrino. Il primo è alla riga %lld, a X%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld件の切削移動がX0を越えて主軸中心の反対側に出ています。最初は%2$lld行目、X%3$@です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld рабочих перемещений уходят за X0 на другую сторону оси шпинделя. Первое — в строке %lld, на X%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld kesme hareketi X0'ı geçerek iş mili ekseninin öbür tarafına gidiyor. İlki %2$lld. satırda, X%3$@ konumunda."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld 个切削动作越过 X0 到了主轴轴线的另一侧。第一个在第 %2$lld 行，位于 X%3$@。"
+          }
+        }
+      }
+    },
     "%lld cutting moves run before any M3/M4 spindle start. The first is on line %lld.": {
       "localizations": {
         "ar": {
@@ -175,6 +233,122 @@
         }
       }
     },
+    "%lld moves go beyond your lathe's maximum diameter. The first is on line %lld, at X%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld حركة تتجاوز أقصى قطر لمخرطتك. الأولى في السطر %2$lld عند X%3$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Bewegungen gehen über den größten Durchmesser deiner Drehmaschine hinaus. Die erste ist in Zeile %lld, bei X%@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld moves go beyond your lathe's maximum diameter. The first is on line %2$lld, at X%3$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimientos superan el diámetro máximo de tu torno. El primero está en la línea %lld, en X%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimenti superano il diametro massimo del tuo tornio. Il primo è alla riga %lld, a X%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld件の移動が旋盤の最大直径を超えています。最初は%2$lld行目、X%3$@です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld перемещений выходят за максимальный диаметр вашего станка. Первое — в строке %lld, на X%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hareket tornanızın en büyük çapını aşıyor. İlki %2$lld. satırda, X%3$@ konumunda."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld 个动作超出了车床的最大直径。第一个在第 %2$lld 行，位于 X%3$@。"
+          }
+        }
+      }
+    },
+    "%lld moves reach the chuck jaws you set. The first is on line %lld, at Z%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld حركة تصل إلى فكوك الظرف التي حددتها. الأولى في السطر %2$lld عند Z%3$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Bewegungen erreichen die eingestellten Futterbacken. Die erste ist in Zeile %lld, bei Z%@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld moves reach the chuck jaws you set. The first is on line %2$lld, at Z%3$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimientos llegan a las garras del plato que indicaste. El primero está en la línea %lld, en Z%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld movimenti raggiungono le griffe impostate. Il primo è alla riga %lld, a Z%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld件の移動が設定したチャックの爪に届いています。最初は%2$lld行目、Z%3$@です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld перемещений доходят до заданных кулачков патрона. Первое — в строке %lld, на Z%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hareket ayarladığınız ayna çenelerine ulaşıyor. İlki %2$lld. satırda, Z%3$@ konumunda."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld 个动作碰到了你设置的卡爪。第一个在第 %2$lld 行，位于 Z%3$@。"
+          }
+        }
+      }
+    },
     "%lld rapid moves go below the stock top. The first is on line %lld, dropping from Z%@ to Z%@.": {
       "localizations": {
         "ar": {
@@ -229,6 +403,122 @@
           "stringUnit": {
             "state": "translated",
             "value": "有 %1$lld 个快速移动低于材料上表面。第一个在第 %2$lld 行，从 Z%3$@ 降到 Z%4$@。"
+          }
+        }
+      }
+    },
+    "%lld rapid moves go more than 5 mm past the deepest cut, toward the chuck. The first is on line %lld, at Z%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld حركة سريعة تتجاوز أعمق قطع بأكثر من 5 مم باتجاه الظرف. الأولى في السطر %2$lld عند Z%3$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Eilgänge gehen mehr als 5 mm über den tiefsten Schnitt hinaus Richtung Futter. Der erste ist in Zeile %lld, bei Z%@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld rapid moves go more than 5 mm past the deepest cut, toward the chuck. The first is on line %2$lld, at Z%3$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld rápidos van más de 5 mm más allá del corte más profundo, hacia el plato. El primero está en la línea %lld, en Z%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld rapidi vanno oltre 5 mm dopo il taglio più profondo, verso il mandrino. Il primo è alla riga %lld, a Z%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld件の早送りが最も深い加工から5 mm以上チャック側へ進んでいます。最初は%2$lld行目、Z%3$@です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld холостых ходов уходят больше чем на 5 мм дальше самого глубокого прохода, к патрону. Первый — в строке %lld, на Z%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hızlı hareket en derin kesimin 5 mm'den fazla ötesine, aynaya doğru gidiyor. İlki %2$lld. satırda, Z%3$@ konumunda."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld 个快速移动越过最深切削 5 mm 以上，朝卡盘方向运动。第一个在第 %2$lld 行，位于 Z%3$@。"
+          }
+        }
+      }
+    },
+    "%lld rapid moves pass through material that hasn't been cut yet. The first is on line %lld, ending at X%@ Z%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld حركة سريعة تمر عبر خامة لم تُقطع بعد. الأولى في السطر %2$lld وتنتهي عند X%3$@ Z%4$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld Eilgänge fahren durch noch nicht abgetragenes Material. Der erste ist in Zeile %lld und endet bei X%@ Z%@."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "%1$lld rapid moves pass through material that hasn't been cut yet. The first is on line %2$lld, ending at X%3$@ Z%4$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld rápidos atraviesan material que aún no se ha cortado. El primero está en la línea %lld y termina en X%@ Z%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld rapidi attraversano materiale non ancora tagliato. Il primo è alla riga %lld e termina a X%@ Z%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld件の早送りがまだ削っていない材料を通過しています。最初は%2$lld行目で、X%3$@ Z%4$@で終わります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld холостых ходов проходят через ещё не снятый материал. Первый — в строке %lld и заканчивается на X%@ Z%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld hızlı hareket henüz kesilmemiş malzemenin içinden geçiyor. İlki %2$lld. satırda, X%3$@ Z%4$@ konumunda bitiyor."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld 个快速移动穿过尚未切削的材料。第一个在第 %2$lld 行，终点为 X%3$@ Z%4$@。"
           }
         }
       }
@@ -1019,6 +1309,162 @@
         }
       }
     },
+    "A tool fed into a stationary part rubs and chips. With feed per revolution (G95) the axis may not move at all and the program appears to hang.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأداة المدفوعة نحو قطعة متوقفة تحتك وتتشظى. مع التغذية لكل دورة (G95) قد لا يتحرك المحور إطلاقًا ويبدو البرنامج متوقفًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Werkzeug, das in ein stehendes Teil zugestellt wird, reibt und bricht aus. Bei Vorschub pro Umdrehung (G95) bewegt sich die Achse eventuell gar nicht und das Programm scheint zu hängen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una herramienta que avanza contra una pieza parada roza y se astilla. Con avance por vuelta (G95) el eje puede no moverse y el programa parece colgado."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un utensile spinto contro un pezzo fermo striscia e si scheggia. Con avanzamento al giro (G95) l'asse può non muoversi e il programma sembra bloccato."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "止まっている部品に送られた工具はこすれて欠けます。毎回転送り（G95）では軸がまったく動かず、プログラムが止まったように見えることがあります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резец, подаваемый на неподвижную деталь, трёт и выкрашивается. При подаче на оборот (G95) ось может вообще не двигаться, и программа будто зависает."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duran bir parçaya ilerletilen takım sürtünür ve ufalanır. Devir başına ilerlemede (G95) eksen hiç hareket etmeyebilir ve program takılmış gibi görünür."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "对静止工件进给的刀具会摩擦并崩刃。采用每转进给（G95）时轴可能完全不动，程序看起来像卡住了。"
+          }
+        }
+      }
+    },
+    "Add G50 S… (Fanuc style) or G96 D… (LinuxCNC) with a safe maximum before the first G96 cut, below what your chuck and part are rated for.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف G50 S… (أسلوب Fanuc) أو G96 D… (LinuxCNC) بحد أقصى آمن قبل أول قطع بـ G96، أقل مما يتحمله الظرف والقطعة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge vor dem ersten G96-Schnitt G50 S… (Fanuc) oder G96 D… (LinuxCNC) mit einem sicheren Maximum ein, unter dem, wofür Futter und Teil ausgelegt sind."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade G50 S… (estilo Fanuc) o G96 D… (LinuxCNC) con un máximo seguro antes del primer corte en G96, por debajo de lo que admiten el plato y la pieza."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi G50 S… (stile Fanuc) o G96 D… (LinuxCNC) con un massimo sicuro prima del primo taglio in G96, sotto ciò che mandrino e pezzo sopportano."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初のG96加工の前に、チャックと部品の許容値より低い安全な上限でG50 S…（Fanuc方式）またはG96 D…（LinuxCNC）を追加してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте G50 S… (стиль Fanuc) или G96 D… (LinuxCNC) с безопасным максимумом до первого прохода в G96 — ниже допустимого для патрона и детали."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk G96 kesiminden önce, aynanızın ve parçanızın dayanabileceğinin altında güvenli bir üst sınırla G50 S… (Fanuc) ya da G96 D… (LinuxCNC) ekleyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在第一次 G96 切削前加入 G50 S…（Fanuc 方式）或 G96 D…（LinuxCNC），设定低于卡盘和工件承受能力的安全上限。"
+          }
+        }
+      }
+    },
+    "Add M3 with a speed (G97 S… or G96 S… with a G50 limit) before the first cut, or enable spindle output in your post processor.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أضف M3 مع سرعة (G97 S… أو G96 S… مع حد G50) قبل أول قطع، أو فعّل خرج عمود الدوران في معالج CAM."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Füge vor dem ersten Schnitt M3 mit Drehzahl hinzu (G97 S… oder G96 S… mit G50-Grenze) oder aktiviere die Spindelausgabe im Postprozessor."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añade M3 con velocidad (G97 S… o G96 S… con límite G50) antes del primer corte, o activa la salida del husillo en el posprocesador."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi M3 con una velocità (G97 S… o G96 S… con limite G50) prima del primo taglio, o abilita l'uscita mandrino nel post processor."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初の加工の前に回転数付きのM3（G97 S…、またはG50制限付きのG96 S…）を追加するか、ポストプロセッサで主軸出力を有効にしてください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавьте M3 с оборотами (G97 S… или G96 S… с ограничением G50) перед первым проходом или включите вывод шпинделя в постпроцессоре."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk kesimden önce hız ile birlikte M3 ekleyin (G97 S… ya da G50 sınırıyla G96 S…) veya post işlemcinizde iş mili çıkışını açın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在第一次切削前加入带转速的 M3（G97 S…，或带 G50 限制的 G96 S…），或在后处理中启用主轴输出。"
+          }
+        }
+      }
+    },
     "Add an F value before the first G1/G2/G3, or re-export from CAM.": {
       "localizations": {
         "ar": {
@@ -1539,6 +1985,58 @@
         }
       }
     },
+    "At rapid speed the insert hits the spinning part head-on. It usually breaks the insert and can pull the part out of the chuck.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بالسرعة السريعة تصطدم اللقمة بالقطعة الدوّارة وجهًا لوجه. غالبًا تنكسر اللقمة وقد تنسحب القطعة من الظرف."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Eilgang trifft die Platte frontal auf das drehende Teil. Meist bricht die Platte, und das Teil kann aus dem Futter gerissen werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A velocidad rápida la plaquita choca de frente con la pieza girando. Suele romper la plaquita y puede arrancar la pieza del plato."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In rapido l'inserto colpisce frontalmente il pezzo in rotazione. Di solito rompe l'inserto e può strappare il pezzo dal mandrino."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "早送りではチップが回転中の部品に正面からぶつかります。通常チップが折れ、部品がチャックから抜けることもあります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На холостом ходу пластина врезается во вращающуюся деталь лоб в лоб. Обычно ломается пластина, а деталь может вырвать из патрона."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hızlı harekette kesici uç dönen parçaya önden çarpar. Genellikle ucu kırar ve parçayı aynadan çekip çıkarabilir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速移动时刀片会正面撞上旋转的工件，通常会打断刀片，还可能把工件从卡盘中拉出。"
+          }
+        }
+      }
+    },
     "At that height the bit can catch clamps, screws, tabs or an uneven stock surface while moving at full speed.": {
       "localizations": {
         "ar": {
@@ -1747,6 +2245,58 @@
         }
       }
     },
+    "Check the X and Z zero and the stock diameter. Approach the part from outside the stock diameter and in front of the face, then feed in with G1.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقق من صفر X وZ ومن قطر الخامة. اقترب من القطعة من خارج قطر الخامة وأمام الوجه، ثم ادخل بـ G1."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe den X- und Z-Nullpunkt und den Materialdurchmesser. Nähere dich dem Teil von außerhalb des Durchmessers und vor der Stirnseite, dann mit G1 zustellen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprueba el cero de X y Z y el diámetro del material. Acércate desde fuera del diámetro y delante de la cara, y entra con G1."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla lo zero X e Z e il diametro del grezzo. Avvicinati da fuori del diametro e davanti alla faccia, poi entra in G1."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "XとZの原点と材料径を確認してください。材料径の外側かつ端面の手前から近づき、G1で切り込んでください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте нули X и Z и диаметр заготовки. Подходите к детали снаружи диаметра и перед торцом, затем врезайтесь на G1."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X ve Z sıfırını ve stok çapını kontrol edin. Parçaya stok çapının dışından ve alnın önünden yaklaşın, sonra G1 ile ilerleyin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查 X、Z 零点和毛坯直径。从毛坯直径以外、端面前方接近工件，再用 G1 进给切入。"
+          }
+        }
+      }
+    },
     "Check the probe wiring for a short.": {
       "localizations": {
         "ar": {
@@ -1847,6 +2397,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "在 加工 › G 代码文本 中检查报告的行。"
+          }
+        }
+      }
+    },
+    "Check the stock diameter and that X values are diameters, not radii (G7/G8).": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقق من قطر الخامة ومن أن قيم X أقطار لا أنصاف أقطار (G7/G8)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe den Materialdurchmesser und ob X-Werte Durchmesser und keine Radien sind (G7/G8)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprueba el diámetro del material y que los valores de X sean diámetros, no radios (G7/G8)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla il diametro del grezzo e che i valori X siano diametri, non raggi (G7/G8)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料径と、Xの値が半径ではなく直径であること（G7/G8）を確認してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте диаметр заготовки и то, что значения X — диаметры, а не радиусы (G7/G8)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stok çapını ve X değerlerinin yarıçap değil çap olduğunu (G7/G8) kontrol edin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查毛坯直径，以及 X 值是直径而不是半径（G7/G8）。"
           }
         }
       }
@@ -2055,6 +2657,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "确认龙门是否真的到达行程末端，还是开关因干扰或松动的线而触发。"
+          }
+        }
+      }
+    },
+    "Check whether the program expects diameter or radius X values, and that facing ends at X0 or a little past it.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحقق مما إذا كان البرنامج يتوقع X كقطر أو نصف قطر، وأن تشغيل الوجه ينتهي عند X0 أو بعده بقليل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prüfe, ob das Programm X als Durchmesser oder Radius erwartet und ob das Plandrehen bei X0 oder knapp dahinter endet."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comprueba si el programa espera X en diámetro o en radio, y que el refrentado termine en X0 o un poco más allá."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlla se il programma si aspetta X in diametro o in raggio e che la sfacciatura finisca a X0 o poco oltre."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プログラムがXを直径と半径のどちらで想定しているか、端面加工がX0かわずかに越えた位置で終わるかを確認してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проверьте, ожидает ли программа X в диаметрах или радиусах, и что подрезка торца заканчивается на X0 или чуть дальше."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programın X'i çap mı yarıçap mı beklediğini ve alın tornalamanın X0'da ya da hemen ötesinde bittiğini kontrol edin."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "检查程序把 X 当作直径还是半径，以及端面车削是否在 X0 或略过 X0 处结束。"
           }
         }
       }
@@ -2367,6 +3021,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "命令冲突"
+          }
+        }
+      }
+    },
+    "Constant surface speed without an RPM limit": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سرعة قطع ثابتة دون حد للدوران"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Konstante Schnittgeschwindigkeit ohne Drehzahlgrenze"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocidad de corte constante sin límite de RPM"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocità di taglio costante senza limite di giri"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回転数制限のない周速一定制御"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Постоянная скорость резания без ограничения оборотов"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devir sınırı olmadan sabit kesme hızı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "恒线速但没有转速限制"
           }
         }
       }
@@ -3463,6 +4169,58 @@
         }
       }
     },
+    "In G96 the spindle speeds up as the tool moves toward the centre. Near X0 it heads for full speed, which can fling a lightly held part out of the chuck.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في G96 يتسارع عمود الدوران كلما اقتربت الأداة من المركز. قرب X0 يتجه إلى السرعة القصوى، ما قد يقذف قطعة مثبتة بخفة من الظرف."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei G96 dreht die Spindel schneller, je näher das Werkzeug der Mitte kommt. Nahe X0 geht sie auf volle Drehzahl, was ein schwach gespanntes Teil aus dem Futter schleudern kann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En G96 el husillo acelera a medida que la herramienta se acerca al centro. Cerca de X0 va a máxima velocidad, lo que puede lanzar una pieza poco sujeta."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In G96 il mandrino accelera man mano che l'utensile va verso il centro. Vicino a X0 va alla massima velocità e può scagliare un pezzo serrato poco."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G96では工具が中心に近づくほど主軸が速くなります。X0付近では最高速度に向かい、軽く把持した部品が飛び出すことがあります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В G96 шпиндель разгоняется по мере приближения резца к центру. Около X0 он уходит на полные обороты, что может выбросить слабо зажатую деталь."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G96'da takım merkeze yaklaştıkça iş mili hızlanır. X0 yakınında tam hıza çıkar; bu, gevşek tutulan bir parçayı aynadan fırlatabilir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 G96 下刀具越靠近中心主轴转得越快，接近 X0 时会冲向最高转速，可能把夹得不牢的工件甩出卡盘。"
+          }
+        }
+      }
+    },
     "Increase the homing pull-off ($27), e.g. to 2–3 mm.": {
       "localizations": {
         "ar": {
@@ -3827,6 +4585,58 @@
         }
       }
     },
+    "Larger than the lathe can swing": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكبر مما تسعه المخرطة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größer als der Umlaufdurchmesser"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más grande que el volteo del torno"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Più grande dell'altezza punte del tornio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋盤の振りより大きい"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Больше, чем допускает станок"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornanın çapından büyük"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超出车床回转直径"
+          }
+        }
+      }
+    },
     "Laser mode needs PWM": {
       "localizations": {
         "ar": {
@@ -3983,6 +4793,58 @@
         }
       }
     },
+    "Line %lld cuts in G96 (constant surface speed) but the program never sets a maximum RPM with G50 S or G96 D.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقطع السطر %lld بـ G96 (سرعة قطع ثابتة) لكن البرنامج لا يحدد أبدًا أقصى دوران بـ G50 S أو G96 D."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeile %lld schneidet mit G96 (konstante Schnittgeschwindigkeit), aber das Programm setzt nie eine Höchstdrehzahl mit G50 S oder G96 D."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La línea %lld corta en G96 (velocidad de corte constante) pero el programa nunca fija unas RPM máximas con G50 S o G96 D."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La riga %lld taglia in G96 (velocità di taglio costante) ma il programma non imposta mai i giri massimi con G50 S o G96 D."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld行目はG96（周速一定）で加工していますが、プログラムはG50 SやG96 Dで最高回転数を設定していません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Строка %lld режет в G96 (постоянная скорость резания), но программа нигде не задаёт максимальные обороты через G50 S или G96 D."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld. satır G96 (sabit kesme hızı) ile kesiyor ama program G50 S ya da G96 D ile hiçbir zaman en yüksek devri belirlemiyor."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第 %lld 行在 G96（恒线速）下切削，但程序从未用 G50 S 或 G96 D 设定最高转速。"
+          }
+        }
+      }
+    },
     "Line %lld is a rapid (G0) that drops from Z%@ to Z%@, below the stock top.": {
       "localizations": {
         "ar": {
@@ -4037,6 +4899,64 @@
           "stringUnit": {
             "state": "translated",
             "value": "第 %1$lld 行是一个快速移动（G0），从 Z%2$@ 降到 Z%3$@，低于材料上表面。"
+          }
+        }
+      }
+    },
+    "Line %lld is a rapid (G0) that passes through uncut stock, ending at X%@ Z%@.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السطر %1$lld حركة سريعة (G0) تمر عبر خامة غير مقطوعة وتنتهي عند X%2$@ Z%3$@."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeile %lld ist ein Eilgang (G0), der durch unbearbeitetes Material fährt und bei X%@ Z%@ endet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Line %1$lld is a rapid (G0) that passes through uncut stock, ending at X%2$@ Z%3$@."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La línea %lld es un rápido (G0) que atraviesa material sin cortar y termina en X%@ Z%@."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La riga %lld è un rapido (G0) che attraversa grezzo non tagliato e termina a X%@ Z%@."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld行目は未加工の材料を通過してX%2$@ Z%3$@で終わる早送り（G0）です。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Строка %lld — холостой ход (G0) через неснятый материал, заканчивается на X%@ Z%@."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$lld. satır, kesilmemiş stokun içinden geçen ve X%2$@ Z%3$@ konumunda biten bir hızlı harekettir (G0)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "第 %1$lld 行是一个快速移动（G0），穿过未切削的毛坯，终点为 X%2$@ Z%3$@。"
           }
         }
       }
@@ -4453,6 +5373,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "确保探测板没有事先碰到刀具，磁吸夹子夹在刀具上而不是探测板上。"
+          }
+        }
+      }
+    },
+    "Make the stock stick out further, or shorten the toolpath in CAM. Set the chuck position in the job so Toolpath can check it exactly.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اجعل الخامة تبرز أكثر أو اختصر مسار الأداة في CAM. حدد موضع الظرف في العمل ليتحقق Toolpath بدقة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lass das Material weiter herausragen oder kürze den Werkzeugweg im CAM. Gib die Futterposition im Job an, damit Toolpath genau prüfen kann."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haz que el material sobresalga más o acorta la trayectoria en el CAM. Indica la posición del plato en el trabajo para que Toolpath lo compruebe con exactitud."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fai sporgere di più il grezzo o accorcia il percorso nel CAM. Imposta la posizione del mandrino nel lavoro così Toolpath può controllare con precisione."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料の突き出しを長くするか、CAMで工具経路を短くしてください。ジョブでチャック位置を設定すると、Toolpathが正確に確認できます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Увеличьте вылет заготовки или укоротите траекторию в CAM. Укажите положение патрона в задании, чтобы Toolpath проверил точно."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stoku daha fazla dışarı çıkarın ya da CAM'de takım yolunu kısaltın. Toolpath'in tam kontrol edebilmesi için işte ayna konumunu ayarlayın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "让毛坯多伸出一些，或在 CAM 中缩短刀路。在作业中设置卡盘位置，Toolpath 就能精确检查。"
           }
         }
       }
@@ -5081,6 +6053,58 @@
         }
       }
     },
+    "Past the centre the tool cuts with the wrong side of the insert and can be pulled under the part. Facing usually stops at or just past X0.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعد المركز تقطع الأداة بالجانب الخطأ من اللقمة وقد تُسحب تحت القطعة. ينتهي تشغيل الوجه عادة عند X0 أو بعده بقليل."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hinter der Mitte schneidet das Werkzeug mit der falschen Seite der Platte und kann unter das Teil gezogen werden. Plandrehen endet meist bei X0 oder knapp dahinter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasado el centro, la herramienta corta con el lado equivocado de la plaquita y puede meterse bajo la pieza. El refrentado suele terminar en X0 o un poco más allá."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oltre il centro l'utensile taglia con il lato sbagliato dell'inserto e può essere trascinato sotto il pezzo. La sfacciatura di solito si ferma a X0 o poco oltre."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "中心を越えると工具はチップの反対側で削り、部品の下に引き込まれることがあります。端面加工は通常X0かわずかに越えた位置で止めます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За центром резец режет не той стороной пластины и может затянуться под деталь. Подрезка торца обычно заканчивается на X0 или чуть дальше."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merkezin ötesinde takım, kesici ucun yanlış tarafıyla keser ve parçanın altına çekilebilir. Alın tornalama genelde X0'da ya da hemen ötesinde durur."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "越过中心后刀具会用刀片的错误一侧切削，并可能被拉到工件下方。端面车削通常停在 X0 或略过 X0。"
+          }
+        }
+      }
+    },
     "Prefer I/J arc output in your CAM post instead of R.": {
       "localizations": {
         "ar": {
@@ -5285,6 +6309,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "在 CAM 中提高安全高度或抬刀高度（5 mm 是常见起点），或让压板远离刀路。"
+          }
+        }
+      }
+    },
+    "Rapid move into uncut stock": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حركة سريعة نحو خامة غير مقطوعة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eilgang in unbearbeitetes Material"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rápido contra material sin cortar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapido nel grezzo non tagliato"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "未加工材料への早送り"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Холостой ход в неснятый материал"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesilmemiş stoka hızlı hareket"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "快速移动进入未切削毛坯"
           }
         }
       }
@@ -6641,6 +7717,58 @@
         }
       }
     },
+    "The carriage or tool post will hit the bed or cover, or the part won't fit at all.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيصطدم العربة أو حامل الأداة بالسرير أو الغطاء، أو لن تتسع القطعة أصلًا."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlitten oder Werkzeughalter stoßen an Bett oder Abdeckung, oder das Teil passt gar nicht."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El carro o la torreta chocarán con la bancada o la tapa, o la pieza no cabrá."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il carro o il portautensili urteranno il bancale o la copertura, oppure il pezzo non entrerà."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "往復台や刃物台がベッドやカバーに当たるか、部品がそもそも入りません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Суппорт или резцедержатель ударит станину или кожух, либо деталь не поместится."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Araba ya da takım tutucu tezgâha veya kapağa çarpar, ya da parça hiç sığmaz."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "溜板或刀架会撞到床身或护罩，或者工件根本装不下。"
+          }
+        }
+      }
+    },
     "The chip load was held inside the safe range for this material, so very small or very large bits don't get an unrealistic bite.": {
       "localizations": {
         "ar": {
@@ -6955,6 +8083,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "这把刀的理想转速为 %1$@ 转/分，高于你机器的 %2$@。进给已按 %3$@ 转/分重新计算，让每个刃仍切下预期的切屑。"
+          }
+        }
+      }
+    },
+    "The jaws stick out further than the part. Hitting them breaks the tool holder or the jaws and can throw the part.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبرز الفكوك أكثر من القطعة. الاصطدام بها يكسر حامل الأداة أو الفكوك وقد يقذف القطعة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Backen ragen weiter heraus als das Teil. Ein Anfahren bricht Werkzeughalter oder Backen und kann das Teil wegschleudern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las garras sobresalen más que la pieza. Chocar con ellas rompe el portaherramientas o las garras y puede lanzar la pieza."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le griffe sporgono più del pezzo. Urtarle rompe il portautensile o le griffe e può scagliare il pezzo."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "爪は部品より外へ出ています。ぶつけると刃物台や爪が壊れ、部品が飛ぶことがあります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кулачки выступают дальше детали. Удар по ним ломает резцедержатель или кулачки и может выбросить деталь."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çeneler parçadan daha fazla dışarı taşar. Onlara çarpmak takım tutucuyu ya da çeneleri kırar ve parçayı fırlatabilir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "卡爪比工件伸得更远。撞上它们会损坏刀架或卡爪，并可能甩出工件。"
           }
         }
       }
@@ -7375,6 +8555,58 @@
         }
       }
     },
+    "Tool crosses the centreline": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأداة تعبر خط المركز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkzeug fährt über die Mitte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La herramienta cruza el centro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'utensile attraversa l'asse"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工具が中心線を越える"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резец пересекает ось"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım merkez çizgisini geçiyor"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刀具越过中心线"
+          }
+        }
+      }
+    },
     "Tool length offset axis": {
       "localizations": {
         "ar": {
@@ -7527,6 +8759,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "刀具编号过大"
+          }
+        }
+      }
+    },
+    "Tool travels toward the chuck": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأداة تتجه نحو الظرف"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkzeug fährt Richtung Futter"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La herramienta va hacia el plato"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'utensile va verso il mandrino"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工具がチャックへ向かう"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резец идёт к патрону"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takım aynaya doğru gidiyor"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刀具朝卡盘移动"
           }
         }
       }

@@ -83,7 +83,9 @@ struct JobsView: View {
     }
 
     private func openSample() {
-        let job = JobImporter.sampleJob()
+        // Lathe owners get a lathe sample.
+        let lathe = (try? context.fetch(FetchDescriptor<Machine>()))?.first { $0.isActive }?.kind == .lathe
+        let job = lathe ? JobImporter.latheSampleJob() : JobImporter.sampleJob()
         context.insert(job)
         router.open(job: job.id)
     }

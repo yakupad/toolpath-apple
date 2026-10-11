@@ -11,6 +11,9 @@ struct CalculateView: View {
                     NavigationLink { FeedsView() } label: {
                         Label("Feeds & Speeds", systemImage: "gauge.with.dots.needle.67percent")
                     }
+                    NavigationLink { TurningView() } label: {
+                        Label("Turning (lathe)", systemImage: "circle.circle")
+                    }
                     NavigationLink { QuoteView() } label: {
                         Label("Quote a job", systemImage: "doc.text")
                     }

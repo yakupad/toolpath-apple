@@ -67,7 +67,7 @@ private struct ReportPage: View {
                 Text("No issues found").font(.system(size: 11))
             }
             ForEach(analysis.groups.prefix(6)) { group in
-                let e = Explainer.explain(group)
+                let e = Explainer.explain(group, kind: analysis.kind)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("\(group.severity == .danger ? "■" : "▲") \(e.title)")
                         .font(.system(size: 11, weight: .semibold))

@@ -1,5 +1,6 @@
 import CNCDesign
 import CNCKit
+import SwiftData
 import SwiftUI
 
 /// Wall-clock driven playback clock for simulation (speed multiplier, pause,
@@ -93,6 +94,7 @@ struct SimulationBar: View {
 
 struct WarningsList: View {
     let groups: [FindingGroup]
+    var kind: MachineKind = .mill
     @Binding var focusedMove: Int?
 
     var body: some View {
@@ -106,7 +108,7 @@ struct WarningsList: View {
             }
             LazyVStack(spacing: 10) {
                 ForEach(groups) { group in
-                    WarningCard(group: group, isFocused: focusedMove == group.first.moveIndex) {
+                    WarningCard(group: group, kind: kind, isFocused: focusedMove == group.first.moveIndex) {
                         withAnimation(.snappy) {
                             focusedMove = focusedMove == group.first.moveIndex ? nil : group.first.moveIndex
                         }
@@ -121,12 +123,13 @@ struct WarningsList: View {
 
 struct WarningCard: View {
     let group: FindingGroup
+    var kind: MachineKind = .mill
     let isFocused: Bool
     let onShow: () -> Void
     @State private var expanded = false
 
     var body: some View {
-        let explanation = Explainer.explain(group)
+        let explanation = Explainer.explain(group, kind: kind)
         let tint = group.severity == .danger ? TP.Palette.danger : TP.Palette.caution
         VStack(alignment: .leading, spacing: 8) {
             HStack(alignment: .top, spacing: 12) {
@@ -165,19 +168,30 @@ struct WarningCard: View {
 
 struct StatsView: View {
     let analysis: JobAnalysis
+    var job: JobFile?
 
     var body: some View {
         let s = analysis.statistics
         let b = analysis.document.bounds
+        let one = FloatingPointFormatStyle<Double>.number.precision(.fractionLength(1))
         ScrollView {
+            if analysis.kind == .lathe, let job { LatheSetupCard(job: job) }
             Grid(alignment: .leading, horizontalSpacing: 16, verticalSpacing: 14) {
                 GridRow {
                     ValueLabel("Est. time", value: Duration.seconds(s.estimatedMachiningTimeMinutes * 60).formatted(.time(pattern: .hourMinuteSecond)))
                     ValueLabel("Moves", value: analysis.document.moves.count.formatted())
                 }
-                GridRow {
-                    ValueLabel("Size X × Y", value: "\(b.width.formatted(.number.precision(.fractionLength(1)))) × \(b.height.formatted(.number.precision(.fractionLength(1))))", unit: "mm", size: 18)
-                    ValueLabel("Z range", value: "\(b.minZ.formatted(.number.precision(.fractionLength(1)))) … \(b.maxZ.formatted(.number.precision(.fractionLength(1))))", unit: "mm", size: 18)
+                if analysis.kind == .lathe {
+                    // Lathe documents: x = axial Z, y = radius.
+                    GridRow {
+                        ValueLabel("Largest Ø", value: (b.maxY * 2).formatted(one), unit: "mm", size: 18)
+                        ValueLabel("Z range", value: "\(b.minX.formatted(one)) … \(b.maxX.formatted(one))", unit: "mm", size: 18)
+                    }
+                } else {
+                    GridRow {
+                        ValueLabel("Size X × Y", value: "\(b.width.formatted(one)) × \(b.height.formatted(one))", unit: "mm", size: 18)
+                        ValueLabel("Z range", value: "\(b.minZ.formatted(one)) … \(b.maxZ.formatted(one))", unit: "mm", size: 18)
+                    }
                 }
                 GridRow {
                     ValueLabel("Cutting", value: (s.cutDistanceMm / 1000).formatted(.number.precision(.fractionLength(2))), unit: "m", size: 18)
@@ -202,6 +216,35 @@ struct StatsView: View {
     }
 }
 
+/// Lathe jobs: where the chuck jaws sit, so the chuck check is exact.
+struct LatheSetupCard: View {
+    @Bindable var job: JobFile
+    @Environment(Router.self) private var router
+    @Query(filter: #Predicate<Machine> { $0.isActive }) private var activeMachines: [Machine]
+    @State private var stickout: Double = 0
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Label("Lathe program", systemImage: "circle.circle").font(.headline)
+            NumberField(title: "Stock out of the jaws", value: $stickout, unit: "mm")
+            Text(job.chuckZ == nil
+                 ? "Enter how far the stock sticks out so Toolpath can check every move against the chuck. 0 = not set."
+                 : "Moves closer than 0.5 mm to the jaws are flagged as dangerous.")
+                .font(.footnote).foregroundStyle(TP.Palette.textSecondary)
+        }
+        .tpCard()
+        .padding(.bottom, 8)
+        .onAppear { stickout = job.chuckZ.map { -$0 } ?? 0 }
+        .onChange(of: stickout) { _, value in
+            let newValue: Double? = value > 0 ? -value : nil
+            guard newValue != job.chuckZ else { return }
+            job.chuckZ = newValue
+            router.analyses.invalidate(job.id)
+            router.analyses.load(job, machine: activeMachines.first)
+        }
+    }
+}
+
 enum SafetyReport {
     static func text(job: JobFile, analysis: JobAnalysis) -> String {
         var lines = [
@@ -212,7 +255,7 @@ enum SafetyReport {
         ]
         if analysis.groups.isEmpty { lines.append("No issues found.") }
         for group in analysis.groups {
-            let e = Explainer.explain(group)
+            let e = Explainer.explain(group, kind: analysis.kind)
             lines.append("[\(group.severity == .danger ? "DANGER" : "CAUTION")] \(e.title)")
             lines.append("  \(e.whatHappened)")
             lines.append("  Fix: \(e.howToFix)")

@@ -516,16 +516,6 @@
         }
       }
     },
-    "%lld × %lld mm": {
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "new",
-            "value": "%1$lld × %2$lld mm"
-          }
-        }
-      }
-    },
     "%lld × %lld × %lld mm · %lld h": {
       "localizations": {
         "en": {
@@ -1004,6 +994,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "免费 7 天，之后按年付费"
+          }
+        }
+      }
+    },
+    "A key left in the chuck is thrown at full speed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مفتاح الظرف المتروك يُقذف بالسرعة القصوى."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein steckender Futterschlüssel wird mit voller Drehzahl weggeschleudert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una llave olvidada en el plato sale despedida a toda velocidad."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una chiave lasciata nel mandrino viene scagliata a piena velocità."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チャックに残したチャックハンドルは最高速度で飛ばされます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Забытый в патроне ключ вылетит на полной скорости."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aynada unutulan anahtar tam hızda fırlar."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "留在卡盘上的扳手会以全速甩出。"
           }
         }
       }
@@ -2200,6 +2242,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "铝（6061）"
+          }
+        }
+      }
+    },
+    "An insert above or below centre rubs and leaves a nub when facing.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اللقمة الأعلى أو الأدنى من المركز تحتك وتترك نتوءًا عند تشغيل الوجه."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Platte über oder unter Mitte reibt und lässt beim Plandrehen einen Zapfen stehen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una plaquita por encima o por debajo del centro roza y deja un pezón al refrentar."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un inserto sopra o sotto il centro striscia e lascia un nocciolo in sfacciatura."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "芯高より上や下のチップはこすれて、端面加工でへそが残ります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резец выше или ниже центра трёт и оставляет «пупок» при подрезке торца."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merkezin üstünde ya da altında kalan kesici ucu sürtünür ve alın tornalamada ortada bir çıkıntı bırakır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刀片高于或低于中心会摩擦，端面车削时会留下凸台。"
           }
         }
       }
@@ -3868,6 +3962,64 @@
         }
       }
     },
+    "Capped at your lathe's %@ RPM — the ideal speed for this small diameter is %@ RPM. Feed is recalculated from the capped speed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "محدود بسرعة مخرطتك %@ دورة/دقيقة — السرعة المثالية لهذا القطر الصغير %@ دورة/دقيقة. أُعيد حساب التغذية من السرعة المحدودة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auf die %@ U/min deiner Drehmaschine begrenzt – ideal wären für diesen kleinen Durchmesser %@ U/min. Der Vorschub wird aus der begrenzten Drehzahl neu berechnet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Capped at your lathe's %1$@ RPM — the ideal speed for this small diameter is %2$@ RPM. Feed is recalculated from the capped speed."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitado a las %@ RPM de tu torno: la velocidad ideal para este diámetro pequeño es %@ RPM. El avance se recalcula con la velocidad limitada."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Limitato ai %@ giri del tuo tornio: la velocità ideale per questo piccolo diametro è %@ giri. L'avanzamento è ricalcolato dalla velocità limitata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋盤の上限 %@ rpm で制限されました。この小径に理想的な回転数は %@ rpm です。送りは制限後の回転数で再計算されます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ограничено %@ об/мин вашего станка — для этого малого диаметра идеально %@ об/мин. Подача пересчитана по ограниченным оборотам."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornanızın %@ devir/dk sınırına takıldı — bu küçük çap için ideal hız %@ devir/dk. İlerleme sınırlanmış hıza göre yeniden hesaplandı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已限制为车床的 %@ 转/分——这个小直径的理想转速是 %@ 转/分。进给按限制后的转速重新计算。"
+          }
+        }
+      }
+    },
     "Carbide": {
       "localizations": {
         "ar": {
@@ -3916,6 +4068,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "硬质合金"
+          }
+        }
+      }
+    },
+    "Carbide insert": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لقمة كربيد"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hartmetallplatte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plaquita de metal duro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inserto in metallo duro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超硬チップ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Твердосплавная пластина"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Karbür uç"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "硬质合金刀片"
           }
         }
       }
@@ -4702,6 +4906,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "切屑变薄"
+          }
+        }
+      }
+    },
+    "Chuck key removed, jaws tight": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أُزيل مفتاح الظرف وشُدّت الفكوك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Futterschlüssel abgezogen, Backen fest"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llave del plato retirada, garras apretadas"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chiave del mandrino tolta, griffe serrate"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チャックハンドルを外し、爪を締めた"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ключ из патрона вынут, кулачки зажаты"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna anahtarı çıkarıldı, ayna sıkıldı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "卡盘扳手已取下，卡爪已夹紧"
           }
         }
       }
@@ -5694,6 +5950,58 @@
         }
       }
     },
+    "Conservative values for hobby lathes. Test, then adjust in small steps.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قيم متحفظة لمخارط الهواة. جرّب ثم عدّل بخطوات صغيرة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorsichtige Werte für Hobby-Drehmaschinen. Testen, dann in kleinen Schritten anpassen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valores conservadores para tornos de hobby. Prueba y ajusta en pasos pequeños."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valori prudenti per torni hobbistici. Prova, poi regola a piccoli passi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホビー旋盤向けの控えめな値です。試してから少しずつ調整してください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Осторожные значения для любительских токарных станков. Проверьте и корректируйте небольшими шагами."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hobi tornaları için temkinli değerler. Deneyin, sonra küçük adımlarla ayarlayın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "适用于业余车床的保守数值。先试切，再小幅调整。"
+          }
+        }
+      }
+    },
     "Continue": {
       "localizations": {
         "ar": {
@@ -6318,6 +6626,7 @@
         }
       }
     },
+    "Cut": {},
     "Cut recipes": {
       "localizations": {
         "ar": {
@@ -7468,6 +7777,58 @@
         }
       }
     },
+    "Enter how far the stock sticks out so Toolpath can check every move against the chuck. 0 = not set.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أدخل مقدار بروز الخامة حتى يتحقق Toolpath من كل حركة مقابل الظرف. 0 = غير محدد."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gib an, wie weit das Material aus dem Futter ragt, damit Toolpath jede Bewegung gegen das Futter prüfen kann. 0 = nicht gesetzt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indica cuánto sobresale el material para que Toolpath compruebe cada movimiento contra el plato. 0 = sin definir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indica quanto sporge il pezzo così Toolpath può controllare ogni movimento rispetto al mandrino. 0 = non impostato."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料のチャックからの突き出し量を入力すると、Toolpathがすべての動きをチャックと照合できます。0 = 未設定。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Укажите вылет заготовки из кулачков, чтобы Toolpath проверял каждое движение относительно патрона. 0 = не задано."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath'in her hareketi aynaya göre kontrol edebilmesi için stokun ne kadar dışarıda olduğunu girin. 0 = ayarlanmadı."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "输入材料伸出卡盘的长度，Toolpath 就能检查每个动作与卡盘的距离。0 = 未设置。"
+          }
+        }
+      }
+    },
     "Enter the controller's address.": {
       "localizations": {
         "ar": {
@@ -7994,6 +8355,58 @@
         }
       }
     },
+    "Eye protection on, no gloves or loose sleeves": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "نظارة الحماية مرتداة، دون قفازات أو أكمام واسعة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schutzbrille auf, keine Handschuhe oder weiten Ärmel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gafas puestas, sin guantes ni mangas sueltas"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Occhiali indossati, niente guanti o maniche larghe"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保護メガネ着用、手袋や袖口の広い服はなし"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очки надеты, без перчаток и свободных рукавов"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Göz koruması takılı; eldiven ve bol kol yok"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "戴好护目镜，不戴手套、不穿宽袖衣服"
+          }
+        }
+      }
+    },
     "FR4 / PCB": {
       "localizations": {
         "ar": {
@@ -8046,6 +8459,7 @@
         }
       }
     },
+    "Face": {},
     "Feed": {
       "localizations": {
         "ar": {
@@ -8354,6 +8768,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "筛选"
+          }
+        }
+      }
+    },
+    "Finish": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تشطيب"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schlichten"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acabado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finitura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仕上げ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Чистовая"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finiş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "精车"
           }
         }
       }
@@ -9452,6 +9918,110 @@
         }
       }
     },
+    "Groove": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحزيز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstechen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ranura"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gola"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "溝入れ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Канавка"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kanal"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切槽"
+          }
+        }
+      }
+    },
+    "Grooving and parting load the whole tool width: low speed, light feed, plenty of coolant or air.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التحزيز والقطع يحمّلان عرض الأداة بالكامل: سرعة منخفضة وتغذية خفيفة وتبريد أو هواء وفير."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Einstechen und Abstechen belasten die ganze Schneidenbreite: niedrige Drehzahl, kleiner Vorschub, viel Kühlung oder Luft."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ranurar y tronzar carga todo el ancho de la herramienta: velocidad baja, avance ligero y mucho refrigerante o aire."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gole e troncatura caricano tutta la larghezza dell'utensile: bassa velocità, avanzamento leggero, molto refrigerante o aria."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "溝入れと突っ切りは刃幅全体に負荷がかかります。低速・軽い送り・十分なクーラントかエアで。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прорезка и отрезка нагружают всю ширину резца: низкие обороты, малая подача, обильное охлаждение или обдув."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kanal açma ve kesme takımın tüm genişliğini yükler: düşük hız, hafif ilerleme, bol soğutma ya da hava."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切槽和切断时整个刀宽都受力：低转速、小进给，充足的冷却液或吹气。"
+          }
+        }
+      }
+    },
     "HDPE / Delrin": {
       "localizations": {
         "ar": {
@@ -9552,6 +10122,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "高速钢"
+          }
+        }
+      }
+    },
+    "HSS turns at about 40% of carbide's surface speed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخرط أدوات HSS بنحو 40٪ من سرعة القطع للكربيد."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HSS dreht mit etwa 40 % der Schnittgeschwindigkeit von Hartmetall."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El HSS tornea a un 40 % de la velocidad de corte del metal duro."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'HSS tornisce a circa il 40% della velocità di taglio del metallo duro."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ハイスは超硬の約40%の切削速度で旋削します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Быстрорез точит примерно на 40 % скорости резания твёрдого сплава."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HSS, karbürün yaklaşık %40'ı kesme hızında tornalar."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "高速钢的车削速度约为硬质合金的 40%。"
           }
         }
       }
@@ -11227,6 +11849,58 @@
         }
       }
     },
+    "Largest Ø": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أكبر Ø"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größter Ø"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø mayor"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø massimo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大Ø"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Наибольший Ø"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En büyük Ø"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大 Ø"
+          }
+        }
+      }
+    },
     "Last message": {
       "localizations": {
         "ar": {
@@ -11275,6 +11949,162 @@
           "stringUnit": {
             "state": "translated",
             "value": "最新消息"
+          }
+        }
+      }
+    },
+    "Lathe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخرطة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drehmaschine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torno"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋盤"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Токарный станок"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torna"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车床"
+          }
+        }
+      }
+    },
+    "Lathe program": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "برنامج خراطة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drehprogramm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programa de torno"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programma di tornitura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋盤プログラム"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Токарная программа"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torna programı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车削程序"
+          }
+        }
+      }
+    },
+    "Lathes": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخارط"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drehmaschinen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornos"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torni"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋盤"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Токарные станки"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornalar"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车床"
           }
         }
       }
@@ -12586,6 +13416,110 @@
         }
       }
     },
+    "Max diameter": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أقصى قطر"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max. Durchmesser"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diámetro máx."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diametro max"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大直径"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Макс. диаметр"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maks. çap"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大直径"
+          }
+        }
+      }
+    },
+    "Max part length": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أقصى طول للقطعة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max. Teilelänge"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longitud máx. de pieza"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lunghezza max pezzo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大部品長"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Макс. длина детали"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maks. parça boyu"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最大工件长度"
+          }
+        }
+      }
+    },
     "Max spindle RPM": {
       "localizations": {
         "ar": {
@@ -13002,6 +13936,58 @@
         }
       }
     },
+    "Most lathe controls and CAM posts program X as a diameter (Fanuc style). Turn this off for radius programming (G8).": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبرمج معظم أنظمة التحكم في المخارط ومعالجات CAM المحور X كقطر (أسلوب Fanuc). أوقفه عند البرمجة بنصف القطر (G8)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die meisten Drehsteuerungen und CAM-Postprozessoren programmieren X als Durchmesser (Fanuc-Stil). Für Radiusprogrammierung (G8) ausschalten."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La mayoría de controles de torno y posprocesadores CAM programan X como diámetro (estilo Fanuc). Desactívalo para programar en radio (G8)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La maggior parte dei controlli e dei post CAM per torni programma X come diametro (stile Fanuc). Disattiva per la programmazione a raggio (G8)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "多くの旋盤制御とCAMポストはXを直径で指令します（Fanuc方式）。半径指令（G8）の場合はオフにしてください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Большинство токарных систем ЧПУ и постпроцессоров CAM задают X как диаметр (стиль Fanuc). Выключите для программирования в радиусах (G8)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çoğu torna kontrolü ve CAM çıktısı X'i çap olarak yazar (Fanuc tarzı). Yarıçap programlama (G8) için kapatın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "大多数车床系统和 CAM 后处理把 X 编为直径（Fanuc 方式）。半径编程（G8）时请关闭。"
+          }
+        }
+      }
+    },
     "Moves": {
       "localizations": {
         "ar": {
@@ -13054,6 +14040,58 @@
         }
       }
     },
+    "Moves closer than 0.5 mm to the jaws are flagged as dangerous.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُعلَّم الحركات الأقرب من 0.5 مم إلى الفكوك على أنها خطرة."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewegungen näher als 0,5 mm an den Backen werden als gefährlich markiert."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los movimientos a menos de 0,5 mm de las garras se marcan como peligrosos."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I movimenti a meno di 0,5 mm dalle griffe sono segnalati come pericolosi."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "爪から0.5 mm以内に近づく動きは危険として表示されます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Движения ближе 0,5 мм к кулачкам отмечаются как опасные."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aynaya 0,5 mm'den fazla yaklaşan hareketler tehlikeli olarak işaretlenir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "距卡爪不足 0.5 mm 的动作会被标为危险。"
+          }
+        }
+      }
+    },
     "Multiply feed by": {
       "localizations": {
         "ar": {
@@ -13102,6 +14140,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "进给乘以"
+          }
+        }
+      }
+    },
+    "My lathe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخرطتي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meine Drehmaschine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mi torno"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il mio tornio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マイ旋盤"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мой токарный станок"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornam"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我的车床"
           }
         }
       }
@@ -14611,6 +15701,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "其他 / 自制"
+          }
+        }
+      }
+    },
+    "Other lathe": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مخرطة أخرى"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Andere Drehmaschine"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otro torno"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altro tornio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "その他の旋盤"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Другой токарный станок"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diğer torna"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "其他车床"
           }
         }
       }
@@ -16747,6 +17889,58 @@
         }
       }
     },
+    "Rough": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخشين"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schruppen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desbaste"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sgrossatura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "荒加工"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Черновая"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaba"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "粗车"
+          }
+        }
+      }
+    },
     "Rough finish": {
       "localizations": {
         "ar": {
@@ -16795,6 +17989,110 @@
           "stringUnit": {
             "state": "translated",
             "value": "表面粗糙"
+          }
+        }
+      }
+    },
+    "Router / mill": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "راوتر / فريزة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fräse / Router"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fresadora / router"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fresa / router"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ルーター / フライス"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фрезер / фрезерный станок"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Router / freze"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雕刻机 / 铣床"
+          }
+        }
+      }
+    },
+    "Routers and mills": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الراوترات والفرايز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fräsen und Router"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fresadoras y routers"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Frese e router"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ルーターとフライス盤"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фрезеры и фрезерные станки"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Router'lar ve frezeler"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "雕刻机和铣床"
           }
         }
       }
@@ -18049,6 +19347,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "发送"
+          }
+        }
+      }
+    },
+    "Set a maximum RPM for G96": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضبط حدًا أقصى للدوران لـ G96"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maximale Drehzahl für G96 setzen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Define unas RPM máximas para G96"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Imposta un massimo di giri per G96"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G96の最高回転数を設定"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задайте максимальные обороты для G96"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "G96 için maksimum devir ayarlayın"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "为 G96 设置最高转速"
           }
         }
       }
@@ -19983,6 +21333,162 @@
         }
       }
     },
+    "Stock at least Ø%@ mm": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الخامة بقطر Ø%@ مم على الأقل"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Material mindestens Ø%@ mm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Material de al menos Ø%@ mm"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grezzo almeno Ø%@ mm"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料はØ%@ mm以上"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заготовка не меньше Ø%@ мм"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stok en az Ø%@ mm"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "毛坯至少 Ø%@ mm"
+          }
+        }
+      }
+    },
+    "Stock out of the jaws": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البروز من الفكوك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auskragung aus dem Futter"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voladizo fuera de las garras"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sporgenza dalle griffe"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チャックからの突き出し"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вылет из кулачков"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayna dışındaki stok"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "伸出卡爪的长度"
+          }
+        }
+      }
+    },
+    "Stock sticks out at least %@ mm from the jaws": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبرز الخامة %@ مم على الأقل من الفكوك"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Material ragt mindestens %@ mm aus den Backen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El material sobresale al menos %@ mm de las garras"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il grezzo sporge almeno %@ mm dalle griffe"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "材料は爪から%@ mm以上突き出す"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заготовка выступает из кулачков не меньше чем на %@ мм"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stok aynadan en az %@ mm dışarıda"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "毛坯伸出卡爪至少 %@ mm"
+          }
+        }
+      }
+    },
     "Stock value": {
       "localizations": {
         "ar": {
@@ -20187,6 +21693,116 @@
           "stringUnit": {
             "state": "translated",
             "value": "支持一款独立的车间应用"
+          }
+        }
+      }
+    },
+    "Surface speed": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سرعة القطع"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schnittgeschwindigkeit"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocidad de corte"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velocità di taglio"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切削速度"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скорость резания"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kesme hızı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切削速度"
+          }
+        }
+      }
+    },
+    "Surface speed %lld m/min on Ø%@ mm gives the spindle speed.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تعطي سرعة قطع %lld م/دقيقة عند Ø%@ مم سرعة عمود الدوران."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld m/min Schnittgeschwindigkeit bei Ø%@ mm ergeben die Spindeldrehzahl."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "new",
+            "value": "Surface speed %1$lld m/min on Ø%2$@ mm gives the spindle speed."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld m/min de velocidad de corte en Ø%@ mm dan la velocidad del husillo."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld m/min di velocità di taglio su Ø%@ mm danno i giri del mandrino."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø%2$@ mmで切削速度%1$lld m/分から主軸回転数が決まります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скорость резания %lld м/мин на Ø%@ мм даёт обороты шпинделя."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ø%2$@ mm'de %1$lld m/dk kesme hızı iş mili devrini verir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Ø%2$@ mm 上以 %1$lld 米/分的切削速度得出主轴转速。"
           }
         }
       }
@@ -20504,6 +22120,58 @@
         }
       }
     },
+    "The deepest cut plus 5 mm clearance to the chuck.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعمق قطع مع خلوص 5 مم إلى الظرف."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiefster Schnitt plus 5 mm Abstand zum Futter."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El corte más profundo más 5 mm de margen hasta el plato."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il taglio più profondo più 5 mm di margine dal mandrino."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最も深い加工 + チャックまで5 mmの余裕。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Самый глубокий проход плюс 5 мм зазора до патрона."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En derin kesim artı aynaya 5 mm pay."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最深切削再加 5 mm 到卡盘的余量。"
+          }
+        }
+      }
+    },
     "The deepest cut reaches this depth.": {
       "localizations": {
         "ar": {
@@ -20552,6 +22220,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "最深的切削到达此深度。"
+          }
+        }
+      }
+    },
+    "The feed per revolution equals the thread pitch. A low speed leaves room to stop at a shoulder.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "التغذية لكل دورة تساوي خطوة السن. السرعة المنخفضة تترك مجالًا للتوقف عند كتف."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der Vorschub pro Umdrehung entspricht der Gewindesteigung. Eine niedrige Drehzahl lässt Zeit, an einem Absatz zu stoppen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El avance por vuelta es igual al paso de la rosca. Una velocidad baja deja margen para parar en un resalte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'avanzamento al giro è uguale al passo del filetto. Una bassa velocità lascia margine per fermarsi a uno spallamento."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1回転あたりの送りはねじピッチと同じです。低速なら段部で止める余裕があります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подача на оборот равна шагу резьбы. Низкие обороты оставляют время остановиться у уступа."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devir başına ilerleme diş adımına eşittir. Düşük hız, bir omuzda durmak için zaman bırakır."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "每转进给等于螺距。低转速便于在台阶处停下。"
           }
         }
       }
@@ -20712,6 +22432,58 @@
         }
       }
     },
+    "The program uses constant surface speed without G50 S or G96 D.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يستخدم البرنامج سرعة قطع ثابتة دون G50 S أو G96 D."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Programm nutzt konstante Schnittgeschwindigkeit ohne G50 S oder G96 D."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El programa usa velocidad de corte constante sin G50 S ni G96 D."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il programma usa la velocità di taglio costante senza G50 S o G96 D."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このプログラムはG50 SやG96 Dなしで周速一定制御を使っています。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Программа использует постоянную скорость резания без G50 S или G96 D."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Program G50 S ya da G96 D olmadan sabit kesme hızı kullanıyor."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "程序使用恒线速，但没有 G50 S 或 G96 D。"
+          }
+        }
+      }
+    },
     "The purchase couldn't be verified.": {
       "localizations": {
         "ar": {
@@ -20818,6 +22590,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "从该点起，刀路覆盖 %1$@ × %2$@ mm。"
+          }
+        }
+      }
+    },
+    "The widest cut in the program.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أعرض قطع في البرنامج."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der breiteste Schnitt im Programm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El corte más ancho del programa."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il taglio più largo del programma."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プログラム中で最も大きい加工径。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Самый широкий проход в программе."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programdaki en geniş kesim."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "程序中最大的切削直径。"
           }
         }
       }
@@ -21182,6 +23006,162 @@
           "stringUnit": {
             "state": "translated",
             "value": "千分之一英寸"
+          }
+        }
+      }
+    },
+    "Thread": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سن"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewinde"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rosca"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filetto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ねじ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резьба"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diş"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螺纹"
+          }
+        }
+      }
+    },
+    "Thread pitch": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خطوة السن"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewindesteigung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paso de rosca"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passo del filetto"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ねじピッチ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Шаг резьбы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Diş adımı"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螺距"
+          }
+        }
+      }
+    },
+    "Tie back long hair. Gloves and cloth can be caught by the spinning chuck.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اربط الشعر الطويل. قد تعلق القفازات والقماش بالظرف الدوّار."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lange Haare zusammenbinden. Handschuhe und Stoff können vom drehenden Futter erfasst werden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recoge el pelo largo. Los guantes y la ropa pueden engancharse en el plato girando."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lega i capelli lunghi. Guanti e tessuti possono essere presi dal mandrino in rotazione."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "長い髪はまとめてください。手袋や布は回転するチャックに巻き込まれることがあります。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уберите длинные волосы. Перчатки и ткань может затянуть вращающимся патроном."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uzun saçı toplayın. Eldiven ve kumaş dönen aynaya kapılabilir."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "扎好长发。手套和布料可能被旋转的卡盘卷入。"
           }
         }
       }
@@ -21810,6 +23790,58 @@
         }
       }
     },
+    "Tools set on centre height": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأدوات مضبوطة على ارتفاع المركز"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Werkzeuge auf Mitte eingestellt"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herramientas a la altura del centro"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utensili all'altezza del centro"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "工具を芯高に合わせた"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Резцы выставлены по центру"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takımlar merkez yüksekliğinde"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "刀具已对准中心高"
+          }
+        }
+      }
+    },
     "Top": {
       "localizations": {
         "ar": {
@@ -21910,6 +23942,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "总成本"
+          }
+        }
+      }
+    },
+    "Touch off X on a measured diameter and Z on the faced end.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صفّر X على قطر مقاس وZ على الوجه المخروط."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X an einem gemessenen Durchmesser und Z an der plangedrehten Stirnseite ankratzen."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toma X en un diámetro medido y Z en la cara refrentada."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Azzera X su un diametro misurato e Z sulla faccia sfacciata."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xは測定した直径で、Zは端面加工した面でタッチオフしてください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Привяжите X по измеренному диаметру, а Z по подрезанному торцу."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X'i ölçülmüş bir çapta, Z'yi alnı tornalanmış uçta sıfırlayın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在实测直径上对 X，在已车平的端面上对 Z。"
           }
         }
       }
@@ -22278,6 +24362,111 @@
         }
       }
     },
+    "Turning": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خراطة"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drehen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torneado"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornitura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋削"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Точение"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornalama"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车削"
+          }
+        }
+      }
+    },
+    "Turning (lathe)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خراطة (مخرطة)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Drehen (Drehmaschine)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Torneado (torno)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornitura (tornio)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "旋削（旋盤）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Точение (токарный)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tornalama (torna)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车削（车床）"
+          }
+        }
+      }
+    },
+    "Type": {},
     "UNC / UNF": {
       "localizations": {
         "ar": {
@@ -23163,6 +25352,58 @@
       }
     },
     "WebSocket (FluidNC)": {},
+    "When facing, the diameter shrinks to zero: use G96 constant surface speed with a G50 RPM limit.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند تشغيل الوجه يصغر القطر حتى الصفر: استخدم سرعة القطع الثابتة G96 مع حد دوران G50."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Plandrehen schrumpft der Durchmesser auf null: konstante Schnittgeschwindigkeit G96 mit G50-Drehzahlgrenze verwenden."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al refrentar, el diámetro llega a cero: usa velocidad de corte constante G96 con límite de RPM G50."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In sfacciatura il diametro scende a zero: usa la velocità di taglio costante G96 con un limite di giri G50."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端面加工では直径がゼロまで小さくなります。G50の回転数制限付きでG96周速一定を使ってください。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При подрезке торца диаметр уменьшается до нуля: используйте постоянную скорость резания G96 с ограничением оборотов G50."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alın tornalamada çap sıfıra iner: G50 devir sınırıyla G96 sabit kesme hızı kullanın."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "车端面时直径会减小到零：使用带 G50 转速限制的 G96 恒线速。"
+          }
+        }
+      }
+    },
     "Which alarm or error code?": {
       "localizations": {
         "ar": {
@@ -23742,6 +25983,58 @@
           "stringUnit": {
             "state": "new",
             "value": "X %1$@   Y %2$@"
+          }
+        }
+      }
+    },
+    "X values are diameters": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قيم X أقطار"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X-Werte sind Durchmesser"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los valores de X son diámetros"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I valori X sono diametri"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xの値は直径"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Значения X — диаметры"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X değerleri çaptır"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X 值为直径"
           }
         }
       }
@@ -24368,6 +26661,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "Z 范围"
+          }
+        }
+      }
+    },
+    "Z0 on the part face, X0 on the spindle centreline": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 على وجه القطعة وX0 على محور عمود الدوران"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 an der Stirnseite, X0 auf der Spindelachse"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 en la cara de la pieza, X0 en el eje del husillo"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 sulla faccia del pezzo, X0 sull'asse del mandrino"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0は部品の端面、X0は主軸の中心線"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 на торце детали, X0 на оси шпинделя"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 parça alnında, X0 iş mili merkezinde"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z0 在工件端面，X0 在主轴中心线"
           }
         }
       }

@@ -36,10 +36,18 @@ public struct ToolpathGeometry: Sendable {
         public let style: StrokeStyleKind
     }
 
+    /// Lathe stock drawn around the spindle axis (points are axial, radius).
+    public struct LatheStock: Sendable, Hashable {
+        public let radius: Double
+        public let faceZ: Double
+        public let backZ: Double
+    }
+
     public let points: [GPoint]
     public let segments: [Segment]
     public let bounds: GBounds
     public let moves: [GCodeMove]
+    public let latheStock: LatheStock?
 
     public init(document: GCodeDocument, findings: [Finding], arcSegments: Int = Tessellator.defaultArcSegments) {
         var severity: [Int: FindingSeverity] = [:]
@@ -72,8 +80,26 @@ public struct ToolpathGeometry: Sendable {
         }
         points = pts
         segments = segs
-        bounds = document.bounds
         moves = document.moves
+        if document.kind == .lathe {
+            let cuts = document.moves.filter(\.isCutting)
+            let radius = cuts.flatMap { [$0.start.y, $0.end.y] }.max() ?? document.bounds.maxY
+            let face = min(0, cuts.flatMap { [$0.start.x, $0.end.x] }.max() ?? 0)
+            let back = (cuts.flatMap { [$0.start.x, $0.end.x] }.min() ?? document.bounds.minX) - 5
+            let stock = LatheStock(radius: max(radius, 0.5), faceZ: face, backZ: back)
+            latheStock = stock
+            // Fit both halves of the part and the stock rings in 3D.
+            var b = document.bounds
+            b.minX = min(b.minX, back)
+            b.minY = min(b.minY, -stock.radius)
+            b.maxY = max(b.maxY, stock.radius)
+            b.minZ = -stock.radius
+            b.maxZ = stock.radius
+            bounds = b
+        } else {
+            latheStock = nil
+            bounds = document.bounds
+        }
     }
 
     public var isEmpty: Bool { segments.isEmpty }

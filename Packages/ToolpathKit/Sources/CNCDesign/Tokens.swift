@@ -66,6 +66,8 @@ public enum TP {
         public static let background = Color(light: 0xF4F2EE, dark: 0x121317)
         public static let gridMinor = Color(light: 0x000000, dark: 0xFFFFFF, lightAlpha: 0.06, darkAlpha: 0.045)
         public static let gridMajor = Color(light: 0x000000, dark: 0xFFFFFF, lightAlpha: 0.14, darkAlpha: 0.12)
+        /// Lathe stock section behind the toolpath.
+        public static let stock = Color(light: 0xB98B52, dark: 0xC9A06A, lightAlpha: 0.14, darkAlpha: 0.12)
         public static let rapid = Color(light: 0x2563EB, dark: 0x60A5FA)
         public static let cut = Color(light: 0x16A34A, dark: 0x34D399)
         public static let arcCW = Color(light: 0xD97706, dark: 0xFBBF24)

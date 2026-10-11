@@ -66,6 +66,44 @@ struct MachinePreset: Identifiable, Hashable {
     let x: Double, y: Double, z: Double
     let maxRpm: Double
     let minRpm: Double
+    var kind: MachineKind = .mill
+    /// Lathes: largest diameter and part length.
+    var turningDiameter: Double = 0
+    var turningLength: Double = 0
+
+    static func lathe(id: String, name: String, diameter: Double, length: Double, maxRpm: Double) -> MachinePreset {
+        MachinePreset(id: id, name: name, x: 0, y: 0, z: 0, maxRpm: maxRpm, minRpm: 0,
+                      kind: .lathe, turningDiameter: diameter, turningLength: length)
+    }
+
+    /// Popular hobby lathes (approximate; the user can edit every value).
+    static let lathes: [MachinePreset] = [
+        .lathe(id: "rownd", name: "Rownd Desktop CNC Lathe", diameter: 135, length: 275, maxRpm: 3_000),
+        .lathe(id: "sherline4400", name: "Sherline 4400 CNC", diameter: 89, length: 200, maxRpm: 2_800),
+        .lathe(id: "minilathe7x14", name: "7×14 mini lathe (CNC)", diameter: 180, length: 350, maxRpm: 2_500),
+    ]
+
+    var sizeLabel: String {
+        kind == .lathe
+            ? "Ø\(Int(turningDiameter)) × \(Int(turningLength)) mm"
+            : "\(Int(x)) × \(Int(y)) mm"
+    }
+
+    func apply(to machine: Machine) {
+        machine.presetID = id
+        machine.kind = kind
+        machine.maxSpindleRpm = maxRpm
+        machine.minSpindleRpm = minRpm
+        if kind == .lathe {
+            machine.maxTurningDiameter = turningDiameter
+            machine.maxTurningLength = turningLength
+            machine.controller = .other
+        } else {
+            machine.travelX = x
+            machine.travelY = y
+            machine.travelZ = z
+        }
+    }
 
     /// Popular hobby machines, smallest first. Approximate travel and spindle
     /// ranges, used only to prefill a profile the user can edit.
@@ -119,10 +157,18 @@ struct MachinesList: View {
             .onDelete { offsets in offsets.forEach { context.delete(machines[$0]) } }
 
             Menu {
-                ForEach(MachinePreset.all) { preset in
-                    Button(preset.name) { add(preset) }
+                Section("Routers and mills") {
+                    ForEach(MachinePreset.all) { preset in
+                        Button(preset.name) { add(preset) }
+                    }
+                    Button("Other / DIY") { add(nil) }
                 }
-                Button("Other / DIY") { add(nil) }
+                Section("Lathes") {
+                    ForEach(MachinePreset.lathes) { preset in
+                        Button(preset.name) { add(preset) }
+                    }
+                    Button("Other lathe") { add(.lathe(id: "", name: String(localized: "My lathe"), diameter: 100, length: 200, maxRpm: 3_000)) }
+                }
             } label: {
                 Label("Add machine", systemImage: "plus.circle.fill")
             }
@@ -135,14 +181,7 @@ struct MachinesList: View {
             return
         }
         let machine = Machine(name: preset?.name ?? String(localized: "My machine"))
-        if let preset {
-            machine.presetID = preset.id
-            machine.travelX = preset.x
-            machine.travelY = preset.y
-            machine.travelZ = preset.z
-            machine.maxSpindleRpm = preset.maxRpm
-            machine.minSpindleRpm = preset.minRpm
-        }
+        preset?.apply(to: machine)
         context.insert(machine)
         if machines.allSatisfy({ !$0.isActive }) { machine.isActive = true }
     }
@@ -168,10 +207,29 @@ struct MachineEditView: View {
                 }
                 Toggle("Homing switches", isOn: $machine.hasHomingSwitches)
             }
-            Section("Travel") {
-                NumberField(title: "X", value: $machine.travelX)
-                NumberField(title: "Y", value: $machine.travelY)
-                NumberField(title: "Z", value: $machine.travelZ)
+            Section {
+                Picker("Type", selection: Binding(get: { machine.kind }, set: { machine.kind = $0 })) {
+                    Text("Router / mill").tag(MachineKind.mill)
+                    Text("Lathe").tag(MachineKind.lathe)
+                }
+                .pickerStyle(.segmented)
+            }
+            if machine.kind == .lathe {
+                Section {
+                    NumberField(title: "Max diameter", value: $machine.maxTurningDiameter, unit: "mm")
+                    NumberField(title: "Max part length", value: $machine.maxTurningLength, unit: "mm")
+                    Toggle("X values are diameters", isOn: $machine.latheDiameterMode)
+                } header: {
+                    Text("Lathe")
+                } footer: {
+                    Text("Most lathe controls and CAM posts program X as a diameter (Fanuc style). Turn this off for radius programming (G8).")
+                }
+            } else {
+                Section("Travel") {
+                    NumberField(title: "X", value: $machine.travelX)
+                    NumberField(title: "Y", value: $machine.travelY)
+                    NumberField(title: "Z", value: $machine.travelZ)
+                }
             }
             Section("Spindle & motion") {
                 NumberField(title: "Min RPM", value: $machine.minSpindleRpm, unit: "rpm")
@@ -185,10 +243,12 @@ struct MachineEditView: View {
             } footer: {
                 Text("For Wi-Fi controllers (FluidNC, grblHAL). Read-only.")
             }
-            Section {
-                Toggle("Check files against travel", isOn: $machine.checkTravelFromOrigin)
-            } footer: {
-                Text("Only turn this on if your work zero usually sits near machine home. Most CAM files are relative to the part, which this check can't see.")
+            if machine.kind == .mill {
+                Section {
+                    Toggle("Check files against travel", isOn: $machine.checkTravelFromOrigin)
+                } footer: {
+                    Text("Only turn this on if your work zero usually sits near machine home. Most CAM files are relative to the part, which this check can't see.")
+                }
             }
         }
         .navigationTitle(machine.name)

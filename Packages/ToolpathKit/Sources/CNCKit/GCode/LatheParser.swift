@@ -11,7 +11,7 @@ import Foundation
 /// preview shows real roughing passes and thread passes.
 ///
 /// Supported: G0–G3 (I/K or R arcs, G18 plane), G7/G8 diameter/radius mode,
-/// U/W incremental words, G20/G21, G90/G91 as absolute/incremental (LinuxCNC
+/// U/W incremental words, G20/G21, G94/G95 and G98/G99 feed modes, G90/G91 as absolute/incremental (LinuxCNC
 /// and grblHAL meaning, not the Fanuc group-A turning cycle), G94/G95,
 /// G96/G97, G50 S and G96 D spindle limits, G32/G33 threading, T0101 tool
 /// words, M3/M4/M5.
@@ -157,8 +157,9 @@ public struct LatheParser: Sendable {
                 case 21: unitScale = 1
                 case 90: absolute = true
                 case 91: absolute = false
-                case 94: feedPerRev = false
-                case 95: feedPerRev = true
+                // G94/G95 (LinuxCNC, grblHAL) and G98/G99 (Fanuc lathe).
+                case 94, 98: feedPerRev = false
+                case 95, 99: feedPerRev = true
                 case 96:
                     css = true
                     if let d = line.value("D") { maxRpm = d }
@@ -453,6 +454,18 @@ public struct LatheParser: Sendable {
 /// Recognises lathe programs, so a file opened without a lathe profile is
 /// still read the right way.
 public enum LatheDetector {
+    /// Whether any line programs a Y axis word (comments ignored).
+    public static func hasYAxis(_ source: String) -> Bool {
+        var found = false
+        var words: [GCodeParser.Word] = []
+        source.enumerateLines { raw, stop in
+            words.removeAll(keepingCapacity: true)
+            GCodeParser.scanWords(raw, into: &words)
+            if words.contains(where: { $0.letter == "Y" }) { found = true; stop = true }
+        }
+        return found
+    }
+
     public static func isLikelyLathe(_ source: String) -> Bool {
         var score = 0
         var sawY = false

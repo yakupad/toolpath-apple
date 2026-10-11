@@ -9,8 +9,8 @@ struct JobDetailView: View {
     @Environment(Router.self) private var router
     @Query(filter: #Predicate<Machine> { $0.isActive }) private var activeMachines: [Machine]
 
-    @State private var camera = OrbitCamera.isometric
-    @State private var is3D = true
+    @State private var camera = DebugFlags.start2D ? OrbitCamera.top : OrbitCamera.isometric
+    @State private var is3D = !DebugFlags.start2D
     @State private var showInspector = true
     @State private var inspectorTab: InspectorTab = .warnings
     @State private var focusedMove: Int?
@@ -233,14 +233,14 @@ struct JobDetailView: View {
 
             switch inspectorTab {
             case .warnings:
-                WarningsList(groups: analysis.groups, focusedMove: $focusedMove)
+                WarningsList(groups: analysis.groups, kind: analysis.kind, focusedMove: $focusedMove)
             case .preflight:
                 PreflightView(job: job, analysis: analysis, machine: machine) {
                     Telemetry.log(.preflightCompleted)
                     showRun = true
                 }
             case .stats:
-                StatsView(analysis: analysis)
+                StatsView(analysis: analysis, job: job)
             }
         }
         .padding(.horizontal, TP.Metric.gutter)

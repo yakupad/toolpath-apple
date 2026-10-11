@@ -46,8 +46,16 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
     public var body: some View {
         Canvas(rendersAsynchronously: false) { context, size in
             guard !geometry.isEmpty, size.width > 1, size.height > 1 else { return }
+            // Lathe parts are drawn true to scale: the depth exaggeration that
+            // makes shallow mill cuts readable would stretch the stock rings.
+            var camera = camera
+            if geometry.latheStock != nil { camera.zScale = 1 }
             let projection = Projection(camera: camera, size: size, bounds: geometry.bounds, insets: insets)
-            if showGrid { drawGrid(in: &context, projection) }
+            if let stock = geometry.latheStock {
+                drawLathe(stock, in: &context, projection)
+            } else if showGrid {
+                drawGrid(in: &context, projection)
+            }
             drawMoves(in: &context, projection)
         }
         .background(TP.Viewer.background)
@@ -93,6 +101,47 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
         }
         context.stroke(minor, with: .color(TP.Viewer.gridMinor), lineWidth: 0.6)
         context.stroke(major, with: .color(TP.Viewer.gridMajor), lineWidth: 1.2)
+    }
+
+    // MARK: Lathe
+
+    /// Spindle axis, the stock as a translucent section on both sides of the
+    /// axis, rings at its ends (visible in 3D) and a faint mirror of the path
+    /// so the turned silhouette reads at a glance.
+    private func drawLathe(_ stock: ToolpathGeometry.LatheStock, in context: inout GraphicsContext, _ p: Projection) {
+        let r = stock.radius
+        var section = Path()
+        section.move(to: p.point(stock.faceZ, r, 0))
+        section.addLine(to: p.point(stock.backZ, r, 0))
+        section.addLine(to: p.point(stock.backZ, -r, 0))
+        section.addLine(to: p.point(stock.faceZ, -r, 0))
+        section.closeSubpath()
+        context.fill(section, with: .color(TP.Viewer.stock))
+        context.stroke(section, with: .color(TP.Viewer.gridMajor), lineWidth: 1)
+
+        var rings = Path()
+        for z in [stock.faceZ, stock.backZ] {
+            for step in 0...48 {
+                let a = Double(step) / 48 * 2 * .pi
+                let point = p.point(z, r * cos(a), r * sin(a))
+                if step == 0 { rings.move(to: point) } else { rings.addLine(to: point) }
+            }
+        }
+        context.stroke(rings, with: .color(TP.Viewer.gridMajor), lineWidth: 1)
+
+        var axis = Path()
+        axis.move(to: p.point(stock.backZ - 10, 0, 0))
+        axis.addLine(to: p.point(stock.faceZ + 15, 0, 0))
+        context.stroke(axis, with: .color(TP.Viewer.gridMajor), style: StrokeStyle(lineWidth: 1, dash: [10, 4, 2, 4]))
+
+        var mirror = Path()
+        for segment in geometry.segments where !geometry.moves[segment.moveIndex].isRapid {
+            let pts = geometry.points[segment.range]
+            guard let first = pts.first else { continue }
+            mirror.move(to: p.point(first.x, -first.y, first.z))
+            for q in pts.dropFirst() { mirror.addLine(to: p.point(q.x, -q.y, q.z)) }
+        }
+        context.stroke(mirror, with: .color(TP.Viewer.gridMajor.opacity(0.8)), lineWidth: 1)
     }
 
     // MARK: Moves

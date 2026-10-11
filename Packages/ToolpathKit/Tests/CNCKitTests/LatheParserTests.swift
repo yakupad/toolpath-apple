@@ -130,4 +130,9 @@ struct LatheParserTests {
         #expect(LatheDetector.isLikelyLathe("T0101\nG0 X20 Z2\nG1 U-2 W-3"))
         #expect(!LatheDetector.isLikelyLathe("G21 G90\nG0 X10 Y10 Z5\nG1 Z-1 F300"))
     }
+
+    @Test func fanucG99IsFeedPerRev() throws {
+        let doc = parser.parse("G99 G97 S1000 M3\nG0 X20 Z1\nG1 Z-5 F0.1", fileName: "t.nc")
+        #expect(abs((doc.moves.last?.feedRate ?? 0) - 100) < 1e-9)
+    }
 }

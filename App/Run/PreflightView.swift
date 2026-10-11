@@ -202,6 +202,27 @@ struct PreflightText {
         case .dustCollection:
             title = String(localized: "Dust collection ready")
             detail = nil
+        case .latheZero:
+            title = String(localized: "Z0 on the part face, X0 on the spindle centreline")
+            detail = String(localized: "Touch off X on a measured diameter and Z on the faced end.")
+        case let .stickout(minimum):
+            title = String(localized: "Stock sticks out at least \(mm(minimum)) mm from the jaws")
+            detail = String(localized: "The deepest cut plus 5 mm clearance to the chuck.")
+        case let .stockDiameter(minimum):
+            title = String(localized: "Stock at least Ø\(mm(minimum)) mm")
+            detail = String(localized: "The widest cut in the program.")
+        case .toolsOnCenter:
+            title = String(localized: "Tools set on centre height")
+            detail = String(localized: "An insert above or below centre rubs and leaves a nub when facing.")
+        case .chuckKeyRemoved:
+            title = String(localized: "Chuck key removed, jaws tight")
+            detail = String(localized: "A key left in the chuck is thrown at full speed.")
+        case .spindleLimit:
+            title = String(localized: "Set a maximum RPM for G96")
+            detail = String(localized: "The program uses constant surface speed without G50 S or G96 D.")
+        case .latheProtection:
+            title = String(localized: "Eye protection on, no gloves or loose sleeves")
+            detail = String(localized: "Tie back long hair. Gloves and cloth can be caught by the spinning chuck.")
         }
     }
 }

@@ -64,12 +64,7 @@ struct OnboardingView: View {
         }
         if let preset {
             let machine = Machine(name: preset.name)
-            machine.presetID = preset.id
-            machine.travelX = preset.x
-            machine.travelY = preset.y
-            machine.travelZ = preset.z
-            machine.maxSpindleRpm = preset.maxRpm
-            machine.minSpindleRpm = preset.minRpm
+            preset.apply(to: machine)
             machine.isActive = true
             context.insert(machine)
         }
@@ -106,13 +101,13 @@ struct OnboardingView: View {
                 Text("We'll load its travel and spindle limits so every check fits your machine.")
                     .foregroundStyle(TP.Palette.textSecondary)
                 LazyVGrid(columns: [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)], spacing: 10) {
-                    ForEach(MachinePreset.all) { option in
+                    ForEach(MachinePreset.all + MachinePreset.lathes) { option in
                         Button { preset = preset == option ? nil : option } label: {
                             VStack(alignment: .leading, spacing: 6) {
-                                Image(systemName: "cube.transparent").font(.title2).foregroundStyle(TP.Palette.accentText)
+                                Image(systemName: option.kind == .lathe ? "circle.circle" : "cube.transparent").font(.title2).foregroundStyle(TP.Palette.accentText)
                                 Spacer(minLength: 8)
                                 Text(option.name).font(.headline).multilineTextAlignment(.leading)
-                                Text("\(Int(option.x)) × \(Int(option.y)) mm").font(.caption).foregroundStyle(TP.Palette.textSecondary)
+                                Text(option.sizeLabel).font(.caption).foregroundStyle(TP.Palette.textSecondary)
                             }
                             .frame(maxWidth: .infinity, minHeight: 110, alignment: .leading)
                             .padding(14)

@@ -57,4 +57,45 @@ enum SampleProgram {
         ]
         return lines.joined(separator: "\n")
     }()
+
+    /// A small lathe sample: Ø25 aluminium bar, face, rough with G71,
+    /// finish with G70, groove and an M20×1.5 thread. Fanuc-style, X as
+    /// diameter, Z0 on the face.
+    static let lathe = """
+    (Toolpath lathe sample - 25 mm aluminium bar, Z0 on the face, X diameter)
+    G21 G18 G40 G99
+    G50 S2500
+    T0101 (Turning insert)
+    G96 S180 M3
+    G0 X27 Z2 M8
+    G1 Z0 F0.1
+    X-0.4
+    G0 X27 Z2
+    G71 U1 R0.5
+    G71 P10 Q60 U0.4 W0.1 F0.18
+    N10 G0 X14
+    N20 G1 Z0 F0.08
+    N30 X16 Z-1
+    N40 Z-12
+    N45 X20 Z-14
+    N50 Z-30
+    N55 G2 X24 Z-32 R2
+    N60 G1 Z-40
+    G70 P10 Q60
+    G0 X40 Z10
+    T0303 (Grooving tool 2 mm)
+    G97 S800
+    G0 X22 Z-30
+    G1 X17 F0.03
+    G0 X22
+    G0 X40 Z10
+    T0505 (Threading insert 60 deg)
+    G97 S500
+    G0 X22 Z4
+    G76 P010060 Q50 R0.02
+    G76 X18.16 Z-26 P920 Q300 F1.5
+    G0 X40 Z10 M9
+    M5
+    M30
+    """
 }
