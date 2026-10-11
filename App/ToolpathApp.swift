@@ -7,6 +7,7 @@ struct ToolpathApp: App {
     @State private var router = Router()
     @State private var store = Store()
     @AppStorage("appearance") private var appearance: Appearance = .system
+    @AppStorage("workshopMode") private var workshopMode = false
 
     init() {
         let schema = Schema(AppSchema.models)
@@ -26,6 +27,8 @@ struct ToolpathApp: App {
                 .environment(router)
                 .environment(store)
                 .preferredColorScheme(appearance.colorScheme)
+                // Workshop mode: at least xxLarge text and controls for gloved hands.
+                .dynamicTypeSize(workshopMode ? DynamicTypeSize.xxLarge...DynamicTypeSize.accessibility3 : DynamicTypeSize.xSmall...DynamicTypeSize.accessibility5)
                 .tint(Color.accentColor)
                 .onOpenURL { url in router.importFile(at: url) }
         }
