@@ -9,7 +9,7 @@ workers_dev = true
 # The id is filled in by `wrangler kv namespace create TOOLPATH_KV`.
 [[kv_namespaces]]
 binding = "TOOLPATH_KV"
-id = "REPLACE_WITH_KV_ID"
+id = "c01c6b0f4e0446d98d0dd2a69a9523db"
 
 [vars]
 BUNDLE_ID = "com.yakupad.toolpath"
