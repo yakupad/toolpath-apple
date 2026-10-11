@@ -14,6 +14,12 @@ public enum FindingCategory: String, Sendable, Codable, CaseIterable {
     case missingSpindleStart
     case zeroFeedRate
     case exceedsMachineLimits
+    // Lathe
+    case latheRapidIntoStock
+    case chuckCollision
+    case cssWithoutSpeedLimit
+    case crossesCenterline
+    case exceedsSwing
 }
 
 /// A fact computed deterministically by `GCodeAnalyzer` — never guessed.

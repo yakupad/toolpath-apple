@@ -50,6 +50,14 @@ public struct PreflightItem: Sendable, Hashable, Identifiable {
         case airCut
         case personalProtection
         case dustCollection
+        // Lathe
+        case latheZero
+        case stickout(minimumMm: Double)
+        case stockDiameter(minimumMm: Double)
+        case toolsOnCenter
+        case chuckKeyRemoved
+        case spindleLimit(maxRpm: Double?)
+        case latheProtection
     }
 
     public let id: String
@@ -68,6 +76,7 @@ public enum PreflightGenerator {
     public static let clampMarginMm = 10.0
 
     public static func items(document: GCodeDocument, findings: [Finding], machine: MachineContext) -> [PreflightItem] {
+        if document.kind == .lathe { return latheItems(document: document, findings: findings, machine: machine) }
         var items: [PreflightItem] = []
         func add(_ id: String, _ kind: PreflightItem.Kind, _ section: PreflightSection, critical: Bool = false, warning: Bool = false) {
             items.append(PreflightItem(id: id, kind: kind, section: section, isCritical: critical, isWarning: warning))
@@ -120,6 +129,52 @@ public enum PreflightGenerator {
         add("ppe", .personalProtection, .safety, critical: true)
         add("dust", .dustCollection, .safety)
 
+        return items.sorted { $0.section < $1.section }
+    }
+
+    /// Lathe checklist: zeroes on face and centreline, stick-out and stock
+    /// diameter from the program, tool centre height, chuck key, RPM limit.
+    static func latheItems(document: GCodeDocument, findings: [Finding], machine: MachineContext) -> [PreflightItem] {
+        var items: [PreflightItem] = []
+        func add(_ id: String, _ kind: PreflightItem.Kind, _ section: PreflightSection, critical: Bool = false, warning: Bool = false) {
+            items.append(PreflightItem(id: id, kind: kind, section: section, isCritical: critical, isWarning: warning))
+        }
+        let dangers = findings.filter { $0.severity == .danger }.count
+        if dangers > 0 { add("dangers", .resolveDangers(count: dangers), .setup, critical: true, warning: true) }
+
+        let cuts = document.moves.filter(\.isCutting)
+        add("lathe-zero", .latheZero, .setup, critical: true)
+        if let deepest = cuts.flatMap({ [$0.start.x, $0.end.x] }).min(), deepest < 0 {
+            add("stickout", .stickout(minimumMm: -deepest + 5), .setup, critical: true)
+        }
+        if let widest = cuts.flatMap({ [$0.start.y, $0.end.y] }).max(), widest > 0 {
+            add("stock-diameter", .stockDiameter(minimumMm: widest * 2), .setup, critical: true)
+        }
+
+        let timeline = GCodeTimeline(document: document, rapidRateMmPerMin: machine.rapidRateMmPerMin)
+        if let first = document.toolChanges.first {
+            add("tool-\(first.toolNumber)", .toolLoaded(toolNumber: first.toolNumber, sourceLine: first.sourceLine), .tooling, critical: true)
+            for change in document.toolChanges.dropFirst() {
+                let at = change.firstMoveIndex.flatMap { timeline.startTime(ofMove: $0) }
+                add("change-\(change.toolNumber)-\(change.sourceLine)",
+                    .toolChange(toolNumber: change.toolNumber, sourceLine: change.sourceLine, atSeconds: at), .tooling)
+            }
+        } else {
+            add("tool", .toolLoaded(toolNumber: nil, sourceLine: nil), .tooling, critical: true)
+        }
+        add("center-height", .toolsOnCenter, .tooling, critical: true)
+
+        if let rpm = document.moves.map(\.spindleSpeed).max(), rpm > 0 {
+            let outOfRange = rpm > machine.maxSpindleRpm
+            add("rpm", .spindleSpeed(rpm: rpm, outOfRange: outOfRange), .machine, warning: outOfRange)
+        }
+        if let line = document.lathe?.cssWithoutLimitLine {
+            _ = line
+            add("spindle-limit", .spindleLimit(maxRpm: nil), .machine, critical: true, warning: true)
+        }
+        add("chuck-key", .chuckKeyRemoved, .safety, critical: true)
+        add("air-cut", .airCut, .safety)
+        add("lathe-ppe", .latheProtection, .safety, critical: true)
         return items.sorted { $0.section < $1.section }
     }
 

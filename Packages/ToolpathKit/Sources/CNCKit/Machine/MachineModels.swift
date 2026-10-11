@@ -1,5 +1,12 @@
 import Foundation
 
+/// Milling machines (routers, mills) and lathes read G-code differently: a
+/// lathe works in the X/Z plane, X usually being a diameter.
+public enum MachineKind: String, Sendable, Codable, CaseIterable {
+    case mill
+    case lathe
+}
+
 /// Machine travel limits in millimeters.
 public struct MachineEnvelope: Sendable, Hashable, Codable {
     public var maxX: Double

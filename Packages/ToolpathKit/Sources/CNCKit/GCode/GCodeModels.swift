@@ -105,7 +105,29 @@ public struct ToolChange: Sendable, Hashable {
 }
 
 /// Result of deterministically parsing a G-code file.
+///
+/// Lathe programs use the same model: `GPoint.x` is the axial position (Z on
+/// the machine), `GPoint.y` the radius from the spindle centerline (X/2 in
+/// diameter mode) and `GPoint.z` is 0. A plan view of the document is
+/// therefore the familiar lathe profile, and arcs, lengths, bounds and the
+/// timeline need no lathe-specific code.
+/// Facts about a lathe program that aren't visible in the moves alone.
+public struct LatheProgramInfo: Sendable, Hashable {
+    /// First line that cut in constant surface speed (G96) with no spindle
+    /// limit set by G50 S / G96 D.
+    public var cssWithoutLimitLine: Int?
+    /// Smallest radius cut while in constant surface speed.
+    public var minimumCssRadius: Double?
+
+    public init(cssWithoutLimitLine: Int? = nil, minimumCssRadius: Double? = nil) {
+        self.cssWithoutLimitLine = cssWithoutLimitLine
+        self.minimumCssRadius = minimumCssRadius
+    }
+}
+
 public struct GCodeDocument: Sendable {
+    public let kind: MachineKind
+    public let lathe: LatheProgramInfo?
     public let fileName: String
     public let totalLines: Int
     public let moves: [GCodeMove]
@@ -115,7 +137,10 @@ public struct GCodeDocument: Sendable {
     public let cuttingCount: Int
     public let hasAnySpindleOn: Bool
 
-    public init(fileName: String, totalLines: Int, moves: [GCodeMove], toolChanges: [ToolChange] = []) {
+    public init(fileName: String, totalLines: Int, moves: [GCodeMove], toolChanges: [ToolChange] = [],
+                kind: MachineKind = .mill, lathe: LatheProgramInfo? = nil) {
+        self.kind = kind
+        self.lathe = lathe
         self.fileName = fileName
         self.totalLines = totalLines
         self.moves = moves
