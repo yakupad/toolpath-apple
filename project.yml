@@ -59,10 +59,13 @@ targets:
         ENABLE_APP_SANDBOX: YES
         ENABLE_USER_SELECTED_FILES: readonly
         ENABLE_HARDENED_RUNTIME: YES
+        CODE_SIGN_ENTITLEMENTS: Config/Entitlements/Toolpath-iOS.entitlements
+        "CODE_SIGN_ENTITLEMENTS[sdk=macosx*]": Config/Entitlements/Toolpath-macOS.entitlements
     info:
       path: App/Info.plist
       properties:
         CFBundleLocalizations: [en, tr, de, es, it, ru, ja, zh-Hans, ar]
+        UIBackgroundModes: [remote-notification]
         CFBundleDocumentTypes:
           - CFBundleTypeName: G-code
             LSHandlerRank: Alternate
@@ -92,6 +95,7 @@ targets:
         INFOPLIST_KEY_CFBundleDisplayName: Toolpath
         GENERATE_INFOPLIST_FILE: YES
         SKIP_INSTALL: YES
+        CODE_SIGN_ENTITLEMENTS: Config/Entitlements/ToolpathWidgets.entitlements
         TARGETED_DEVICE_FAMILY: "1,2"
     info:
       path: Widgets/Info.plist

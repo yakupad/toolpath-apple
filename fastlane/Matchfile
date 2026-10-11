@@ -1,0 +1,10 @@
+# Signing assets live encrypted in a private repo shared by all of my Apple
+# apps (yakupad/apple-signing). One distribution certificate is reused by
+# every app and every CI run, so CI never mints new certificates.
+# The decryption password comes from MATCH_PASSWORD; it is never committed.
+git_url("https://github.com/yakupad/apple-signing.git")
+storage_mode("git")
+type("appstore")
+team_id("D677J9K7QY")
+app_identifier(["com.yakupad.toolpath", "com.yakupad.toolpath.widgets"])
+readonly(true)

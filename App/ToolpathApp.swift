@@ -11,9 +11,10 @@ struct ToolpathApp: App {
 
     init() {
         let schema = Schema(AppSchema.models)
-        // iCloud sync switches on once the CloudKit entitlement is added
-        // (see vault: Identity & Sync). Until then the store is local.
-        let configuration = ModelConfiguration(schema: schema, cloudKitDatabase: .none)
+        // Free iCloud sync through the user's private CloudKit database — no
+        // account or login of our own. Without an iCloud account the store
+        // simply stays local.
+        let configuration = ModelConfiguration(schema: schema, cloudKitDatabase: .private("iCloud.com.yakupad.toolpath"))
         do {
             container = try ModelContainer(for: schema, configurations: configuration)
         } catch {

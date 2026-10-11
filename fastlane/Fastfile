@@ -1,0 +1,82 @@
+# Signing and upload only. Builds use the App Store Connect API key from the
+# environment (ASC_KEY_ID, ASC_ISSUER_ID, ASC_KEY_PATH); nothing secret is
+# stored in this repository.
+
+default_platform(:ios)
+
+def asc_key
+  app_store_connect_api_key(
+    key_id: ENV.fetch("ASC_KEY_ID"),
+    issuer_id: ENV.fetch("ASC_ISSUER_ID"),
+    key_filepath: ENV.fetch("ASC_KEY_PATH")
+  )
+end
+
+# CI regenerates the Xcode project with XcodeGen (Automatic signing), then
+# switches the targets to the match profiles for the release build.
+def manual_signing(sdk, profiles)
+  profiles.each do |target, profile|
+    update_code_signing_settings(
+      path: "Toolpath.xcodeproj",
+      use_automatic_signing: false,
+      targets: [target],
+      team_id: "D677J9K7QY",
+      code_sign_identity: "Apple Distribution",
+      profile_name: profile,
+      sdk: sdk == "macos" ? "macosx*" : "iphoneos*"
+    )
+  end
+end
+
+def match_auth
+  ENV["MATCH_GIT_BASIC_AUTHORIZATION"]
+end
+
+platform :ios do
+  desc "One-time (or after adding capabilities): create or refresh certs and profiles"
+  lane :bootstrap_signing do
+    asc_key
+    # force: regenerate profiles so newly added capabilities (iCloud, App
+    # Groups) are included. The certificate itself is reused.
+    force = ENV["MATCH_FORCE"] == "1"
+    match(type: "appstore", readonly: false, platform: "ios", force: force)
+    match(type: "appstore", readonly: false, platform: "macos", force: force,
+          app_identifier: ["com.yakupad.toolpath"], additional_cert_types: ["mac_installer_distribution"])
+  end
+
+  desc "Build and upload the iOS app to TestFlight"
+  lane :beta do
+    asc_key
+    match(type: "appstore", readonly: true, git_basic_authorization: match_auth)
+    manual_signing("ios", {
+      "Toolpath" => "match AppStore com.yakupad.toolpath",
+      "ToolpathWidgets" => "match AppStore com.yakupad.toolpath.widgets"
+    })
+    build_app(
+      project: "Toolpath.xcodeproj",
+      scheme: "Toolpath",
+      destination: "generic/platform=iOS",
+      export_method: "app-store",
+      xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
+    )
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+end
+
+platform :mac do
+  desc "Build and upload the Mac app to TestFlight"
+  lane :beta do
+    asc_key
+    match(type: "appstore", readonly: true, platform: "macos", app_identifier: ["com.yakupad.toolpath"],
+          additional_cert_types: ["mac_installer_distribution"], git_basic_authorization: match_auth)
+    manual_signing("macos", { "Toolpath" => "match AppStore com.yakupad.toolpath macos" })
+    build_app(
+      project: "Toolpath.xcodeproj",
+      scheme: "Toolpath",
+      destination: "generic/platform=macOS",
+      export_method: "app-store",
+      xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
+    )
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+  end
+end

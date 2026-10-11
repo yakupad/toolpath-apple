@@ -1,0 +1,52 @@
+name: TestFlight
+
+# Manual for now; switch to tags once the first build has gone through.
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: "Platform"
+        type: choice
+        options: [ios, mac, both]
+        default: ios
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: macos-26
+    strategy:
+      matrix:
+        lane: [ios, mac]
+    steps:
+      - name: Skip unselected platform
+        if: inputs.platform != 'both' && inputs.platform != matrix.lane
+        run: echo "skipping ${{ matrix.lane }}"
+      - uses: actions/checkout@v4
+        if: inputs.platform == 'both' || inputs.platform == matrix.lane
+      - name: Build and upload
+        if: inputs.platform == 'both' || inputs.platform == matrix.lane
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_CONTENT_BASE64: ${{ secrets.ASC_KEY_CONTENT_BASE64 }}
+          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
+          MATCH_REPO_TOKEN: ${{ secrets.MATCH_REPO_TOKEN }}
+          BUILD_NUMBER: ${{ github.run_number }}
+          LANE: ${{ matrix.lane }}
+        run: |
+          brew install xcodegen
+          xcodegen generate
+          export ASC_KEY_PATH="$RUNNER_TEMP/asc_key.p8"
+          printf '%s' "$ASC_KEY_CONTENT_BASE64" | base64 --decode > "$ASC_KEY_PATH"
+          export MATCH_GIT_BASIC_AUTHORIZATION=$(printf 'x-access-token:%s' "$MATCH_REPO_TOKEN" | base64)
+          export MATCH_KEYCHAIN_NAME=ci.keychain MATCH_KEYCHAIN_PASSWORD=$(uuidgen)
+          security create-keychain -p "$MATCH_KEYCHAIN_PASSWORD" "$MATCH_KEYCHAIN_NAME"
+          security set-keychain-settings -lut 3600 "$MATCH_KEYCHAIN_NAME"
+          security unlock-keychain -p "$MATCH_KEYCHAIN_PASSWORD" "$MATCH_KEYCHAIN_NAME"
+          security list-keychains -d user -s "$MATCH_KEYCHAIN_NAME" $(security list-keychains -d user | tr -d '"')
+          fastlane "$LANE" beta
+      - name: Clean up key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/asc_key.p8"
