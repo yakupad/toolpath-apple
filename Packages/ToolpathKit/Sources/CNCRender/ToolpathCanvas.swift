@@ -98,25 +98,10 @@ public struct ToolpathCanvas: View, @preconcurrency Animatable {
     // MARK: Moves
 
     private func drawMoves(in context: inout GraphicsContext, _ p: Projection) {
-        var paths = [StrokeStyleKind: Path]()
         let total = geometry.segments.count
         let limit = cursor.map { $0.moveIndex + 1 } ?? max(1, Int((Double(total) * drawProgress).rounded(.up)))
         let points = geometry.points
-
-        for segment in geometry.segments.prefix(min(limit, total)) {
-            let move = geometry.moves[segment.moveIndex]
-            guard filter.allows(move) else { continue }
-            var path = paths[segment.style] ?? Path()
-            if let cursor, cursor.moveIndex == segment.moveIndex, cursor.moveProgress < 1 {
-                let partial = Tessellator.polyline(for: move, upTo: cursor.moveProgress)
-                path.move(to: p.point(partial[0]))
-                for q in partial.dropFirst() { path.addLine(to: p.point(q)) }
-            } else {
-                path.move(to: p.point(points[segment.range.lowerBound]))
-                for i in segment.range.dropFirst() { path.addLine(to: p.point(points[i])) }
-            }
-            paths[segment.style] = path
-        }
+        let paths = ToolpathPathBuilder.build(geometry: geometry, projection: p, filter: filter, limit: limit, cursor: cursor)
 
         let dim = focusedMove != nil
         for kind in StrokeStyleKind.allCases {

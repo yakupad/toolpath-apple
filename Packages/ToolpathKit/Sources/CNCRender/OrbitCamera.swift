@@ -82,6 +82,8 @@ public struct Projection: Sendable {
     let scale: Double
     /// Screen point the job's center maps to (center of the unobscured area).
     let origin: CGPoint
+    // Precomputed rotation terms: point() runs for every vertex every frame.
+    let cy: Double, sy: Double, cp: Double, sp: Double, zScale: Double
 
     /// Fits the job's footprint (not the machine bed) into the part of the
     /// viewport not covered by `insets` (toolbars, bottom panel).
@@ -92,6 +94,9 @@ public struct Projection: Sendable {
         let visible = CGSize(width: max(size.width - insets.leading - insets.trailing, 1),
                              height: max(size.height - insets.top - insets.bottom, 1))
         self.origin = CGPoint(x: insets.leading + visible.width / 2, y: insets.top + visible.height / 2)
+        self.cy = cos(camera.yaw); self.sy = sin(camera.yaw)
+        self.cp = cos(camera.pitch); self.sp = sin(camera.pitch)
+        self.zScale = camera.zScale
         let corners: [GPoint] = [
             GPoint(x: bounds.minX, y: bounds.minY, z: bounds.minZ), GPoint(x: bounds.maxX, y: bounds.minY, z: bounds.minZ),
             GPoint(x: bounds.minX, y: bounds.maxY, z: bounds.minZ), GPoint(x: bounds.maxX, y: bounds.maxY, z: bounds.minZ),
@@ -111,10 +116,13 @@ public struct Projection: Sendable {
 
     @inline(__always)
     public func point(_ x: Double, _ y: Double, _ z: Double) -> CGPoint {
-        let r = camera.rotate(x: x - center.x, y: y - center.y, z: z - center.z)
+        let dx = x - center.x, dy = y - center.y, dz = (z - center.z) * zScale
+        let rx = dx * cy - dy * sy
+        let ry = dx * sy + dy * cy
+        let screenY = ry * sp + dz * cp
         return CGPoint(
-            x: origin.x + r.x * scale + camera.pan.width,
-            y: origin.y - r.y * scale + camera.pan.height
+            x: origin.x + rx * scale + camera.pan.width,
+            y: origin.y - screenY * scale + camera.pan.height
         )
     }
 
