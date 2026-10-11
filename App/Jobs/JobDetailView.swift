@@ -22,6 +22,7 @@ struct JobDetailView: View {
     @State private var panelExpanded = false
     @State private var showQuote = false
     @State private var pdfURL: URL?
+    @State private var showCompare = false
     @Environment(Store.self) private var store
     @Environment(\.horizontalSizeClass) private var sizeClass
 
@@ -83,6 +84,7 @@ struct JobDetailView: View {
                     }
             }
         }
+        .navigationDestination(isPresented: $showCompare) { ComparePicker(current: job) }
         .navigationDestination(isPresented: $showQuote) {
             QuoteView(machineMinutes: analysis?.statistics.estimatedMachiningTimeMinutes ?? 30, title: job.name)
         }
@@ -177,6 +179,11 @@ struct JobDetailView: View {
                             showQuote = true
                         } label: {
                             Label("Make a quote", systemImage: "doc.text")
+                        }
+                        Button {
+                            showCompare = true
+                        } label: {
+                            Label("Compare with…", systemImage: "square.split.2x1")
                         }
                         ShareLink(item: SafetyReport.text(job: job, analysis: analysis), subject: Text(job.name)) {
                             Label("Share report", systemImage: "square.and.arrow.up")

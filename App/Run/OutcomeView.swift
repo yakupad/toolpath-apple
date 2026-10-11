@@ -15,7 +15,9 @@ struct OutcomeView: View {
     @State private var materialID = CuttingMaterial.catalog[0].id
     @State private var notes = ""
     @State private var recipeID: UUID?
+    @State private var toolID: UUID?
     @Query(sort: \Recipe.createdAt, order: .reverse) private var recipes: [Recipe]
+    @Query(sort: \Tool.createdAt) private var tools: [Tool]
 
     var body: some View {
         NavigationStack {
@@ -58,6 +60,14 @@ struct OutcomeView: View {
                         ForEach(CuttingMaterial.catalog) { Text($0.title).tag($0.id) }
                     }
                 }
+                if !tools.isEmpty {
+                    Section("Tool") {
+                        Picker("Tool", selection: $toolID) {
+                            Text("None").tag(UUID?.none)
+                            ForEach(tools) { Text($0.nickname).tag(Optional($0.id)) }
+                        }
+                    }
+                }
                 if !recipes.isEmpty {
                     Section("Recipe") {
                         Picker("Recipe", selection: $recipeID) {
@@ -90,6 +100,10 @@ struct OutcomeView: View {
         log.durationMinutes = minutes
         log.notes = notes
         log.recipeID = recipeID
+        log.toolID = toolID
+        if let toolID, let tool = tools.first(where: { $0.id == toolID }) {
+            tool.cuttingMinutes += minutes
+        }
         context.insert(log)
         machine?.spindleHours += minutes / 60
         try? context.save()
