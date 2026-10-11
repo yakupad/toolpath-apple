@@ -162,6 +162,13 @@ struct MachineEditView: View {
                 NumberField(title: "Rapid rate", value: $machine.rapidRate, unit: "mm/min")
             }
             Section {
+                NavigationLink { MachineMonitorView(machine: machine) } label: {
+                    Label("Live monitor (beta)", systemImage: "dot.radiowaves.left.and.right")
+                }
+            } footer: {
+                Text("For Wi-Fi controllers (FluidNC, grblHAL). Read-only.")
+            }
+            Section {
                 Toggle("Check files against travel", isOn: $machine.checkTravelFromOrigin)
             } footer: {
                 Text("Only turn this on if your work zero usually sits near machine home. Most CAM files are relative to the part, which this check can't see.")

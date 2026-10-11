@@ -1,0 +1,66 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSLocalNetworkUsageDescription": {
+      "comment": "Local network permission prompt for the read-only live monitor",
+      "extractionState": "manual",
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يقرأ Toolpath حالة وحدة التحكم CNC على شبكتك المحلية (للقراءة فقط)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath liest den Status deiner CNC-Steuerung im lokalen Netzwerk (nur lesend)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath reads the status of your CNC controller on your local network (read-only)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath lee el estado de tu controlador CNC en tu red local (solo lectura)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath legge lo stato del tuo controller CNC sulla rete locale (sola lettura)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpathはローカルネットワーク上のCNCコントローラの状態を読み取ります（読み取り専用）。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath считывает состояние вашего ЧПУ-контроллера в локальной сети (только чтение)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath, yerel ağınızdaki CNC kontrolcünüzün durumunu okur (salt okunur)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toolpath 会读取您本地网络中 CNC 控制器的状态（只读）。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

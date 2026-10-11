@@ -49,6 +49,8 @@ final class Machine {
     var isActive: Bool = false
     var spindleHours: Double = 0
     var createdAt: Date = Date.now
+    /// Address of a Wi-Fi controller for the read-only live monitor.
+    var monitorHost: String = ""
 
     init(name: String) { self.name = name }
 
