@@ -71,14 +71,34 @@ platform :mac do
     match(type: "appstore", readonly: true, platform: "macos", app_identifier: ["com.yakupad.toolpath"],
           additional_cert_types: ["mac_installer_distribution"], git_basic_authorization: match_auth)
     manual_signing("macos", { "Toolpath" => "match AppStore com.yakupad.toolpath macos" })
-    pkg = build_mac_app(
-      project: "Toolpath.xcodeproj",
-      scheme: "Toolpath",
-      destination: "generic/platform=macOS",
-      export_method: "app-store",
-      xcodebuild_formatter: "",
-      xcargs: "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}"
-    )
+    # gym validates the export of this multiplatform project as an iOS IPA,
+    # so archive and export the Mac app with xcodebuild directly.
+    root = File.expand_path("..", __dir__)
+    archive = File.join(root, "build/release/Toolpath-mac.xcarchive")
+    export_dir = File.join(root, "build/release/mac")
+    options = File.join(root, "build/release/mac-export-options.plist")
+    FileUtils.mkdir_p(export_dir)
+    File.write(options, <<~PLIST)
+      <?xml version="1.0" encoding="UTF-8"?>
+      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+      <plist version="1.0"><dict>
+        <key>method</key><string>app-store-connect</string>
+        <key>destination</key><string>export</string>
+        <key>teamID</key><string>D677J9K7QY</string>
+        <key>signingStyle</key><string>manual</string>
+        <key>signingCertificate</key><string>Apple Distribution</string>
+        <key>installerSigningCertificate</key><string>3rd Party Mac Developer Installer: Yakup Ad (D677J9K7QY)</string>
+        <key>provisioningProfiles</key><dict>
+          <key>com.yakupad.toolpath</key><string>match AppStore com.yakupad.toolpath macos</string>
+        </dict>
+      </dict></plist>
+    PLIST
+    sh("xcodebuild", "-project", File.join(root, "Toolpath.xcodeproj"), "-scheme", "Toolpath",
+       "-configuration", "Release", "-destination", "generic/platform=macOS",
+       "-archivePath", archive, "CURRENT_PROJECT_VERSION=#{ENV.fetch('BUILD_NUMBER', '1')}", "archive")
+    sh("xcodebuild", "-exportArchive", "-archivePath", archive,
+       "-exportPath", export_dir, "-exportOptionsPlist", options)
+    pkg = Dir[File.join(export_dir, "*.pkg")].first || UI.user_error!("No .pkg was exported")
     upload_to_testflight(pkg: pkg, app_platform: "osx", skip_waiting_for_build_processing: true) unless ENV["SKIP_UPLOAD"] == "1"
   end
 end
