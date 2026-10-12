@@ -81,6 +81,7 @@ enum DebugLaunch {
             }
         }
         if args.contains("-showPaywall") { router.showPaywall = true }
+        if args.contains("-renderCreatives") { CreativeRenderer.renderAll() }
         #if os(macOS)
         if args.contains("-screenshotWindow") {
             // 1440×900 pt = 2880×1800 px on Retina: the App Store Mac size.
