@@ -82,6 +82,8 @@ enum DebugLaunch {
         }
         if args.contains("-showPaywall") { router.showPaywall = true }
         if args.contains("-renderCreatives") { CreativeRenderer.renderAll() }
+        if let source = DebugFlags.value("-renderMarketing") { MarketingShots.renderAll(source: URL(fileURLWithPath: source)) }
+        if args.contains("-renderCreativeVideos") { Task { await CreativeRenderer.renderVideos() } }
         #if os(macOS)
         if args.contains("-screenshotWindow") {
             // 1440×900 pt = 2880×1800 px on Retina: the App Store Mac size.
@@ -111,20 +113,10 @@ enum DebugLaunch {
             router.open(job: job.id)
         }
         if args.contains("-openDanger") {
-            let job = JobFile(name: "knob_pocket.nc", content: """
-            G21 G90
-            M3 S12000
-            G0 Z5
-            G0 X0 Y0
-            G1 Z-1 F300
-            G2 X0 Y0 I20 J0 F800
-            G0 Z0.5
-            G0 X40 Y0 Z-1
-            G1 X60 F600
-            G0 Z10
-            M5
-            """)
+            // The sample sign with one rapid that plunges into the stock.
+            let job = JobFile(name: "sign_v2.nc", content: SampleProgram.sign + "\nG0 X60 Y30 Z-1.5\nG0 Z5\n")
             context.insert(job)
+            router.analyses.load(job, machine: nil)
             router.open(job: job.id)
         }
     }

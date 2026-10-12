@@ -2,6 +2,7 @@
 import CNCDesign
 import CNCKit
 import CNCRender
+import AVFoundation
 import ImageIO
 import SwiftUI
 import UniformTypeIdentifiers
@@ -45,6 +46,67 @@ enum CreativeRenderer {
             }
         }
         try? "done".write(to: folder.appending(path: "DONE"), atomically: true, encoding: .utf8)
+    }
+
+    /// Text-free 15 s videos (usable in every language): the toolpath draws
+    /// on, the dangerous rapid turns red and the score drops from 100 to 75.
+    static func renderVideos() async {
+        guard let base = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        let folder = base.appending(path: "creatives")
+        try? FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        let videos: [(String, CGSize)] = [("video_header", CGSize(width: 1920, height: 823)),
+                                          ("video_search", CGSize(width: 1440, height: 960))]
+        for (name, size) in videos {
+            let url = folder.appending(path: "\(name).mov")
+            try? FileManager.default.removeItem(at: url)
+            do { try await renderVideo(size: size, seconds: 15, fps: 30, to: url) }
+            catch { try? "\(error)".write(to: folder.appending(path: "\(name).error.txt"), atomically: true, encoding: .utf8) }
+        }
+        try? "done".write(to: folder.appending(path: "VIDEOS_DONE"), atomically: true, encoding: .utf8)
+    }
+
+    static func renderVideo(size: CGSize, seconds: Double, fps: Int32, to url: URL) async throws {
+        let pixelWidth = Int(size.width * 2), pixelHeight = Int(size.height * 2)
+        let writer = try AVAssetWriter(outputURL: url, fileType: .mov)
+        let input = AVAssetWriterInput(mediaType: .video, outputSettings: [
+            AVVideoCodecKey: AVVideoCodecType.h264,
+            AVVideoWidthKey: pixelWidth,
+            AVVideoHeightKey: pixelHeight,
+            AVVideoCompressionPropertiesKey: [AVVideoAverageBitRateKey: 40_000_000, AVVideoExpectedSourceFrameRateKey: fps],
+        ])
+        input.expectsMediaDataInRealTime = false
+        let adaptor = AVAssetWriterInputPixelBufferAdaptor(assetWriterInput: input, sourcePixelBufferAttributes: [
+            kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA,
+            kCVPixelBufferWidthKey as String: pixelWidth,
+            kCVPixelBufferHeightKey as String: pixelHeight,
+        ])
+        writer.add(input)
+        writer.startWriting()
+        writer.startSession(atSourceTime: .zero)
+        let frames = Int(seconds * Double(fps))
+        for index in 0..<frames {
+            let t = Double(index) / Double(fps)
+            let renderer = ImageRenderer(content: CreativeVideoFrame(time: t, size: size).frame(width: size.width, height: size.height))
+            renderer.scale = 2
+            renderer.isOpaque = true
+            guard let image = renderer.cgImage, let pool = adaptor.pixelBufferPool else { continue }
+            var buffer: CVPixelBuffer?
+            CVPixelBufferPoolCreatePixelBuffer(nil, pool, &buffer)
+            guard let buffer else { continue }
+            CVPixelBufferLockBaseAddress(buffer, [])
+            if let context = CGContext(data: CVPixelBufferGetBaseAddress(buffer), width: pixelWidth, height: pixelHeight,
+                                       bitsPerComponent: 8, bytesPerRow: CVPixelBufferGetBytesPerRow(buffer),
+                                       space: CGColorSpaceCreateDeviceRGB(),
+                                       bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue) {
+                context.draw(image, in: CGRect(x: 0, y: 0, width: pixelWidth, height: pixelHeight))
+            }
+            CVPixelBufferUnlockBaseAddress(buffer, [])
+            while !input.isReadyForMoreMediaData { try await Task.sleep(for: .milliseconds(5)) }
+            adaptor.append(buffer, withPresentationTime: CMTime(value: CMTimeValue(index), timescale: fps))
+        }
+        input.markAsFinished()
+        await writer.finishWriting()
+        if writer.status != .completed { throw writer.error ?? CocoaError(.fileWriteUnknown) }
     }
 
     static func write(_ image: CGImage, to url: URL) {
@@ -149,6 +211,54 @@ struct CreativeView: View {
                 .fixedSize(horizontal: false, vertical: true)
         }
         .multilineTextAlignment(isRTL ? .trailing : .leading)
+    }
+}
+
+/// One frame of the header/search video at `time` seconds.
+struct CreativeVideoFrame: View {
+    let time: Double
+    let size: CGSize
+
+    private static let document = GCodeParser().parse(SampleProgram.sign + "\nG0 X60 Y30 Z-1.5\nG0 Z5\n", fileName: "creative")
+    private static let geometry = ToolpathGeometry(document: document, findings: GCodeAnalyzer().analyze(document))
+
+    var body: some View {
+        // 0–9 s draw-on (eased), then hold; the danger rapid is the last move drawn.
+        let raw = min(time / 9, 1)
+        let progress = raw < 0.5 ? 2 * raw * raw : 1 - pow(-2 * raw + 2, 2) / 2
+        let flagged = time >= 9
+        let scoreBlend = min(max((time - 9) / 0.8, 0), 1)
+        let score = Int((100 - 25 * scoreBlend).rounded())
+        let yaw = OrbitCamera.isometric.yaw + 0.45 * sin(time / 15 * .pi * 2) * 0.6
+        ZStack(alignment: .bottomLeading) {
+            LinearGradient(colors: [Color(hex: 0x23211C), Color(hex: 0x121110)], startPoint: .topLeading, endPoint: .bottomTrailing)
+            ToolpathCanvas(geometry: Self.geometry,
+                           camera: OrbitCamera(yaw: yaw, pitch: OrbitCamera.isometric.pitch, zoom: 1.0),
+                           drawProgress: progress, showGrid: true)
+                .mask(RadialGradient(colors: [.black, .black, .clear], center: .center, startRadius: 0, endRadius: size.width * 0.6))
+            HStack(spacing: size.height * 0.03) {
+                ZStack {
+                    Circle().stroke(Color.white.opacity(0.12), lineWidth: size.height * 0.014)
+                    Circle().trim(from: 0, to: 1 - 0.25 * scoreBlend)
+                        .stroke(flagged ? TP.Palette.danger : TP.Palette.success, style: StrokeStyle(lineWidth: size.height * 0.014, lineCap: .round))
+                        .rotationEffect(.degrees(-90))
+                    Text("\(score)")
+                        .font(.system(size: size.height * 0.05, weight: .bold, design: .monospaced))
+                        .foregroundStyle(.white)
+                }
+                .frame(width: size.height * 0.14, height: size.height * 0.14)
+                if flagged {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: size.height * 0.06))
+                        .foregroundStyle(TP.Palette.danger)
+                        .opacity(scoreBlend)
+                }
+            }
+            .padding(size.height * 0.025)
+            .background(.black.opacity(0.35), in: .rect(cornerRadius: size.height * 0.045))
+            .padding(size.height * 0.07)
+        }
+        .environment(\.colorScheme, .dark)
     }
 }
 
