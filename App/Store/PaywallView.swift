@@ -42,6 +42,9 @@ struct PaywallView: View {
                         }
                     }
 
+                    Text("Payment is charged to your Apple Account when you confirm. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before that. Manage or cancel any time in your Apple Account settings. If a free trial is offered, any unused part of it ends when you subscribe.")
+                        .font(.caption2)
+                        .foregroundStyle(TP.Palette.textTertiary)
                     Text("G-code checks, pre-flight, feeds and speeds, calculators, alarms, iCloud sync and 5 cloud questions a month stay free.")
                         .font(.footnote)
                         .foregroundStyle(TP.Palette.textSecondary)

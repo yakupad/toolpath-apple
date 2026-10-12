@@ -2142,6 +2142,58 @@
         }
       }
     },
+    "Allow cloud answers": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح بالإجابات السحابية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Antworten erlauben"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir respuestas en la nube"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti risposte cloud"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドでの回答を許可"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешить облачные ответы"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut yanıtlarına izin ver"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许云端回答"
+          }
+        }
+      }
+    },
     "Aluminum": {
       "localizations": {
         "ar": {
@@ -2450,6 +2502,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "来自内置车间资料库的回答"
+          }
+        }
+      }
+    },
+    "Apple Intelligence isn't available here. To answer, Toolpath can send your question, the last few messages and the matching workshop notes through the Toolpath server to Anthropic's Claude. Toolpath doesn't store them, and they are never linked to your name or Apple Account.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence غير متاح هنا. للإجابة، يمكن لـ Toolpath إرسال سؤالك وآخر بضع رسائل وملاحظات الورشة المطابقة عبر خادم Toolpath إلى Claude من Anthropic. لا يحتفظ Toolpath بها، ولا تُربط أبدًا باسمك أو بحساب Apple الخاص بك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ist hier nicht verfügbar. Für eine Antwort kann Toolpath deine Frage, die letzten Nachrichten und passende Werkstattnotizen über den Toolpath-Server an Claude von Anthropic senden. Toolpath speichert sie nicht, und sie werden nie mit deinem Namen oder Apple Account verknüpft."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence no está disponible aquí. Para responder, Toolpath puede enviar tu pregunta, los últimos mensajes y las notas de taller relacionadas a Claude de Anthropic a través del servidor de Toolpath. Toolpath no los guarda y nunca se vinculan a tu nombre ni a tu cuenta de Apple."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence non è disponibile qui. Per rispondere, Toolpath può inviare la tua domanda, gli ultimi messaggi e le note d'officina pertinenti a Claude di Anthropic tramite il server di Toolpath. Toolpath non li conserva e non vengono mai collegati al tuo nome o al tuo Account Apple."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ここではApple Intelligenceを利用できません。回答のため、Toolpathはあなたの質問、直近のメッセージ、関連する作業メモをToolpathサーバー経由でAnthropicのClaudeに送信できます。Toolpathはこれらを保存せず、あなたの名前やApple Accountと結び付けることもありません。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence здесь недоступен. Чтобы ответить, Toolpath может отправить ваш вопрос, последние сообщения и подходящие заметки мастерской через сервер Toolpath в Claude от Anthropic. Toolpath их не хранит, и они никогда не связываются с вашим именем или аккаунтом Apple."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence burada kullanılamıyor. Yanıt verebilmek için Toolpath sorunuzu, son birkaç mesajı ve ilgili atölye notlarını Toolpath sunucusu üzerinden Anthropic'in Claude modeline gönderebilir. Toolpath bunları saklamaz ve hiçbir zaman adınız ya da Apple Hesabınızla ilişkilendirilmez."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此处无法使用 Apple 智能。为了回答，Toolpath 可以通过 Toolpath 服务器把你的问题、最近几条消息和相关车间笔记发送给 Anthropic 的 Claude。Toolpath 不会保存这些内容，也绝不会将其与你的姓名或 Apple 账户关联。"
           }
         }
       }
@@ -3646,6 +3750,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "断刀"
+          }
+        }
+      }
+    },
+    "Built-in library only": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مكتبة مدمجة فقط"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur eingebaute Bibliothek"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo la biblioteca integrada"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo libreria integrata"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "内蔵ライブラリのみ"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только встроенная библиотека"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sadece yerleşik kütüphane"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅使用内置资料库"
           }
         }
       }
@@ -5374,6 +5530,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "云端助手"
+          }
+        }
+      }
+    },
+    "Cloud assistant (Claude)": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "المساعد السحابي (Claude)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Assistent (Claude)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asistente en la nube (Claude)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Assistente cloud (Claude)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタント（Claude）"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Облачный ассистент (Claude)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut asistan (Claude)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "云端助手（Claude）"
           }
         }
       }
@@ -16017,6 +16225,58 @@
         }
       }
     },
+    "Payment is charged to your Apple Account when you confirm. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before that. Manage or cancel any time in your Apple Account settings. If a free trial is offered, any unused part of it ends when you subscribe.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يُخصم المبلغ من حساب Apple الخاص بك عند التأكيد. تتجدد الاشتراكات تلقائيًا ما لم تُلغَ قبل 24 ساعة على الأقل من نهاية الفترة الحالية؛ ويُحتسب التجديد خلال الـ24 ساعة السابقة لذلك. يمكنك الإدارة أو الإلغاء في أي وقت من إعدادات حساب Apple. إذا عُرضت فترة تجربة مجانية، ينتهي الجزء غير المستخدم منها عند الاشتراك."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Zahlung wird bei Bestätigung deinem Apple Account belastet. Abos verlängern sich automatisch, wenn sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden; die Verlängerung wird innerhalb der 24 Stunden davor berechnet. Verwalten oder kündigen kannst du jederzeit in den Einstellungen deines Apple Accounts. Ein nicht genutzter Teil einer Gratis-Testphase verfällt mit dem Abschluss eines Abos."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El pago se carga a tu cuenta de Apple al confirmar. Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo actual; la renovación se cobra en las 24 horas previas. Puedes gestionarlas o cancelarlas cuando quieras en los ajustes de tu cuenta de Apple. Si se ofrece una prueba gratuita, la parte no usada termina al suscribirte."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il pagamento viene addebitato sul tuo Account Apple alla conferma. Gli abbonamenti si rinnovano automaticamente se non vengono annullati almeno 24 ore prima della fine del periodo in corso; il rinnovo viene addebitato nelle 24 ore precedenti. Puoi gestirli o annullarli in qualsiasi momento nelle impostazioni del tuo Account Apple. Se è offerta una prova gratuita, la parte non utilizzata termina quando ti abboni."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お支払いは購入の確認時にApple Accountに請求されます。サブスクリプションは、現在の期間終了の24時間前までに解約しない限り自動更新され、更新料金はその24時間以内に請求されます。Apple Accountの設定でいつでも管理・解約できます。無料トライアルがある場合、未使用分は購読時に終了します。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оплата списывается с вашего аккаунта Apple при подтверждении. Подписки продлеваются автоматически, если их не отменить не менее чем за 24 часа до конца текущего периода; продление оплачивается в течение 24 часов до этого. Управлять подпиской или отменить её можно в любое время в настройках аккаунта Apple. Если предлагается бесплатный пробный период, его неиспользованная часть сгорает при оформлении подписки."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ödeme, onayladığınızda Apple Hesabınızdan alınır. Abonelikler, mevcut dönemin bitiminden en az 24 saat önce iptal edilmezse otomatik olarak yenilenir; yenileme ücreti bu süreden önceki 24 saat içinde alınır. Apple Hesabı ayarlarınızdan istediğiniz zaman yönetebilir veya iptal edebilirsiniz. Ücretsiz deneme sunuluyorsa, abone olduğunuzda kullanılmayan kısmı sona erer."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "确认购买时将从你的 Apple 账户扣款。订阅会自动续订，除非在当前周期结束前至少 24 小时取消；续订费用会在此前 24 小时内收取。你可以随时在 Apple 账户设置中管理或取消。如提供免费试用，订阅后未使用的试用部分将终止。"
+          }
+        }
+      }
+    },
     "Pick the closest material you know. Toolpath uses its conservative starting values.": {
       "localizations": {
         "ar": {
@@ -16689,6 +16949,58 @@
           "stringUnit": {
             "state": "translated",
             "value": "隐私"
+          }
+        }
+      }
+    },
+    "Privacy policy": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سياسة الخصوصية"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datenschutzerklärung"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Política de privacidad"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informativa sulla privacy"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシーポリシー"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Политика конфиденциальности"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizlilik politikası"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐私政策"
           }
         }
       }
@@ -24831,6 +25143,58 @@
         }
       }
     },
+    "Use the cloud assistant?": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "هل تريد استخدام المساعد السحابي؟"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cloud-Assistenten verwenden?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Usar el asistente en la nube?"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usare l'assistente cloud?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クラウドアシスタントを使いますか？"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Использовать облачного ассистента?"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulut asistan kullanılsın mı?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用云端助手？"
+          }
+        }
+      }
+    },
     "V-bit": {
       "localizations": {
         "ar": {
@@ -26144,6 +26508,58 @@
         }
       }
     },
+    "You can change this in Settings.": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنك تغيير ذلك من الإعدادات."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst das in den Einstellungen ändern."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes cambiarlo en Ajustes."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puoi cambiarlo in Impostazioni."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "これは設定で変更できます。"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Это можно изменить в Настройках."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bunu Ayarlar'dan değiştirebilirsiniz."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你可以在“设置”中更改。"
+          }
+        }
+      }
+    },
     "You're Pro — thank you!": {
       "localizations": {
         "ar": {
@@ -27403,6 +27819,7 @@
         }
       }
     },
+    "“%@”": {},
     "☐  %@": {}
   },
   "version": "1.0"

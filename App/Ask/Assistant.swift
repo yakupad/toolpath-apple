@@ -114,6 +114,24 @@ final class AssistantModel {
     private(set) var cloudQuota: ToolpathAPI.Quota?
     /// Set when the cloud allowance ran out: the view offers Pro or a pack.
     private(set) var needsUpgrade = false
+    /// A question waiting for the user's permission to use the cloud
+    /// assistant (App Review 5.1.2(i): ask before sending data to a
+    /// third-party AI).
+    private(set) var pendingConsent: (question: String, hasHomingSwitches: Bool)?
+
+    enum CloudConsent: String { case unknown, granted, declined }
+    static let consentKey = "cloudAssistantConsent"
+    static var cloudConsent: CloudConsent {
+        get { CloudConsent(rawValue: UserDefaults.standard.string(forKey: consentKey) ?? "") ?? .unknown }
+        set { UserDefaults.standard.set(newValue.rawValue, forKey: consentKey) }
+    }
+
+    func resolveConsent(_ granted: Bool) {
+        Self.cloudConsent = granted ? .granted : .declined
+        guard let pending = pendingConsent else { return }
+        pendingConsent = nil
+        askCloud(pending.question, hasHomingSwitches: pending.hasHomingSwitches)
+    }
     private var session: LanguageModelSession?
 
     static var availability: SystemLanguageModel.Availability { SystemLanguageModel.default.availability }
@@ -156,12 +174,24 @@ final class AssistantModel {
         messages = []
         session = nil
         needsUpgrade = false
+        pendingConsent = nil
     }
 
     /// Without Apple Intelligence (unsupported device or region): the cloud
     /// assistant while the user has questions left, grounded in the same
     /// workshop notes; otherwise the built-in library answers.
     private func askCloud(_ question: String, hasHomingSwitches: Bool) {
+        switch Self.cloudConsent {
+        case .unknown:
+            pendingConsent = (question, hasHomingSwitches)
+            return
+        case .declined:
+            messages.append(ChatMessage(role: .user, text: question))
+            messages.append(OfflineAnswer.compose(for: question, hasHomingSwitches: hasHomingSwitches))
+            return
+        case .granted:
+            break
+        }
         let history = messages.suffix(6).map { ToolpathAPI.Turn(role: $0.role == .user ? "user" : "assistant", text: $0.text) }
         messages.append(ChatMessage(role: .user, text: question))
         messages.append(ChatMessage(role: .assistant, text: ""))

@@ -14,6 +14,7 @@ struct SettingsView: View {
     @AppStorage("appearance") private var appearance: Appearance = .system
     @AppStorage("workshopMode") private var workshopMode = false
     @AppStorage(Telemetry.preferenceKey) private var shareUsageData = true
+    @AppStorage(AssistantModel.consentKey) private var cloudConsent = AssistantModel.CloudConsent.unknown.rawValue
     @AppStorage("toolChangeAlerts") private var toolChangeAlerts = true
     @AppStorage("jobFinishedAlerts") private var jobFinishedAlerts = true
 
@@ -63,6 +64,10 @@ struct SettingsView: View {
                 }
                 Section {
                     ICloudStatusRow()
+                    Toggle("Cloud assistant (Claude)", isOn: Binding(
+                        get: { cloudConsent == AssistantModel.CloudConsent.granted.rawValue },
+                        set: { cloudConsent = ($0 ? AssistantModel.CloudConsent.granted : .declined).rawValue }
+                    ))
                     Toggle("Share anonymous usage and crash data", isOn: $shareUsageData)
                         .onChange(of: shareUsageData) { _, on in Telemetry.apply(on) }
                     if let backupURL {

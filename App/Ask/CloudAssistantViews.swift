@@ -61,3 +61,28 @@ struct UpgradeCard: View {
         .background(TP.Palette.accent.opacity(0.08), in: .rect(cornerRadius: 18))
     }
 }
+
+/// Asked once, before the first question goes to the cloud assistant.
+struct CloudConsentCard: View {
+    let question: String
+    let decide: (Bool) -> Void
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label("Use the cloud assistant?", systemImage: "cloud").font(.headline)
+            Text("Apple Intelligence isn't available here. To answer, Toolpath can send your question, the last few messages and the matching workshop notes through the Toolpath server to Anthropic's Claude. Toolpath doesn't store them, and they are never linked to your name or Apple Account.")
+                .font(.subheadline).foregroundStyle(TP.Palette.textSecondary)
+            Text("“\(question)”").font(.subheadline.italic()).lineLimit(3)
+            Link("Privacy policy", destination: URL(string: "https://yakupad.github.io/toolpath-apple/privacy/")!)
+                .font(.footnote)
+            Button("Allow cloud answers") { decide(true) }
+                .buttonStyle(.tpPrimary)
+            Button("Built-in library only") { decide(false) }
+                .buttonStyle(.bordered)
+                .frame(maxWidth: .infinity)
+            Text("You can change this in Settings.").font(.caption).foregroundStyle(TP.Palette.textTertiary)
+        }
+        .padding(16)
+        .background(TP.Palette.card, in: .rect(cornerRadius: 18))
+    }
+}

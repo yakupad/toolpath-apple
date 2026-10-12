@@ -115,6 +115,9 @@ struct AssistantView: View {
                         if model.needsUpgrade {
                             UpgradeCard().id("upgrade")
                         }
+                        if let pending = model.pendingConsent {
+                            CloudConsentCard(question: pending.question) { model.resolveConsent($0) }
+                        }
                     }
                     .padding(TP.Metric.gutter)
                 }
