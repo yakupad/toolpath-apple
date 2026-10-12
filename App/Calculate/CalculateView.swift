@@ -4,8 +4,11 @@ import SwiftData
 import SwiftUI
 
 struct CalculateView: View {
+    /// Screenshot runs can open a calculator directly with `-screen feeds|turning`.
+    @State private var path: [String] = DebugFlags.value("-screen").map { [$0] } ?? []
+
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             List {
                 Section {
                     NavigationLink { FeedsView() } label: {
@@ -28,6 +31,9 @@ struct CalculateView: View {
                 }
             }
             .navigationTitle("Calculate")
+            .navigationDestination(for: String.self) { screen in
+                if screen == "turning" { TurningView() } else { FeedsView() }
+            }
         }
     }
 }

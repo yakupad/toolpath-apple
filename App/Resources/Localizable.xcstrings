@@ -11848,6 +11848,58 @@
         }
       }
     },
+    "Just need answers? Add 100 cloud questions": {
+      "localizations": {
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحتاج إلى إجابات فقط؟ أضف 100 سؤال سحابي"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brauchst du nur Antworten? 100 Cloud-Fragen hinzufügen"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Solo necesitas respuestas? Añade 100 preguntas en la nube"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ti servono solo risposte? Aggiungi 100 domande cloud"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回答だけ必要ですか？クラウド質問を100回追加"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нужны только ответы? Добавьте 100 облачных вопросов"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sadece yanıt mı lazım? 100 bulut sorusu ekle"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只需要答案？增加 100 次云端提问"
+          }
+        }
+      }
+    },
     "Keep clamps %@ mm outside the path": {
       "localizations": {
         "ar": {

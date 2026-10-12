@@ -21,7 +21,7 @@ struct PaywallView: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
                     HeroToolpath()
-                        .frame(height: 180)
+                        .frame(height: 110)
                         .clipShape(.rect(cornerRadius: 24))
                     Text("Run your shop like a pro").font(.largeTitle.bold())
                     VStack(alignment: .leading, spacing: 12) {
@@ -40,6 +40,22 @@ struct PaywallView: View {
                         PlanRow(product: product, isSelected: selectedID == product.id) {
                             selectedID = product.id
                         }
+                    }
+
+                    if let pack = store.creditPack {
+                        Button {
+                            Task { await store.purchase(pack) }
+                        } label: {
+                            HStack {
+                                Label("Just need answers? Add 100 cloud questions", systemImage: "sparkles")
+                                    .font(.subheadline)
+                                Spacer()
+                                Text(pack.displayPrice).font(.tpValue(15))
+                            }
+                            .padding(14)
+                            .background(TP.Palette.card, in: .rect(cornerRadius: 14))
+                        }
+                        .buttonStyle(.plain)
                     }
 
                     Text("Payment is charged to your Apple Account when you confirm. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period; renewal is charged within 24 hours before that. Manage or cancel any time in your Apple Account settings. If a free trial is offered, any unused part of it ends when you subscribe.")

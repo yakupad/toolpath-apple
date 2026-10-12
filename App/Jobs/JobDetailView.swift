@@ -12,14 +12,14 @@ struct JobDetailView: View {
     @State private var camera = DebugFlags.start2D ? OrbitCamera.top : OrbitCamera.isometric
     @State private var is3D = !DebugFlags.start2D
     @State private var showInspector = true
-    @State private var inspectorTab: InspectorTab = .warnings
+    @State private var inspectorTab: InspectorTab = InspectorTab(rawValue: DebugFlags.value("-panel") ?? "") ?? .warnings
     @State private var focusedMove: Int?
     @State private var drawProgress = 0.0
     @State private var filter = MoveFilter()
     @State private var simulation = SimulationClock()
     @State private var isSimulating = false
     @State private var showRun = false
-    @State private var panelExpanded = false
+    @State private var panelExpanded = DebugFlags.panelExpanded
     @State private var showQuote = false
     @State private var pdfURL: URL?
     @State private var showCompare = false

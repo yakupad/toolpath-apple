@@ -1,6 +1,25 @@
 import Foundation
 
 enum DebugFlags {
+    /// Value after a `-name value` launch argument (debug builds only).
+    static func value(_ name: String) -> String? {
+        #if DEBUG
+        let args = ProcessInfo.processInfo.arguments
+        guard let i = args.firstIndex(of: name), args.indices.contains(i + 1) else { return nil }
+        return args[i + 1]
+        #else
+        return nil
+        #endif
+    }
+
+    static var panelExpanded: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-panelExpanded")
+        #else
+        false
+        #endif
+    }
+
     /// Screenshot runs open job previews in 2D with `-view2D`.
     static var start2D: Bool {
         #if DEBUG
@@ -49,6 +68,7 @@ enum DebugLaunch {
                 try? FileManager.default.copyItem(at: url, to: target)
             }
         }
+        if args.contains("-showPaywall") { router.showPaywall = true }
         if args.contains("-openLatheDanger") {
             // G96 without a G50 limit facing to the centre, and a rapid into uncut stock.
             let job = JobFile(name: "lathe_mistakes.nc", content: "G21 G96 S150 M3\nG95\nT0101\nG0 X32 Z2\nG1 X30 F0.2\nG1 Z-20\nG0 X20 Z-10\nG0 X32 Z0\nG1 X0 F0.1\nG0 Z5\nM5")
