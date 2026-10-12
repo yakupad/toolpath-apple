@@ -230,6 +230,7 @@ struct JobDetailView: View {
                 ForEach(InspectorTab.allCases) { Text($0.title).tag($0) }
             }
             .pickerStyle(.segmented)
+            .labelsHidden()
 
             switch inspectorTab {
             case .warnings:

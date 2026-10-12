@@ -15,7 +15,7 @@ struct ToolpathApp: App {
         // Free iCloud sync through the user's private CloudKit database — no
         // account or login of our own. Without an iCloud account the store
         // simply stays local.
-        let configuration = ModelConfiguration(schema: schema, cloudKitDatabase: .private("iCloud.com.yakupad.toolpath"))
+        let configuration = ModelConfiguration(schema: schema, cloudKitDatabase: DebugFlags.localStore ? .none : .private("iCloud.com.yakupad.toolpath"))
         do {
             container = try ModelContainer(for: schema, configurations: configuration)
         } catch {

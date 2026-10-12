@@ -33,6 +33,8 @@ struct RootView: View {
             }
         }
         .tabViewStyle(.sidebarAdaptable)
+        // Grouped forms everywhere: macOS otherwise lays forms out in columns.
+        .formStyle(.grouped)
         .fileImporter(isPresented: $router.isImporting, allowedContentTypes: JobImporter.contentTypes, allowsMultipleSelection: true) { result in
             if case let .success(urls) = result {
                 router.pendingURLs.append(contentsOf: urls)

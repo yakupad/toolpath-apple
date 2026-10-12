@@ -51,8 +51,17 @@ final class Router {
     }
 
     func open(job id: UUID) {
+        guard tab != .jobs else {
+            jobsPath = [id]
+            return
+        }
+        // Switch tabs first: on macOS the sidebar tab's navigation stack
+        // resets a path set before it is on screen.
         tab = .jobs
-        jobsPath = [id]
+        Task { @MainActor in
+            try? await Task.sleep(for: .milliseconds(150))
+            jobsPath = [id]
+        }
     }
 }
 

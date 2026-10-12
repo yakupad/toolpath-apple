@@ -1,6 +1,15 @@
 import Foundation
 
 enum DebugFlags {
+    /// `-localStore`: no CloudKit, so unsigned debug builds can run.
+    static var localStore: Bool {
+        #if DEBUG
+        ProcessInfo.processInfo.arguments.contains("-localStore")
+        #else
+        false
+        #endif
+    }
+
     /// Value after a `-name value` launch argument (debug builds only).
     static func value(_ name: String) -> String? {
         #if DEBUG
@@ -40,6 +49,9 @@ enum DebugFlags {
 }
 
 #if DEBUG
+#if os(macOS)
+import AppKit
+#endif
 import SwiftData
 import SwiftUI
 
@@ -69,6 +81,16 @@ enum DebugLaunch {
             }
         }
         if args.contains("-showPaywall") { router.showPaywall = true }
+        #if os(macOS)
+        if args.contains("-screenshotWindow") {
+            // 1440×900 pt = 2880×1800 px on Retina: the App Store Mac size.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                for window in NSApplication.shared.windows where window.isVisible {
+                    window.setFrame(NSRect(x: 80, y: 80, width: 1440, height: 900), display: true)
+                }
+            }
+        }
+        #endif
         if args.contains("-openLatheDanger") {
             // G96 without a G50 limit facing to the centre, and a rapid into uncut stock.
             let job = JobFile(name: "lathe_mistakes.nc", content: "G21 G96 S150 M3\nG95\nT0101\nG0 X32 Z2\nG1 X30 F0.2\nG1 Z-20\nG0 X20 Z-10\nG0 X32 Z0\nG1 X0 F0.1\nG0 Z5\nM5")
